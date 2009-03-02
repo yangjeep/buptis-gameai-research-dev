@@ -1,12 +1,12 @@
 /*
- * deadend.roles.Dog
+ * deadend.roles.DogTeam
  * Copyright (C) Yang JiaJian 2009 <Yang JiaJian>
- * deadend.roles.Dog is free software: you can redistribute it and/or modify it
+ * deadend.roles.DogTeam is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  * 
- * deadend.roles.Dog is distributed in the hope that it will be useful, but
+ * deadend.roles.DogTeam is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
@@ -16,31 +16,28 @@
  */
 
 package deadend.roles;
+
 import deadend.game.DeadEndGame;
+
+import java.util.List;
+
 /**
+ * This class controls the dogs' intelligence
+ * Two dog could work individually or cooperately
  *
  * @author Yang JiaJian
  */
-public class Dog extends Animal{
+public class DogTeam {
+    public List<Dog> dogTeam;
 
-    public Dog(DeadEndGame game) {
+    // TODO add fields DogTeamBrain
+
+    public DogTeam(DeadEndGame game) {
     }
 
-    // TODO add initialize logic here
-    @Override
-    public void initialize(){
-    }
 
-    // TODO add the strategy related logic here
-    @Override
-    public void compute(){
-        // TODO the strategy logic is added here
-        
-        super.move();
-    }
-
-    // TODO the reset logig is here
-    @Override
-    public void reset(){
-    }
+    // TODO add initialize logic
+    // TODO add update logic
+    // TODO add compute logic
+    // TODO add reset logic
 }

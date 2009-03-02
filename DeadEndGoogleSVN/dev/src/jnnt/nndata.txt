@@ -1,0 +1,8 @@
+inNum:1
+hideNum:3
+outNum:1
+sampleNum:8
+p1:{1,2,3,4,5,6,7,8}
+t1:{10,20,30,40,50,60,70,80}
+simNum:1
+p2:{6}
