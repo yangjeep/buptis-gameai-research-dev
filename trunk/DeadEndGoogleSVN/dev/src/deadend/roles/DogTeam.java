@@ -35,9 +35,16 @@ public class DogTeam {
     public DogTeam(DeadEndGame game) {
     }
 
-
     // TODO add initialize logic
+    public void initialize(){
+    }
     // TODO add update logic
+    public void update(){
+    }
     // TODO add compute logic
+    public void compute(){
+    }
     // TODO add reset logic
+    public void reset(){
+    }
 }

@@ -31,6 +31,8 @@ public class Cat extends Animal{
     // TODO add initialize logic here
     @Override
     public void initialize(){
+        this.bornAtHome();
+        this.direction=null;
     }
 
     // TODO add the strategy related logic here
@@ -43,5 +45,12 @@ public class Cat extends Animal{
     // TODO the reset logig is here
     @Override
     public void reset(){
+        this.bornAtHome();
+        this.direction=null;
+    }
+
+
+    // To born at the initial place
+    public void bornAtHome(){
     }
 }
