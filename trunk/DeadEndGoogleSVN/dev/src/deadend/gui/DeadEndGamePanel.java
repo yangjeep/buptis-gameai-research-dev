@@ -1,6 +1,18 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * deadend.gui.DeadEndGamePanel
+ * Copyright (C) Yang JiaJian 2009 <Yang JiaJian>
+ * deadend.gui.DeadEndGamePanel is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the
+ * Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * deadend.gui.DeadEndGamePanel is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 /*
@@ -10,6 +22,11 @@
  */
 
 package deadend.gui;
+
+import java.awt.*;
+import javax.swing.*;
+
+import deadend.game.GameConfigClass;
 
 /**
  *
@@ -32,6 +49,7 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     private void initComponents() {
 
         setBackground(new java.awt.Color(0, 0, 0));
+        setMinimumSize(new java.awt.Dimension(400, 400));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -41,7 +59,7 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -49,4 +67,25 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
 
+    @Override
+    public void paint(Graphics g){
+
+        //Draw the grids
+        int numOfX,numOfY;
+        numOfX=deadend.game.GameConfigClass.GridX;
+        numOfY=deadend.game.GameConfigClass.GridY;
+
+        int unitx,unity;
+        unitx=this.getWidth()/numOfX;
+        unity=this.getHeight()/numOfY;
+
+        g.setColor(Color.GRAY);
+        for(int i=0;i<=numOfX;i++){
+            g.drawLine(i*unitx, 0, i*unitx, this.getHeight());
+        }
+        for(int i=0;i<=numOfX;i++){
+            g.drawLine(0, i*unity, this.getWidth(), i*unity);
+        }
+
+    }
 }
