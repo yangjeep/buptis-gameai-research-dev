@@ -26,7 +26,7 @@ package deadend.gui;
 import java.awt.*;
 import javax.swing.*;
 
-import deadend.game.GameConfigClass;
+import deadend.game.*;
 
 /**
  *
@@ -66,11 +66,25 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
+    
+    /**
+     * The game core
+     */
+    private DeadEndGame game;
+    /**
+     * Construct the game entity
+     */
+    public void initGame(){
+        this.game=new DeadEndGame();
+        this.game.intialize();
+    }
 
     @Override
     public void paint(Graphics g){
 
-        //Draw the grids
+        /**
+         * This block is to draw the grids (the board)
+         */
         int numOfX,numOfY;
         numOfX=deadend.game.GameConfigClass.GridX;
         numOfY=deadend.game.GameConfigClass.GridY;

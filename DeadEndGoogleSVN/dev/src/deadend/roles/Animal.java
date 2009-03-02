@@ -48,6 +48,10 @@ public abstract class Animal {
     public abstract void reset();
 
     public void move(){
+        if(this.direction==null){
+            System.err.print("The direction is null");
+            return;
+        }
         Point p=this.position;
         if(this.direction==Directions.Up){
             this.position.setLocation(p.x,p.y-1);
