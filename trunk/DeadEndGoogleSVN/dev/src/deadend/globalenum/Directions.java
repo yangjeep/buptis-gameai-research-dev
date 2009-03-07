@@ -38,5 +38,9 @@ public enum Directions{
     /**
      * Go right next step
      */
-    Right
+    Right,
+    /**
+     * still
+     */
+    Still
 }

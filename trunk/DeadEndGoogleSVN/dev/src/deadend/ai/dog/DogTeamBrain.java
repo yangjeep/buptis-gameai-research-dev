@@ -20,6 +20,7 @@ package deadend.ai.dog;
 import java.util.ArrayList;
 
 import deadend.game.DeadEndGame;
+import deadend.globalenum.Directions;
 import deadend.ai.dog.monteCarlo.*;
 /**
  *
@@ -30,13 +31,13 @@ public class DogTeamBrain {
     public DogTeamBrain(DeadEndGame game,int timeLimit) {
         this.game=game;
         this.timeLimitInMS=timeLimit;
-        this.dcredit=new DirectionCredit();
+        
     }
 
     DeadEndGame game;
     int timeLimitInMS;
 
-    DirectionCredit dcredit;
+    ArrayList<DirectionCredit> dcredits;
 
     public ArrayList<deadend.globalenum.Directions> directions;
     // TODO method computation within time limit
@@ -44,12 +45,23 @@ public class DogTeamBrain {
         long begin = System.currentTimeMillis();
 		long limit = begin + this.timeLimitInMS;
 
+        this.dcredits=new ArrayList<DirectionCredit>(deadend.game.GameConfigClass.NumberOfDogs);
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
-        
+        directions.clear();
+        dcredits.clear();
+        for(int i=0;i<deadend.game.GameConfigClass.NumberOfDogs;i++){
+            this.dcredits.add(new DirectionCredit());
+            this.directions.add(Directions.Still);
+        }
         do{
-            //Computation logic here
+            // TODO Computation logic here
+            MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
             
         }while(System.currentTimeMillis()<limit);
+
+        for(int i=0;i<this.directions.size();i++){
+            this.directions.set(i, this.dcredits.get(i).findBest());
+        }
     }
     
 }

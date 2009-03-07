@@ -17,9 +17,11 @@
 
 package deadend.ai.dog.monteCarlo;
 
+import java.awt.Point;
 /**
  *
  * @author Yang JiaJian
  */
 public class MDog {
+    Point position;
 }
