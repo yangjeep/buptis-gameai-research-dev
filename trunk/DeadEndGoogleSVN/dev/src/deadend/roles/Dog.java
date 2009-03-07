@@ -17,6 +17,7 @@
 
 package deadend.roles;
 import deadend.game.DeadEndGame;
+import deadend.globalenum.Directions;
 /**
  *
  * @author Yang JiaJian
@@ -26,20 +27,24 @@ public class Dog extends Animal{
     public Dog(DeadEndGame game) {
     }
 
-    // TODO add initialize logic here
+    // initialize logic here
     @Override
     public void initialize(){
         this.bornAtHome();
     }
 
-    // TODO add the strategy related logic here
-    @Override
-    public void compute(){
+    // add the strategy related logic here
+    /**
+     *@param direction Directions
+     */
+    public void compute(Directions direction){
         // TODO the strategy logic is added here
-        
+        this.direction=direction;
         super.move();
     }
-
+    @Override
+    public void compute(){
+    }
     // TODO the reset logig is here
     @Override
     public void reset(){

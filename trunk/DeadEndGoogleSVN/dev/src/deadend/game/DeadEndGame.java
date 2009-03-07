@@ -61,11 +61,11 @@ public class DeadEndGame implements ActionListener{
     //State control
     public boolean isPaused;
 
-    // TODO Constructor
+    // Constructor
     public DeadEndGame(){
 
     }
-    // TODO Initialize
+    // Initialize
     public void intialize(){
         this.LimitStep=GameConfigClass.Step_Limit;
         this.gameresult=GameResults.NotEnd;
@@ -85,7 +85,7 @@ public class DeadEndGame implements ActionListener{
         x++;
         door.add(new Point(x,y));
 
-        // TODO Initialize the player and npc
+        // Initialize the player and npc
         this.player=new Cat(this);
         this.dogs=new DogTeam(this);
 
@@ -148,7 +148,7 @@ public class DeadEndGame implements ActionListener{
         this.dogs.compute();
     }
 
-    // TODO Reset logic
+    // Reset logic
     public void reset(){
         this.gameresult=GameResults.NotEnd;
         this.isAutoRun=false;

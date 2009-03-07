@@ -55,12 +55,15 @@ public class DogTeam {
             d.initialize();
             this.dogTeam.add(d);
         }
-        
+        this.brain=new DogTeamBrain(this.game,deadend.game.GameConfigClass.ComputingTimeLimit);
     }
 
     // TODO add compute logic
     public void compute(){
-        
+        this.brain.compute();
+        for(int i=0;i<this.dogTeam.size();i++){
+            this.dogTeam.get(i).compute(this.brain.directions.get(i));
+        }
     }
     // TODO add reset logic
     public void reset(){
