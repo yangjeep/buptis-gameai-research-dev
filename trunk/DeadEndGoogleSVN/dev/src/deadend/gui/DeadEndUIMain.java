@@ -1,37 +1,41 @@
 /*
- * deadend.gui.DeadEndMainUI
+ * deadend.gui.DeadEndUIMain
  * Copyright (C) Yang JiaJian 2009 <Yang JiaJian>
- * deadend.gui.DeadEndMainUI is free software: you can redistribute it and/or modify it
+ * deadend.gui.DeadEndUIMain is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- *
- * deadend.gui.DeadEndMainUI is distributed in the hope that it will be useful, but
+ * 
+ * deadend.gui.DeadEndUIMain is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
- *
+ * 
  * You should have received a copy of the GNU General Public License along
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 /*
- * DeadEndMainUI.java
+ * DeadEndUIMain.java
  *
- * Created on 2009-3-1, 19:11:26
+ * Created on 2009-3-7, 14:39:56
  */
 
 package deadend.gui;
-
+import deadend.game.*;
 /**
  *
  * @author Yang JiaJian
  */
-public class DeadEndMainUI extends javax.swing.JFrame {
+public class DeadEndUIMain extends javax.swing.JFrame {
 
-    /** Creates new form DeadEndMainUI */
-    public DeadEndMainUI() {
+    public DeadEndGame game;
+    /** Creates new form DeadEndUIMain */
+    public DeadEndUIMain() {
         initComponents();
+
+        this.game=this.deadEndGamePanel1.game;
+        this.deadEndControlPanel1.initGame(this.game);
     }
 
     /** This method is called from within the constructor to
@@ -44,36 +48,36 @@ public class DeadEndMainUI extends javax.swing.JFrame {
     private void initComponents() {
 
         deadEndGamePanel1 = new deadend.gui.DeadEndGamePanel();
-        jScrollBar1 = new javax.swing.JScrollBar();
         deadEndControlPanel1 = new deadend.gui.DeadEndControlPanel();
-        MainMenuBar = new javax.swing.JMenuBar();
+        jScrollBar1 = new javax.swing.JScrollBar();
+        jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("BUPTIS GameAI Platform");
-        setMinimumSize(new java.awt.Dimension(460, 600));
+        setMinimumSize(new java.awt.Dimension(442, 558));
 
         javax.swing.GroupLayout deadEndGamePanel1Layout = new javax.swing.GroupLayout(deadEndGamePanel1);
         deadEndGamePanel1.setLayout(deadEndGamePanel1Layout);
         deadEndGamePanel1Layout.setHorizontalGroup(
             deadEndGamePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 402, Short.MAX_VALUE)
+            .addGap(0, 401, Short.MAX_VALUE)
         );
         deadEndGamePanel1Layout.setVerticalGroup(
             deadEndGamePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 402, Short.MAX_VALUE)
+            .addGap(0, 401, Short.MAX_VALUE)
         );
 
-        jScrollBar1.setPreferredSize(new java.awt.Dimension(17, 5));
+        deadEndControlPanel1.setMinimumSize(new java.awt.Dimension(450, 120));
+        deadEndControlPanel1.setPreferredSize(new java.awt.Dimension(450, 120));
 
         jMenu1.setText("File");
-        MainMenuBar.add(jMenu1);
+        jMenuBar1.add(jMenu1);
 
         jMenu2.setText("About");
-        MainMenuBar.add(jMenu2);
+        jMenuBar1.add(jMenu2);
 
-        setJMenuBar(MainMenuBar);
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -82,23 +86,20 @@ public class DeadEndMainUI extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(deadEndGamePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11))
-                    .addComponent(deadEndControlPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(deadEndGamePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(deadEndControlPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(deadEndGamePanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE))
+                    .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(deadEndControlPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                .addComponent(deadEndControlPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -111,17 +112,17 @@ public class DeadEndMainUI extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DeadEndMainUI().setVisible(true);
+                new DeadEndUIMain().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar MainMenuBar;
     private deadend.gui.DeadEndControlPanel deadEndControlPanel1;
     private deadend.gui.DeadEndGamePanel deadEndGamePanel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
 

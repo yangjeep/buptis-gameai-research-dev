@@ -49,9 +49,7 @@ public class DogTeam {
             this.dogTeam.add(d);
         }
     }
-    // TODO add update logic
-    public void update(){
-    }
+
     // TODO add compute logic
     public void compute(){
     }

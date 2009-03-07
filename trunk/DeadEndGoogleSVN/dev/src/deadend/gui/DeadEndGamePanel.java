@@ -73,7 +73,7 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     /**
      * The game core
      */
-    private DeadEndGame game;
+    public DeadEndGame game;
     /**
      * Construct the game entity
      */
@@ -120,6 +120,7 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
         
         this.drawCat(g);
         this.drawDogs(g);
+
         this.repaint();
     }
 
