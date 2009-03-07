@@ -36,6 +36,7 @@ public class DirectionCredit {
     }
 
     public void addCredit(Directions d){
+        System.out.println(d.toString());
         int k=0;
         if(d==Directions.Up){
             k=this.credit.get(0);
@@ -67,8 +68,9 @@ public class DirectionCredit {
                 t=i;
                 k=this.credit.get(i);
             }
+            System.out.print(" "+this.credit.get(i));
         }
-
+        System.out.println();
         if(k==1)return Directions.Down;
         else if(k==2)return Directions.Left;
         else if(k==3)return Directions.Right;
