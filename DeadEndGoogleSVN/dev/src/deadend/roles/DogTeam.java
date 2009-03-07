@@ -60,9 +60,13 @@ public class DogTeam {
 
     // TODO add compute logic
     public void compute(){
+        
     }
     // TODO add reset logic
     public void reset(){
+        for(Dog d:this.dogTeam){
+            d.bornAtHome();
+        }
     }
 
     public StrategyInterface getStrategy() {

@@ -68,7 +68,7 @@ public class DeadEndGame implements ActionListener{
         this.LimitStep=GameConfigClass.Step_Limit;
         this.gameresult=GameResults.NotEnd;
         this.isAutoRun=false;
-        this.isGameEnd=false;
+        this.isGameEnd=true;
         this.isPaused=false;
         this.step=0;
 
@@ -138,7 +138,7 @@ public class DeadEndGame implements ActionListener{
     public void reset(){
         this.gameresult=GameResults.NotEnd;
         this.isAutoRun=false;
-        this.isGameEnd=false;
+        this.isGameEnd=true;
         this.isPaused=false;
         this.step=0;
 

@@ -43,7 +43,7 @@ public class Dog extends Animal{
     // TODO the reset logig is here
     @Override
     public void reset(){
-        
+        this.bornAtHome();
     }
 
 
