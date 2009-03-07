@@ -207,12 +207,12 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void resumeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resumeButtonActionPerformed
-        // TODO add your handling code here:
+        // add your handling code here:
         this.game.ResumeGame();
     }//GEN-LAST:event_resumeButtonActionPerformed
 
     private void autoRunButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_autoRunButtonActionPerformed
-        // TODO add your handling code here:
+        // add your handling code here:
         String ms=this.jTextField1.getText();
         int times=50;
         try{
