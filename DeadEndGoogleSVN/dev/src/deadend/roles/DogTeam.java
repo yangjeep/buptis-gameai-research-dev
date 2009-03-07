@@ -17,9 +17,11 @@
 
 package deadend.roles;
 
-import deadend.game.DeadEndGame;
+import java.util.ArrayList;
 
-import java.util.List;
+import deadend.game.DeadEndGame;
+import deadend.game.GameConfigClass;
+
 
 /**
  * This class controls the dogs' intelligence
@@ -28,15 +30,24 @@ import java.util.List;
  * @author Yang JiaJian
  */
 public class DogTeam {
-    public List<Dog> dogTeam;
+    public ArrayList<Dog> dogTeam;
 
     // TODO add fields DogTeamBrain
+    DeadEndGame game;
 
     public DogTeam(DeadEndGame game) {
+        this.game=game;
     }
 
     // TODO add initialize logic
     public void initialize(){
+        this.dogTeam=new ArrayList<Dog>();
+        int dogLimit=GameConfigClass.NumberOfDogs;
+        for(int i=1;i<=dogLimit;i++){
+            Dog d=new Dog(this.game);
+            d.initialize();
+            this.dogTeam.add(d);
+        }
     }
     // TODO add update logic
     public void update(){

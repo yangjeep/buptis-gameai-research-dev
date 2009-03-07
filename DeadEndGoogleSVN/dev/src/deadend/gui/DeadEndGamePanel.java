@@ -27,6 +27,7 @@ import java.awt.*;
 import javax.swing.*;
 
 import deadend.game.*;
+import deadend.roles.Dog;
 
 /**
  *
@@ -37,6 +38,8 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     /** Creates new form DeadEndGamePanel */
     public DeadEndGamePanel() {
         initComponents();
+
+        this.initGame();
     }
 
     /** This method is called from within the constructor to
@@ -49,17 +52,17 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     private void initComponents() {
 
         setBackground(new java.awt.Color(0, 0, 0));
-        setMinimumSize(new java.awt.Dimension(400, 400));
+        setMinimumSize(new java.awt.Dimension(401, 401));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 401, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 401, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -83,6 +86,11 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     public void paint(Graphics g){
 
         /**
+         * Draw the background
+         */
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, this.getWidth(), this.getHeight());
+        /**
          * This block is to draw the grids (the board)
          */
         int numOfX,numOfY;
@@ -93,7 +101,7 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
         unitx=this.getWidth()/numOfX;
         unity=this.getHeight()/numOfY;
 
-        g.setColor(Color.GRAY);
+        g.setColor(Color.lightGray);
         for(int i=0;i<=numOfX;i++){
             g.drawLine(i*unitx, 0, i*unitx, this.getHeight());
         }
@@ -101,5 +109,77 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
             g.drawLine(0, i*unity, this.getWidth(), i*unity);
         }
 
+        /**
+         * Draw the door
+         */
+        g.setColor(Color.green);
+        int x,y;
+        for(Point d:this.game.door){
+            g.fillRect(d.x*unitx, d.y*unity, unitx, unity);
+        }
+        
+        this.drawCat(g);
+        this.drawDogs(g);
+        this.repaint();
+    }
+
+    /**
+     * Draw Cat
+     * @param g Graphics
+     */
+    public void drawCat(Graphics g){
+
+        int numOfX,numOfY;
+        numOfX=deadend.game.GameConfigClass.GridX;
+        numOfY=deadend.game.GameConfigClass.GridY;
+
+        int unitx,unity;
+        unitx=this.getWidth()/numOfX;
+        unity=this.getHeight()/numOfY;
+
+        g.setColor(Color.cyan);
+
+        int x,y;
+        x=this.game.player.getPosition().x;
+        y=this.game.player.getPosition().y;
+
+        g.fillOval(x*unitx, y*unity, unitx, unity);
+    }
+    /**
+     * Draw the dog
+     * @param g Graphics
+     */
+    public void drawDogs(Graphics g){
+        if(this.game.dogs.dogTeam.isEmpty()){return;}
+        int numOfX,numOfY;
+        numOfX=deadend.game.GameConfigClass.GridX;
+        numOfY=deadend.game.GameConfigClass.GridY;
+
+        int unitx,unity;
+        unitx=this.getWidth()/numOfX;
+        unity=this.getHeight()/numOfY;
+
+        g.setColor(Color.orange);
+
+        int x,y;
+        for(Dog d:this.game.dogs.dogTeam){
+            x=d.getPosition().x;
+            y=d.getPosition().y;
+            g.fillOval(x*unitx, y*unity, unitx, unity);
+        }
+
+    }
+    /**
+     * call Reset logic of the game
+     */
+    public void reset(){
+        this.game.reset();
+    }
+
+    /**
+     * autorun logic
+     * @param num integer indicates the number of autorun
+     */
+    public void autoRun(int num){
     }
 }

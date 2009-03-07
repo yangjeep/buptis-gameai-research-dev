@@ -17,6 +17,8 @@
 
 package deadend.game;
 
+import java.util.ArrayList;
+import java.awt.Point;
 
 import deadend.roles.*;
 import deadend.globalenum.GameResults;
@@ -35,6 +37,8 @@ public class DeadEndGame {
     public int step;
     public int LimitStep;
     public boolean isGameEnd;
+
+    public ArrayList<Point> door;
 
     // Tools access DB
     private ODBCWrite odbcWriter;
@@ -61,6 +65,14 @@ public class DeadEndGame {
         this.isGameEnd=false;
         this.isPaused=false;
         this.step=0;
+
+        this.door=new ArrayList<Point>();
+        int x,y;
+        x=GameConfigClass.GridX/2-1;
+        y=0;
+        door.add(new Point(x,y));
+        x++;
+        door.add(new Point(x,y));
 
         // TODO Initialize the player and npc
         this.player=new Cat(this);
@@ -108,7 +120,7 @@ public class DeadEndGame {
      */
     private int autoRun_Rounds;
     public void initAutoRun(int totalRounds){
-
+        this.autoRun_Rounds=totalRounds;
     }
     private boolean isTaskFinished;
     /**

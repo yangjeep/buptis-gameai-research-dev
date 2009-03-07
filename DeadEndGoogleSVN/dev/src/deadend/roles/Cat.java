@@ -24,8 +24,11 @@ import deadend.game.DeadEndGame;
 public class Cat extends Animal{
 
     // TODO add fields
+    DeadEndGame game;
+
     public Cat(DeadEndGame game) {
         // TODO assign fields
+        this.game=game;
     }
 
     // TODO add initialize logic here
@@ -33,6 +36,7 @@ public class Cat extends Animal{
     public void initialize(){
         this.bornAtHome();
         this.direction=null;
+
     }
 
     // TODO add the strategy related logic here
@@ -47,10 +51,19 @@ public class Cat extends Animal{
     public void reset(){
         this.bornAtHome();
         this.direction=null;
+
+        // TODO reborn
+        this.bornAtHome();
     }
 
 
     // To born at the initial place
     public void bornAtHome(){
+        int x,y;
+        java.util.Random rand=new java.util.Random();
+        x=rand.nextInt(6)+(deadend.game.GameConfigClass.GridX/2-3);
+        y=rand.nextInt(4)+(deadend.game.GameConfigClass.GridY-5);
+
+        this.position=new java.awt.Point(x,y);
     }
 }
