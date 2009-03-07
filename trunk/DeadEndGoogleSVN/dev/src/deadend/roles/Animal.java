@@ -67,4 +67,30 @@ public abstract class Animal {
         }
         this.direction=null;
     }
+
+    public Directions getDirection() {
+        return direction;
+    }
+
+    public void setDirection(Directions direction) {
+        this.direction = direction;
+    }
+
+    public Point getPosition() {
+        return position;
+    }
+
+    public void setPosition(Point position) {
+        this.position = position;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+
 }

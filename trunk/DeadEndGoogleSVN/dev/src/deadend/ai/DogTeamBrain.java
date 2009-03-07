@@ -17,6 +17,7 @@
 
 package deadend.ai;
 
+import deadend.game.DeadEndGame;
 /**
  *
  * @author Yang JiaJian
@@ -24,6 +25,11 @@ package deadend.ai;
 public class DogTeamBrain {
 
     // TODO constructor
+    public DogTeamBrain(DeadEndGame game) {
+        this.game=game;
+    }
+
+    DeadEndGame game;
     // TODO method computation within time limit
     public void compute(int timeLimitInMS){
         long begin = System.currentTimeMillis();

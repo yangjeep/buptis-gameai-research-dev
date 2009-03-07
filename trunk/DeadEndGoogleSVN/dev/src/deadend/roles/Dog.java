@@ -29,6 +29,7 @@ public class Dog extends Animal{
     // TODO add initialize logic here
     @Override
     public void initialize(){
+        this.bornAtHome();
     }
 
     // TODO add the strategy related logic here
@@ -42,5 +43,17 @@ public class Dog extends Animal{
     // TODO the reset logig is here
     @Override
     public void reset(){
+        
+    }
+
+
+    // To born at the initial place
+    public void bornAtHome(){
+        int x,y;
+        java.util.Random rand=new java.util.Random();
+        x=rand.nextInt(6)+(deadend.game.GameConfigClass.GridX/2-3);
+        y=rand.nextInt(4)+1;
+
+        this.position=new java.awt.Point(x,y);
     }
 }
