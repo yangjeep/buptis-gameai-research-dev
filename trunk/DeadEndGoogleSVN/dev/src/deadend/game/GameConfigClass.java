@@ -37,5 +37,5 @@ public class GameConfigClass {
     // Upper limit of game steps
     public final static int Step_Limit=40;
     // Refresh limit
-    public final static int InitRefreshTimeMS=2000;
+    public final static int InitRefreshTimeMS=1000;
 }

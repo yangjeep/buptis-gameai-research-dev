@@ -131,10 +131,14 @@ public class DeadEndGame implements ActionListener{
     }
 
     @Override
-    public void actionPerformed(ActionEvent e){
+    public void actionPerformed(ActionEvent e){   
         this.step++;
         this.judge();
-        if(this.isGameEnd || this.isPaused){
+        if(this.gameresult!=GameResults.NotEnd){
+            this.ticker.stop();
+            return;
+        }
+        if(this.isPaused){
             this.ticker.stop();
             return;
         }
@@ -176,12 +180,6 @@ public class DeadEndGame implements ActionListener{
      */
     private void judge(){
         /**
-         * Find if the turns has been reached
-         */
-        if(this.step>=this.LimitStep){
-            this.isGameEnd=true;
-        }
-        /**
          * Find if dog wins
          */
         for(Dog d:this.dogs.dogTeam){
@@ -199,7 +197,11 @@ public class DeadEndGame implements ActionListener{
                 this.gameresult=GameResults.CatWin;
             }
         }
-        if(this.isGameEnd && this.gameresult==GameResults.NotEnd){
+        /**
+         * Find if the turns has been reached
+         */
+        if(this.step>=this.LimitStep){
+            this.isGameEnd=true;
             this.gameresult=GameResults.Draw;
         }
     }

@@ -279,14 +279,16 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         else{
             this.StartButton.setEnabled(false);
             this.PulseButton.setEnabled(true);
-            if(this.game.isPaused){
+        }
+        
+        if(this.game.isPaused){
             this.PulseButton.setEnabled(false);
             this.resumeButton.setEnabled(true);
-            }else{
+        }else{
             this.PulseButton.setEnabled(true);
             this.resumeButton.setEnabled(false);
         }
-        }
+
         if(this.game.isAutoRun){
             this.StartButton.setEnabled(false);
             this.PulseButton.setEnabled(false);
