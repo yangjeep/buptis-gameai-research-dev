@@ -82,19 +82,24 @@ public class MSimGame {
             for(MDog m:this.sdogs){
                 m.rMove(step);
             }
+            if(!this.isFinished)continue;
         }
         // TODO record the first step of dogs
         this.nextDir.clear();
         
         for(int i=0;i<this.sdogs.size();i++){
             this.nextDir.add(this.sdogs.get(i).first);
+            //System.out.print(this.nextDir.get(i).toString());
         }
+        //System.out.println();
+        
         return true;
     }
     public void runToDeath(){
         while(!this.isFinished){
             this.runSim();
         }
+        System.out.println(this.simResult.toString());
     }
     private void judge(){
         for(Point p:this.game.door){
