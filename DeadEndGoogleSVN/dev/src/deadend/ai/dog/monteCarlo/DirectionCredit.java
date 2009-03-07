@@ -38,12 +38,12 @@ public class DirectionCredit {
     public void addCredit(Directions d){
         System.out.println(d.toString());
         int k=0;
-        if(d==Directions.Up){
+        if(d==Directions.Down){
             k=this.credit.get(0);
             k++;
             this.credit.set(0, k);
         }
-        if(d==Directions.Down){
+        if(d==Directions.Up){
             k=this.credit.get(1);
             k++;
             this.credit.set(1, k);
@@ -62,7 +62,7 @@ public class DirectionCredit {
 
     public Directions findBest(){
         int k=this.credit.get(0);
-        int t=0;
+        int t=-1;
         for(int i=0;i<this.credit.size();i++){
             if(this.credit.get(i)>k){
                 t=i;
@@ -71,9 +71,9 @@ public class DirectionCredit {
             System.out.print(" "+this.credit.get(i));
         }
         System.out.println();
-        if(k==1)return Directions.Down;
+        if(k==1)return Directions.Up;
         else if(k==2)return Directions.Left;
         else if(k==3)return Directions.Right;
-        else return Directions.Up;
+        else return Directions.Down;
     }
 }

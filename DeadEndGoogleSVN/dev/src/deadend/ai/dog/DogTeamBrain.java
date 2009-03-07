@@ -59,7 +59,7 @@ public class DogTeamBrain {
             // TODO Computation logic here
             MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
             msim.runToDeath();
-            if(msim.simResult==deadend.globalenum.GameResults.DogWin){
+            if(msim.simResult==deadend.globalenum.GameResults.DogWin || msim.simResult==deadend.globalenum.GameResults.Draw){
                     for(int i=0;i<this.game.dogs.dogTeam.size();i++){
                         Directions d=msim.nextDir.get(i);
                         this.dcredits.get(i).addCredit(d);
