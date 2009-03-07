@@ -36,10 +36,9 @@ import deadend.roles.Dog;
 public class DeadEndGamePanel extends javax.swing.JPanel {
 
     /** Creates new form DeadEndGamePanel */
-    public DeadEndGamePanel() {
+    public DeadEndGamePanel(DeadEndGame game) {
         initComponents();
-
-        this.initGame();
+        this.game=game;
     }
 
     /** This method is called from within the constructor to
@@ -77,8 +76,8 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     /**
      * Construct the game entity
      */
-    public void initGame(){
-        this.game=new DeadEndGame();
+    public void initGame(DeadEndGame game){
+        this.game=game;
         this.game.intialize();
     }
 
