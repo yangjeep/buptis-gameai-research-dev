@@ -21,6 +21,8 @@ import java.util.ArrayList;
 
 import deadend.game.DeadEndGame;
 import deadend.game.GameConfigClass;
+import deadend.ai.*;
+import deadend.ai.dog.DogTeamBrain;
 
 
 /**
@@ -35,6 +37,11 @@ public class DogTeam {
     // TODO add fields DogTeamBrain
     DeadEndGame game;
 
+    // Strategy
+    private StrategyInterface strategy;
+
+    private DogTeamBrain brain;
+
     public DogTeam(DeadEndGame game) {
         this.game=game;
     }
@@ -48,6 +55,7 @@ public class DogTeam {
             d.initialize();
             this.dogTeam.add(d);
         }
+        
     }
 
     // TODO add compute logic
@@ -56,4 +64,13 @@ public class DogTeam {
     // TODO add reset logic
     public void reset(){
     }
+
+    public StrategyInterface getStrategy() {
+        return strategy;
+    }
+
+    public void setStrategy(StrategyInterface strategy) {
+        this.strategy = strategy;
+    }
+
 }
