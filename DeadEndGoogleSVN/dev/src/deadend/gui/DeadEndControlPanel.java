@@ -33,12 +33,19 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
     public DeadEndControlPanel() {
         initComponents();
     }
-    /** Creates new form DeadEndControlPanel */
+    /**
+     * Creates new form DeadEndControlPanel
+     * @param game the game
+     */
     public DeadEndControlPanel(DeadEndGame game) {
         initComponents();
         this.game=game;
     }
 
+    /**
+     * Initilize the game
+     * @param game the game
+     */
     public void initGame(DeadEndGame game){
         this.game=game;
     }
@@ -75,6 +82,7 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         StartButton.addActionListener(formListener);
 
         jTextField1.setText("50");
+        jTextField1.addActionListener(formListener);
 
         jLabel1.setText("AutoRun");
 
@@ -98,6 +106,7 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
         PulseButton.setText("Pulse");
         PulseButton.setEnabled(false);
+        PulseButton.addActionListener(formListener);
 
         autoRunStop.setText("StopAuto");
         autoRunStop.setEnabled(false);
@@ -176,38 +185,71 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
     private class FormListener implements java.awt.event.ActionListener {
         FormListener() {}
         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            if (evt.getSource() == autoRunButton) {
+            if (evt.getSource() == StartButton) {
+                DeadEndControlPanel.this.StartButtonActionPerformed(evt);
+            }
+            else if (evt.getSource() == autoRunButton) {
                 DeadEndControlPanel.this.autoRunButtonActionPerformed(evt);
+            }
+            else if (evt.getSource() == resetButton) {
+                DeadEndControlPanel.this.resetButtonActionPerformed(evt);
             }
             else if (evt.getSource() == resumeButton) {
                 DeadEndControlPanel.this.resumeButtonActionPerformed(evt);
             }
-            else if (evt.getSource() == StartButton) {
-                DeadEndControlPanel.this.StartButtonActionPerformed(evt);
+            else if (evt.getSource() == jTextField1) {
+                DeadEndControlPanel.this.jTextField1ActionPerformed(evt);
             }
-            else if (evt.getSource() == resetButton) {
-                DeadEndControlPanel.this.resetButtonActionPerformed(evt);
+            else if (evt.getSource() == PulseButton) {
+                DeadEndControlPanel.this.PulseButtonActionPerformed(evt);
             }
         }
     }// </editor-fold>//GEN-END:initComponents
 
     private void resumeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resumeButtonActionPerformed
         // TODO add your handling code here:
+        this.game.ResumeGame();
     }//GEN-LAST:event_resumeButtonActionPerformed
 
     private void autoRunButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_autoRunButtonActionPerformed
         // TODO add your handling code here:
+        String ms=this.jTextField1.getText();
+        int times=50;
+        try{
+            times=Integer.parseInt(ms);
+        }catch(Exception e){
+            System.err.println(e.toString());
+        }
+        this.game.initAutoRun(times);
+        this.game.autoRun();
 }//GEN-LAST:event_autoRunButtonActionPerformed
 
     private void StartButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartButtonActionPerformed
         // TODO add your handling code here:
-        
+        this.game.StartAGame();
     }//GEN-LAST:event_StartButtonActionPerformed
 
     private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetButtonActionPerformed
         // TODO add your handling code here:
         this.game.reset();
     }//GEN-LAST:event_resetButtonActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+        String ms=this.jTextField1.getText();
+        int times=50;
+        try{
+            times=Integer.parseInt(ms);
+        }catch(Exception e){
+            System.err.println(e.toString());
+        }
+        this.game.initAutoRun(times);
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void PulseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PulseButtonActionPerformed
+        // TODO add your handling code here:
+        this.game.PulseGame();
+    }//GEN-LAST:event_PulseButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

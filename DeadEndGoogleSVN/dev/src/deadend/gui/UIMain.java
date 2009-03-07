@@ -38,6 +38,7 @@ public class UIMain extends javax.swing.JFrame {
         initComponents();
 
         this.deadEndControlPanel1.initGame(game);
+        this.deadEndGamePanel1.initGame(game);
         this.update();
     }
 
@@ -136,7 +137,7 @@ public class UIMain extends javax.swing.JFrame {
 
     private void jScrollBar1AdjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {//GEN-FIRST:event_jScrollBar1AdjustmentValueChanged
         // TODO add your handling code here:
-        System.out.println(this.jScrollBar1.getValue());
+        this.game.ticker.setDelay(this.jScrollBar1.getValue());
     }//GEN-LAST:event_jScrollBar1AdjustmentValueChanged
 
     /**

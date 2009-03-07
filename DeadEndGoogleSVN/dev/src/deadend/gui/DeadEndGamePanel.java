@@ -35,11 +35,17 @@ import deadend.roles.Dog;
  */
 public class DeadEndGamePanel extends javax.swing.JPanel {
 
+
+    public DeadEndGamePanel() {
+        initComponents();
+    }
+    
     /** Creates new form DeadEndGamePanel */
     public DeadEndGamePanel(DeadEndGame game) {
         initComponents();
         this.game=game;
     }
+
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -51,17 +57,17 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     private void initComponents() {
 
         setBackground(new java.awt.Color(0, 0, 0));
-        setMinimumSize(new java.awt.Dimension(401, 401));
+        setMinimumSize(new java.awt.Dimension(501, 501));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
+            .addGap(0, 501, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
+            .addGap(0, 501, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -79,11 +85,14 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     public void initGame(DeadEndGame game){
         this.game=game;
         this.game.intialize();
+
+        this.drawGame();
     }
+
 
     @Override
     public void paint(Graphics g){
-
+        //this.g=g;
         /**
          * Draw the background
          */
@@ -108,6 +117,10 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
             g.drawLine(0, i*unity, this.getWidth(), i*unity);
         }
 
+        if(this.game==null){
+            this.repaint();
+            return;
+        }
         /**
          * Draw the door
          */
@@ -116,13 +129,17 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
         for(Point d:this.game.door){
             g.fillRect(d.x*unitx, d.y*unity, unitx, unity);
         }
-        
+
         this.drawCat(g);
         this.drawDogs(g);
 
         this.repaint();
     }
 
+    //Graphics g;
+    public void drawGame(){
+        
+    }
     /**
      * Draw Cat
      * @param g Graphics

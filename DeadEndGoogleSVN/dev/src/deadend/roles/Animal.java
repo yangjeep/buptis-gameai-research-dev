@@ -53,16 +53,16 @@ public abstract class Animal {
             return;
         }
         Point p=this.position;
-        if(this.direction==Directions.Up){
+        if(this.direction==Directions.Up || this.position.y>0){
             this.position.setLocation(p.x,p.y-1);
         }
-        if(this.direction==Directions.Down){
+        if(this.direction==Directions.Down || this.position.y<deadend.game.GameConfigClass.GridY){
             this.position.setLocation(p.x,p.y+1);
         }
-        if(this.direction==Directions.Left){
+        if(this.direction==Directions.Left || this.position.x>0){
             this.position.setLocation(p.x-1, p.y);
         }
-        if(this.direction==Directions.Right){
+        if(this.direction==Directions.Right || this.position.y<deadend.game.GameConfigClass.GridX){
             this.position.setLocation(p.x+1, p.y);
         }
         this.direction=null;
