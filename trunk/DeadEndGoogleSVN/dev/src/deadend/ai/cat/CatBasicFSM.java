@@ -16,15 +16,36 @@
  */
 
 package deadend.ai.cat;
+
+import java.awt.Point;
+import java.util.ArrayList;
+
 import deadend.ai.StrategyInterface;
 import deadend.globalenum.Directions;
-import deadend.game.DeadEndGame;
+import deadend.game.*;
+import deadend.roles.*;
 /**
  *
  * @author Yang JiaJian
  */
 public class CatBasicFSM implements StrategyInterface{
     @Override public Directions compute(DeadEndGame game){
-        return Directions.Up;
+        ArrayList<Point> doors=game.door;
+        ArrayList<Dog> dogs=game.dogs.dogTeam;
+
+        Point player=game.player.getPosition();
+        boolean escape=false;
+        
+        for(Dog d:dogs){
+            if(d.getPosition().distance(player)<2){
+                /**
+                 * escape mode
+                 */
+                
+            }
+        }
+
+        if(player.y>=0){return Directions.Up;}
+        return null;
     }
 }

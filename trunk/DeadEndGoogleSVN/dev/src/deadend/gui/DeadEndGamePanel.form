@@ -6,7 +6,7 @@
       <Color blue="0" green="0" red="0" type="rgb"/>
     </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[401, 401]"/>
+      <Dimension value="[501, 501]"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -24,12 +24,12 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="401" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="501" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="401" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="501" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>

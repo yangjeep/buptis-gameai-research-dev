@@ -41,6 +41,8 @@ public class DeadEndGame implements ActionListener{
     public int LimitStep;
     public boolean isGameEnd;
 
+    public boolean isReseted;
+
     public Timer ticker;
     public int refreshTime;
 
@@ -70,7 +72,10 @@ public class DeadEndGame implements ActionListener{
         this.isAutoRun=false;
         this.isGameEnd=true;
         this.isPaused=false;
+
         this.step=0;
+
+        this.isTaskFinished=true;
 
         this.door=new ArrayList<Point>();
         int x,y;
@@ -90,13 +95,18 @@ public class DeadEndGame implements ActionListener{
         //Initialize the timer
         this.refreshTime=GameConfigClass.InitRefreshTimeMS;
         this.ticker=new Timer(this.refreshTime,this);
+
+        this.isReseted=true;
     }
     /**
      * When starting the game it enters the main loop
      */
     public void StartAGame(){
-        this.reset();
+        if(!this.isReseted){
+            this.reset();
+        }
         this.ticker.start();
+        this.isReseted=false;
     }
 
     public void StopGame(){
@@ -142,8 +152,12 @@ public class DeadEndGame implements ActionListener{
         this.isPaused=false;
         this.step=0;
 
+        this.isTaskFinished=true;
+
         this.player.reset();
         this.dogs.reset();
+
+        this.isReseted=true;
     }
 
     // TODO add logic to manipulate data
@@ -176,6 +190,15 @@ public class DeadEndGame implements ActionListener{
                 this.gameresult=GameResults.DogWin;
             }
         }
+        /**
+         * Find if cat wins
+         */
+        for(Point d:this.door){
+            if(this.player.getPosition().equals(d)){
+                this.isGameEnd=true;
+                this.gameresult=GameResults.CatWin;
+            }
+        }
         if(this.isGameEnd && this.gameresult==GameResults.NotEnd){
             this.gameresult=GameResults.Draw;
         }
@@ -188,8 +211,13 @@ public class DeadEndGame implements ActionListener{
     private int autoRun_Rounds;
     public void initAutoRun(int totalRounds){
         this.autoRun_Rounds=totalRounds;
+        this.isBreakTask=false;
     }
     private boolean isTaskFinished;
+    private boolean isBreakTask;
+    public void stopAutoRun(){
+        this.isBreakTask=true;
+    }
     /**
      * execute the autorun task
      */
