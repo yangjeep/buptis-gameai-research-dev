@@ -41,6 +41,8 @@ public class Cat extends Animal{
         this.bornAtHome();
         this.direction=null;
 
+        this.speed=deadend.game.GameConfigClass.CatSpeed;
+
         this.strategy=new CatBasicFSM();
     }
 

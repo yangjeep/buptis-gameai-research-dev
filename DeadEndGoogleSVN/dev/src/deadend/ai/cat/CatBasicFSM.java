@@ -35,15 +35,37 @@ public class CatBasicFSM implements StrategyInterface{
 
         Point player=game.player.getPosition();
         boolean escape=false;
-        
+        java.util.Random rand=new java.util.Random();
         for(Dog d:dogs){
             if(d.getPosition().distance(player)<2){
                 /**
                  * escape mode
                  */
-                
+                if(d.getPosition().x>player.x)return Directions.Up;
+                if(d.getPosition().x<player.x)return Directions.Up;
+                if(d.getPosition().y<player.y){
+                    float r=rand.nextFloat();
+                    if(r>0.5){
+                        return Directions.Left;
+                    }else{
+                        return Directions.Right;
+                    }
+                }
             }
         }
+
+        Point d=doors.get(0);
+        double dis=d.distance(player);
+        int target=0;
+        for(int i=0;i<doors.size();i++){
+            double ds=doors.get(i).distance(player);
+            if(ds<dis){
+                target=i;
+                dis=ds;
+            }
+        }
+        if(doors.get(target).x>player.x)return Directions.Right;
+        if(doors.get(target).x<player.x)return Directions.Left;
 
         if(player.y>=0){return Directions.Up;}
         return null;
