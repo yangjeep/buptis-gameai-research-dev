@@ -19,6 +19,9 @@ package deadend.game;
 
 import java.util.ArrayList;
 import java.awt.Point;
+import javax.swing.Timer;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 import deadend.roles.*;
 import deadend.globalenum.GameResults;
@@ -27,7 +30,7 @@ import deadend.database.odbc.*;
  *
  * @author Yang JiaJian
  */
-public class DeadEndGame {
+public class DeadEndGame implements ActionListener{
     // The characters
     public Cat player;
     public DogTeam dogs;
@@ -37,6 +40,9 @@ public class DeadEndGame {
     public int step;
     public int LimitStep;
     public boolean isGameEnd;
+
+    public Timer ticker;
+    public int refreshTime;
 
     public ArrayList<Point> door;
 
@@ -80,11 +86,43 @@ public class DeadEndGame {
 
         this.player.initialize();
         this.dogs.initialize();
+
+        //Initialize the timer
+        this.refreshTime=GameConfigClass.InitRefreshTimeMS;
+        this.ticker=new Timer(this.refreshTime,this);
     }
-    // TODO Update
-    public void update(){
-        
+    /**
+     * When starting the game it enters the main loop
+     */
+    public void StartAGame(){
+        this.reset();
+        this.ticker.start();
     }
+
+    public void StopGame(){
+        this.ticker.stop();
+    }
+
+    public void PulseGame(){
+        if(!this.isPaused)this.isPaused=true;
+    }
+    public void ResumeGame(){
+        if(this.isPaused)this.isPaused=false;
+    }
+
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+        this.judge();
+        if(this.isGameEnd || this.isPaused){
+            return;
+        }
+        for(int i=1;i<=this.player.getSpeed();i++){
+            this.player.compute();
+        }
+        this.dogs.compute();
+    }
+
     // TODO Reset logic
     public void reset(){
         this.gameresult=GameResults.NotEnd;
@@ -112,6 +150,10 @@ public class DeadEndGame {
      * This part is to judge the result
      */
     private void judge(){
+        /**
+         *
+         */
+        
     }
 
     /**

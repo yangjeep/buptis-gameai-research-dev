@@ -17,14 +17,18 @@
 
 package deadend.roles;
 import deadend.game.DeadEndGame;
+import deadend.ai.*;
+import deadend.ai.cat.*;
 /**
  *
  * @author Yang JiaJian
  */
 public class Cat extends Animal{
 
-    // TODO add fields
     DeadEndGame game;
+
+    // Strategy
+    private StrategyInterface strategy;
 
     public Cat(DeadEndGame game) {
         // TODO assign fields
@@ -36,13 +40,13 @@ public class Cat extends Animal{
     public void initialize(){
         this.bornAtHome();
         this.direction=null;
-
     }
 
     // TODO add the strategy related logic here
     @Override
     public void compute(){
         // TODO the strategy logic is added here
+        
         super.move();
     }
 

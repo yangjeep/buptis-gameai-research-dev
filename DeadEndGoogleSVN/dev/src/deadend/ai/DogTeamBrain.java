@@ -24,7 +24,6 @@ import deadend.game.DeadEndGame;
  */
 public class DogTeamBrain {
 
-    // TODO constructor
     public DogTeamBrain(DeadEndGame game) {
         this.game=game;
     }
