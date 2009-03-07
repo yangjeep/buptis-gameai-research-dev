@@ -42,9 +42,6 @@ public class DogTeamBrain {
     public ArrayList<deadend.globalenum.Directions> directions;
     // TODO method computation within time limit
     public void compute(){
-        long begin = System.currentTimeMillis();
-		long limit = begin + this.timeLimitInMS;
-
         this.dcredits=new ArrayList<DirectionCredit>(deadend.game.GameConfigClass.NumberOfDogs);
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
         directions.clear();
@@ -53,15 +50,29 @@ public class DogTeamBrain {
             this.dcredits.add(new DirectionCredit());
             this.directions.add(Directions.Still);
         }
+
+        long begin = System.currentTimeMillis();
+		long limit = begin + this.timeLimitInMS;
+        
         do{
+            this.simNum++;
             // TODO Computation logic here
             MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
-            
-        }while(System.currentTimeMillis()<limit);
+            msim.runToDeath();
+            if(msim.simResult==deadend.globalenum.GameResults.DogWin){
+                    for(int i=0;i<this.game.dogs.dogTeam.size();i++){
+                        Directions d=msim.nextDir.get(i);
+                        this.dcredits.get(i).addCredit(d);
+                    }
+            }
+            msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
+        }while(System.currentTimeMillis()<=limit);
 
         for(int i=0;i<this.directions.size();i++){
             this.directions.set(i, this.dcredits.get(i).findBest());
         }
+        System.out.println("Simed:"+simNum);
+        this.simNum=0;
     }
-    
+    int simNum=0;
 }
