@@ -17,11 +17,24 @@
 
 package deadend.ai.dog.monteCarlo;
 
+import deadend.roles.*;
+import deadend.globalenum.*;
+import deadend.game.*;
+import java.awt.Point;
+import java.util.ArrayList;
 /**
  *
  * @author Yang JiaJian
  */
 public class MSimGame {
     // TODO add the logic of an original game
+    public MSimGame(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
+        this.game=game;
+        this.nextDir=new ArrayList<Directions>(dogs.size());
+        this.simResult=GameResults.NotEnd;
+    }
+    public ArrayList<Directions> nextDir;
+    public GameResults simResult;
+    private DeadEndGame game;
     
 }

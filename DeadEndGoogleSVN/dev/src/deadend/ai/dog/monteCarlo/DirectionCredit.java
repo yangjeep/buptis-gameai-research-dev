@@ -59,4 +59,19 @@ public class DirectionCredit {
         }
     }
 
+    public Directions findBest(){
+        int k=this.credit.get(0);
+        int t=0;
+        for(int i=0;i<this.credit.size();i++){
+            if(this.credit.get(i)>k){
+                t=i;
+                k=this.credit.get(i);
+            }
+        }
+
+        if(k==1)return Directions.Down;
+        else if(k==2)return Directions.Left;
+        else if(k==3)return Directions.Right;
+        else return Directions.Up;
+    }
 }

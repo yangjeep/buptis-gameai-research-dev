@@ -17,11 +17,12 @@
 
 package deadend.ai.dog.monteCarlo;
 
+import java.awt.*;
 /**
  *
  * @author Yang JiaJian
  */
 public class MCat {
-
+    Point position;
     
 }
