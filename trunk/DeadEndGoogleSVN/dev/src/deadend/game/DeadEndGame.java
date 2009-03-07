@@ -104,17 +104,28 @@ public class DeadEndGame implements ActionListener{
     }
 
     public void PulseGame(){
-        if(!this.isPaused)this.isPaused=true;
+        if(!this.isPaused){
+            this.isPaused=true;
+            this.ticker.stop();
+        }
     }
     public void ResumeGame(){
-        if(this.isPaused)this.isPaused=false;
+        if(this.isPaused){
+            this.isPaused=false;
+            this.ticker.start();
+        }
     }
 
+    public void setRefreshDelay(int delay){
+        this.refreshTime=delay;
+    }
 
     @Override
     public void actionPerformed(ActionEvent e){
+        this.step++;
         this.judge();
         if(this.isGameEnd || this.isPaused){
+            this.ticker.stop();
             return;
         }
         for(int i=1;i<=this.player.getSpeed();i++){
@@ -151,9 +162,23 @@ public class DeadEndGame implements ActionListener{
      */
     private void judge(){
         /**
-         *
+         * Find if the turns has been reached
          */
-        
+        if(this.step>=this.LimitStep){
+            this.isGameEnd=true;
+        }
+        /**
+         * Find if dog wins
+         */
+        for(Dog d:this.dogs.dogTeam){
+            if(d.getPosition().equals(this.player.getPosition())){
+                this.isGameEnd=true;
+                this.gameresult=GameResults.DogWin;
+            }
+        }
+        if(this.isGameEnd && this.gameresult==GameResults.NotEnd){
+            this.gameresult=GameResults.Draw;
+        }
     }
 
     /**

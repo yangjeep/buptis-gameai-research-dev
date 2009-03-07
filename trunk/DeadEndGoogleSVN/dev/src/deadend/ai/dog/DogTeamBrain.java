@@ -15,7 +15,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package deadend.ai;
+package deadend.ai.dog;
 
 import deadend.game.DeadEndGame;
 /**

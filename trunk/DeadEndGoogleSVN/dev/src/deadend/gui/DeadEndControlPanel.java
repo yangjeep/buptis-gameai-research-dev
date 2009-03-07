@@ -55,35 +55,37 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
         jProgressBar1 = new javax.swing.JProgressBar();
         StartButton = new javax.swing.JButton();
-        StopButton = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        autoRunButton = new javax.swing.JButton();
         resetButton = new javax.swing.JButton();
         resumeButton = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox();
+        PulseButton = new javax.swing.JButton();
+        autoRunStop = new javax.swing.JButton();
+
+        FormListener formListener = new FormListener();
 
         setMinimumSize(new java.awt.Dimension(450, 150));
         setPreferredSize(new java.awt.Dimension(450, 150));
 
         StartButton.setText("Start");
 
-        StopButton.setText("Pause");
-        StopButton.setEnabled(false);
-
-        jTextField1.setText("autorun");
+        jTextField1.setText("50");
 
         jLabel1.setText("AutoRun");
 
-        jButton1.setText("AutoRun");
+        autoRunButton.setText("AutoRun");
+        autoRunButton.addActionListener(formListener);
 
         resetButton.setText("Reset");
 
         resumeButton.setText("Resume");
         resumeButton.setEnabled(false);
+        resumeButton.addActionListener(formListener);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "BasicFSM" }));
 
@@ -91,7 +93,13 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarlo" }));
+
+        PulseButton.setText("Pulse");
+        PulseButton.setEnabled(false);
+
+        autoRunStop.setText("StopAuto");
+        autoRunStop.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -102,31 +110,34 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                            .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
-                                .addGap(38, 38, 38)
-                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)))
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(autoRunButton)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(autoRunStop)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, 0, 186, Short.MAX_VALUE)
+                        .addComponent(jComboBox1, 0, 200, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel3)
                         .addGap(16, 16, 16)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jComboBox2, 0, 164, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(resetButton, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                            .addComponent(StartButton, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE))
+                            .addComponent(resetButton, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE)
+                            .addComponent(StartButton, javax.swing.GroupLayout.DEFAULT_SIZE, 76, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(resumeButton, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)
-                            .addComponent(StopButton, javax.swing.GroupLayout.DEFAULT_SIZE, 89, Short.MAX_VALUE)))
-                    .addComponent(jComboBox2, 0, 178, Short.MAX_VALUE))
+                            .addComponent(PulseButton, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE)
+                            .addComponent(resumeButton, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -134,26 +145,24 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(StartButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(resumeButton))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
-                        .addGap(4, 4, 4)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE))
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE))
-                        .addGap(2, 2, 2))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(resetButton)
-                        .addComponent(StopButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                            .addComponent(autoRunButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(20, 20, 20))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(StartButton, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                            .addComponent(PulseButton))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(resetButton)
+                            .addComponent(resumeButton)
+                            .addComponent(autoRunStop))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jComboBox1)
@@ -161,13 +170,36 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
                     .addComponent(jLabel3))
                 .addGap(49, 49, 49))
         );
+    }
+
+    // Code for dispatching events from components to event handlers.
+
+    private class FormListener implements java.awt.event.ActionListener {
+        FormListener() {}
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            if (evt.getSource() == resumeButton) {
+                DeadEndControlPanel.this.resumeButtonActionPerformed(evt);
+            }
+            else if (evt.getSource() == autoRunButton) {
+                DeadEndControlPanel.this.autoRunButtonActionPerformed(evt);
+            }
+        }
     }// </editor-fold>//GEN-END:initComponents
+
+    private void resumeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resumeButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_resumeButtonActionPerformed
+
+    private void autoRunButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_autoRunButtonActionPerformed
+        // TODO add your handling code here:
+}//GEN-LAST:event_autoRunButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton PulseButton;
     private javax.swing.JButton StartButton;
-    private javax.swing.JButton StopButton;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton autoRunButton;
+    private javax.swing.JButton autoRunStop;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox2;
     private javax.swing.JLabel jLabel1;
@@ -180,4 +212,38 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     private DeadEndGame game;
+
+    @Override
+    public void paintComponent(java.awt.Graphics g){
+        this.jProgressBar1.setValue(game.step/game.LimitStep);
+        if(this.game.isGameEnd){
+            this.StartButton.setEnabled(true);
+            this.PulseButton.setEnabled(false);
+        }
+        else{
+            this.StartButton.setEnabled(false);
+            this.PulseButton.setEnabled(true);
+        }
+        if(this.game.isPaused){
+            this.PulseButton.setEnabled(false);
+            this.resumeButton.setEnabled(true);
+        }else{
+            this.PulseButton.setEnabled(true);
+            this.resumeButton.setEnabled(false);
+        }
+
+        if(this.game.isAutoRun){
+            this.StartButton.setEnabled(false);
+            this.PulseButton.setEnabled(false);
+            this.resumeButton.setEnabled(false);
+            this.resetButton.setEnabled(false);
+            this.autoRunButton.setEnabled(false);
+            this.autoRunStop.setEnabled(true);
+        }
+        if(!this.game.isAutoRun){
+            this.autoRunButton.setEnabled(true);
+            this.autoRunStop.setEnabled(false);
+        }
+        this.repaint();
+    }
 }

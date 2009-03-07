@@ -40,13 +40,15 @@ public class Cat extends Animal{
     public void initialize(){
         this.bornAtHome();
         this.direction=null;
+
+        this.strategy=new CatBasicFSM();
     }
 
     // TODO add the strategy related logic here
     @Override
     public void compute(){
         // TODO the strategy logic is added here
-        
+        this.direction=this.strategy.compute(game);
         super.move();
     }
 
@@ -70,4 +72,14 @@ public class Cat extends Animal{
 
         this.position=new java.awt.Point(x,y);
     }
+
+    public StrategyInterface getStrategy() {
+        return strategy;
+    }
+
+    public void setStrategy(StrategyInterface strategy) {
+        this.strategy = strategy;
+    }
+
+
 }

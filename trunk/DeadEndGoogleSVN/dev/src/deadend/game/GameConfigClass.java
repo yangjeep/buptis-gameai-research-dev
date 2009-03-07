@@ -38,5 +38,5 @@ public class GameConfigClass {
     public final static int Step_Limit=40;
 
     // Refresh limit
-    public final static int InitRefreshTimeMS=1500;
+    public final static int InitRefreshTimeMS=2000;
 }
