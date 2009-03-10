@@ -33,6 +33,9 @@ public class Dog extends Animal{
         this.bornAtHome();
     }
 
+    public void initialize(int num){
+        this.bornAtHome(num);
+    }
     // add the strategy related logic here
     /**
      *@param direction Directions
@@ -58,6 +61,19 @@ public class Dog extends Animal{
         java.util.Random rand=new java.util.Random();
         x=rand.nextInt(6)+(deadend.game.GameConfigClass.GridX/2-3);
         y=rand.nextInt(4)+1;
+
+        this.position=new java.awt.Point(x,y);
+    }
+
+    // To born at the initial place
+    public void bornAtHome(int num){
+        int x,y;
+        if(num==0)
+            x=deadend.game.GameConfigClass.GridX/2-2;
+        else
+            x=deadend.game.GameConfigClass.GridX/2+1;
+        y=5;
+
 
         this.position=new java.awt.Point(x,y);
     }

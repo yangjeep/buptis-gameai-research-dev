@@ -15,7 +15,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package deadend.ai.dog.monteCarlo;
+package deadend.ai.dog.sMonteCarlo;
 
 import deadend.roles.*;
 import deadend.globalenum.*;
@@ -29,7 +29,7 @@ import java.util.ArrayList;
 public class MSimGame {
     private double odist;
     private ArrayList<Double> odists;
-    // the logic of an original game
+    // TODO add the logic of an original game
     public MSimGame(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
         this.game=game;
         this.nextDir=new ArrayList<Directions>(dogs.size());
@@ -162,11 +162,10 @@ public class MSimGame {
             if(this.scat.position.equals(p)){
                 this.simResult=GameResults.CatWin;
                 this.isFinished=true;
-                return;
             }
         }
         for(MDog p:this.sdogs){
-            if(p.position.equals(this.scat.position)){
+            if(p.position.equals(this.scat)){
                 this.simResult=GameResults.DogWin;
                 this.isFinished=true;
             }

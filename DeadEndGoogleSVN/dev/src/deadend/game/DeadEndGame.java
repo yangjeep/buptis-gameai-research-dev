@@ -109,6 +109,15 @@ public class DeadEndGame implements ActionListener{
         this.isReseted=false;
     }
 
+    public void StartAGame(int time){
+        this.refreshTime=GameConfigClass.ComputingTimeLimit;
+        if(!this.isReseted){
+            this.reset();
+        }
+        
+        this.isReseted=false;
+    }
+
     public void StopGame(){
         this.ticker.stop();
     }
@@ -148,8 +157,26 @@ public class DeadEndGame implements ActionListener{
         this.dogs.compute();
     }
 
+    public void playGame(){
+        this.step++;
+        this.judge();
+        if(this.gameresult!=GameResults.NotEnd){
+            this.ticker.stop();
+            return;
+        }
+        if(this.isPaused){
+            this.ticker.stop();
+            return;
+        }
+        for(int i=1;i<=this.player.getSpeed();i++){
+            this.player.compute();
+        }
+        this.dogs.compute();
+
+    }
     // Reset logic
     public void reset(){
+        if(this.gameresult!=GameResults.NotEnd)this.recordGameResultToODBC();
         this.gameresult=GameResults.NotEnd;
         this.isAutoRun=false;
         this.isGameEnd=true;
@@ -170,6 +197,7 @@ public class DeadEndGame implements ActionListener{
     }
     private void recordGameResultToODBC(){
         // TODO record the game result
+        deadend.database.odbc.ODBCWrite.writeMCTime(this);
     }
     private void appendResultToStepODBC(){
         // TODO query from the record and write it to another table
@@ -213,16 +241,27 @@ public class DeadEndGame implements ActionListener{
     private int autoRun_Rounds;
     public void initAutoRun(int totalRounds){
         this.autoRun_Rounds=totalRounds;
+        this.i=1;
         this.isBreakTask=false;
+        this.reset();
     }
     private boolean isTaskFinished;
     private boolean isBreakTask;
     public void stopAutoRun(){
         this.isBreakTask=true;
     }
+    int i=1;
     /**
      * execute the autorun task
      */
     public void autoRun(){
+        do{
+            this.playGame();
+            if(this.gameresult!=GameResults.NotEnd){
+                this.reset();
+                i++;
+            }
+            System.out.println("Record:"+this.i);
+        }while(i<=this.autoRun_Rounds);
     }
 }

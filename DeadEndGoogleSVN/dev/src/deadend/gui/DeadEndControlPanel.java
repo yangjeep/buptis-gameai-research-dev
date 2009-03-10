@@ -213,7 +213,8 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
     private void autoRunButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_autoRunButtonActionPerformed
         // add your handling code here:
-        String ms=this.jTextField1.getText();
+        if(!this.game.isAutoRun){
+            String ms=this.jTextField1.getText();
         int times=50;
         try{
             times=Integer.parseInt(ms);
@@ -222,6 +223,8 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         }
         this.game.initAutoRun(times);
         this.game.autoRun();
+        }
+        
 }//GEN-LAST:event_autoRunButtonActionPerformed
 
     private void StartButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartButtonActionPerformed

@@ -15,7 +15,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package deadend.ai.dog.monteCarlo;
+package deadend.ai.dog.sMonteCarlo;
 
 import java.awt.Point;
 
@@ -33,6 +33,9 @@ public class MDog {
     }
 
     public void rMove(int step){
+
+        // TODO change the direction into strategy
+
         java.util.Random rand=new java.util.Random();
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
         choices.clear();

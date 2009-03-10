@@ -35,12 +35,13 @@ public class DogTeamBrain {
     }
 
     DeadEndGame game;
+
     int timeLimitInMS;
 
     ArrayList<DirectionCredit> dcredits;
 
     public ArrayList<deadend.globalenum.Directions> directions;
-    // TODO method computation within time limit
+    // method computation within time limit
     public void compute(){
         this.dcredits=new ArrayList<DirectionCredit>(deadend.game.GameConfigClass.NumberOfDogs);
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
@@ -53,23 +54,41 @@ public class DogTeamBrain {
 
         long begin = System.currentTimeMillis();
 		long limit = begin + this.timeLimitInMS;
-        
+
+        System.out.println("Time:"+(limit-begin));
+        MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
         do{
-            this.simNum++;
-            // TODO Computation logic here
-            MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
-            msim.runToDeath();
-            if(msim.simResult==deadend.globalenum.GameResults.DogWin || msim.simResult==deadend.globalenum.GameResults.Draw){
+            
+            // Computation logic here
+            msim.runSim();
+            
+            if(msim.simResult!=deadend.globalenum.GameResults.NotEnd){
+                if(msim.simResult==deadend.globalenum.GameResults.DogWin)
+                {
                     for(int i=0;i<this.game.dogs.dogTeam.size();i++){
-                        Directions d=msim.nextDir.get(i);
-                        this.dcredits.get(i).addCredit(d);
-                    }
+                            Directions d=msim.nextDir.get(i);
+                            this.dcredits.get(i).addCredit(d);
+                        }
+                }
+                /*
+                if(msim.simResult==deadend.globalenum.GameResults.Draw)
+                {
+                    for(int i=0;i<this.game.dogs.dogTeam.size();i++){
+                            Directions d=msim.nextDir.get(i);
+                            this.dcredits.get(i).addDrawCredit(d);
+                        }
+                }
+                 */
+                this.simNum++;
+                msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
             }
-            msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
+            
         }while(System.currentTimeMillis()<=limit);
 
         for(int i=0;i<this.directions.size();i++){
-            this.directions.set(i, this.dcredits.get(i).findBest());
+            this.directions.set(i, this.dcredits.get(i).findBest(
+                    (java.awt.Point)this.game.dogs.dogTeam.get(i).getPosition().clone(),
+                    (java.awt.Point)this.game.player.getPosition().clone()));
         }
         System.out.println("Simed:"+simNum);
         this.simNum=0;

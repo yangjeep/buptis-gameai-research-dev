@@ -33,9 +33,9 @@ public class GameConfigClass {
     // Dog speed
     public final static int DogSpeed=1;
     // Time limit of computing
-    public final static int ComputingTimeLimit=300;
+    public static int ComputingTimeLimit=100;
     // Upper limit of game steps
-    public final static int Step_Limit=40;
+    public final static int Step_Limit=20;
     // Refresh limit
     public final static int InitRefreshTimeMS=1000;
 }
