@@ -1,0 +1,5137 @@
+run:
+Time:500
+ 5 0 1 1
+k=5
+ 4 1 0 2
+k=4
+Simed:2393
+Record:1
+Time:500
+ 20 8 18 16
+k=20
+ 19 16 6 21
+k=21
+Simed:2510
+Record:1
+Time:500
+ 82 47 41 51
+k=82
+ 94 42 24 61
+k=94
+Simed:2869
+Record:1
+Time:500
+ 219 100 112 220
+k=220
+ 211 171 103 166
+k=211
+Simed:3163
+Record:1
+Time:500
+ 500 303 267 332
+k=500
+ 421 296 309 376
+k=421
+Simed:3943
+Record:1
+sun.jdbc.odbc.JdbcOdbcConnection@95fd19500
+Record:2
+Time:500
+ 2 0 0 0
+k=2
+ 1 1 0 0
+k=1
+Simed:2618
+Record:2
+Time:500
+ 21 14 7 17
+k=21
+ 28 11 4 16
+k=28
+Simed:2802
+Record:2
+Time:500
+ 81 61 50 37
+k=81
+ 92 45 33 59
+k=92
+Simed:2950
+Record:2
+Time:500
+ 198 169 148 183
+k=198
+ 229 155 109 205
+k=229
+Simed:3551
+Record:2
+Time:500
+ 468 365 337 555
+k=555
+ 437 396 391 501
+k=501
+Simed:4547
+Record:2
+sun.jdbc.odbc.JdbcOdbcConnection@1d04653500
+Record:3
+Time:500
+ 4 2 1 1
+k=4
+ 3 2 0 3
+k=3
+Simed:2622
+Record:3
+Time:500
+ 18 10 7 10
+k=18
+ 20 9 5 11
+k=20
+Simed:2806
+Record:3
+Time:500
+ 79 51 46 45
+k=79
+ 84 42 35 60
+k=84
+Simed:3072
+Record:3
+Time:500
+ 209 117 116 190
+k=209
+ 196 148 117 171
+k=196
+Simed:3186
+Record:3
+Time:500
+ 489 338 333 565
+k=565
+ 408 426 424 467
+k=467
+Simed:4652
+Record:3
+sun.jdbc.odbc.JdbcOdbcConnection@14c1103500
+Record:4
+Time:500
+ 2 1 0 0
+k=2
+ 2 1 0 0
+k=2
+Simed:2613
+Record:4
+Time:500
+ 15 8 10 2
+k=15
+ 18 6 4 7
+k=18
+Simed:2827
+Record:4
+Time:500
+ 83 69 70 39
+k=83
+ 91 55 50 65
+k=91
+Simed:3078
+Record:4
+Time:500
+ 202 147 156 205
+k=205
+ 244 138 109 219
+k=244
+Simed:3579
+Record:4
+Time:500
+ 581 332 359 465
+k=581
+ 497 398 394 448
+k=497
+Simed:4580
+Record:4
+sun.jdbc.odbc.JdbcOdbcConnection@a761fe500
+Record:5
+Time:500
+ 2 1 1 0
+k=2
+ 4 0 0 0
+k=4
+Simed:2552
+Record:5
+Time:500
+ 21 14 8 11
+k=21
+ 25 14 5 10
+k=25
+Simed:2622
+Record:5
+Time:500
+ 76 46 51 48
+k=76
+ 85 43 36 57
+k=85
+Simed:2881
+Record:5
+Time:500
+ 218 155 141 183
+k=218
+ 253 146 113 185
+k=253
+Simed:3417
+Record:5
+Time:500
+ 443 340 315 577
+k=577
+ 414 405 391 465
+k=465
+Simed:4507
+Record:5
+sun.jdbc.odbc.JdbcOdbcConnection@be0e27500
+Record:6
+Time:500
+ 3 1 0 0
+k=3
+ 2 0 2 0
+k=2
+Simed:2647
+Record:6
+Time:500
+ 11 7 4 9
+k=11
+ 9 8 3 11
+k=11
+Simed:2849
+Record:6
+Time:500
+ 76 49 53 53
+k=76
+ 86 54 33 58
+k=86
+Simed:3083
+Record:6
+Time:500
+ 221 163 144 197
+k=221
+ 247 170 121 187
+k=247
+Simed:3613
+Record:6
+Time:500
+ 541 346 311 499
+k=541
+ 438 369 426 464
+k=464
+Simed:4672
+Record:6
+Time:500
+ 69 124 127 145
+k=145
+ 62 118 145 140
+k=145
+Simed:3945
+Record:6
+Time:500
+ 44 84 56 84
+k=84
+ 43 67 102 56
+k=102
+Simed:4085
+Record:6
+Time:500
+ 29 37 50 67
+k=67
+ 20 48 72 43
+k=72
+Simed:4514
+Record:6
+Time:500
+ 8 20 17 29
+k=29
+ 10 14 37 13
+k=37
+Simed:6645
+Record:6
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:270882
+Record:6
+sun.jdbc.odbc.JdbcOdbcConnection@cf66b500
+Record:7
+Time:500
+ 1 2 0 1
+k=2
+ 2 0 0 2
+k=2
+Simed:2683
+Record:7
+Time:500
+ 4 4 0 3
+k=4
+ 4 1 2 4
+k=4
+Simed:2717
+Record:7
+Time:500
+ 21 21 15 19
+k=21
+ 34 15 6 21
+k=34
+Simed:2931
+Record:7
+Time:500
+ 110 87 71 72
+k=110
+ 135 73 50 82
+k=135
+Simed:3283
+Record:7
+Time:500
+ 325 202 186 278
+k=325
+ 347 196 204 244
+k=347
+Simed:3910
+Record:7
+Time:500
+ 200 283 274 250
+k=283
+ 193 241 263 310
+k=310
+Simed:4122
+Record:7
+Time:500
+ 137 349 208 273
+k=349
+ 183 237 265 282
+k=282
+Simed:4593
+Record:7
+Time:500
+ 106 186 142 182
+k=186
+ 70 187 201 158
+k=201
+Simed:4835
+Record:7
+Time:500
+ 86 93 120 110
+k=120
+ 62 92 116 139
+k=139
+Simed:6013
+Record:7
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:241738
+Record:7
+sun.jdbc.odbc.JdbcOdbcConnection@15dd910500
+Record:8
+Time:500
+ 1 2 2 3
+k=3
+ 3 2 1 2
+k=3
+Simed:2546
+Record:8
+Time:500
+ 3 3 1 1
+k=3
+ 4 1 1 2
+k=4
+Simed:2823
+Record:8
+Time:500
+ 30 25 30 19
+k=30
+ 48 16 16 24
+k=48
+Simed:2836
+Record:8
+Time:500
+ 122 71 67 85
+k=122
+ 137 87 52 69
+k=137
+Simed:2648
+Record:8
+Time:500
+ 564 343 361 441
+k=564
+ 507 390 369 443
+k=507
+Simed:4498
+Record:8
+sun.jdbc.odbc.JdbcOdbcConnection@189c036500
+Record:9
+Time:500
+ 2 1 2 1
+k=2
+ 1 3 0 2
+k=3
+Simed:2597
+Record:9
+Time:500
+ 20 11 7 6
+k=20
+ 17 9 7 11
+k=17
+Simed:2790
+Record:9
+Time:500
+ 61 48 41 52
+k=61
+ 76 40 24 62
+k=76
+Simed:3010
+Record:9
+Time:500
+ 239 130 143 202
+k=239
+ 218 165 138 193
+k=218
+Simed:3474
+Record:9
+Time:500
+ 448 365 329 587
+k=587
+ 456 413 407 453
+k=456
+Simed:4635
+Record:9
+sun.jdbc.odbc.JdbcOdbcConnection@78aa80500
+Record:10
+Time:500
+ 1 1 2 1
+k=2
+ 1 1 0 3
+k=3
+Simed:2567
+Record:10
+Time:500
+ 21 5 12 3
+k=21
+ 18 5 8 10
+k=18
+Simed:2707
+Record:10
+Time:500
+ 54 44 25 46
+k=54
+ 73 24 20 52
+k=73
+Simed:3021
+Record:10
+Time:500
+ 183 108 118 119
+k=183
+ 183 117 85 143
+k=183
+Simed:3392
+Record:10
+Time:500
+ 281 188 191 319
+k=319
+ 242 192 207 338
+k=338
+Simed:3866
+Record:10
+Time:500
+ 207 298 227 261
+k=298
+ 207 213 272 301
+k=301
+Simed:4201
+Record:10
+Time:500
+ 146 315 189 276
+k=315
+ 167 235 270 254
+k=270
+Simed:4486
+Record:10
+Time:500
+ 103 169 164 182
+k=182
+ 77 153 217 171
+k=217
+Simed:4853
+Record:10
+Time:500
+ 66 94 109 75
+k=109
+ 40 60 171 73
+k=171
+Simed:6602
+Record:10
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:259869
+Record:10
+sun.jdbc.odbc.JdbcOdbcConnection@10c0f66500
+Record:11
+Time:500
+ 0 0 1 0
+k=1
+ 0 0 0 1
+k=1
+Simed:2618
+Record:11
+Time:500
+ 9 10 3 3
+k=10
+ 14 4 1 6
+k=14
+Simed:2803
+Record:11
+Time:500
+ 27 13 12 9
+k=27
+ 29 10 3 19
+k=29
+Simed:2991
+Record:11
+Time:500
+ 103 72 46 43
+k=103
+ 110 47 38 69
+k=110
+Simed:3251
+Record:11
+Time:500
+ 202 108 122 171
+k=202
+ 204 123 94 182
+k=204
+Simed:3650
+Record:11
+Time:500
+ 263 233 206 330
+k=330
+ 257 200 251 324
+k=324
+Simed:4226
+Record:11
+Time:500
+ 116 294 184 265
+k=294
+ 168 229 227 235
+k=235
+Simed:4296
+Record:11
+Time:500
+ 101 143 140 174
+k=174
+ 70 147 188 153
+k=188
+Simed:4797
+Record:11
+Time:500
+ 64 95 100 64
+k=100
+ 41 51 152 79
+k=152
+Simed:6654
+Record:11
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:254447
+Record:11
+sun.jdbc.odbc.JdbcOdbcConnection@1931579500
+Record:12
+Time:500
+ 3 0 2 1
+k=3
+ 1 1 0 4
+k=4
+Simed:2633
+Record:12
+Time:500
+ 13 10 6 8
+k=13
+ 17 4 7 9
+k=17
+Simed:2811
+Record:12
+Time:500
+ 76 61 58 35
+k=76
+ 87 53 30 60
+k=87
+Simed:2953
+Record:12
+Time:500
+ 214 155 139 176
+k=214
+ 211 168 116 189
+k=211
+Simed:3483
+Record:12
+Time:500
+ 451 345 345 516
+k=516
+ 424 365 380 488
+k=488
+Simed:4532
+Record:12
+sun.jdbc.odbc.JdbcOdbcConnection@bb2bc3500
+Record:13
+Time:500
+ 4 1 0 1
+k=4
+ 3 1 1 1
+k=3
+Simed:2522
+Record:13
+Time:500
+ 17 12 5 3
+k=17
+ 19 4 2 12
+k=19
+Simed:2774
+Record:13
+Time:500
+ 73 41 54 48
+k=73
+ 76 47 27 66
+k=76
+Simed:2982
+Record:13
+Time:500
+ 170 120 115 158
+k=170
+ 187 123 98 155
+k=187
+Simed:2830
+Record:13
+Time:500
+ 439 334 345 617
+k=617
+ 400 420 432 483
+k=483
+Simed:4620
+Record:13
+sun.jdbc.odbc.JdbcOdbcConnection@1e940b500
+Record:14
+Time:500
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:2677
+Record:14
+Time:500
+ 3 4 3 0
+k=4
+ 4 2 2 2
+k=4
+Simed:2584
+Record:14
+Time:500
+ 4 4 3 1
+k=4
+ 6 4 0 2
+k=6
+Simed:2821
+Record:14
+Time:500
+ 43 35 23 22
+k=43
+ 59 24 13 27
+k=59
+Simed:3104
+Record:14
+Time:500
+ 156 105 100 113
+k=156
+ 179 104 77 114
+k=179
+Simed:3601
+Record:14
+Time:500
+ 303 220 225 352
+k=352
+ 320 246 227 307
+k=320
+Simed:4282
+Record:14
+Time:500
+ 458 336 414 764
+k=764
+ 414 460 443 655
+k=655
+Simed:5398
+Record:14
+sun.jdbc.odbc.JdbcOdbcConnection@42a818500
+Record:15
+Time:500
+ 3 0 0 1
+k=3
+ 2 0 1 1
+k=2
+Simed:2600
+Record:15
+Time:500
+ 13 11 9 1
+k=13
+ 16 3 5 10
+k=16
+Simed:2852
+Record:15
+Time:500
+ 66 72 43 44
+k=72
+ 95 44 31 55
+k=95
+Simed:3003
+Record:15
+Time:500
+ 106 54 59 76
+k=106
+ 107 70 60 58
+k=107
+Simed:2947
+Record:15
+Time:500
+ 299 161 219 303
+k=303
+ 329 207 193 253
+k=329
+Simed:3939
+Record:15
+Time:500
+ 271 269 317 219
+k=317
+ 324 295 244 213
+k=324
+Simed:4265
+Record:15
+Time:500
+ 451 385 371 731
+k=731
+ 449 446 444 599
+k=599
+Simed:5366
+Record:15
+sun.jdbc.odbc.JdbcOdbcConnection@12dd76500
+Record:16
+Time:500
+ 2 0 0 1
+k=2
+ 2 1 0 0
+k=2
+Simed:2612
+Record:16
+Time:500
+ 11 13 10 4
+k=13
+ 19 4 2 13
+k=19
+Simed:2831
+Record:16
+Time:500
+ 27 18 19 11
+k=27
+ 30 14 7 24
+k=30
+Simed:2959
+Record:16
+Time:500
+ 121 71 69 62
+k=121
+ 134 71 63 55
+k=134
+Simed:3190
+Record:16
+Time:500
+ 319 213 192 288
+k=319
+ 335 222 196 259
+k=335
+Simed:4010
+Record:16
+Time:500
+ 201 307 239 268
+k=307
+ 192 234 282 307
+k=307
+Simed:4287
+Record:16
+Time:500
+ 130 303 203 238
+k=303
+ 163 209 257 245
+k=257
+Simed:4413
+Record:16
+Time:500
+ 137 185 149 160
+k=185
+ 78 155 235 163
+k=235
+Simed:4765
+Record:16
+Time:500
+ 74 104 134 109
+k=134
+ 47 98 162 114
+k=162
+Simed:6777
+Record:16
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:259174
+Record:16
+sun.jdbc.odbc.JdbcOdbcConnection@acbd3a500
+Record:17
+Time:500
+ 1 4 0 1
+k=4
+ 4 1 1 0
+k=4
+Simed:2557
+Record:17
+Time:500
+ 6 4 2 2
+k=6
+ 5 1 3 5
+k=5
+Simed:2768
+Record:17
+Time:500
+ 31 20 17 18
+k=31
+ 28 24 8 26
+k=28
+Simed:3009
+Record:17
+Time:500
+ 92 77 59 72
+k=92
+ 96 74 51 79
+k=96
+Simed:3073
+Record:17
+Time:500
+ 280 154 196 238
+k=280
+ 274 177 182 235
+k=274
+Simed:3625
+Record:17
+Time:500
+ 213 286 253 266
+k=286
+ 187 235 281 315
+k=315
+Simed:4205
+Record:17
+Time:500
+ 122 290 228 243
+k=290
+ 149 234 235 265
+k=265
+Simed:4450
+Record:17
+Time:500
+ 94 170 169 151
+k=170
+ 64 159 187 174
+k=187
+Simed:4893
+Record:17
+Time:500
+ 81 107 136 92
+k=136
+ 59 75 159 123
+k=159
+Simed:6588
+Record:17
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:247289
+Record:17
+sun.jdbc.odbc.JdbcOdbcConnection@6d6aa0500
+Record:18
+Time:500
+ 2 0 2 0
+k=2
+ 2 0 0 2
+k=2
+Simed:2638
+Record:18
+Time:500
+ 16 14 9 10
+k=16
+ 19 8 3 19
+k=19
+Simed:2820
+Record:18
+Time:500
+ 72 44 49 42
+k=72
+ 72 40 33 62
+k=72
+Simed:2766
+Record:18
+Time:500
+ 209 153 151 170
+k=209
+ 228 153 125 177
+k=228
+Simed:3459
+Record:18
+Time:500
+ 521 367 336 608
+k=608
+ 458 422 454 498
+k=498
+Simed:4733
+Record:18
+sun.jdbc.odbc.JdbcOdbcConnection@287811500
+Record:19
+Time:500
+ 0 2 0 1
+k=2
+ 1 1 1 0
+k=1
+Simed:2666
+Record:19
+Time:500
+ 5 1 2 0
+k=5
+ 4 2 1 1
+k=4
+Simed:2778
+Record:19
+Time:500
+ 26 12 13 11
+k=26
+ 27 12 10 13
+k=27
+Simed:3014
+Record:19
+Time:500
+ 113 92 84 58
+k=113
+ 131 75 65 76
+k=131
+Simed:3365
+Record:19
+Time:500
+ 316 189 173 310
+k=316
+ 328 212 192 256
+k=328
+Simed:3909
+Record:19
+Time:500
+ 190 273 230 247
+k=273
+ 181 212 258 289
+k=289
+Simed:4113
+Record:19
+Time:500
+ 128 309 206 224
+k=309
+ 161 216 256 234
+k=256
+Simed:4424
+Record:19
+Time:500
+ 116 167 139 161
+k=167
+ 73 151 198 161
+k=198
+Simed:4881
+Record:19
+Time:500
+ 102 106 141 116
+k=141
+ 63 82 199 121
+k=199
+Simed:6984
+Record:19
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:254335
+Record:19
+sun.jdbc.odbc.JdbcOdbcConnection@1169fb2500
+Record:20
+Time:500
+ 2 3 0 1
+k=3
+ 3 2 1 0
+k=3
+Simed:2602
+Record:20
+Time:500
+ 8 4 3 2
+k=8
+ 8 5 2 2
+k=8
+Simed:2756
+Record:20
+Time:500
+ 27 15 16 12
+k=27
+ 27 14 8 21
+k=27
+Simed:2960
+Record:20
+Time:500
+ 115 83 68 80
+k=115
+ 129 78 52 87
+k=129
+Simed:3213
+Record:20
+Time:500
+ 301 220 199 302
+k=302
+ 335 228 193 266
+k=335
+Simed:4037
+Record:20
+Time:500
+ 335 238 235 337
+k=337
+ 332 241 256 316
+k=332
+Simed:4376
+Record:20
+Time:500
+ 514 717 690 374
+k=717
+ 520 598 635 542
+k=635
+Simed:5735
+Record:20
+Time:500
+ 255 376 372 235
+k=376
+ 259 329 371 279
+k=371
+Simed:4874
+Record:20
+Time:500
+ 197 436 596 248
+k=596
+ 193 355 598 331
+k=598
+Simed:5823
+Record:20
+Time:500
+ 128 152 138 86
+k=152
+ 73 95 219 117
+k=219
+Simed:7800
+Record:20
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:271581
+Record:20
+sun.jdbc.odbc.JdbcOdbcConnection@79cd09500
+Record:21
+Time:500
+ 1 0 0 0
+k=1
+ 0 1 0 0
+k=1
+Simed:2651
+Record:21
+Time:500
+ 14 8 6 2
+k=14
+ 15 2 3 10
+k=15
+Simed:2800
+Record:21
+Time:500
+ 83 61 60 48
+k=83
+ 113 39 39 61
+k=113
+Simed:3110
+Record:21
+Time:500
+ 202 161 157 178
+k=202
+ 224 182 109 183
+k=224
+Simed:3562
+Record:21
+Time:500
+ 525 344 359 601
+k=601
+ 442 431 446 510
+k=510
+Simed:4747
+Record:21
+sun.jdbc.odbc.JdbcOdbcConnection@10794d4500
+Record:22
+Time:500
+ 3 0 0 2
+k=3
+ 3 2 0 0
+k=3
+Simed:2661
+Record:22
+Time:500
+ 22 6 5 7
+k=22
+ 12 8 7 13
+k=13
+Simed:2847
+Record:22
+Time:500
+ 99 50 52 53
+k=99
+ 84 54 45 71
+k=84
+Simed:3026
+Record:22
+Time:500
+ 216 137 136 195
+k=216
+ 213 174 121 176
+k=213
+Simed:3538
+Record:22
+Time:500
+ 491 335 371 592
+k=592
+ 467 417 416 489
+k=489
+Simed:4693
+Record:22
+sun.jdbc.odbc.JdbcOdbcConnection@17574b9500
+Record:23
+Time:500
+ 1 1 2 1
+k=2
+ 1 2 0 2
+k=2
+Simed:2670
+Record:23
+Time:500
+ 8 5 6 1
+k=8
+ 5 6 4 5
+k=6
+Simed:2843
+Record:23
+Time:500
+ 70 38 44 39
+k=70
+ 68 32 29 62
+k=68
+Simed:3076
+Record:23
+Time:500
+ 141 112 117 134
+k=141
+ 168 98 86 152
+k=168
+Simed:3435
+Record:23
+Time:500
+ 311 218 203 283
+k=311
+ 250 196 220 349
+k=349
+Simed:4046
+Record:23
+Time:500
+ 129 148 149 163
+k=163
+ 97 131 197 164
+k=197
+Simed:3942
+Record:23
+Time:500
+ 49 102 70 113
+k=113
+ 46 97 107 84
+k=107
+Simed:4164
+Record:23
+Time:500
+ 36 63 37 46
+k=63
+ 14 45 78 45
+k=78
+Simed:4685
+Record:23
+Time:500
+ 25 26 36 39
+k=39
+ 17 18 57 34
+k=57
+Simed:6738
+Record:23
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:250714
+Record:23
+sun.jdbc.odbc.JdbcOdbcConnection@17aaa0e500
+Record:24
+Time:500
+ 2 0 2 0
+k=2
+ 0 1 1 2
+k=2
+Simed:2643
+Record:24
+Time:500
+ 8 10 6 4
+k=10
+ 11 5 2 10
+k=11
+Simed:2861
+Record:24
+Time:500
+ 30 20 19 12
+k=30
+ 32 19 9 21
+k=32
+Simed:3060
+Record:24
+Time:500
+ 124 89 86 51
+k=124
+ 146 68 47 89
+k=146
+Simed:3378
+Record:24
+Time:500
+ 286 218 196 284
+k=286
+ 318 199 196 271
+k=318
+Simed:4019
+Record:24
+Time:500
+ 213 308 271 297
+k=308
+ 199 266 277 347
+k=347
+Simed:4316
+Record:24
+Time:500
+ 139 287 233 247
+k=287
+ 168 226 254 258
+k=258
+Simed:4511
+Record:24
+Time:500
+ 119 188 156 175
+k=188
+ 86 164 216 172
+k=216
+Simed:4947
+Record:24
+Time:500
+ 94 93 149 102
+k=149
+ 61 85 166 126
+k=166
+Simed:6949
+Record:24
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:261589
+Record:24
+sun.jdbc.odbc.JdbcOdbcConnection@15c30f6500
+Record:25
+Time:500
+ 1 0 0 1
+k=1
+ 2 0 0 0
+k=2
+Simed:2617
+Record:25
+Time:500
+ 8 17 5 8
+k=17
+ 22 4 2 10
+k=22
+Simed:2842
+Record:25
+Time:500
+ 25 21 14 12
+k=25
+ 35 10 3 24
+k=35
+Simed:2964
+Record:25
+Time:500
+ 118 90 74 67
+k=118
+ 140 71 47 91
+k=140
+Simed:3359
+Record:25
+Time:500
+ 289 180 222 286
+k=289
+ 304 210 175 288
+k=304
+Simed:4005
+Record:25
+Time:500
+ 193 272 249 289
+k=289
+ 173 224 269 337
+k=337
+Simed:4293
+Record:25
+Time:500
+ 106 246 183 156
+k=246
+ 132 177 225 157
+k=225
+Simed:4344
+Record:25
+Time:500
+ 94 183 136 135
+k=183
+ 66 142 217 123
+k=217
+Simed:4879
+Record:25
+Time:500
+ 80 91 116 86
+k=116
+ 48 63 181 81
+k=181
+Simed:6916
+Record:25
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:260235
+Record:25
+sun.jdbc.odbc.JdbcOdbcConnection@187d27e500
+Record:26
+Time:500
+ 2 1 0 1
+k=2
+ 3 0 1 0
+k=3
+Simed:2667
+Record:26
+Time:500
+ 18 12 8 9
+k=18
+ 25 6 5 11
+k=25
+Simed:2751
+Record:26
+Time:500
+ 71 62 60 42
+k=71
+ 85 54 29 67
+k=85
+Simed:3057
+Record:26
+Time:500
+ 200 160 164 189
+k=200
+ 240 157 106 210
+k=240
+Simed:3586
+Record:26
+Time:500
+ 497 354 366 612
+k=612
+ 450 416 464 499
+k=499
+Simed:4757
+Record:26
+sun.jdbc.odbc.JdbcOdbcConnection@161fcdd500
+Record:27
+Time:500
+ 1 0 1 0
+k=1
+ 0 0 1 1
+k=1
+Simed:2669
+Record:27
+Time:500
+ 13 8 10 6
+k=13
+ 16 8 3 10
+k=16
+Simed:2758
+Record:27
+Time:500
+ 84 61 43 38
+k=84
+ 91 43 24 68
+k=91
+Simed:3041
+Record:27
+Time:500
+ 220 131 123 187
+k=220
+ 209 161 111 180
+k=209
+Simed:3392
+Record:27
+Time:500
+ 508 341 342 537
+k=537
+ 448 364 429 487
+k=487
+Simed:4583
+Record:27
+sun.jdbc.odbc.JdbcOdbcConnection@2110fc500
+Record:28
+Time:500
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:2611
+Record:28
+Time:500
+ 13 6 9 6
+k=13
+ 12 7 5 10
+k=12
+Simed:2758
+Record:28
+Time:500
+ 77 41 65 53
+k=77
+ 81 44 35 76
+k=81
+Simed:3066
+Record:28
+Time:500
+ 223 160 161 194
+k=223
+ 252 162 121 203
+k=252
+Simed:3485
+Record:28
+Time:500
+ 469 336 336 572
+k=572
+ 396 401 429 487
+k=487
+Simed:4608
+Record:28
+sun.jdbc.odbc.JdbcOdbcConnection@9a44f1500
+Record:29
+Time:500
+ 2 0 0 1
+k=2
+ 2 0 0 1
+k=2
+Simed:2539
+Record:29
+Time:500
+ 15 9 10 7
+k=15
+ 16 10 5 10
+k=16
+Simed:2742
+Record:29
+Time:500
+ 89 51 59 41
+k=89
+ 105 50 32 53
+k=105
+Simed:3025
+Record:29
+Time:500
+ 220 172 159 187
+k=220
+ 238 166 118 216
+k=238
+Simed:3567
+Record:29
+Time:500
+ 475 339 306 573
+k=573
+ 413 397 402 481
+k=481
+Simed:4543
+Record:29
+sun.jdbc.odbc.JdbcOdbcConnection@6aade500
+Record:30
+Time:500
+ 1 1 1 0
+k=1
+ 1 1 1 0
+k=1
+Simed:2584
+Record:30
+Time:500
+ 18 11 11 5
+k=18
+ 22 7 5 11
+k=22
+Simed:2742
+Record:30
+Time:500
+ 86 66 37 41
+k=86
+ 98 41 27 64
+k=98
+Simed:3107
+Record:30
+Time:500
+ 223 130 137 187
+k=223
+ 218 144 123 192
+k=218
+Simed:3387
+Record:30
+Time:500
+ 414 309 325 542
+k=542
+ 359 370 392 469
+k=469
+Simed:4185
+Record:30
+sun.jdbc.odbc.JdbcOdbcConnection@6da8eb500
+Record:31
+Time:500
+ 3 1 0 1
+k=3
+ 4 1 0 0
+k=4
+Simed:2536
+Record:31
+Time:500
+ 12 10 9 5
+k=12
+ 16 8 5 7
+k=16
+Simed:2608
+Record:31
+Time:500
+ 62 58 53 59
+k=62
+ 78 50 28 76
+k=78
+Simed:3040
+Record:31
+Time:500
+ 217 169 162 184
+k=217
+ 233 178 120 201
+k=233
+Simed:3562
+Record:31
+Time:500
+ 455 378 307 591
+k=591
+ 433 419 414 465
+k=465
+Simed:4629
+Record:31
+sun.jdbc.odbc.JdbcOdbcConnection@3d4817500
+Record:32
+Time:500
+ 2 1 0 1
+k=2
+ 4 0 0 0
+k=4
+Simed:2669
+Record:32
+Time:500
+ 22 10 16 7
+k=22
+ 19 14 6 16
+k=19
+Simed:2752
+Record:32
+Time:500
+ 76 42 53 37
+k=76
+ 75 45 34 54
+k=75
+Simed:2922
+Record:32
+Time:500
+ 209 167 136 218
+k=218
+ 238 176 123 193
+k=238
+Simed:3504
+Record:32
+Time:500
+ 554 329 345 459
+k=554
+ 461 391 411 424
+k=461
+Simed:4582
+Record:32
+sun.jdbc.odbc.JdbcOdbcConnection@1794494500
+Record:33
+Time:500
+ 1 1 0 0
+k=1
+ 1 0 0 1
+k=1
+Simed:2486
+Record:33
+Time:500
+ 16 9 6 9
+k=16
+ 12 15 4 9
+k=15
+Simed:2701
+Record:33
+Time:500
+ 83 47 45 41
+k=83
+ 92 46 35 43
+k=92
+Simed:2935
+Record:33
+Time:500
+ 254 136 128 169
+k=254
+ 220 153 128 186
+k=220
+Simed:3449
+Record:33
+Time:500
+ 425 325 338 591
+k=591
+ 417 385 373 504
+k=504
+Simed:4589
+Record:33
+sun.jdbc.odbc.JdbcOdbcConnection@d76237500
+Record:34
+Time:500
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:2418
+Record:34
+Time:500
+ 24 14 10 14
+k=24
+ 26 14 11 11
+k=26
+Simed:2689
+Record:34
+Time:500
+ 87 47 49 51
+k=87
+ 81 46 38 69
+k=81
+Simed:3014
+Record:34
+Time:500
+ 210 114 121 198
+k=210
+ 192 168 103 180
+k=192
+Simed:3497
+Record:34
+Time:500
+ 453 346 340 548
+k=548
+ 410 364 411 502
+k=502
+Simed:4563
+Record:34
+sun.jdbc.odbc.JdbcOdbcConnection@e86a5f500
+Record:35
+Time:500
+ 1 3 2 0
+k=3
+ 4 0 0 2
+k=4
+Simed:2510
+Record:35
+Time:500
+ 7 1 3 3
+k=7
+ 7 3 2 2
+k=7
+Simed:2650
+Record:35
+Time:500
+ 32 21 13 15
+k=32
+ 41 23 5 12
+k=41
+Simed:2784
+Record:35
+Time:500
+ 147 66 66 79
+k=147
+ 134 96 53 75
+k=134
+Simed:3159
+Record:35
+Time:500
+ 313 178 198 287
+k=313
+ 305 193 210 268
+k=305
+Simed:4023
+Record:35
+Time:500
+ 229 290 240 272
+k=290
+ 217 226 259 329
+k=329
+Simed:4332
+Record:35
+Time:500
+ 141 329 222 258
+k=329
+ 183 235 268 264
+k=268
+Simed:4610
+Record:35
+Time:500
+ 107 160 162 162
+k=162
+ 61 154 230 146
+k=230
+Simed:4952
+Record:35
+Time:500
+ 39 34 47 42
+k=47
+ 20 26 71 45
+k=71
+Simed:6828
+Record:35
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:258018
+Record:35
+sun.jdbc.odbc.JdbcOdbcConnection@1cd04f1500
+Record:36
+Time:500
+ 0 1 0 1
+k=1
+ 0 1 0 1
+k=1
+Simed:2677
+Record:36
+Time:500
+ 5 2 2 2
+k=5
+ 7 2 2 0
+k=7
+Simed:2852
+Record:36
+Time:500
+ 36 22 15 7
+k=36
+ 34 17 9 20
+k=34
+Simed:3022
+Record:36
+Time:500
+ 135 87 75 66
+k=135
+ 131 83 71 78
+k=131
+Simed:3296
+Record:36
+Time:500
+ 315 193 179 301
+k=315
+ 323 207 209 249
+k=323
+Simed:3929
+Record:36
+Time:500
+ 182 290 255 270
+k=290
+ 177 216 275 329
+k=329
+Simed:4296
+Record:36
+Time:500
+ 158 283 202 288
+k=288
+ 174 215 280 262
+k=280
+Simed:4613
+Record:36
+Time:500
+ 104 154 129 133
+k=154
+ 62 117 209 132
+k=209
+Simed:4926
+Record:36
+Time:500
+ 74 90 123 65
+k=123
+ 46 56 166 84
+k=166
+Simed:6962
+Record:36
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:270129
+Record:36
+sun.jdbc.odbc.JdbcOdbcConnection@153d05b500
+Record:37
+Time:500
+ 3 0 2 2
+k=3
+ 2 2 2 1
+k=2
+Simed:2466
+Record:37
+Time:500
+ 15 16 6 8
+k=16
+ 20 6 2 17
+k=20
+Simed:2865
+Record:37
+Time:500
+ 51 22 16 13
+k=51
+ 50 18 7 27
+k=50
+Simed:3012
+Record:37
+Time:500
+ 122 87 74 65
+k=122
+ 140 77 50 81
+k=140
+Simed:3266
+Record:37
+Time:500
+ 277 200 220 269
+k=277
+ 333 208 167 258
+k=333
+Simed:3990
+Record:37
+Time:500
+ 208 313 262 293
+k=313
+ 217 244 284 331
+k=331
+Simed:4344
+Record:37
+Time:500
+ 152 317 216 264
+k=317
+ 186 232 285 246
+k=285
+Simed:4628
+Record:37
+Time:500
+ 100 185 152 161
+k=185
+ 76 160 208 154
+k=208
+Simed:4955
+Record:37
+Time:500
+ 113 105 143 120
+k=143
+ 47 84 221 129
+k=221
+Simed:7055
+Record:37
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:261980
+Record:37
+sun.jdbc.odbc.JdbcOdbcConnection@1ec3adc500
+Record:38
+Time:500
+ 2 1 0 2
+k=2
+ 1 0 0 4
+k=4
+Simed:2697
+Record:38
+Time:500
+ 13 11 9 3
+k=13
+ 21 4 4 7
+k=21
+Simed:2851
+Record:38
+Time:500
+ 72 60 53 30
+k=72
+ 80 50 32 53
+k=80
+Simed:3104
+Record:38
+Time:500
+ 207 138 138 185
+k=207
+ 223 149 120 176
+k=223
+Simed:3538
+Record:38
+Time:500
+ 503 353 381 572
+k=572
+ 439 404 442 524
+k=524
+Simed:4761
+Record:38
+sun.jdbc.odbc.JdbcOdbcConnection@ebbf5c500
+Record:39
+Time:500
+ 1 0 1 2
+k=2
+ 0 1 0 3
+k=3
+Simed:2612
+Record:39
+Time:500
+ 4 4 4 1
+k=4
+ 5 1 3 4
+k=5
+Simed:2856
+Record:39
+Time:500
+ 46 25 25 15
+k=46
+ 51 25 9 26
+k=51
+Simed:3064
+Record:39
+Time:500
+ 147 103 100 91
+k=147
+ 193 92 60 96
+k=193
+Simed:3455
+Record:39
+Time:500
+ 591 356 348 494
+k=591
+ 521 414 411 443
+k=521
+Simed:4732
+Record:39
+sun.jdbc.odbc.JdbcOdbcConnection@c3601b500
+Record:40
+Time:500
+ 3 0 0 1
+k=3
+ 3 0 1 0
+k=3
+Simed:2683
+Record:40
+Time:500
+ 6 10 10 4
+k=10
+ 11 4 6 9
+k=11
+Simed:2862
+Record:40
+Time:500
+ 23 24 13 11
+k=24
+ 34 11 7 19
+k=34
+Simed:3040
+Record:40
+Time:500
+ 53 33 32 15
+k=53
+ 56 22 21 34
+k=56
+Simed:3255
+Record:40
+Time:500
+ 158 83 116 106
+k=158
+ 139 99 101 124
+k=139
+Simed:3618
+Record:40
+Time:500
+ 334 230 243 316
+k=334
+ 296 224 261 342
+k=342
+Simed:4356
+Record:40
+Time:500
+ 148 303 214 239
+k=303
+ 178 217 251 258
+k=258
+Simed:4465
+Record:40
+Time:500
+ 100 149 149 171
+k=171
+ 67 149 209 144
+k=209
+Simed:4959
+Record:40
+Time:500
+ 78 105 112 98
+k=112
+ 52 69 186 86
+k=186
+Simed:7001
+Record:40
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:263880
+Record:40
+sun.jdbc.odbc.JdbcOdbcConnection@ab7af2500
+Record:41
+Time:500
+ 1 2 1 0
+k=2
+ 3 1 0 0
+k=3
+Simed:2668
+Record:41
+Time:500
+ 3 1 0 1
+k=3
+ 2 1 2 0
+k=2
+Simed:2846
+Record:41
+Time:500
+ 30 16 11 8
+k=30
+ 26 14 4 21
+k=26
+Simed:3057
+Record:41
+Time:500
+ 107 80 79 69
+k=107
+ 151 57 45 82
+k=151
+Simed:3398
+Record:41
+Time:500
+ 327 220 209 298
+k=327
+ 353 229 188 284
+k=353
+Simed:4090
+Record:41
+Time:500
+ 208 322 230 283
+k=322
+ 201 228 294 320
+k=320
+Simed:4376
+Record:41
+Time:500
+ 134 266 215 266
+k=266
+ 184 249 222 226
+k=249
+Simed:4508
+Record:41
+Time:500
+ 110 187 139 167
+k=187
+ 79 173 193 158
+k=193
+Simed:4986
+Record:41
+Time:500
+ 99 99 132 113
+k=132
+ 59 74 190 120
+k=190
+Simed:6804
+Record:41
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:259675
+Record:41
+sun.jdbc.odbc.JdbcOdbcConnection@945e31500
+Record:42
+Time:500
+ 3 3 0 1
+k=3
+ 2 1 2 2
+k=2
+Simed:2688
+Record:42
+Time:500
+ 9 9 8 6
+k=9
+ 13 4 1 14
+k=14
+Simed:2855
+Record:42
+Time:500
+ 72 70 51 40
+k=72
+ 88 50 32 63
+k=88
+Simed:3126
+Record:42
+Time:500
+ 224 163 188 181
+k=224
+ 256 144 129 227
+k=256
+Simed:3630
+Record:42
+Time:500
+ 428 343 341 571
+k=571
+ 425 390 398 470
+k=470
+Simed:4682
+Record:42
+sun.jdbc.odbc.JdbcOdbcConnection@1f88953500
+Record:43
+Time:500
+ 1 1 1 0
+k=1
+ 1 1 0 1
+k=1
+Simed:2677
+Record:43
+Time:500
+ 12 13 5 6
+k=13
+ 13 12 3 8
+k=13
+Simed:2873
+Record:43
+Time:500
+ 33 12 11 9
+k=33
+ 30 15 12 8
+k=30
+Simed:3008
+Record:43
+Time:500
+ 99 48 61 72
+k=99
+ 105 67 48 60
+k=105
+Simed:3177
+Record:43
+Time:500
+ 324 155 164 298
+k=324
+ 331 199 203 208
+k=331
+Simed:3838
+Record:43
+Time:500
+ 191 269 220 228
+k=269
+ 169 215 222 302
+k=302
+Simed:4005
+Record:43
+Time:500
+ 125 294 195 234
+k=294
+ 153 192 225 278
+k=278
+Simed:4433
+Record:43
+Time:500
+ 102 207 133 123
+k=207
+ 79 137 195 154
+k=195
+Simed:4772
+Record:43
+Time:500
+ 92 107 132 90
+k=132
+ 71 73 163 114
+k=163
+Simed:6620
+Record:43
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:248080
+Record:43
+sun.jdbc.odbc.JdbcOdbcConnection@ec7c94500
+Record:44
+Time:500
+ 4 0 4 1
+k=4
+ 2 5 2 0
+k=5
+Simed:2574
+Record:44
+Time:500
+ 18 7 10 7
+k=18
+ 17 10 4 11
+k=17
+Simed:2764
+Record:44
+Time:500
+ 85 34 45 49
+k=85
+ 85 46 32 50
+k=85
+Simed:2998
+Record:44
+Time:500
+ 213 112 135 238
+k=238
+ 215 191 119 173
+k=215
+Simed:3526
+Record:44
+Time:500
+ 540 295 347 447
+k=540
+ 489 394 379 367
+k=489
+Simed:4535
+Record:44
+sun.jdbc.odbc.JdbcOdbcConnection@101751500
+Record:45
+Time:500
+ 1 1 0 1
+k=1
+ 0 1 1 1
+k=1
+Simed:2591
+Record:45
+Time:500
+ 25 12 13 5
+k=25
+ 17 11 16 11
+k=17
+Simed:2656
+Record:45
+Time:500
+ 89 35 39 55
+k=89
+ 84 51 37 46
+k=84
+Simed:2915
+Record:45
+Time:500
+ 221 140 136 183
+k=221
+ 220 158 123 179
+k=220
+Simed:3563
+Record:45
+Time:500
+ 461 364 296 566
+k=566
+ 423 392 407 465
+k=465
+Simed:4554
+Record:45
+sun.jdbc.odbc.JdbcOdbcConnection@15bc68c500
+Record:46
+Time:500
+ 1 0 2 1
+k=2
+ 0 2 0 2
+k=2
+Simed:2588
+Record:46
+Time:500
+ 10 12 3 5
+k=12
+ 16 1 3 10
+k=16
+Simed:2760
+Record:46
+Time:500
+ 18 22 6 8
+k=22
+ 28 8 4 14
+k=28
+Simed:3003
+Record:46
+Time:500
+ 29 22 17 12
+k=29
+ 38 13 8 21
+k=38
+Simed:3209
+Record:46
+Time:500
+ 105 74 80 94
+k=105
+ 106 86 52 109
+k=109
+Simed:3580
+Record:46
+Time:500
+ 269 171 150 248
+k=269
+ 240 175 171 252
+k=252
+Simed:4167
+Record:46
+Time:500
+ 182 238 237 377
+k=377
+ 171 256 198 409
+k=409
+Simed:4684
+Record:46
+Time:500
+ 102 175 154 171
+k=175
+ 69 156 206 171
+k=206
+Simed:4835
+Record:46
+Time:500
+ 84 84 130 102
+k=130
+ 40 70 160 130
+k=160
+Simed:6570
+Record:46
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:247534
+Record:46
+sun.jdbc.odbc.JdbcOdbcConnection@f0cda1500
+Record:47
+Time:500
+ 1 0 1 1
+k=1
+ 2 0 0 1
+k=2
+Simed:2626
+Record:47
+Time:500
+ 21 6 12 7
+k=21
+ 17 11 5 13
+k=17
+Simed:2728
+Record:47
+Time:500
+ 82 48 49 49
+k=82
+ 75 56 34 63
+k=75
+Simed:2942
+Record:47
+Time:500
+ 208 132 140 183
+k=208
+ 198 158 126 181
+k=198
+Simed:3421
+Record:47
+Time:500
+ 436 335 316 508
+k=508
+ 393 377 388 437
+k=437
+Simed:4453
+Record:47
+sun.jdbc.odbc.JdbcOdbcConnection@16c2195500
+Record:48
+Time:500
+ 2 2 1 2
+k=2
+ 4 2 0 1
+k=4
+Simed:2603
+Record:48
+Time:500
+ 10 9 9 6
+k=10
+ 13 11 5 5
+k=13
+Simed:2797
+Record:48
+Time:500
+ 67 51 34 41
+k=67
+ 75 44 23 51
+k=75
+Simed:3001
+Record:48
+Time:500
+ 216 156 146 184
+k=216
+ 218 167 132 185
+k=218
+Simed:3489
+Record:48
+Time:500
+ 454 316 342 520
+k=520
+ 407 353 386 486
+k=486
+Simed:4449
+Record:48
+sun.jdbc.odbc.JdbcOdbcConnection@13ca972500
+Record:49
+Time:500
+ 3 0 2 0
+k=3
+ 2 2 1 0
+k=2
+Simed:2483
+Record:49
+Time:500
+ 9 13 11 4
+k=13
+ 15 10 1 11
+k=15
+Simed:2725
+Record:49
+Time:500
+ 32 17 11 12
+k=32
+ 25 22 11 14
+k=25
+Simed:2924
+Record:49
+Time:500
+ 102 76 73 82
+k=102
+ 140 70 44 79
+k=140
+Simed:3214
+Record:49
+Time:500
+ 305 182 182 282
+k=305
+ 346 190 182 233
+k=346
+Simed:3868
+Record:49
+Time:500
+ 179 288 230 268
+k=288
+ 214 226 218 307
+k=307
+Simed:4147
+Record:49
+Time:500
+ 106 256 185 235
+k=256
+ 144 223 206 209
+k=223
+Simed:4268
+Record:49
+Time:500
+ 114 139 140 129
+k=140
+ 72 142 172 136
+k=172
+Simed:4782
+Record:49
+Time:500
+ 37 36 43 53
+k=53
+ 24 22 67 56
+k=67
+Simed:6380
+Record:49
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:260080
+Record:49
+sun.jdbc.odbc.JdbcOdbcConnection@7c9b46500
+Record:50
+Time:500
+ 0 2 1 0
+k=2
+ 2 0 0 1
+k=2
+Simed:2663
+Record:50
+Time:500
+ 6 2 0 1
+k=6
+ 3 2 2 2
+k=3
+Simed:2529
+Record:50
+Time:500
+ 33 28 14 23
+k=33
+ 42 27 8 21
+k=42
+Simed:2861
+Record:50
+Time:500
+ 128 76 63 77
+k=128
+ 147 69 53 75
+k=147
+Simed:3274
+Record:50
+Time:500
+ 299 196 210 266
+k=299
+ 309 215 207 240
+k=309
+Simed:3892
+Record:50
+Time:500
+ 189 316 257 258
+k=316
+ 193 222 284 321
+k=321
+Simed:4221
+Record:50
+Time:500
+ 122 265 210 253
+k=265
+ 162 234 229 225
+k=234
+Simed:4372
+Record:50
+Time:500
+ 99 155 159 164
+k=164
+ 82 155 193 147
+k=193
+Simed:4772
+Record:50
+Time:500
+ 49 94 88 78
+k=94
+ 35 60 146 68
+k=146
+Simed:6388
+Record:50
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:246866
+Record:50
+sun.jdbc.odbc.JdbcOdbcConnection@13dff89500
+Record:51
+Time:500
+ 3 2 0 0
+k=3
+ 1 0 3 1
+k=3
+Simed:2563
+Record:51
+Time:500
+ 18 12 6 2
+k=18
+ 21 6 6 5
+k=21
+Simed:2762
+Record:51
+Time:500
+ 66 45 50 41
+k=66
+ 74 41 33 54
+k=74
+Simed:2867
+Record:51
+Time:500
+ 193 144 148 183
+k=193
+ 221 134 114 199
+k=221
+Simed:3352
+Record:51
+Time:500
+ 409 331 317 502
+k=502
+ 383 325 367 484
+k=484
+Simed:4367
+Record:51
+sun.jdbc.odbc.JdbcOdbcConnection@1a84fae500
+Record:52
+Time:500
+ 4 2 1 1
+k=4
+ 6 0 2 0
+k=6
+Simed:2526
+Record:52
+Time:500
+ 22 8 11 6
+k=22
+ 21 8 4 14
+k=21
+Simed:2779
+Record:52
+Time:500
+ 72 57 48 40
+k=72
+ 86 44 24 63
+k=86
+Simed:3054
+Record:52
+Time:500
+ 215 175 153 200
+k=215
+ 246 177 119 201
+k=246
+Simed:3557
+Record:52
+Time:500
+ 477 386 343 588
+k=588
+ 465 421 434 474
+k=474
+Simed:4703
+Record:52
+sun.jdbc.odbc.JdbcOdbcConnection@17ff24f500
+Record:53
+Time:500
+ 1 2 0 0
+k=2
+ 2 1 0 0
+k=2
+Simed:2592
+Record:53
+Time:500
+ 2 2 0 0
+k=2
+ 2 0 0 2
+k=2
+Simed:2798
+Record:53
+Time:500
+ 27 16 16 13
+k=27
+ 28 17 8 19
+k=28
+Simed:2958
+Record:53
+Time:500
+ 114 73 84 59
+k=114
+ 124 69 62 75
+k=124
+Simed:3219
+Record:53
+Time:500
+ 273 185 193 274
+k=274
+ 303 205 172 245
+k=303
+Simed:3789
+Record:53
+Time:500
+ 317 196 203 319
+k=319
+ 278 220 237 300
+k=300
+Simed:4141
+Record:53
+Time:500
+ 473 621 583 358
+k=621
+ 443 567 601 424
+k=601
+Simed:5285
+Record:53
+Time:500
+ 224 396 456 222
+k=456
+ 264 360 368 306
+k=368
+Simed:5116
+Record:53
+Time:500
+ 135 279 249 177
+k=279
+ 136 197 336 171
+k=336
+Simed:5351
+Record:53
+Time:500
+ 121 165 130 88
+k=165
+ 75 114 210 105
+k=210
+Simed:7881
+Record:53
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:271089
+Record:53
+sun.jdbc.odbc.JdbcOdbcConnection@c3d026500
+Record:54
+Time:500
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:2651
+Record:54
+Time:500
+ 0 2 3 1
+k=3
+ 2 2 1 1
+k=2
+Simed:2809
+Record:54
+Time:500
+ 22 11 11 9
+k=22
+ 26 9 4 14
+k=26
+Simed:3017
+Record:54
+Time:500
+ 71 61 61 44
+k=71
+ 86 50 28 73
+k=86
+Simed:3242
+Record:54
+Time:500
+ 181 148 143 165
+k=181
+ 192 137 114 194
+k=194
+Simed:3743
+Record:54
+Time:500
+ 271 224 180 331
+k=331
+ 227 220 216 343
+k=343
+Simed:4152
+Record:54
+Time:500
+ 133 280 207 263
+k=280
+ 158 197 276 252
+k=276
+Simed:4546
+Record:54
+Time:500
+ 110 142 132 162
+k=162
+ 71 138 174 163
+k=174
+Simed:4863
+Record:54
+Time:500
+ 77 87 124 97
+k=124
+ 54 61 189 81
+k=189
+Simed:6932
+Record:54
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:258766
+Record:54
+sun.jdbc.odbc.JdbcOdbcConnection@125b4f500
+Record:55
+Time:500
+ 2 1 1 1
+k=2
+ 3 0 0 2
+k=3
+Simed:2667
+Record:55
+Time:500
+ 16 16 9 7
+k=16
+ 19 9 1 19
+k=19
+Simed:2831
+Record:55
+Time:500
+ 80 58 57 41
+k=80
+ 86 53 34 63
+k=86
+Simed:3069
+Record:55
+Time:500
+ 214 150 166 182
+k=214
+ 232 142 113 225
+k=232
+Simed:3541
+Record:55
+Time:500
+ 476 386 334 601
+k=601
+ 469 405 412 511
+k=511
+Simed:4716
+Record:55
+sun.jdbc.odbc.JdbcOdbcConnection@f37160500
+Record:56
+Time:500
+ 0 4 0 0
+k=4
+ 3 0 0 1
+k=3
+Simed:2638
+Record:56
+Time:500
+ 5 3 2 2
+k=5
+ 8 1 0 3
+k=8
+Simed:2748
+Record:56
+Time:500
+ 36 25 16 12
+k=36
+ 38 13 13 25
+k=38
+Simed:3009
+Record:56
+Time:500
+ 132 60 77 68
+k=132
+ 131 61 67 78
+k=131
+Simed:3259
+Record:56
+Time:500
+ 309 200 212 309
+k=309
+ 333 232 195 270
+k=333
+Simed:4041
+Record:56
+Time:500
+ 206 281 286 261
+k=286
+ 183 213 261 377
+k=377
+Simed:4297
+Record:56
+Time:500
+ 50 95 87 141
+k=141
+ 43 90 116 124
+k=124
+Simed:4187
+Record:56
+Time:500
+ 39 52 64 65
+k=65
+ 27 42 92 59
+k=92
+Simed:4672
+Record:56
+Time:500
+ 16 19 34 31
+k=34
+ 10 14 50 26
+k=50
+Simed:6742
+Record:56
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:260137
+Record:56
+sun.jdbc.odbc.JdbcOdbcConnection@1792d2c500
+Record:57
+Time:500
+ 0 1 1 0
+k=1
+ 1 1 0 0
+k=1
+Simed:2678
+Record:57
+Time:500
+ 3 1 3 1
+k=3
+ 3 2 1 2
+k=3
+Simed:2827
+Record:57
+Time:500
+ 25 27 19 11
+k=27
+ 28 17 12 25
+k=28
+Simed:3030
+Record:57
+Time:500
+ 46 30 30 15
+k=46
+ 50 22 13 36
+k=50
+Simed:3137
+Record:57
+Time:500
+ 165 83 107 109
+k=165
+ 153 106 86 119
+k=153
+Simed:3637
+Record:57
+Time:500
+ 345 220 203 323
+k=345
+ 288 227 255 321
+k=321
+Simed:4269
+Record:57
+Time:500
+ 104 291 223 271
+k=291
+ 175 225 253 236
+k=253
+Simed:4554
+Record:57
+Time:500
+ 94 184 138 151
+k=184
+ 62 174 206 125
+k=206
+Simed:4896
+Record:57
+Time:500
+ 105 120 140 97
+k=140
+ 63 84 205 110
+k=205
+Simed:6976
+Record:57
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:257607
+Record:57
+sun.jdbc.odbc.JdbcOdbcConnection@16efb90500
+Record:58
+Time:500
+ 0 3 1 0
+k=3
+ 1 3 0 0
+k=3
+Simed:2664
+Record:58
+Time:500
+ 2 2 1 2
+k=2
+ 3 3 0 1
+k=3
+Simed:2796
+Record:58
+Time:500
+ 34 16 22 13
+k=34
+ 32 18 13 22
+k=32
+Simed:3028
+Record:58
+Time:500
+ 108 82 80 66
+k=108
+ 127 65 45 99
+k=127
+Simed:3324
+Record:58
+Time:500
+ 318 188 195 311
+k=318
+ 317 213 192 290
+k=317
+Simed:4057
+Record:58
+Time:500
+ 187 256 254 257
+k=257
+ 166 220 278 290
+k=290
+Simed:4125
+Record:58
+Time:500
+ 101 231 208 151
+k=231
+ 116 184 203 188
+k=203
+Simed:4331
+Record:58
+Time:500
+ 84 147 134 105
+k=147
+ 67 107 198 98
+k=198
+Simed:4846
+Record:58
+Time:500
+ 84 100 105 71
+k=105
+ 47 58 193 62
+k=193
+Simed:6931
+Record:58
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:270269
+Record:58
+sun.jdbc.odbc.JdbcOdbcConnection@2011e5500
+Record:59
+Time:500
+ 3 2 0 1
+k=3
+ 2 0 2 2
+k=2
+Simed:2647
+Record:59
+Time:500
+ 19 6 6 4
+k=19
+ 11 8 7 9
+k=11
+Simed:2837
+Record:59
+Time:500
+ 68 61 42 43
+k=68
+ 87 48 18 61
+k=87
+Simed:3077
+Record:59
+Time:500
+ 208 152 175 186
+k=208
+ 248 157 125 191
+k=248
+Simed:3583
+Record:59
+Time:500
+ 463 372 329 601
+k=601
+ 441 412 424 488
+k=488
+Simed:4670
+Record:59
+sun.jdbc.odbc.JdbcOdbcConnection@8a8b07500
+Record:60
+Time:500
+ 0 2 1 0
+k=2
+ 1 0 0 2
+k=2
+Simed:2664
+Record:60
+Time:500
+ 5 3 4 4
+k=5
+ 4 5 2 5
+k=5
+Simed:2736
+Record:60
+Time:500
+ 53 21 14 12
+k=53
+ 38 27 18 17
+k=38
+Simed:2970
+Record:60
+Time:500
+ 106 77 71 67
+k=106
+ 126 71 58 66
+k=126
+Simed:3252
+Record:60
+Time:500
+ 294 210 194 300
+k=300
+ 332 220 187 259
+k=332
+Simed:4029
+Record:60
+Time:500
+ 291 239 276 205
+k=291
+ 324 272 215 200
+k=324
+Simed:4284
+Record:60
+Time:500
+ 202 433 493 206
+k=493
+ 237 306 504 287
+k=504
+Simed:4896
+Record:60
+Time:500
+ 97 182 130 146
+k=182
+ 76 150 196 133
+k=196
+Simed:4615
+Record:60
+Time:500
+ 67 130 83 117
+k=130
+ 57 93 160 87
+k=160
+Simed:5166
+Record:60
+Time:500
+ 31 67 61 37
+k=67
+ 26 49 80 41
+k=80
+Simed:7355
+Record:60
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:253365
+Record:60
+sun.jdbc.odbc.JdbcOdbcConnection@10e4a33500
+Record:61
+Time:500
+ 2 1 0 1
+k=2
+ 2 1 0 1
+k=2
+Simed:2616
+Record:61
+Time:500
+ 11 11 9 8
+k=11
+ 14 9 5 11
+k=14
+Simed:2812
+Record:61
+Time:500
+ 64 51 33 57
+k=64
+ 90 42 25 48
+k=90
+Simed:2967
+Record:61
+Time:500
+ 247 124 146 218
+k=247
+ 237 157 135 206
+k=237
+Simed:3485
+Record:61
+Time:500
+ 437 341 327 530
+k=530
+ 424 382 391 438
+k=438
+Simed:4506
+Record:61
+sun.jdbc.odbc.JdbcOdbcConnection@1d7a082500
+Record:62
+Time:500
+ 6 2 0 0
+k=6
+ 2 2 4 0
+k=4
+Simed:2595
+Record:62
+Time:500
+ 30 21 6 12
+k=30
+ 35 15 10 9
+k=35
+Simed:2768
+Record:62
+Time:500
+ 64 52 52 52
+k=64
+ 83 54 34 49
+k=83
+Simed:2982
+Record:62
+Time:500
+ 216 150 116 221
+k=221
+ 245 170 121 167
+k=245
+Simed:3512
+Record:62
+Time:500
+ 597 359 344 433
+k=597
+ 536 386 390 421
+k=536
+Simed:4570
+Record:62
+sun.jdbc.odbc.JdbcOdbcConnection@f2f761500
+Record:63
+Time:500
+ 2 0 1 2
+k=2
+ 2 2 1 0
+k=2
+Simed:2570
+Record:63
+Time:500
+ 22 13 9 13
+k=22
+ 17 22 5 13
+k=22
+Simed:2758
+Record:63
+Time:500
+ 83 36 40 60
+k=83
+ 74 50 42 53
+k=74
+Simed:2973
+Record:63
+Time:500
+ 195 113 130 216
+k=216
+ 207 156 117 174
+k=207
+Simed:3305
+Record:63
+Time:500
+ 587 318 314 433
+k=587
+ 509 355 418 370
+k=509
+Simed:4477
+Record:63
+sun.jdbc.odbc.JdbcOdbcConnection@aa2ee4500
+Record:64
+Time:500
+ 2 2 2 3
+k=3
+ 2 4 2 1
+k=4
+Simed:2483
+Record:64
+Time:500
+ 5 7 3 2
+k=7
+ 6 6 3 2
+k=6
+Simed:2598
+Record:64
+Time:500
+ 12 6 6 6
+k=12
+ 14 4 5 7
+k=14
+Simed:2848
+Record:64
+Time:500
+ 64 47 39 33
+k=64
+ 73 32 31 47
+k=73
+Simed:3225
+Record:64
+Time:500
+ 287 179 154 169
+k=287
+ 302 172 154 161
+k=302
+Simed:3858
+Record:64
+Time:500
+ 323 197 225 367
+k=367
+ 302 230 248 332
+k=332
+Simed:4366
+Record:64
+Time:500
+ 483 722 679 370
+k=722
+ 509 611 613 521
+k=613
+Simed:5689
+Record:64
+Time:500
+ 234 442 432 249
+k=442
+ 296 372 390 299
+k=390
+Simed:5186
+Record:64
+Time:500
+ 196 400 657 291
+k=657
+ 252 365 633 294
+k=633
+Simed:6071
+Record:64
+Time:500
+ 125 147 170 109
+k=170
+ 74 111 219 147
+k=219
+Simed:7844
+Record:64
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:252384
+Record:64
+sun.jdbc.odbc.JdbcOdbcConnection@5e4591500
+Record:65
+Time:500
+ 2 0 0 1
+k=2
+ 0 1 1 1
+k=1
+Simed:2576
+Record:65
+Time:500
+ 20 11 11 11
+k=20
+ 20 14 7 12
+k=20
+Simed:2824
+Record:65
+Time:500
+ 76 52 46 49
+k=76
+ 80 47 39 57
+k=80
+Simed:3043
+Record:65
+Time:500
+ 202 134 141 194
+k=202
+ 206 170 112 183
+k=206
+Simed:3454
+Record:65
+Time:500
+ 478 314 316 544
+k=544
+ 413 369 398 472
+k=472
+Simed:4498
+Record:65
+sun.jdbc.odbc.JdbcOdbcConnection@184a7d6500
+Record:66
+Time:500
+ 1 0 0 1
+k=1
+ 0 1 0 1
+k=1
+Simed:2498
+Record:66
+Time:500
+ 17 9 7 4
+k=17
+ 14 5 5 13
+k=14
+Simed:2760
+Record:66
+Time:500
+ 67 61 37 39
+k=67
+ 71 43 31 59
+k=71
+Simed:3037
+Record:66
+Time:500
+ 228 146 170 192
+k=228
+ 240 161 116 219
+k=240
+Simed:3556
+Record:66
+Time:500
+ 465 329 346 597
+k=597
+ 430 398 408 501
+k=501
+Simed:4600
+Record:66
+sun.jdbc.odbc.JdbcOdbcConnection@686c5e500
+Record:67
+Time:500
+ 5 0 2 0
+k=5
+ 1 3 1 2
+k=3
+Simed:2487
+Record:67
+Time:500
+ 20 3 7 6
+k=20
+ 13 9 6 8
+k=13
+Simed:2750
+Record:67
+Time:500
+ 83 47 54 43
+k=83
+ 92 50 37 48
+k=92
+Simed:3031
+Record:67
+Time:500
+ 194 157 151 180
+k=194
+ 214 160 115 193
+k=214
+Simed:3518
+Record:67
+Time:500
+ 460 365 334 595
+k=595
+ 419 435 416 484
+k=484
+Simed:4648
+Record:67
+sun.jdbc.odbc.JdbcOdbcConnection@13c2797500
+Record:68
+Time:500
+ 4 1 1 1
+k=4
+ 3 0 1 3
+k=3
+Simed:2630
+Record:68
+Time:500
+ 16 11 11 7
+k=16
+ 14 9 7 15
+k=15
+Simed:2836
+Record:68
+Time:500
+ 89 62 49 61
+k=89
+ 104 46 36 75
+k=104
+Simed:3080
+Record:68
+Time:500
+ 207 136 171 189
+k=207
+ 217 159 110 217
+k=217
+Simed:3548
+Record:68
+Time:500
+ 474 352 311 600
+k=600
+ 487 404 392 454
+k=487
+Simed:4680
+Record:68
+sun.jdbc.odbc.JdbcOdbcConnection@4198e500
+Record:69
+Time:500
+ 1 3 0 0
+k=3
+ 3 0 0 1
+k=3
+Simed:2639
+Record:69
+Time:500
+ 5 1 2 3
+k=5
+ 2 2 1 6
+k=6
+Simed:2757
+Record:69
+Time:500
+ 38 23 11 6
+k=38
+ 34 16 9 19
+k=34
+Simed:2901
+Record:69
+Time:500
+ 108 86 79 65
+k=108
+ 143 73 49 73
+k=143
+Simed:3340
+Record:69
+Time:500
+ 288 180 177 305
+k=305
+ 308 208 170 264
+k=308
+Simed:3966
+Record:69
+Time:500
+ 328 244 212 332
+k=332
+ 316 233 233 334
+k=334
+Simed:4347
+Record:69
+Time:500
+ 415 334 422 682
+k=682
+ 398 405 450 600
+k=600
+Simed:5274
+Record:69
+sun.jdbc.odbc.JdbcOdbcConnection@1932b46500
+Record:70
+Time:500
+ 0 1 2 2
+k=2
+ 1 1 1 2
+k=2
+Simed:2597
+Record:70
+Time:500
+ 13 5 3 4
+k=13
+ 11 4 1 9
+k=11
+Simed:2778
+Record:70
+Time:500
+ 62 46 35 31
+k=62
+ 80 21 22 51
+k=80
+Simed:3036
+Record:70
+Time:500
+ 175 96 105 126
+k=175
+ 153 115 94 140
+k=153
+Simed:3337
+Record:70
+Time:500
+ 283 187 172 304
+k=304
+ 246 165 217 318
+k=318
+Simed:3954
+Record:70
+Time:500
+ 227 306 277 276
+k=306
+ 208 253 308 317
+k=317
+Simed:4283
+Record:70
+Time:500
+ 107 286 187 229
+k=286
+ 146 206 237 220
+k=237
+Simed:4275
+Record:70
+Time:500
+ 89 152 175 175
+k=175
+ 63 163 212 153
+k=212
+Simed:4789
+Record:70
+Time:500
+ 47 26 43 41
+k=47
+ 19 24 65 49
+k=65
+Simed:6571
+Record:70
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:249091
+Record:70
+sun.jdbc.odbc.JdbcOdbcConnection@f99651500
+Record:71
+Time:500
+ 1 1 1 1
+k=1
+ 1 1 0 2
+k=2
+Simed:2577
+Record:71
+Time:500
+ 10 15 7 15
+k=15
+ 18 16 5 8
+k=18
+Simed:2776
+Record:71
+Time:500
+ 33 19 11 18
+k=33
+ 35 21 10 15
+k=35
+Simed:2912
+Record:71
+Time:500
+ 117 70 56 84
+k=117
+ 133 60 51 83
+k=133
+Simed:3192
+Record:71
+Time:500
+ 295 177 196 276
+k=295
+ 313 189 204 238
+k=313
+Simed:3849
+Record:71
+Time:500
+ 208 292 272 248
+k=292
+ 198 218 291 313
+k=313
+Simed:4227
+Record:71
+Time:500
+ 125 290 218 235
+k=290
+ 161 217 244 246
+k=246
+Simed:4453
+Record:71
+Time:500
+ 99 169 143 162
+k=169
+ 68 166 187 152
+k=187
+Simed:4766
+Record:71
+Time:500
+ 84 101 122 88
+k=122
+ 45 80 167 103
+k=167
+Simed:6518
+Record:71
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:253637
+Record:71
+sun.jdbc.odbc.JdbcOdbcConnection@18ec9af500
+Record:72
+Time:500
+ 1 1 0 0
+k=1
+ 1 1 0 0
+k=1
+Simed:2594
+Record:72
+Time:500
+ 11 12 2 7
+k=12
+ 14 8 4 6
+k=14
+Simed:2774
+Record:72
+Time:500
+ 31 23 10 13
+k=31
+ 29 15 9 24
+k=29
+Simed:2933
+Record:72
+Time:500
+ 122 64 75 81
+k=122
+ 148 62 51 81
+k=148
+Simed:3256
+Record:72
+Time:500
+ 271 176 220 288
+k=288
+ 320 225 170 240
+k=320
+Simed:3934
+Record:72
+Time:500
+ 359 204 217 309
+k=359
+ 312 250 232 295
+k=312
+Simed:4257
+Record:72
+Time:500
+ 119 256 200 273
+k=273
+ 155 223 225 245
+k=245
+Simed:4401
+Record:72
+Time:500
+ 65 149 109 104
+k=149
+ 50 106 168 103
+k=168
+Simed:4531
+Record:72
+Time:500
+ 73 107 93 97
+k=107
+ 44 74 177 75
+k=177
+Simed:5793
+Record:72
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:240320
+Record:72
+sun.jdbc.odbc.JdbcOdbcConnection@1074641500
+Record:73
+Time:500
+ 3 1 0 0
+k=3
+ 1 0 2 1
+k=2
+Simed:2585
+Record:73
+Time:500
+ 19 10 10 10
+k=19
+ 22 11 5 11
+k=22
+Simed:2739
+Record:73
+Time:500
+ 73 46 54 46
+k=73
+ 80 47 35 57
+k=80
+Simed:2965
+Record:73
+Time:500
+ 211 131 127 198
+k=211
+ 209 157 104 197
+k=209
+Simed:3490
+Record:73
+Time:500
+ 503 367 359 573
+k=573
+ 447 393 423 539
+k=539
+Simed:4639
+Record:73
+sun.jdbc.odbc.JdbcOdbcConnection@11552cd500
+Record:74
+Time:500
+ 0 2 1 0
+k=2
+ 0 1 1 1
+k=1
+Simed:2625
+Record:74
+Time:500
+ 2 4 0 0
+k=4
+ 3 2 1 0
+k=3
+Simed:2709
+Record:74
+Time:500
+ 12 5 4 3
+k=12
+ 10 6 3 5
+k=10
+Simed:2859
+Record:74
+Time:500
+ 67 39 18 19
+k=67
+ 70 28 20 25
+k=70
+Simed:3125
+Record:74
+Time:500
+ 154 81 98 119
+k=154
+ 166 95 81 110
+k=166
+Simed:3483
+Record:74
+Time:500
+ 296 198 200 296
+k=296
+ 280 213 217 280
+k=280
+Simed:4172
+Record:74
+Time:500
+ 122 218 156 225
+k=225
+ 146 194 185 196
+k=196
+Simed:3942
+Record:74
+Time:500
+ 70 156 146 112
+k=156
+ 59 119 190 116
+k=190
+Simed:4801
+Record:74
+Time:500
+ 67 83 96 87
+k=96
+ 41 56 155 81
+k=155
+Simed:6299
+Record:74
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:255081
+Record:74
+sun.jdbc.odbc.JdbcOdbcConnection@11ab8a5500
+Record:75
+Time:500
+ 5 1 1 1
+k=5
+ 3 1 1 3
+k=3
+Simed:2596
+Record:75
+Time:500
+ 19 10 16 9
+k=19
+ 18 6 10 20
+k=20
+Simed:2834
+Record:75
+Time:500
+ 78 59 58 39
+k=78
+ 91 55 21 67
+k=91
+Simed:3063
+Record:75
+Time:500
+ 216 133 152 194
+k=216
+ 230 169 106 190
+k=230
+Simed:3518
+Record:75
+Time:500
+ 482 359 361 544
+k=544
+ 428 402 415 501
+k=501
+Simed:4612
+Record:75
+sun.jdbc.odbc.JdbcOdbcConnection@1a97149500
+Record:76
+Time:500
+ 3 1 3 0
+k=3
+ 3 2 1 1
+k=3
+Simed:2578
+Record:76
+Time:500
+ 17 15 11 14
+k=17
+ 20 9 7 21
+k=21
+Simed:2801
+Record:76
+Time:500
+ 65 55 40 50
+k=65
+ 74 39 37 60
+k=74
+Simed:2973
+Record:76
+Time:500
+ 215 127 144 188
+k=215
+ 218 149 126 181
+k=218
+Simed:3253
+Record:76
+Time:500
+ 506 363 346 574
+k=574
+ 421 395 477 496
+k=496
+Simed:4620
+Record:76
+sun.jdbc.odbc.JdbcOdbcConnection@7502f6500
+Record:77
+Time:500
+ 2 0 1 1
+k=2
+ 1 1 1 1
+k=1
+Simed:2386
+Record:77
+Time:500
+ 23 14 5 5
+k=23
+ 30 4 8 5
+k=30
+Simed:2730
+Record:77
+Time:500
+ 73 47 44 43
+k=73
+ 72 38 31 66
+k=72
+Simed:2954
+Record:77
+Time:500
+ 211 154 115 187
+k=211
+ 243 151 101 172
+k=243
+Simed:3489
+Record:77
+Time:500
+ 490 340 335 628
+k=628
+ 433 421 423 516
+k=516
+Simed:4694
+Record:77
+sun.jdbc.odbc.JdbcOdbcConnection@affbf6500
+Record:78
+Time:500
+ 1 1 1 1
+k=1
+ 1 2 0 1
+k=2
+Simed:2611
+Record:78
+Time:500
+ 18 11 6 7
+k=18
+ 18 9 2 13
+k=18
+Simed:2714
+Record:78
+Time:500
+ 88 51 51 39
+k=88
+ 95 50 29 55
+k=95
+Simed:2965
+Record:78
+Time:500
+ 212 164 146 206
+k=212
+ 233 166 112 217
+k=233
+Simed:3517
+Record:78
+Time:500
+ 469 339 338 564
+k=564
+ 426 376 398 510
+k=510
+Simed:4408
+Record:78
+sun.jdbc.odbc.JdbcOdbcConnection@1d6545e500
+Record:79
+Time:500
+ 2 1 2 0
+k=2
+ 2 0 1 2
+k=2
+Simed:2626
+Record:79
+Time:500
+ 9 15 7 8
+k=15
+ 26 6 1 6
+k=26
+Simed:2689
+Record:79
+Time:500
+ 32 21 12 16
+k=32
+ 30 18 10 23
+k=30
+Simed:2855
+Record:79
+Time:500
+ 117 63 69 78
+k=117
+ 130 61 48 88
+k=130
+Simed:3246
+Record:79
+Time:500
+ 294 173 177 282
+k=294
+ 311 203 178 234
+k=311
+Simed:3855
+Record:79
+Time:500
+ 208 274 219 238
+k=274
+ 170 223 261 285
+k=285
+Simed:4057
+Record:79
+Time:500
+ 144 287 184 237
+k=287
+ 178 200 256 218
+k=256
+Simed:4476
+Record:79
+Time:500
+ 81 158 159 162
+k=162
+ 69 157 187 147
+k=187
+Simed:4787
+Record:79
+Time:500
+ 75 78 113 74
+k=113
+ 43 59 175 63
+k=175
+Simed:6795
+Record:79
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:252134
+Record:79
+sun.jdbc.odbc.JdbcOdbcConnection@16e8e76500
+Record:80
+Time:500
+ 1 0 3 0
+k=3
+ 0 1 2 1
+k=2
+Simed:2618
+Record:80
+Time:500
+ 6 4 3 3
+k=6
+ 5 4 2 5
+k=5
+Simed:2521
+Record:80
+Time:500
+ 61 30 41 38
+k=61
+ 68 33 13 56
+k=68
+Simed:2939
+Record:80
+Time:500
+ 190 91 95 124
+k=190
+ 177 102 87 134
+k=177
+Simed:3390
+Record:80
+Time:500
+ 312 187 175 293
+k=312
+ 257 192 185 333
+k=333
+Simed:3885
+Record:80
+Time:500
+ 119 147 125 175
+k=175
+ 95 119 167 185
+k=185
+Simed:3838
+Record:80
+Time:500
+ 49 121 73 74
+k=121
+ 44 85 112 76
+k=112
+Simed:3947
+Record:80
+Time:500
+ 31 58 57 67
+k=67
+ 25 50 70 68
+k=70
+Simed:4584
+Record:80
+Time:500
+ 17 19 32 29
+k=32
+ 7 19 47 24
+k=47
+Simed:6467
+Record:80
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:261720
+Record:80
+sun.jdbc.odbc.JdbcOdbcConnection@12bf469500
+Record:81
+Time:500
+ 1 2 0 1
+k=2
+ 1 2 0 1
+k=2
+Simed:2568
+Record:81
+Time:500
+ 2 1 1 0
+k=2
+ 3 1 0 0
+k=3
+Simed:2764
+Record:81
+Time:500
+ 36 20 15 19
+k=36
+ 36 19 15 20
+k=36
+Simed:2574
+Record:81
+Time:500
+ 112 62 83 52
+k=112
+ 138 59 42 70
+k=138
+Simed:3229
+Record:81
+Time:500
+ 288 177 203 289
+k=289
+ 340 172 188 257
+k=340
+Simed:3817
+Record:81
+Time:500
+ 235 280 287 185
+k=287
+ 290 269 232 196
+k=290
+Simed:4095
+Record:81
+Time:500
+ 406 336 369 643
+k=643
+ 403 420 403 528
+k=528
+Simed:5146
+Record:81
+sun.jdbc.odbc.JdbcOdbcConnection@1da6112500
+Record:82
+Time:500
+ 2 0 0 1
+k=2
+ 2 0 0 1
+k=2
+Simed:2650
+Record:82
+Time:500
+ 19 12 3 6
+k=19
+ 18 10 5 7
+k=18
+Simed:2783
+Record:82
+Time:500
+ 79 46 39 50
+k=79
+ 63 48 37 66
+k=66
+Simed:3021
+Record:82
+Time:500
+ 228 164 157 196
+k=228
+ 247 158 136 204
+k=247
+Simed:3536
+Record:82
+Time:500
+ 441 360 355 550
+k=550
+ 443 400 386 477
+k=477
+Simed:4538
+Record:82
+sun.jdbc.odbc.JdbcOdbcConnection@1bf48de500
+Record:83
+Time:500
+ 3 0 1 2
+k=3
+ 2 0 2 2
+k=2
+Simed:2616
+Record:83
+Time:500
+ 19 9 7 7
+k=19
+ 17 11 5 9
+k=17
+Simed:2759
+Record:83
+Time:500
+ 62 60 50 42
+k=62
+ 75 40 32 67
+k=75
+Simed:2964
+Record:83
+Time:500
+ 215 159 163 178
+k=215
+ 224 163 139 189
+k=224
+Simed:3483
+Record:83
+Time:500
+ 478 344 356 545
+k=545
+ 400 398 430 495
+k=495
+Simed:4586
+Record:83
+sun.jdbc.odbc.JdbcOdbcConnection@1548b94500
+Record:84
+Time:500
+ 9 0 0 0
+k=9
+ 3 2 3 1
+k=3
+Simed:2472
+Record:84
+Time:500
+ 9 9 7 8
+k=9
+ 15 5 4 9
+k=15
+Simed:2739
+Record:84
+Time:500
+ 73 73 53 44
+k=73
+ 92 52 34 65
+k=92
+Simed:3006
+Record:84
+Time:500
+ 189 133 149 184
+k=189
+ 216 148 122 169
+k=216
+Simed:3416
+Record:84
+Time:500
+ 457 342 325 588
+k=588
+ 430 385 443 454
+k=454
+Simed:4534
+Record:84
+sun.jdbc.odbc.JdbcOdbcConnection@197f7f4500
+Record:85
+Time:500
+ 0 0 1 0
+k=1
+ 1 0 0 0
+k=1
+Simed:2591
+Record:85
+Time:500
+ 10 11 5 8
+k=11
+ 11 4 4 15
+k=15
+Simed:2701
+Record:85
+Time:500
+ 29 14 9 7
+k=29
+ 27 7 8 17
+k=27
+Simed:2952
+Record:85
+Time:500
+ 78 47 46 53
+k=78
+ 91 44 36 53
+k=91
+Simed:2982
+Record:85
+Time:500
+ 203 119 135 162
+k=203
+ 195 118 132 174
+k=195
+Simed:3635
+Record:85
+Time:500
+ 252 224 198 318
+k=318
+ 246 195 227 324
+k=324
+Simed:4235
+Record:85
+Time:500
+ 131 265 217 223
+k=265
+ 137 221 229 249
+k=249
+Simed:4342
+Record:85
+Time:500
+ 98 178 115 167
+k=178
+ 74 146 168 170
+k=170
+Simed:4736
+Record:85
+Time:500
+ 76 107 120 123
+k=123
+ 50 88 167 121
+k=167
+Simed:6836
+Record:85
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:252069
+Record:85
+sun.jdbc.odbc.JdbcOdbcConnection@e54538500
+Record:86
+Time:500
+ 4 0 2 0
+k=4
+ 2 2 1 1
+k=2
+Simed:2552
+Record:86
+Time:500
+ 15 12 7 5
+k=15
+ 13 8 8 10
+k=13
+Simed:2798
+Record:86
+Time:500
+ 87 54 49 35
+k=87
+ 79 54 26 66
+k=79
+Simed:3103
+Record:86
+Time:500
+ 220 157 149 214
+k=220
+ 228 172 123 217
+k=228
+Simed:3653
+Record:86
+Time:500
+ 468 335 343 523
+k=523
+ 432 364 409 464
+k=464
+Simed:4454
+Record:86
+sun.jdbc.odbc.JdbcOdbcConnection@93a0d8500
+Record:87
+Time:500
+ 5 0 2 1
+k=5
+ 3 3 1 1
+k=3
+Simed:2456
+Record:87
+Time:500
+ 17 13 3 4
+k=17
+ 22 3 3 9
+k=22
+Simed:2806
+Record:87
+Time:500
+ 77 54 40 38
+k=77
+ 81 42 27 59
+k=81
+Simed:3072
+Record:87
+Time:500
+ 237 131 148 195
+k=237
+ 228 167 131 185
+k=228
+Simed:3508
+Record:87
+Time:500
+ 475 365 329 588
+k=588
+ 463 388 396 510
+k=510
+Simed:4581
+Record:87
+sun.jdbc.odbc.JdbcOdbcConnection@142c565500
+Record:88
+Time:500
+ 1 2 1 0
+k=2
+ 2 1 0 1
+k=2
+Simed:2561
+Record:88
+Time:500
+ 4 3 3 1
+k=4
+ 7 1 0 3
+k=7
+Simed:2816
+Record:88
+Time:500
+ 26 18 18 12
+k=26
+ 30 22 4 18
+k=30
+Simed:2978
+Record:88
+Time:500
+ 142 49 71 78
+k=142
+ 143 67 49 81
+k=143
+Simed:3269
+Record:88
+Time:500
+ 278 194 198 267
+k=278
+ 298 208 178 253
+k=298
+Simed:3931
+Record:88
+Time:500
+ 213 275 270 257
+k=275
+ 200 205 276 334
+k=334
+Simed:4262
+Record:88
+Time:500
+ 141 301 220 250
+k=301
+ 166 218 293 235
+k=293
+Simed:4520
+Record:88
+Time:500
+ 108 167 145 160
+k=167
+ 80 139 202 159
+k=202
+Simed:4765
+Record:88
+Time:500
+ 90 86 129 104
+k=129
+ 50 71 185 103
+k=185
+Simed:6824
+Record:88
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:251980
+Record:88
+sun.jdbc.odbc.JdbcOdbcConnection@1a24135500
+Record:89
+Time:500
+ 0 1 0 2
+k=2
+ 2 0 0 1
+k=2
+Simed:2654
+Record:89
+Time:500
+ 12 6 7 7
+k=12
+ 7 9 6 10
+k=10
+Simed:2753
+Record:89
+Time:500
+ 32 23 18 21
+k=32
+ 39 20 9 26
+k=39
+Simed:3015
+Record:89
+Time:500
+ 130 93 94 105
+k=130
+ 143 114 80 85
+k=143
+Simed:3368
+Record:89
+Time:500
+ 557 369 341 469
+k=557
+ 478 445 390 423
+k=478
+Simed:4622
+Record:89
+sun.jdbc.odbc.JdbcOdbcConnection@41a882500
+Record:90
+Time:500
+ 0 3 0 0
+k=3
+ 1 1 0 1
+k=1
+Simed:2620
+Record:90
+Time:500
+ 1 3 0 1
+k=3
+ 3 0 0 2
+k=3
+Simed:2820
+Record:90
+Time:500
+ 6 7 2 6
+k=7
+ 10 4 0 7
+k=10
+Simed:2971
+Record:90
+Time:500
+ 17 16 8 6
+k=17
+ 21 11 4 11
+k=21
+Simed:3107
+Record:90
+Time:500
+ 77 36 46 47
+k=77
+ 73 39 23 71
+k=73
+Simed:3472
+Record:90
+Time:500
+ 259 129 129 181
+k=259
+ 262 155 104 177
+k=262
+Simed:4051
+Record:90
+Time:500
+ 472 352 381 751
+k=751
+ 424 492 440 600
+k=600
+Simed:5394
+Record:90
+sun.jdbc.odbc.JdbcOdbcConnection@7aa91b500
+Record:91
+Time:500
+ 2 2 0 0
+k=2
+ 2 2 0 0
+k=2
+Simed:2617
+Record:91
+Time:500
+ 18 11 10 6
+k=18
+ 20 8 6 11
+k=20
+Simed:2799
+Record:91
+Time:500
+ 70 61 47 49
+k=70
+ 89 46 30 62
+k=89
+Simed:3064
+Record:91
+Time:500
+ 217 146 140 183
+k=217
+ 224 168 110 184
+k=224
+Simed:3578
+Record:91
+Time:500
+ 495 361 343 634
+k=634
+ 449 417 438 529
+k=529
+Simed:4780
+Record:91
+sun.jdbc.odbc.JdbcOdbcConnection@1b206f500
+Record:92
+Time:500
+ 2 0 1 0
+k=2
+ 1 1 0 1
+k=1
+Simed:2668
+Record:92
+Time:500
+ 15 11 7 11
+k=15
+ 19 10 4 11
+k=19
+Simed:2831
+Record:92
+Time:500
+ 69 50 53 37
+k=69
+ 70 41 45 53
+k=70
+Simed:3077
+Record:92
+Time:500
+ 209 158 137 206
+k=209
+ 228 179 121 182
+k=228
+Simed:3463
+Record:92
+Time:500
+ 457 339 327 571
+k=571
+ 429 383 391 491
+k=491
+Simed:4652
+Record:92
+sun.jdbc.odbc.JdbcOdbcConnection@1d334a8500
+Record:93
+Time:500
+ 2 1 0 4
+k=4
+ 2 1 1 3
+k=3
+Simed:2587
+Record:93
+Time:500
+ 6 7 2 1
+k=7
+ 9 4 2 1
+k=9
+Simed:2805
+Record:93
+Time:500
+ 9 11 5 6
+k=11
+ 13 4 4 10
+k=13
+Simed:2955
+Record:93
+Time:500
+ 18 14 7 7
+k=18
+ 23 9 4 10
+k=23
+Simed:3201
+Record:93
+Time:500
+ 89 54 55 55
+k=89
+ 89 65 31 68
+k=89
+Simed:3496
+Record:93
+Time:500
+ 363 201 225 254
+k=363
+ 347 256 200 240
+k=347
+Simed:4324
+Record:93
+Time:500
+ 495 735 650 400
+k=735
+ 511 594 640 535
+k=640
+Simed:5693
+Record:93
+Time:500
+ 218 387 442 255
+k=442
+ 293 334 389 286
+k=389
+Simed:5168
+Record:93
+Time:500
+ 141 348 265 280
+k=348
+ 186 247 324 277
+k=324
+Simed:5573
+Record:93
+Time:500
+ 148 154 184 153
+k=184
+ 91 135 219 194
+k=219
+Simed:7713
+Record:93
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:258191
+Record:93
+sun.jdbc.odbc.JdbcOdbcConnection@1513f3500
+Record:94
+Time:500
+ 0 1 0 0
+k=1
+ 0 1 0 0
+k=1
+Simed:2657
+Record:94
+Time:500
+ 5 5 2 1
+k=5
+ 5 2 2 4
+k=5
+Simed:2762
+Record:94
+Time:500
+ 46 18 24 14
+k=46
+ 33 26 15 28
+k=33
+Simed:2955
+Record:94
+Time:500
+ 116 100 75 76
+k=116
+ 128 75 72 92
+k=128
+Simed:3352
+Record:94
+Time:500
+ 320 212 216 300
+k=320
+ 326 212 221 289
+k=326
+Simed:4015
+Record:94
+Time:500
+ 203 300 267 271
+k=300
+ 175 242 290 334
+k=334
+Simed:4123
+Record:94
+Time:500
+ 122 290 209 216
+k=290
+ 162 200 256 219
+k=256
+Simed:4367
+Record:94
+Time:500
+ 89 163 147 132
+k=163
+ 65 140 189 137
+k=189
+Simed:4776
+Record:94
+Time:500
+ 94 105 140 91
+k=140
+ 59 78 189 104
+k=189
+Simed:6957
+Record:94
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:265181
+Record:94
+sun.jdbc.odbc.JdbcOdbcConnection@f1c8f0500
+Record:95
+Time:500
+ 2 1 0 1
+k=2
+ 0 1 0 3
+k=3
+Simed:2507
+Record:95
+Time:500
+ 16 13 10 8
+k=16
+ 24 5 7 11
+k=24
+Simed:2819
+Record:95
+Time:500
+ 88 64 59 44
+k=88
+ 87 63 41 64
+k=87
+Simed:3033
+Record:95
+Time:500
+ 194 133 169 199
+k=199
+ 225 174 112 184
+k=225
+Simed:3476
+Record:95
+Time:500
+ 586 316 339 499
+k=586
+ 522 410 382 426
+k=522
+Simed:4601
+Record:95
+sun.jdbc.odbc.JdbcOdbcConnection@7e5c86500
+Record:96
+Time:500
+ 2 1 1 4
+k=4
+ 3 2 3 0
+k=3
+Simed:2585
+Record:96
+Time:500
+ 7 5 1 2
+k=7
+ 5 3 2 5
+k=5
+Simed:2702
+Record:96
+Time:500
+ 37 24 18 20
+k=37
+ 49 17 11 22
+k=49
+Simed:2948
+Record:96
+Time:500
+ 126 110 106 86
+k=126
+ 171 105 66 86
+k=171
+Simed:3281
+Record:96
+Time:500
+ 562 325 315 460
+k=562
+ 469 399 370 424
+k=469
+Simed:4579
+Record:96
+sun.jdbc.odbc.JdbcOdbcConnection@da431b500
+Record:97
+Time:500
+ 3 3 0 0
+k=3
+ 4 2 0 0
+k=4
+Simed:2596
+Record:97
+Time:500
+ 13 8 15 11
+k=15
+ 22 7 3 15
+k=22
+Simed:2729
+Record:97
+Time:500
+ 61 30 29 32
+k=61
+ 61 30 23 38
+k=61
+Simed:2875
+Record:97
+Time:500
+ 149 93 98 132
+k=149
+ 169 95 82 126
+k=169
+Simed:3325
+Record:97
+Time:500
+ 305 201 208 305
+k=305
+ 287 189 226 317
+k=317
+Simed:3934
+Record:97
+Time:500
+ 103 144 128 169
+k=169
+ 78 129 169 168
+k=169
+Simed:3823
+Record:97
+Time:500
+ 56 95 73 105
+k=105
+ 50 82 114 83
+k=114
+Simed:4048
+Record:97
+Time:500
+ 40 50 44 56
+k=56
+ 25 45 83 37
+k=83
+Simed:4501
+Record:97
+Time:500
+ 9 14 29 25
+k=29
+ 13 13 34 17
+k=34
+Simed:6477
+Record:97
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:255654
+Record:97
+sun.jdbc.odbc.JdbcOdbcConnection@6c7407500
+Record:98
+Time:500
+ 3 0 3 1
+k=3
+ 3 1 0 3
+k=3
+Simed:2354
+Record:98
+Time:500
+ 22 7 6 8
+k=22
+ 16 9 5 13
+k=16
+Simed:2753
+Record:98
+Time:500
+ 58 33 54 45
+k=58
+ 62 46 34 48
+k=62
+Simed:2779
+Record:98
+Time:500
+ 212 137 160 200
+k=212
+ 226 166 119 198
+k=226
+Simed:3492
+Record:98
+Time:500
+ 478 335 308 562
+k=562
+ 450 372 379 482
+k=482
+Simed:4564
+Record:98
+sun.jdbc.odbc.JdbcOdbcConnection@8eb8bf500
+Record:99
+Time:500
+ 3 0 1 3
+k=3
+ 3 1 1 2
+k=3
+Simed:2476
+Record:99
+Time:500
+ 15 10 9 16
+k=16
+ 16 13 8 13
+k=16
+Simed:2720
+Record:99
+Time:500
+ 36 33 19 21
+k=36
+ 44 21 15 29
+k=44
+Simed:2950
+Record:99
+Time:500
+ 153 94 108 85
+k=153
+ 177 93 78 92
+k=177
+Simed:3352
+Record:99
+Time:500
+ 600 352 352 502
+k=600
+ 485 428 432 461
+k=485
+Simed:4673
+Record:99
+sun.jdbc.odbc.JdbcOdbcConnection@19ca904500
+Record:100
+Time:500
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:2581
+Record:100
+Time:500
+ 11 4 3 2
+k=11
+ 6 6 2 6
+k=6
+Simed:2735
+Record:100
+Time:500
+ 40 33 20 26
+k=40
+ 52 23 13 31
+k=52
+Simed:2979
+Record:100
+Time:500
+ 140 106 90 112
+k=140
+ 166 103 76 103
+k=166
+Simed:3346
+Record:100
+Time:500
+ 487 281 304 443
+k=487
+ 370 372 383 390
+k=390
+Simed:4066
+Record:100
+sun.jdbc.odbc.JdbcOdbcConnection@1d4b906500
+Record:101
+成功生成（总时间：6 分钟 26 秒）
