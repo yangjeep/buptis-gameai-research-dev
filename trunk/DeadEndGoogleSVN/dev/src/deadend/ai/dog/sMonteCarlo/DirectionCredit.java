@@ -15,7 +15,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package deadend.ai.dog.monteCarlo;
+package deadend.ai.dog.sMonteCarlo;
 
 import deadend.globalenum.Directions;
 
@@ -41,22 +41,22 @@ public class DirectionCredit {
         int k=0;
         if(d==Directions.Down){
             k=this.credit.get(0);
-            k+=1;
+            k+=2;
             this.credit.set(0, k);
         }
         if(d==Directions.Up){
             k=this.credit.get(1);
-            k+=1;
+            k+=2;
             this.credit.set(1, k);
         }
         if(d==Directions.Left){
             k=this.credit.get(2);
-            k+=1;
+            k+=2;
             this.credit.set(2, k);
         }
         if(d==Directions.Right){
             k=this.credit.get(3);
-            k+=1;
+            k+=2;
             this.credit.set(3, k);
         }
     }

@@ -1,0 +1,5857 @@
+run:
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:477
+Record:1
+Time:100
+ 2 2 1 0
+k=2
+ 2 1 2 0
+k=2
+Simed:581
+Record:1
+Time:100
+ 2 2 4 1
+k=4
+ 3 3 1 2
+k=3
+Simed:615
+Record:1
+Time:100
+ 23 13 16 13
+k=23
+ 25 14 11 15
+k=25
+Simed:681
+Record:1
+Time:100
+ 73 32 53 63
+k=73
+ 86 38 42 55
+k=86
+Simed:853
+Record:1
+Time:100
+ 40 54 60 51
+k=60
+ 38 44 73 50
+k=73
+Simed:889
+Record:1
+Time:100
+ 14 22 11 25
+k=25
+ 9 15 23 25
+k=25
+Simed:858
+Record:1
+Time:100
+ 6 23 12 6
+k=23
+ 4 14 14 15
+k=15
+Simed:965
+Record:1
+Time:100
+ 9 6 5 7
+k=9
+ 5 7 8 7
+k=8
+Simed:1361
+Record:1
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55568
+Record:1
+sun.jdbc.odbc.JdbcOdbcConnection@133796100
+Record:2
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:531
+Record:2
+Time:100
+ 4 1 2 0
+k=4
+ 2 3 0 2
+k=3
+Simed:604
+Record:2
+Time:100
+ 17 11 11 5
+k=17
+ 12 11 11 10
+k=12
+Simed:656
+Record:2
+Time:100
+ 54 30 24 44
+k=54
+ 54 34 20 44
+k=54
+Simed:709
+Record:2
+Time:100
+ 106 74 72 133
+k=133
+ 108 94 87 96
+k=108
+Simed:1020
+Record:2
+sun.jdbc.odbc.JdbcOdbcConnection@1632c2d100
+Record:3
+Time:100
+ 0 1 0 0
+k=1
+ 0 0 0 1
+k=1
+Simed:558
+Record:3
+Time:100
+ 0 1 0 1
+k=1
+ 1 1 0 0
+k=1
+Simed:603
+Record:3
+Time:100
+ 2 0 0 0
+k=2
+ 0 0 1 1
+k=1
+Simed:645
+Record:3
+Time:100
+ 7 8 5 7
+k=8
+ 11 3 2 11
+k=11
+Simed:686
+Record:3
+Time:100
+ 12 15 8 11
+k=15
+ 13 10 7 16
+k=16
+Simed:750
+Record:3
+Time:100
+ 20 14 11 12
+k=20
+ 24 7 6 20
+k=24
+Simed:816
+Record:3
+Time:100
+ 84 38 51 63
+k=84
+ 80 45 48 63
+k=80
+Simed:1011
+Record:3
+Time:100
+ 65 67 68 71
+k=71
+ 48 73 76 74
+k=76
+Simed:1171
+Record:3
+Time:100
+ 42 48 73 36
+k=73
+ 36 40 82 41
+k=82
+Simed:1628
+Record:3
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56818
+Record:3
+sun.jdbc.odbc.JdbcOdbcConnection@15cda3f100
+Record:4
+Time:100
+ 0 0 0 1
+k=1
+ 0 0 1 0
+k=1
+Simed:563
+Record:4
+Time:100
+ 1 2 0 0
+k=2
+ 2 0 0 1
+k=2
+Simed:605
+Record:4
+Time:100
+ 2 1 0 0
+k=2
+ 1 0 0 2
+k=2
+Simed:635
+Record:4
+Time:100
+ 19 15 8 6
+k=19
+ 18 7 10 13
+k=18
+Simed:707
+Record:4
+Time:100
+ 55 31 24 30
+k=55
+ 60 34 21 25
+k=60
+Simed:771
+Record:4
+Time:100
+ 71 49 33 72
+k=72
+ 60 49 54 62
+k=62
+Simed:912
+Record:4
+Time:100
+ 94 136 130 90
+k=136
+ 97 125 114 114
+k=125
+Simed:1175
+Record:4
+Time:100
+ 34 77 101 46
+k=101
+ 52 60 85 61
+k=85
+Simed:1056
+Record:4
+Time:100
+ 40 61 34 29
+k=61
+ 28 43 61 32
+k=61
+Simed:1106
+Record:4
+Time:100
+ 19 34 35 24
+k=35
+ 19 26 43 24
+k=43
+Simed:1588
+Record:4
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:52171
+Record:4
+sun.jdbc.odbc.JdbcOdbcConnection@1df38fd100
+Record:5
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 0 1
+k=1
+Simed:546
+Record:5
+Time:100
+ 2 1 1 1
+k=2
+ 4 1 0 0
+k=4
+Simed:589
+Record:5
+Time:100
+ 19 7 6 12
+k=19
+ 12 14 3 15
+k=15
+Simed:639
+Record:5
+Time:100
+ 44 23 26 35
+k=44
+ 44 30 18 36
+k=44
+Simed:694
+Record:5
+Time:100
+ 88 66 67 118
+k=118
+ 80 74 79 106
+k=106
+Simed:971
+Record:5
+sun.jdbc.odbc.JdbcOdbcConnection@c8f6f8100
+Record:6
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:555
+Record:6
+Time:100
+ 3 2 2 2
+k=3
+ 6 2 0 1
+k=6
+Simed:584
+Record:6
+Time:100
+ 21 13 8 13
+k=21
+ 20 12 9 14
+k=20
+Simed:638
+Record:6
+Time:100
+ 49 24 21 36
+k=49
+ 50 20 24 36
+k=50
+Simed:707
+Record:6
+Time:100
+ 82 75 55 94
+k=94
+ 86 71 69 80
+k=86
+Simed:878
+Record:6
+sun.jdbc.odbc.JdbcOdbcConnection@1617189100
+Record:7
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:511
+Record:7
+Time:100
+ 4 3 1 3
+k=4
+ 4 3 0 4
+k=4
+Simed:574
+Record:7
+Time:100
+ 12 11 11 13
+k=13
+ 10 14 5 18
+k=18
+Simed:640
+Record:7
+Time:100
+ 40 25 21 27
+k=40
+ 44 29 14 26
+k=44
+Simed:718
+Record:7
+Time:100
+ 122 78 68 113
+k=122
+ 123 85 75 98
+k=123
+Simed:962
+Record:7
+sun.jdbc.odbc.JdbcOdbcConnection@d19bc8100
+Record:8
+Time:100
+ 0 0 1 1
+k=1
+ 0 1 1 0
+k=1
+Simed:530
+Record:8
+Time:100
+ 4 1 0 0
+k=4
+ 3 0 1 1
+k=3
+Simed:569
+Record:8
+Time:100
+ 11 3 6 13
+k=13
+ 14 6 5 8
+k=14
+Simed:628
+Record:8
+Time:100
+ 29 18 14 11
+k=29
+ 25 15 16 16
+k=25
+Simed:678
+Record:8
+Time:100
+ 62 37 40 60
+k=62
+ 60 46 39 54
+k=60
+Simed:835
+Record:8
+Time:100
+ 40 65 45 49
+k=65
+ 39 45 55 60
+k=60
+Simed:875
+Record:8
+Time:100
+ 26 59 44 46
+k=59
+ 25 50 49 51
+k=51
+Simed:886
+Record:8
+Time:100
+ 21 35 23 43
+k=43
+ 14 38 32 38
+k=38
+Simed:1002
+Record:8
+Time:100
+ 19 20 27 17
+k=27
+ 8 8 46 21
+k=46
+Simed:1421
+Record:8
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:52217
+Record:8
+sun.jdbc.odbc.JdbcOdbcConnection@8bdcd2100
+Record:9
+Time:100
+ 0 0 1 0
+k=1
+ 0 0 0 1
+k=1
+Simed:537
+Record:9
+Time:100
+ 1 1 0 1
+k=1
+ 1 1 0 1
+k=1
+Simed:579
+Record:9
+Time:100
+ 13 11 9 6
+k=13
+ 13 8 7 11
+k=13
+Simed:617
+Record:9
+Time:100
+ 37 13 21 31
+k=37
+ 30 17 24 31
+k=31
+Simed:640
+Record:9
+Time:100
+ 40 37 47 62
+k=62
+ 41 43 39 63
+k=63
+Simed:804
+Record:9
+Time:100
+ 34 73 51 53
+k=73
+ 49 45 51 66
+k=66
+Simed:901
+Record:9
+Time:100
+ 22 64 32 52
+k=64
+ 31 40 49 50
+k=50
+Simed:935
+Record:9
+Time:100
+ 19 36 30 22
+k=36
+ 11 24 39 33
+k=39
+Simed:973
+Record:9
+Time:100
+ 13 24 34 15
+k=34
+ 9 19 34 24
+k=34
+Simed:1462
+Record:9
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:53786
+Record:9
+sun.jdbc.odbc.JdbcOdbcConnection@aa37a6100
+Record:10
+Time:100
+ 0 0 0 2
+k=2
+ 1 0 0 1
+k=1
+Simed:532
+Record:10
+Time:100
+ 1 2 1 1
+k=2
+ 3 1 1 0
+k=3
+Simed:568
+Record:10
+Time:100
+ 3 2 1 3
+k=3
+ 3 1 0 5
+k=5
+Simed:613
+Record:10
+Time:100
+ 14 7 4 7
+k=14
+ 16 7 5 4
+k=16
+Simed:671
+Record:10
+Time:100
+ 67 31 37 40
+k=67
+ 61 38 42 34
+k=61
+Simed:816
+Record:10
+Time:100
+ 86 44 45 70
+k=86
+ 64 52 41 88
+k=88
+Simed:917
+Record:10
+Time:100
+ 30 76 55 49
+k=76
+ 42 59 59 50
+k=59
+Simed:942
+Record:10
+Time:100
+ 19 38 37 26
+k=38
+ 13 28 51 28
+k=51
+Simed:967
+Record:10
+Time:100
+ 20 22 38 24
+k=38
+ 11 25 46 22
+k=46
+Simed:1227
+Record:10
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:51042
+Record:10
+sun.jdbc.odbc.JdbcOdbcConnection@1275d39100
+Record:11
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:559
+Record:11
+Time:100
+ 0 1 0 0
+k=1
+ 0 1 0 0
+k=1
+Simed:584
+Record:11
+Time:100
+ 2 0 2 1
+k=2
+ 1 2 1 1
+k=2
+Simed:606
+Record:11
+Time:100
+ 14 9 6 9
+k=14
+ 15 8 4 11
+k=15
+Simed:650
+Record:11
+Time:100
+ 63 38 26 35
+k=63
+ 76 32 29 25
+k=76
+Simed:808
+Record:11
+Time:100
+ 75 50 44 73
+k=75
+ 67 49 57 69
+k=69
+Simed:933
+Record:11
+Time:100
+ 34 65 55 51
+k=65
+ 35 41 68 61
+k=68
+Simed:956
+Record:11
+Time:100
+ 25 33 36 38
+k=38
+ 17 31 48 36
+k=48
+Simed:1008
+Record:11
+Time:100
+ 16 17 18 14
+k=18
+ 7 10 38 10
+k=38
+Simed:1203
+Record:11
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:51566
+Record:11
+sun.jdbc.odbc.JdbcOdbcConnection@105d88a100
+Record:12
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:553
+Record:12
+Time:100
+ 1 1 3 0
+k=3
+ 1 0 2 2
+k=2
+Simed:596
+Record:12
+Time:100
+ 8 4 3 2
+k=8
+ 10 3 0 4
+k=10
+Simed:635
+Record:12
+Time:100
+ 25 12 20 7
+k=25
+ 23 19 10 12
+k=23
+Simed:678
+Record:12
+Time:100
+ 64 21 33 50
+k=64
+ 58 33 33 44
+k=58
+Simed:781
+Record:12
+Time:100
+ 44 51 49 39
+k=51
+ 32 39 50 62
+k=62
+Simed:832
+Record:12
+Time:100
+ 17 76 44 55
+k=76
+ 32 54 54 52
+k=54
+Simed:881
+Record:12
+Time:100
+ 22 26 32 39
+k=39
+ 15 27 43 34
+k=43
+Simed:1029
+Record:12
+Time:100
+ 13 25 23 17
+k=25
+ 7 15 38 18
+k=38
+Simed:1416
+Record:12
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:57815
+Record:12
+sun.jdbc.odbc.JdbcOdbcConnection@1b60280100
+Record:13
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:551
+Record:13
+Time:100
+ 2 4 1 0
+k=4
+ 3 2 0 2
+k=3
+Simed:589
+Record:13
+Time:100
+ 5 1 5 5
+k=5
+ 5 4 2 5
+k=5
+Simed:634
+Record:13
+Time:100
+ 28 9 12 16
+k=28
+ 22 21 13 9
+k=22
+Simed:698
+Record:13
+Time:100
+ 66 46 40 65
+k=66
+ 62 47 56 52
+k=62
+Simed:852
+Record:13
+Time:100
+ 42 70 63 62
+k=70
+ 40 55 65 77
+k=77
+Simed:893
+Record:13
+Time:100
+ 34 57 45 61
+k=61
+ 33 55 50 59
+k=59
+Simed:921
+Record:13
+Time:100
+ 13 30 27 26
+k=30
+ 11 25 40 20
+k=40
+Simed:961
+Record:13
+Time:100
+ 5 14 19 13
+k=19
+ 9 8 14 20
+k=20
+Simed:1342
+Record:13
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54270
+Record:13
+sun.jdbc.odbc.JdbcOdbcConnection@18b81e3100
+Record:14
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:500
+Record:14
+Time:100
+ 3 3 1 3
+k=3
+ 7 2 0 1
+k=7
+Simed:564
+Record:14
+Time:100
+ 21 13 8 11
+k=21
+ 17 20 10 6
+k=20
+Simed:598
+Record:14
+Time:100
+ 53 13 18 45
+k=53
+ 43 33 26 27
+k=43
+Simed:706
+Record:14
+Time:100
+ 67 62 60 78
+k=78
+ 54 65 64 84
+k=84
+Simed:732
+Record:14
+sun.jdbc.odbc.JdbcOdbcConnection@1e845c2100
+Record:15
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:491
+Record:15
+Time:100
+ 0 4 1 0
+k=4
+ 2 0 1 2
+k=2
+Simed:596
+Record:15
+Time:100
+ 3 1 2 2
+k=3
+ 2 2 1 3
+k=3
+Simed:613
+Record:15
+Time:100
+ 16 7 7 8
+k=16
+ 14 8 7 9
+k=14
+Simed:675
+Record:15
+Time:100
+ 54 37 33 39
+k=54
+ 63 33 25 42
+k=63
+Simed:782
+Record:15
+Time:100
+ 57 47 37 63
+k=63
+ 58 37 39 70
+k=70
+Simed:881
+Record:15
+Time:100
+ 99 75 90 158
+k=158
+ 84 100 115 123
+k=123
+Simed:1101
+Record:15
+sun.jdbc.odbc.JdbcOdbcConnection@9cb0f4100
+Record:16
+Time:100
+ 1 0 0 0
+k=1
+ 0 1 0 0
+k=1
+Simed:538
+Record:16
+Time:100
+ 3 5 0 0
+k=5
+ 3 0 3 2
+k=3
+Simed:583
+Record:16
+Time:100
+ 6 6 5 2
+k=6
+ 10 3 3 3
+k=10
+Simed:609
+Record:16
+Time:100
+ 25 16 14 13
+k=25
+ 20 17 11 20
+k=20
+Simed:681
+Record:16
+Time:100
+ 70 41 48 62
+k=70
+ 69 43 43 66
+k=69
+Simed:843
+Record:16
+Time:100
+ 38 51 49 67
+k=67
+ 38 56 51 60
+k=60
+Simed:886
+Record:16
+Time:100
+ 19 47 37 32
+k=47
+ 26 41 41 27
+k=41
+Simed:912
+Record:16
+Time:100
+ 9 27 20 14
+k=27
+ 7 16 30 17
+k=30
+Simed:942
+Record:16
+Time:100
+ 16 20 29 13
+k=29
+ 7 6 41 24
+k=41
+Simed:1441
+Record:16
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:50244
+Record:16
+sun.jdbc.odbc.JdbcOdbcConnection@da6bf4100
+Record:17
+Time:100
+ 3 0 0 1
+k=3
+ 1 2 1 0
+k=2
+Simed:516
+Record:17
+Time:100
+ 3 2 1 2
+k=3
+ 3 1 2 2
+k=3
+Simed:578
+Record:17
+Time:100
+ 13 8 11 9
+k=13
+ 14 9 9 9
+k=14
+Simed:625
+Record:17
+Time:100
+ 39 30 42 35
+k=42
+ 44 37 23 42
+k=44
+Simed:742
+Record:17
+Time:100
+ 67 43 43 60
+k=67
+ 63 36 46 68
+k=68
+Simed:835
+Record:17
+Time:100
+ 27 30 28 46
+k=46
+ 23 24 40 44
+k=44
+Simed:833
+Record:17
+Time:100
+ 15 22 10 22
+k=22
+ 8 21 32 8
+k=32
+Simed:878
+Record:17
+Time:100
+ 10 15 10 7
+k=15
+ 7 8 16 11
+k=16
+Simed:941
+Record:17
+Time:100
+ 6 8 7 8
+k=8
+ 4 5 12 8
+k=12
+Simed:1309
+Record:17
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:49754
+Record:17
+sun.jdbc.odbc.JdbcOdbcConnection@1e228bc100
+Record:18
+Time:100
+ 1 0 1 0
+k=1
+ 0 1 1 0
+k=1
+Simed:497
+Record:18
+Time:100
+ 5 6 2 1
+k=6
+ 8 2 1 3
+k=8
+Simed:542
+Record:18
+Time:100
+ 11 1 2 2
+k=11
+ 8 2 4 2
+k=8
+Simed:580
+Record:18
+Time:100
+ 16 7 13 8
+k=16
+ 9 9 7 19
+k=19
+Simed:609
+Record:18
+Time:100
+ 46 32 43 57
+k=57
+ 51 43 36 48
+k=51
+Simed:782
+Record:18
+Time:100
+ 57 41 37 51
+k=57
+ 53 53 35 45
+k=53
+Simed:816
+Record:18
+Time:100
+ 26 40 32 25
+k=40
+ 19 31 45 28
+k=45
+Simed:722
+Record:18
+Time:100
+ 21 22 17 35
+k=35
+ 14 26 30 25
+k=30
+Simed:929
+Record:18
+Time:100
+ 15 24 20 17
+k=24
+ 12 11 42 11
+k=42
+Simed:1171
+Record:18
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:52930
+Record:18
+sun.jdbc.odbc.JdbcOdbcConnection@dcb03b100
+Record:19
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:544
+Record:19
+Time:100
+ 1 0 1 1
+k=1
+ 0 0 0 3
+k=3
+Simed:593
+Record:19
+Time:100
+ 7 3 2 3
+k=7
+ 7 3 0 5
+k=7
+Simed:610
+Record:19
+Time:100
+ 19 15 10 6
+k=19
+ 16 8 7 19
+k=19
+Simed:645
+Record:19
+Time:100
+ 59 45 46 58
+k=59
+ 79 36 35 58
+k=79
+Simed:835
+Record:19
+Time:100
+ 33 67 37 72
+k=72
+ 43 55 52 59
+k=59
+Simed:875
+Record:19
+Time:100
+ 16 49 25 29
+k=49
+ 26 30 33 30
+k=33
+Simed:818
+Record:19
+Time:100
+ 12 39 25 13
+k=39
+ 14 26 33 16
+k=33
+Simed:952
+Record:19
+Time:100
+ 12 25 20 10
+k=25
+ 6 16 30 15
+k=30
+Simed:1393
+Record:19
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:53561
+Record:19
+sun.jdbc.odbc.JdbcOdbcConnection@111b910100
+Record:20
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:548
+Record:20
+Time:100
+ 4 1 1 2
+k=4
+ 2 0 1 5
+k=5
+Simed:559
+Record:20
+Time:100
+ 16 18 8 16
+k=18
+ 28 11 8 11
+k=28
+Simed:624
+Record:20
+Time:100
+ 21 17 4 14
+k=21
+ 28 10 8 10
+k=28
+Simed:656
+Record:20
+Time:100
+ 70 32 48 48
+k=70
+ 71 40 25 62
+k=71
+Simed:809
+Record:20
+Time:100
+ 26 48 35 45
+k=48
+ 24 39 49 42
+k=49
+Simed:665
+Record:20
+Time:100
+ 30 60 40 47
+k=60
+ 37 39 48 53
+k=53
+Simed:940
+Record:20
+Time:100
+ 17 34 21 33
+k=34
+ 11 32 40 22
+k=40
+Simed:1026
+Record:20
+Time:100
+ 15 24 25 33
+k=33
+ 15 16 43 23
+k=43
+Simed:1468
+Record:20
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54991
+Record:20
+sun.jdbc.odbc.JdbcOdbcConnection@19113f8100
+Record:21
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:551
+Record:21
+Time:100
+ 5 2 3 2
+k=5
+ 2 3 3 4
+k=4
+Simed:596
+Record:21
+Time:100
+ 18 14 16 8
+k=18
+ 22 7 7 20
+k=22
+Simed:652
+Record:21
+Time:100
+ 34 36 38 49
+k=49
+ 46 37 26 48
+k=48
+Simed:754
+Record:21
+Time:100
+ 122 65 77 116
+k=122
+ 104 85 94 97
+k=104
+Simed:1001
+Record:21
+sun.jdbc.odbc.JdbcOdbcConnection@15e234c100
+Record:22
+Time:100
+ 0 0 0 1
+k=1
+ 0 0 0 1
+k=1
+Simed:551
+Record:22
+Time:100
+ 0 1 0 1
+k=1
+ 1 1 0 0
+k=1
+Simed:584
+Record:22
+Time:100
+ 1 1 0 2
+k=2
+ 2 1 0 1
+k=2
+Simed:636
+Record:22
+Time:100
+ 6 7 1 2
+k=7
+ 6 3 4 3
+k=6
+Simed:682
+Record:22
+Time:100
+ 13 5 5 2
+k=13
+ 11 7 2 5
+k=11
+Simed:726
+Record:22
+Time:100
+ 40 25 28 22
+k=40
+ 43 26 23 23
+k=43
+Simed:836
+Record:22
+Time:100
+ 100 158 134 74
+k=158
+ 110 112 131 113
+k=131
+Simed:1212
+Record:22
+Time:100
+ 60 84 90 66
+k=90
+ 63 99 83 55
+k=99
+Simed:1192
+Record:22
+Time:100
+ 50 61 78 29
+k=78
+ 32 39 96 51
+k=96
+Simed:1608
+Record:22
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56724
+Record:22
+sun.jdbc.odbc.JdbcOdbcConnection@55bb93100
+Record:23
+Time:100
+ 0 1 0 1
+k=1
+ 1 0 0 1
+k=1
+Simed:553
+Record:23
+Time:100
+ 0 0 0 1
+k=1
+ 0 1 0 0
+k=1
+Simed:594
+Record:23
+Time:100
+ 1 3 0 0
+k=3
+ 3 0 1 0
+k=3
+Simed:630
+Record:23
+Time:100
+ 5 1 1 1
+k=5
+ 4 1 1 2
+k=4
+Simed:683
+Record:23
+Time:100
+ 22 10 3 11
+k=22
+ 20 9 5 12
+k=20
+Simed:741
+Record:23
+Time:100
+ 87 36 38 42
+k=87
+ 61 52 44 46
+k=61
+Simed:875
+Record:23
+Time:100
+ 80 68 73 192
+k=192
+ 81 111 84 137
+k=137
+Simed:1156
+Record:23
+sun.jdbc.odbc.JdbcOdbcConnection@d66426100
+Record:24
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:562
+Record:24
+Time:100
+ 0 1 0 1
+k=1
+ 1 0 0 1
+k=1
+Simed:578
+Record:24
+Time:100
+ 7 1 0 0
+k=7
+ 4 0 2 2
+k=4
+Simed:642
+Record:24
+Time:100
+ 7 6 4 9
+k=9
+ 5 14 1 6
+k=14
+Simed:677
+Record:24
+Time:100
+ 19 14 20 21
+k=21
+ 23 17 9 25
+k=25
+Simed:766
+Record:24
+Time:100
+ 39 20 18 25
+k=39
+ 34 27 27 14
+k=34
+Simed:787
+Record:24
+Time:100
+ 97 128 161 59
+k=161
+ 104 120 120 101
+k=120
+Simed:1173
+Record:24
+sun.jdbc.odbc.JdbcOdbcConnection@968fda100
+Record:25
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:556
+Record:25
+Time:100
+ 0 1 1 1
+k=1
+ 0 0 1 2
+k=2
+Simed:605
+Record:25
+Time:100
+ 3 0 2 2
+k=3
+ 2 2 1 2
+k=2
+Simed:624
+Record:25
+Time:100
+ 11 12 5 5
+k=12
+ 15 8 3 7
+k=15
+Simed:685
+Record:25
+Time:100
+ 10 8 13 6
+k=13
+ 13 4 8 12
+k=13
+Simed:729
+Record:25
+Time:100
+ 32 12 21 18
+k=32
+ 25 18 17 23
+k=25
+Simed:811
+Record:25
+Time:100
+ 68 51 49 67
+k=68
+ 61 37 54 83
+k=83
+Simed:998
+Record:25
+Time:100
+ 29 41 31 45
+k=45
+ 25 31 40 50
+k=50
+Simed:1042
+Record:25
+Time:100
+ 21 27 17 12
+k=27
+ 18 10 32 17
+k=32
+Simed:1357
+Record:25
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55298
+Record:25
+sun.jdbc.odbc.JdbcOdbcConnection@1697b67100
+Record:26
+Time:100
+ 0 0 0 1
+k=1
+ 0 0 0 1
+k=1
+Simed:561
+Record:26
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:583
+Record:26
+Time:100
+ 5 4 0 0
+k=5
+ 4 2 1 2
+k=4
+Simed:628
+Record:26
+Time:100
+ 11 7 6 5
+k=11
+ 11 6 1 11
+k=11
+Simed:694
+Record:26
+Time:100
+ 69 31 34 38
+k=69
+ 66 34 33 39
+k=66
+Simed:827
+Record:26
+Time:100
+ 69 47 50 76
+k=76
+ 63 47 52 80
+k=80
+Simed:937
+Record:26
+Time:100
+ 86 64 92 153
+k=153
+ 65 85 95 150
+k=150
+Simed:1124
+Record:26
+sun.jdbc.odbc.JdbcOdbcConnection@1c391c3100
+Record:27
+Time:100
+ 0 0 1 1
+k=1
+ 0 1 0 1
+k=1
+Simed:528
+Record:27
+Time:100
+ 4 1 2 1
+k=4
+ 4 2 2 0
+k=4
+Simed:561
+Record:27
+Time:100
+ 14 11 8 6
+k=14
+ 20 8 5 6
+k=20
+Simed:654
+Record:27
+Time:100
+ 37 22 18 32
+k=37
+ 35 31 11 32
+k=35
+Simed:717
+Record:27
+Time:100
+ 55 46 35 69
+k=69
+ 52 43 38 72
+k=72
+Simed:848
+Record:27
+Time:100
+ 50 72 63 56
+k=72
+ 56 49 53 83
+k=83
+Simed:933
+Record:27
+Time:100
+ 26 61 45 60
+k=61
+ 31 47 57 57
+k=57
+Simed:977
+Record:27
+Time:100
+ 21 37 30 37
+k=37
+ 11 33 41 40
+k=41
+Simed:1044
+Record:27
+Time:100
+ 11 26 25 15
+k=26
+ 19 14 32 12
+k=32
+Simed:1476
+Record:27
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56305
+Record:27
+sun.jdbc.odbc.JdbcOdbcConnection@1d6747b100
+Record:28
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:552
+Record:28
+Time:100
+ 2 1 0 0
+k=2
+ 1 1 1 0
+k=1
+Simed:566
+Record:28
+Time:100
+ 9 2 2 3
+k=9
+ 6 3 2 5
+k=6
+Simed:642
+Record:28
+Time:100
+ 42 22 23 15
+k=42
+ 39 18 16 29
+k=39
+Simed:730
+Record:28
+Time:100
+ 111 56 73 119
+k=119
+ 94 84 90 91
+k=94
+Simed:991
+Record:28
+Time:100
+ 47 84 74 57
+k=84
+ 57 79 72 54
+k=79
+Simed:936
+Record:28
+Time:100
+ 36 79 91 52
+k=91
+ 41 52 110 55
+k=110
+Simed:1022
+Record:28
+Time:100
+ 20 28 36 26
+k=36
+ 11 19 47 33
+k=47
+Simed:1034
+Record:28
+Time:100
+ 4 5 11 13
+k=13
+ 3 3 19 8
+k=19
+Simed:1481
+Record:28
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56023
+Record:28
+sun.jdbc.odbc.JdbcOdbcConnection@68cb6b100
+Record:29
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 1 0
+k=1
+Simed:551
+Record:29
+Time:100
+ 6 4 1 2
+k=6
+ 9 0 2 2
+k=9
+Simed:596
+Record:29
+Time:100
+ 23 14 15 3
+k=23
+ 23 8 10 14
+k=23
+Simed:657
+Record:29
+Time:100
+ 56 29 40 29
+k=56
+ 53 23 30 48
+k=53
+Simed:753
+Record:29
+Time:100
+ 104 70 97 128
+k=128
+ 100 106 74 119
+k=119
+Simed:1017
+Record:29
+sun.jdbc.odbc.JdbcOdbcConnection@e1dac2100
+Record:30
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:558
+Record:30
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:600
+Record:30
+Time:100
+ 4 7 3 0
+k=7
+ 7 3 2 2
+k=7
+Simed:639
+Record:30
+Time:100
+ 14 6 6 2
+k=14
+ 17 1 5 5
+k=17
+Simed:676
+Record:30
+Time:100
+ 30 33 25 19
+k=33
+ 36 21 18 32
+k=36
+Simed:768
+Record:30
+Time:100
+ 65 22 27 45
+k=65
+ 56 41 22 40
+k=56
+Simed:866
+Record:30
+Time:100
+ 115 84 80 135
+k=135
+ 84 92 95 143
+k=143
+Simed:1142
+Record:30
+sun.jdbc.odbc.JdbcOdbcConnection@322bce100
+Record:31
+Time:100
+ 0 0 1 0
+k=1
+ 0 0 0 1
+k=1
+Simed:558
+Record:31
+Time:100
+ 5 0 2 4
+k=5
+ 3 3 3 2
+k=3
+Simed:563
+Record:31
+Time:100
+ 13 11 6 9
+k=13
+ 14 5 4 16
+k=16
+Simed:653
+Record:31
+Time:100
+ 31 23 20 17
+k=31
+ 37 19 14 21
+k=37
+Simed:718
+Record:31
+Time:100
+ 73 50 41 74
+k=74
+ 62 35 57 84
+k=84
+Simed:870
+Record:31
+Time:100
+ 44 59 49 55
+k=59
+ 47 43 61 56
+k=61
+Simed:894
+Record:31
+Time:100
+ 28 58 38 54
+k=58
+ 36 51 49 42
+k=51
+Simed:953
+Record:31
+Time:100
+ 25 33 32 29
+k=33
+ 16 38 40 25
+k=40
+Simed:1037
+Record:31
+Time:100
+ 27 27 25 21
+k=27
+ 12 19 50 19
+k=50
+Simed:1492
+Record:31
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54516
+Record:31
+sun.jdbc.odbc.JdbcOdbcConnection@b20352100
+Record:32
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:537
+Record:32
+Time:100
+ 8 2 1 1
+k=8
+ 4 2 2 4
+k=4
+Simed:596
+Record:32
+Time:100
+ 18 13 9 13
+k=18
+ 17 15 5 16
+k=17
+Simed:660
+Record:32
+Time:100
+ 48 25 32 41
+k=48
+ 50 37 25 34
+k=50
+Simed:731
+Record:32
+Time:100
+ 132 79 73 129
+k=132
+ 116 90 88 119
+k=119
+Simed:1034
+Record:32
+Time:100
+ 14 21 36 23
+k=36
+ 9 27 31 27
+k=31
+Simed:796
+Record:32
+Time:100
+ 3 14 4 18
+k=18
+ 9 14 12 4
+k=14
+Simed:871
+Record:32
+Time:100
+ 6 2 2 5
+k=6
+ 0 5 8 2
+k=8
+Simed:994
+Record:32
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:1386
+Record:32
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55043
+Record:32
+sun.jdbc.odbc.JdbcOdbcConnection@11410e5100
+Record:33
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:521
+Record:33
+Time:100
+ 0 0 0 2
+k=2
+ 0 2 0 0
+k=2
+Simed:554
+Record:33
+Time:100
+ 2 3 0 2
+k=3
+ 5 1 0 1
+k=5
+Simed:621
+Record:33
+Time:100
+ 0 6 1 0
+k=6
+ 6 0 1 0
+k=6
+Simed:681
+Record:33
+Time:100
+ 8 7 7 1
+k=8
+ 7 5 2 9
+k=9
+Simed:735
+Record:33
+Time:100
+ 33 19 16 20
+k=33
+ 33 23 14 18
+k=33
+Simed:822
+Record:33
+Time:100
+ 160 73 70 107
+k=160
+ 131 110 99 70
+k=131
+Simed:1143
+Record:33
+sun.jdbc.odbc.JdbcOdbcConnection@1c1f5b2100
+Record:34
+Time:100
+ 1 1 2 0
+k=2
+ 3 1 0 0
+k=3
+Simed:560
+Record:34
+Time:100
+ 3 3 0 2
+k=3
+ 5 1 0 2
+k=5
+Simed:604
+Record:34
+Time:100
+ 12 11 4 16
+k=16
+ 17 8 2 16
+k=17
+Simed:652
+Record:34
+Time:100
+ 27 19 9 14
+k=27
+ 29 12 13 15
+k=29
+Simed:706
+Record:34
+Time:100
+ 67 37 44 59
+k=67
+ 67 49 47 44
+k=67
+Simed:818
+Record:34
+Time:100
+ 41 69 53 65
+k=69
+ 44 51 64 69
+k=69
+Simed:918
+Record:34
+Time:100
+ 27 68 40 52
+k=68
+ 28 55 44 60
+k=60
+Simed:908
+Record:34
+Time:100
+ 28 33 29 35
+k=35
+ 16 37 41 31
+k=41
+Simed:1040
+Record:34
+Time:100
+ 13 19 34 14
+k=34
+ 7 15 44 14
+k=44
+Simed:1417
+Record:34
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56878
+Record:34
+sun.jdbc.odbc.JdbcOdbcConnection@17e4dee100
+Record:35
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:557
+Record:35
+Time:100
+ 1 0 1 0
+k=1
+ 0 1 1 0
+k=1
+Simed:604
+Record:35
+Time:100
+ 8 6 7 3
+k=8
+ 11 5 2 6
+k=11
+Simed:633
+Record:35
+Time:100
+ 25 24 26 27
+k=27
+ 37 27 18 20
+k=37
+Simed:731
+Record:35
+Time:100
+ 55 48 43 36
+k=55
+ 63 45 30 44
+k=63
+Simed:841
+Record:35
+Time:100
+ 57 69 68 54
+k=69
+ 50 83 58 57
+k=83
+Simed:919
+Record:35
+Time:100
+ 40 87 110 47
+k=110
+ 48 81 97 58
+k=97
+Simed:1051
+Record:35
+Time:100
+ 21 36 25 23
+k=36
+ 10 24 43 28
+k=43
+Simed:1018
+Record:35
+Time:100
+ 10 22 23 20
+k=23
+ 7 14 33 21
+k=33
+Simed:1462
+Record:35
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56493
+Record:35
+sun.jdbc.odbc.JdbcOdbcConnection@10c6cfc100
+Record:36
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:559
+Record:36
+Time:100
+ 5 2 1 0
+k=5
+ 5 2 0 1
+k=5
+Simed:597
+Record:36
+Time:100
+ 23 15 14 8
+k=23
+ 21 9 7 23
+k=23
+Simed:654
+Record:36
+Time:100
+ 45 42 26 42
+k=45
+ 53 37 27 38
+k=53
+Simed:757
+Record:36
+Time:100
+ 106 82 59 112
+k=112
+ 100 84 81 94
+k=100
+Simed:991
+Record:36
+sun.jdbc.odbc.JdbcOdbcConnection@20f237100
+Record:37
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:528
+Record:37
+Time:100
+ 2 1 2 1
+k=2
+ 2 1 0 3
+k=3
+Simed:557
+Record:37
+Time:100
+ 9 3 5 4
+k=9
+ 12 3 3 3
+k=12
+Simed:640
+Record:37
+Time:100
+ 42 22 17 17
+k=42
+ 35 22 16 25
+k=35
+Simed:725
+Record:37
+Time:100
+ 127 72 64 106
+k=127
+ 115 94 75 85
+k=115
+Simed:995
+Record:37
+sun.jdbc.odbc.JdbcOdbcConnection@82d210100
+Record:38
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:551
+Record:38
+Time:100
+ 5 2 1 0
+k=5
+ 5 1 2 0
+k=5
+Simed:600
+Record:38
+Time:100
+ 16 21 14 4
+k=21
+ 21 14 6 14
+k=21
+Simed:664
+Record:38
+Time:100
+ 14 9 21 25
+k=25
+ 25 20 6 18
+k=25
+Simed:685
+Record:38
+Time:100
+ 59 26 43 37
+k=59
+ 62 41 26 36
+k=62
+Simed:800
+Record:38
+Time:100
+ 81 42 54 72
+k=81
+ 70 50 58 71
+k=71
+Simed:942
+Record:38
+Time:100
+ 22 68 55 53
+k=68
+ 36 52 50 60
+k=60
+Simed:970
+Record:38
+Time:100
+ 21 50 33 37
+k=50
+ 14 48 46 33
+k=48
+Simed:1030
+Record:38
+Time:100
+ 11 22 24 20
+k=24
+ 8 19 24 26
+k=26
+Simed:1207
+Record:38
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:53917
+Record:38
+sun.jdbc.odbc.JdbcOdbcConnection@18e18a3100
+Record:39
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:555
+Record:39
+Time:100
+ 3 0 0 1
+k=3
+ 1 1 0 2
+k=2
+Simed:603
+Record:39
+Time:100
+ 10 6 5 2
+k=10
+ 15 4 3 1
+k=15
+Simed:633
+Record:39
+Time:100
+ 27 25 17 23
+k=27
+ 36 18 19 19
+k=36
+Simed:721
+Record:39
+Time:100
+ 123 71 85 102
+k=123
+ 102 101 84 94
+k=102
+Simed:1005
+Record:39
+sun.jdbc.odbc.JdbcOdbcConnection@44d990100
+Record:40
+Time:100
+ 1 0 0 1
+k=1
+ 1 1 0 0
+k=1
+Simed:517
+Record:40
+Time:100
+ 3 0 1 1
+k=3
+ 0 3 2 0
+k=3
+Simed:593
+Record:40
+Time:100
+ 15 9 6 6
+k=15
+ 16 8 2 10
+k=16
+Simed:649
+Record:40
+Time:100
+ 54 30 39 36
+k=54
+ 52 35 30 42
+k=52
+Simed:769
+Record:40
+Time:100
+ 95 90 73 107
+k=107
+ 101 89 87 88
+k=101
+Simed:981
+Record:40
+sun.jdbc.odbc.JdbcOdbcConnection@1320a41100
+Record:41
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:550
+Record:41
+Time:100
+ 0 0 1 1
+k=1
+ 0 0 0 2
+k=2
+Simed:598
+Record:41
+Time:100
+ 8 6 6 2
+k=8
+ 4 7 4 7
+k=7
+Simed:643
+Record:41
+Time:100
+ 25 19 20 13
+k=25
+ 30 13 16 18
+k=30
+Simed:715
+Record:41
+Time:100
+ 65 47 45 55
+k=65
+ 71 36 48 57
+k=71
+Simed:830
+Record:41
+Time:100
+ 46 55 66 55
+k=66
+ 48 41 58 75
+k=75
+Simed:916
+Record:41
+Time:100
+ 15 15 20 29
+k=29
+ 8 16 25 30
+k=30
+Simed:881
+Record:41
+Time:100
+ 7 10 9 14
+k=14
+ 6 9 16 9
+k=16
+Simed:979
+Record:41
+Time:100
+ 6 5 9 5
+k=9
+ 3 4 8 10
+k=10
+Simed:1410
+Record:41
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55764
+Record:41
+sun.jdbc.odbc.JdbcOdbcConnection@1be8711100
+Record:42
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:559
+Record:42
+Time:100
+ 3 4 0 1
+k=4
+ 4 0 1 3
+k=4
+Simed:576
+Record:42
+Time:100
+ 3 5 1 4
+k=5
+ 5 3 1 4
+k=5
+Simed:648
+Record:42
+Time:100
+ 10 8 8 2
+k=10
+ 12 3 5 8
+k=12
+Simed:678
+Record:42
+Time:100
+ 24 29 30 29
+k=30
+ 37 27 22 26
+k=37
+Simed:758
+Record:42
+Time:100
+ 61 25 25 57
+k=61
+ 44 36 35 53
+k=53
+Simed:871
+Record:42
+Time:100
+ 36 53 37 64
+k=64
+ 39 46 35 70
+k=70
+Simed:967
+Record:42
+Time:100
+ 21 37 34 27
+k=37
+ 17 35 37 30
+k=37
+Simed:976
+Record:42
+Time:100
+ 15 22 36 28
+k=36
+ 18 17 30 36
+k=36
+Simed:1502
+Record:42
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55908
+Record:42
+sun.jdbc.odbc.JdbcOdbcConnection@15b123b100
+Record:43
+Time:100
+ 1 0 0 1
+k=1
+ 0 0 0 2
+k=2
+Simed:560
+Record:43
+Time:100
+ 6 2 0 2
+k=6
+ 4 1 3 2
+k=4
+Simed:601
+Record:43
+Time:100
+ 14 11 10 10
+k=14
+ 14 9 7 15
+k=15
+Simed:640
+Record:43
+Time:100
+ 36 44 38 48
+k=48
+ 67 23 25 51
+k=67
+Simed:760
+Record:43
+Time:100
+ 129 71 61 105
+k=129
+ 101 72 90 103
+k=103
+Simed:995
+Record:43
+sun.jdbc.odbc.JdbcOdbcConnection@11b86c7100
+Record:44
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:556
+Record:44
+Time:100
+ 2 0 0 1
+k=2
+ 2 0 0 1
+k=2
+Simed:596
+Record:44
+Time:100
+ 6 2 6 2
+k=6
+ 8 3 2 3
+k=8
+Simed:627
+Record:44
+Time:100
+ 25 10 17 11
+k=25
+ 22 8 14 19
+k=22
+Simed:674
+Record:44
+Time:100
+ 61 29 30 67
+k=67
+ 55 41 36 55
+k=55
+Simed:839
+Record:44
+Time:100
+ 73 42 54 75
+k=75
+ 59 54 62 69
+k=69
+Simed:924
+Record:44
+Time:100
+ 93 66 88 156
+k=156
+ 84 87 109 123
+k=123
+Simed:1141
+Record:44
+sun.jdbc.odbc.JdbcOdbcConnection@153b2cb100
+Record:45
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 1 0
+k=1
+Simed:559
+Record:45
+Time:100
+ 5 5 1 4
+k=5
+ 9 2 0 4
+k=9
+Simed:589
+Record:45
+Time:100
+ 9 7 10 4
+k=10
+ 11 6 3 10
+k=11
+Simed:631
+Record:45
+Time:100
+ 26 17 26 33
+k=33
+ 30 27 18 27
+k=30
+Simed:721
+Record:45
+Time:100
+ 71 47 43 65
+k=71
+ 67 53 33 73
+k=73
+Simed:851
+Record:45
+Time:100
+ 49 54 67 59
+k=67
+ 40 49 68 72
+k=72
+Simed:909
+Record:45
+Time:100
+ 11 20 17 27
+k=27
+ 10 25 25 15
+k=25
+Simed:890
+Record:45
+Time:100
+ 6 15 3 16
+k=16
+ 7 10 15 8
+k=15
+Simed:965
+Record:45
+Time:100
+ 6 4 8 9
+k=9
+ 2 2 17 6
+k=17
+Simed:1430
+Record:45
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54800
+Record:45
+sun.jdbc.odbc.JdbcOdbcConnection@123a389100
+Record:46
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:557
+Record:46
+Time:100
+ 2 0 0 1
+k=2
+ 0 1 1 1
+k=1
+Simed:595
+Record:46
+Time:100
+ 2 2 3 1
+k=3
+ 4 1 1 2
+k=4
+Simed:636
+Record:46
+Time:100
+ 27 11 16 6
+k=27
+ 16 15 11 18
+k=18
+Simed:704
+Record:46
+Time:100
+ 46 19 36 34
+k=46
+ 46 25 21 43
+k=46
+Simed:786
+Record:46
+Time:100
+ 45 39 31 80
+k=80
+ 34 39 49 73
+k=73
+Simed:812
+Record:46
+Time:100
+ 25 58 48 45
+k=58
+ 28 49 46 53
+k=53
+Simed:892
+Record:46
+Time:100
+ 29 34 27 52
+k=52
+ 19 31 55 37
+k=55
+Simed:1056
+Record:46
+Time:100
+ 7 22 26 14
+k=26
+ 11 16 31 11
+k=31
+Simed:1414
+Record:46
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54843
+Record:46
+sun.jdbc.odbc.JdbcOdbcConnection@34151f100
+Record:47
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:550
+Record:47
+Time:100
+ 3 1 1 0
+k=3
+ 3 1 1 0
+k=3
+Simed:606
+Record:47
+Time:100
+ 16 15 7 9
+k=16
+ 17 10 10 10
+k=17
+Simed:652
+Record:47
+Time:100
+ 47 34 41 49
+k=49
+ 47 59 22 43
+k=59
+Simed:772
+Record:47
+Time:100
+ 114 63 77 98
+k=114
+ 98 88 71 95
+k=98
+Simed:959
+Record:47
+sun.jdbc.odbc.JdbcOdbcConnection@8eae04100
+Record:48
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 0 1
+k=1
+Simed:566
+Record:48
+Time:100
+ 0 2 3 1
+k=3
+ 1 1 2 2
+k=2
+Simed:590
+Record:48
+Time:100
+ 10 4 10 5
+k=10
+ 6 8 4 11
+k=11
+Simed:643
+Record:48
+Time:100
+ 30 25 16 22
+k=30
+ 38 17 17 21
+k=38
+Simed:717
+Record:48
+Time:100
+ 54 43 43 78
+k=78
+ 64 35 46 73
+k=73
+Simed:865
+Record:48
+Time:100
+ 39 66 61 63
+k=66
+ 38 51 60 80
+k=80
+Simed:918
+Record:48
+Time:100
+ 27 62 43 46
+k=62
+ 44 38 52 44
+k=52
+Simed:960
+Record:48
+Time:100
+ 26 38 42 31
+k=42
+ 22 34 36 45
+k=45
+Simed:1013
+Record:48
+Time:100
+ 8 14 6 9
+k=14
+ 12 6 14 5
+k=14
+Simed:1474
+Record:48
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54249
+Record:48
+sun.jdbc.odbc.JdbcOdbcConnection@1add463100
+Record:49
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:563
+Record:49
+Time:100
+ 1 2 1 0
+k=2
+ 3 0 0 1
+k=3
+Simed:594
+Record:49
+Time:100
+ 3 1 1 1
+k=3
+ 1 4 0 1
+k=4
+Simed:639
+Record:49
+Time:100
+ 10 11 5 6
+k=11
+ 13 8 6 5
+k=13
+Simed:685
+Record:49
+Time:100
+ 19 12 17 14
+k=19
+ 24 16 8 14
+k=24
+Simed:752
+Record:49
+Time:100
+ 74 44 53 69
+k=74
+ 69 74 49 48
+k=74
+Simed:936
+Record:49
+Time:100
+ 102 70 67 141
+k=141
+ 95 88 91 106
+k=106
+Simed:1119
+Record:49
+sun.jdbc.odbc.JdbcOdbcConnection@1d4d493100
+Record:50
+Time:100
+ 0 0 1 1
+k=1
+ 0 0 1 1
+k=1
+Simed:553
+Record:50
+Time:100
+ 2 4 0 1
+k=4
+ 3 1 0 3
+k=3
+Simed:601
+Record:50
+Time:100
+ 2 3 4 5
+k=5
+ 4 4 2 4
+k=4
+Simed:642
+Record:50
+Time:100
+ 9 8 8 5
+k=9
+ 14 3 7 6
+k=14
+Simed:683
+Record:50
+Time:100
+ 39 19 27 22
+k=39
+ 24 21 20 42
+k=42
+Simed:778
+Record:50
+Time:100
+ 89 48 45 96
+k=96
+ 75 46 74 83
+k=83
+Simed:955
+Record:50
+Time:100
+ 80 130 130 66
+k=130
+ 92 97 113 104
+k=113
+Simed:1109
+Record:50
+Time:100
+ 61 97 102 41
+k=102
+ 60 81 90 70
+k=90
+Simed:1127
+Record:50
+Time:100
+ 36 56 63 50
+k=63
+ 31 39 67 68
+k=68
+Simed:1154
+Record:50
+Time:100
+ 19 14 9 15
+k=19
+ 5 10 24 18
+k=24
+Simed:1631
+Record:50
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54639
+Record:50
+sun.jdbc.odbc.JdbcOdbcConnection@1e8c585100
+Record:51
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 0 1
+k=1
+Simed:536
+Record:51
+Time:100
+ 3 2 3 1
+k=3
+ 4 2 1 2
+k=4
+Simed:602
+Record:51
+Time:100
+ 23 10 8 6
+k=23
+ 19 13 9 6
+k=19
+Simed:630
+Record:51
+Time:100
+ 54 20 24 45
+k=54
+ 52 32 25 34
+k=52
+Simed:740
+Record:51
+Time:100
+ 115 85 66 133
+k=133
+ 103 86 93 117
+k=117
+Simed:1027
+Record:51
+sun.jdbc.odbc.JdbcOdbcConnection@12f41a5100
+Record:52
+Time:100
+ 0 0 1 0
+k=1
+ 0 1 0 0
+k=1
+Simed:545
+Record:52
+Time:100
+ 2 2 1 1
+k=2
+ 4 1 0 1
+k=4
+Simed:601
+Record:52
+Time:100
+ 15 9 7 9
+k=15
+ 12 10 8 10
+k=12
+Simed:642
+Record:52
+Time:100
+ 30 20 25 29
+k=30
+ 37 22 16 29
+k=37
+Simed:729
+Record:52
+Time:100
+ 58 52 49 59
+k=59
+ 51 38 50 79
+k=79
+Simed:864
+Record:52
+Time:100
+ 46 70 60 71
+k=71
+ 39 54 87 67
+k=87
+Simed:936
+Record:52
+Time:100
+ 28 53 42 34
+k=53
+ 16 50 51 40
+k=51
+Simed:942
+Record:52
+Time:100
+ 9 28 32 21
+k=32
+ 5 23 40 22
+k=40
+Simed:1040
+Record:52
+Time:100
+ 9 6 6 11
+k=11
+ 6 6 13 7
+k=13
+Simed:1445
+Record:52
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:51787
+Record:52
+sun.jdbc.odbc.JdbcOdbcConnection@391da0100
+Record:53
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:547
+Record:53
+Time:100
+ 0 4 0 0
+k=4
+ 1 1 0 2
+k=2
+Simed:602
+Record:53
+Time:100
+ 3 3 0 4
+k=4
+ 5 2 0 3
+k=5
+Simed:635
+Record:53
+Time:100
+ 5 3 3 2
+k=5
+ 5 3 2 3
+k=5
+Simed:679
+Record:53
+Time:100
+ 20 12 15 16
+k=20
+ 20 10 15 18
+k=20
+Simed:752
+Record:53
+Time:100
+ 58 66 56 44
+k=66
+ 78 60 43 43
+k=78
+Simed:911
+Record:53
+Time:100
+ 112 143 157 101
+k=157
+ 114 133 142 124
+k=142
+Simed:1240
+Record:53
+sun.jdbc.odbc.JdbcOdbcConnection@17a7706100
+Record:54
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:551
+Record:54
+Time:100
+ 1 0 3 1
+k=3
+ 1 1 1 2
+k=2
+Simed:596
+Record:54
+Time:100
+ 12 1 4 1
+k=12
+ 10 2 2 4
+k=10
+Simed:642
+Record:54
+Time:100
+ 23 16 10 13
+k=23
+ 24 14 7 17
+k=24
+Simed:711
+Record:54
+Time:100
+ 51 46 36 67
+k=67
+ 62 37 39 62
+k=62
+Simed:843
+Record:54
+Time:100
+ 68 43 39 81
+k=81
+ 73 46 59 53
+k=73
+Simed:918
+Record:54
+Time:100
+ 103 139 151 69
+k=151
+ 110 122 116 114
+k=122
+Simed:1197
+Record:54
+sun.jdbc.odbc.JdbcOdbcConnection@e85825100
+Record:55
+Time:100
+ 0 0 1 0
+k=1
+ 0 0 1 0
+k=1
+Simed:561
+Record:55
+Time:100
+ 3 1 1 0
+k=3
+ 1 2 1 1
+k=2
+Simed:591
+Record:55
+Time:100
+ 15 14 8 5
+k=15
+ 18 7 5 12
+k=18
+Simed:651
+Record:55
+Time:100
+ 28 21 21 20
+k=28
+ 33 20 10 27
+k=33
+Simed:723
+Record:55
+Time:100
+ 64 50 41 76
+k=76
+ 56 52 45 78
+k=78
+Simed:864
+Record:55
+Time:100
+ 49 64 52 66
+k=66
+ 35 56 70 70
+k=70
+Simed:922
+Record:55
+Time:100
+ 19 60 37 43
+k=60
+ 17 42 65 35
+k=65
+Simed:928
+Record:55
+Time:100
+ 29 34 28 24
+k=34
+ 12 36 39 28
+k=39
+Simed:1028
+Record:55
+Time:100
+ 12 24 23 27
+k=27
+ 8 19 41 18
+k=41
+Simed:1403
+Record:55
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55919
+Record:55
+sun.jdbc.odbc.JdbcOdbcConnection@5585dc100
+Record:56
+Time:100
+ 0 0 1 0
+k=1
+ 0 1 0 0
+k=1
+Simed:537
+Record:56
+Time:100
+ 1 1 0 1
+k=1
+ 2 1 0 0
+k=2
+Simed:598
+Record:56
+Time:100
+ 12 9 8 4
+k=12
+ 14 8 3 8
+k=14
+Simed:646
+Record:56
+Time:100
+ 38 30 31 24
+k=38
+ 43 29 20 31
+k=43
+Simed:739
+Record:56
+Time:100
+ 65 30 35 71
+k=71
+ 44 32 54 71
+k=71
+Simed:830
+Record:56
+Time:100
+ 42 60 54 46
+k=60
+ 47 37 61 57
+k=61
+Simed:875
+Record:56
+Time:100
+ 21 45 45 50
+k=50
+ 25 44 48 44
+k=48
+Simed:946
+Record:56
+Time:100
+ 9 37 17 23
+k=37
+ 15 15 36 20
+k=36
+Simed:985
+Record:56
+Time:100
+ 10 18 13 10
+k=18
+ 5 11 19 16
+k=19
+Simed:1264
+Record:56
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:52413
+Record:56
+sun.jdbc.odbc.JdbcOdbcConnection@185fe0c100
+Record:57
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:535
+Record:57
+Time:100
+ 2 0 1 1
+k=2
+ 2 1 1 0
+k=2
+Simed:577
+Record:57
+Time:100
+ 9 3 2 6
+k=9
+ 8 7 3 2
+k=8
+Simed:628
+Record:57
+Time:100
+ 38 9 22 18
+k=38
+ 29 18 19 21
+k=29
+Simed:689
+Record:57
+Time:100
+ 115 73 58 78
+k=115
+ 103 69 74 78
+k=103
+Simed:946
+Record:57
+sun.jdbc.odbc.JdbcOdbcConnection@13dcd27100
+Record:58
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:563
+Record:58
+Time:100
+ 2 0 0 2
+k=2
+ 3 1 0 0
+k=3
+Simed:568
+Record:58
+Time:100
+ 0 0 3 3
+k=3
+ 2 0 2 2
+k=2
+Simed:571
+Record:58
+Time:100
+ 21 7 4 8
+k=21
+ 17 6 6 11
+k=17
+Simed:663
+Record:58
+Time:100
+ 48 17 24 38
+k=48
+ 39 27 33 28
+k=39
+Simed:763
+Record:58
+Time:100
+ 48 51 24 77
+k=77
+ 41 52 43 64
+k=64
+Simed:875
+Record:58
+Time:100
+ 30 61 54 44
+k=61
+ 31 44 52 62
+k=62
+Simed:895
+Record:58
+Time:100
+ 18 44 28 29
+k=44
+ 18 37 34 30
+k=37
+Simed:990
+Record:58
+Time:100
+ 14 24 21 17
+k=24
+ 12 16 27 21
+k=27
+Simed:1379
+Record:58
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:51112
+Record:58
+sun.jdbc.odbc.JdbcOdbcConnection@1388e5e100
+Record:59
+Time:100
+ 0 0 1 0
+k=1
+ 0 0 1 0
+k=1
+Simed:517
+Record:59
+Time:100
+ 7 1 3 3
+k=7
+ 3 6 1 4
+k=6
+Simed:540
+Record:59
+Time:100
+ 16 4 6 11
+k=16
+ 15 10 5 7
+k=15
+Simed:522
+Record:59
+Time:100
+ 41 10 19 39
+k=41
+ 40 25 19 25
+k=40
+Simed:702
+Record:59
+Time:100
+ 78 31 42 64
+k=78
+ 41 39 57 78
+k=78
+Simed:822
+Record:59
+Time:100
+ 20 18 28 34
+k=34
+ 12 17 29 42
+k=42
+Simed:778
+Record:59
+Time:100
+ 13 20 16 17
+k=20
+ 10 14 23 19
+k=23
+Simed:832
+Record:59
+Time:100
+ 5 17 20 16
+k=20
+ 8 12 22 16
+k=22
+Simed:968
+Record:59
+Time:100
+ 3 1 3 2
+k=3
+ 0 1 4 4
+k=4
+Simed:1383
+Record:59
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:51393
+Record:59
+sun.jdbc.odbc.JdbcOdbcConnection@1757337100
+Record:60
+Time:100
+ 1 0 1 1
+k=1
+ 2 0 0 1
+k=2
+Simed:544
+Record:60
+Time:100
+ 5 1 4 6
+k=6
+ 7 3 2 4
+k=7
+Simed:581
+Record:60
+Time:100
+ 11 8 7 2
+k=11
+ 12 7 7 2
+k=12
+Simed:624
+Record:60
+Time:100
+ 29 14 14 20
+k=29
+ 28 18 13 18
+k=28
+Simed:681
+Record:60
+Time:100
+ 129 69 68 82
+k=129
+ 110 82 93 63
+k=110
+Simed:957
+Record:60
+sun.jdbc.odbc.JdbcOdbcConnection@1852a81100
+Record:61
+Time:100
+ 0 0 3 1
+k=3
+ 0 1 1 2
+k=2
+Simed:530
+Record:61
+Time:100
+ 5 4 2 2
+k=5
+ 7 3 1 2
+k=7
+Simed:582
+Record:61
+Time:100
+ 17 4 5 12
+k=17
+ 14 13 4 7
+k=14
+Simed:596
+Record:61
+Time:100
+ 26 20 22 23
+k=26
+ 32 21 15 23
+k=32
+Simed:693
+Record:61
+Time:100
+ 69 38 37 64
+k=69
+ 50 36 57 65
+k=65
+Simed:837
+Record:61
+Time:100
+ 30 17 29 32
+k=32
+ 14 17 35 42
+k=42
+Simed:828
+Record:61
+Time:100
+ 10 26 18 11
+k=26
+ 10 20 17 18
+k=20
+Simed:811
+Record:61
+Time:100
+ 8 10 7 11
+k=11
+ 5 13 7 11
+k=13
+Simed:977
+Record:61
+Time:100
+ 6 9 11 7
+k=11
+ 2 4 18 9
+k=18
+Simed:1327
+Record:61
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:50336
+Record:61
+sun.jdbc.odbc.JdbcOdbcConnection@12ddfe4100
+Record:62
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 1 0
+k=1
+Simed:519
+Record:62
+Time:100
+ 1 0 2 2
+k=2
+ 1 1 1 2
+k=2
+Simed:568
+Record:62
+Time:100
+ 18 12 12 10
+k=18
+ 19 10 5 18
+k=19
+Simed:651
+Record:62
+Time:100
+ 30 30 31 27
+k=31
+ 48 24 19 27
+k=48
+Simed:724
+Record:62
+Time:100
+ 37 31 34 54
+k=54
+ 41 32 22 61
+k=61
+Simed:809
+Record:62
+Time:100
+ 62 43 50 68
+k=68
+ 53 50 57 63
+k=63
+Simed:887
+Record:62
+Time:100
+ 19 58 46 55
+k=58
+ 34 52 49 43
+k=52
+Simed:947
+Record:62
+Time:100
+ 24 39 34 34
+k=39
+ 21 34 43 33
+k=43
+Simed:1056
+Record:62
+Time:100
+ 25 22 27 21
+k=27
+ 13 17 42 23
+k=42
+Simed:1479
+Record:62
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:50696
+Record:62
+sun.jdbc.odbc.JdbcOdbcConnection@1b5a40a100
+Record:63
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:541
+Record:63
+Time:100
+ 4 2 5 0
+k=5
+ 7 1 0 3
+k=7
+Simed:600
+Record:63
+Time:100
+ 15 10 5 7
+k=15
+ 12 11 3 11
+k=12
+Simed:640
+Record:63
+Time:100
+ 45 26 20 21
+k=45
+ 38 29 21 24
+k=38
+Simed:717
+Record:63
+Time:100
+ 59 40 40 65
+k=65
+ 44 47 47 66
+k=66
+Simed:845
+Record:63
+Time:100
+ 41 55 54 62
+k=62
+ 44 40 68 60
+k=68
+Simed:911
+Record:63
+Time:100
+ 18 58 35 38
+k=58
+ 21 49 54 25
+k=54
+Simed:926
+Record:63
+Time:100
+ 14 29 27 25
+k=29
+ 12 18 44 21
+k=44
+Simed:1032
+Record:63
+Time:100
+ 21 21 21 18
+k=21
+ 6 13 40 22
+k=40
+Simed:1434
+Record:63
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55398
+Record:63
+sun.jdbc.odbc.JdbcOdbcConnection@1b963c4100
+Record:64
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:538
+Record:64
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 0 1
+k=1
+Simed:602
+Record:64
+Time:100
+ 4 3 2 4
+k=4
+ 5 4 2 2
+k=5
+Simed:633
+Record:64
+Time:100
+ 26 18 25 19
+k=26
+ 37 22 11 18
+k=37
+Simed:721
+Record:64
+Time:100
+ 117 89 65 120
+k=120
+ 129 88 89 85
+k=129
+Simed:1011
+Record:64
+Time:100
+ 49 79 77 41
+k=79
+ 60 63 71 52
+k=71
+Simed:933
+Record:64
+Time:100
+ 37 91 91 51
+k=91
+ 59 60 94 57
+k=94
+Simed:1030
+Record:64
+Time:100
+ 26 62 64 35
+k=64
+ 27 57 70 33
+k=70
+Simed:1090
+Record:64
+Time:100
+ 18 26 25 26
+k=26
+ 13 17 47 18
+k=47
+Simed:1475
+Record:64
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:50518
+Record:64
+sun.jdbc.odbc.JdbcOdbcConnection@5e9f1100
+Record:65
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:549
+Record:65
+Time:100
+ 2 5 2 1
+k=5
+ 6 1 1 2
+k=6
+Simed:604
+Record:65
+Time:100
+ 6 2 0 0
+k=6
+ 3 1 2 2
+k=3
+Simed:631
+Record:65
+Time:100
+ 26 11 24 14
+k=26
+ 28 13 13 21
+k=28
+Simed:710
+Record:65
+Time:100
+ 59 47 45 63
+k=63
+ 56 41 44 73
+k=73
+Simed:861
+Record:65
+Time:100
+ 69 49 35 60
+k=69
+ 61 60 55 37
+k=61
+Simed:879
+Record:65
+Time:100
+ 27 62 46 58
+k=62
+ 44 52 41 56
+k=56
+Simed:959
+Record:65
+Time:100
+ 28 50 30 30
+k=50
+ 14 40 49 35
+k=49
+Simed:1026
+Record:65
+Time:100
+ 20 29 27 26
+k=29
+ 12 20 41 29
+k=41
+Simed:1266
+Record:65
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:53736
+Record:65
+sun.jdbc.odbc.JdbcOdbcConnection@e20ef8100
+Record:66
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:552
+Record:66
+Time:100
+ 3 2 0 3
+k=3
+ 3 2 0 3
+k=3
+Simed:582
+Record:66
+Time:100
+ 15 9 7 8
+k=15
+ 16 9 5 9
+k=16
+Simed:632
+Record:66
+Time:100
+ 47 22 26 41
+k=47
+ 47 23 24 42
+k=47
+Simed:738
+Record:66
+Time:100
+ 96 85 82 105
+k=105
+ 105 83 76 104
+k=105
+Simed:960
+Record:66
+sun.jdbc.odbc.JdbcOdbcConnection@823c6d100
+Record:67
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 0 1
+k=1
+Simed:551
+Record:67
+Time:100
+ 3 1 1 0
+k=3
+ 1 2 1 1
+k=2
+Simed:576
+Record:67
+Time:100
+ 25 12 12 11
+k=25
+ 17 10 13 20
+k=20
+Simed:642
+Record:67
+Time:100
+ 41 27 19 37
+k=41
+ 42 28 17 37
+k=42
+Simed:726
+Record:67
+Time:100
+ 91 79 58 121
+k=121
+ 96 78 87 88
+k=96
+Simed:960
+Record:67
+sun.jdbc.odbc.JdbcOdbcConnection@b28980100
+Record:68
+Time:100
+ 0 1 0 0
+k=1
+ 0 1 0 0
+k=1
+Simed:543
+Record:68
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:582
+Record:68
+Time:100
+ 2 1 0 2
+k=2
+ 1 3 0 1
+k=3
+Simed:610
+Record:68
+Time:100
+ 24 9 9 5
+k=24
+ 20 11 5 11
+k=20
+Simed:680
+Record:68
+Time:100
+ 51 38 27 36
+k=51
+ 61 36 28 27
+k=61
+Simed:812
+Record:68
+Time:100
+ 64 60 53 65
+k=65
+ 74 58 47 63
+k=74
+Simed:909
+Record:68
+Time:100
+ 101 56 92 159
+k=159
+ 82 80 103 143
+k=143
+Simed:1124
+Record:68
+sun.jdbc.odbc.JdbcOdbcConnection@83de21100
+Record:69
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:546
+Record:69
+Time:100
+ 0 0 0 1
+k=1
+ 0 0 0 1
+k=1
+Simed:583
+Record:69
+Time:100
+ 5 0 3 1
+k=5
+ 4 1 0 4
+k=4
+Simed:605
+Record:69
+Time:100
+ 12 9 8 6
+k=12
+ 18 6 3 8
+k=18
+Simed:657
+Record:69
+Time:100
+ 56 26 32 30
+k=56
+ 68 30 21 25
+k=68
+Simed:741
+Record:69
+Time:100
+ 76 45 39 93
+k=93
+ 72 58 56 67
+k=72
+Simed:928
+Record:69
+Time:100
+ 89 81 89 153
+k=153
+ 70 113 110 119
+k=119
+Simed:1132
+Record:69
+sun.jdbc.odbc.JdbcOdbcConnection@1429cf1100
+Record:70
+Time:100
+ 1 0 0 2
+k=2
+ 0 0 1 2
+k=2
+Simed:546
+Record:70
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:581
+Record:70
+Time:100
+ 4 8 3 5
+k=8
+ 9 3 1 7
+k=9
+Simed:634
+Record:70
+Time:100
+ 16 5 7 6
+k=16
+ 16 8 6 4
+k=16
+Simed:687
+Record:70
+Time:100
+ 64 43 34 35
+k=64
+ 84 39 27 26
+k=84
+Simed:822
+Record:70
+Time:100
+ 56 50 55 39
+k=56
+ 62 53 55 30
+k=62
+Simed:872
+Record:70
+Time:100
+ 55 83 91 41
+k=91
+ 59 73 85 53
+k=85
+Simed:1022
+Record:70
+Time:100
+ 27 44 26 29
+k=44
+ 13 37 44 32
+k=44
+Simed:988
+Record:70
+Time:100
+ 12 28 20 17
+k=28
+ 13 17 28 19
+k=28
+Simed:1102
+Record:70
+Time:100
+ 10 9 12 13
+k=13
+ 4 7 21 12
+k=21
+Simed:1612
+Record:70
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56102
+Record:70
+sun.jdbc.odbc.JdbcOdbcConnection@1c66ec7100
+Record:71
+Time:100
+ 2 0 0 0
+k=2
+ 2 0 0 0
+k=2
+Simed:527
+Record:71
+Time:100
+ 10 5 3 2
+k=10
+ 10 5 1 4
+k=10
+Simed:609
+Record:71
+Time:100
+ 12 14 12 3
+k=14
+ 19 5 6 11
+k=19
+Simed:635
+Record:71
+Time:100
+ 22 13 12 17
+k=22
+ 27 6 11 20
+k=27
+Simed:649
+Record:71
+Time:100
+ 67 38 39 57
+k=67
+ 63 37 47 54
+k=63
+Simed:772
+Record:71
+Time:100
+ 56 58 59 65
+k=65
+ 44 51 66 77
+k=77
+Simed:884
+Record:71
+Time:100
+ 21 40 31 34
+k=40
+ 18 35 41 32
+k=41
+Simed:766
+Record:71
+Time:100
+ 21 39 21 24
+k=39
+ 7 28 47 23
+k=47
+Simed:1006
+Record:71
+Time:100
+ 17 15 25 18
+k=25
+ 5 14 43 13
+k=43
+Simed:1422
+Record:71
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54327
+Record:71
+sun.jdbc.odbc.JdbcOdbcConnection@4e8edc100
+Record:72
+Time:100
+ 0 0 0 1
+k=1
+ 0 1 0 0
+k=1
+Simed:548
+Record:72
+Time:100
+ 1 3 0 0
+k=3
+ 2 1 0 1
+k=2
+Simed:588
+Record:72
+Time:100
+ 2 1 2 1
+k=2
+ 4 1 0 1
+k=4
+Simed:630
+Record:72
+Time:100
+ 14 6 13 9
+k=14
+ 21 8 4 9
+k=21
+Simed:675
+Record:72
+Time:100
+ 74 26 31 42
+k=74
+ 67 39 28 39
+k=67
+Simed:812
+Record:72
+Time:100
+ 68 58 77 47
+k=77
+ 64 71 63 52
+k=71
+Simed:903
+Record:72
+Time:100
+ 66 73 73 165
+k=165
+ 82 82 94 119
+k=119
+Simed:1097
+Record:72
+sun.jdbc.odbc.JdbcOdbcConnection@9e0c2d100
+Record:73
+Time:100
+ 0 0 0 1
+k=1
+ 0 0 0 1
+k=1
+Simed:539
+Record:73
+Time:100
+ 0 0 1 2
+k=2
+ 2 1 0 0
+k=2
+Simed:564
+Record:73
+Time:100
+ 3 1 0 1
+k=3
+ 2 1 0 2
+k=2
+Simed:622
+Record:73
+Time:100
+ 18 20 11 5
+k=20
+ 24 10 9 11
+k=24
+Simed:691
+Record:73
+Time:100
+ 25 14 18 7
+k=25
+ 20 13 12 19
+k=20
+Simed:728
+Record:73
+Time:100
+ 59 43 47 43
+k=59
+ 55 58 38 41
+k=58
+Simed:870
+Record:73
+Time:100
+ 43 84 112 50
+k=112
+ 62 79 93 55
+k=93
+Simed:1015
+Record:73
+Time:100
+ 17 38 32 23
+k=38
+ 16 27 40 27
+k=40
+Simed:1014
+Record:73
+Time:100
+ 14 25 30 15
+k=30
+ 13 13 40 18
+k=40
+Simed:1424
+Record:73
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55513
+Record:73
+sun.jdbc.odbc.JdbcOdbcConnection@1eb7d25100
+Record:74
+Time:100
+ 0 2 0 1
+k=2
+ 1 0 0 2
+k=2
+Simed:542
+Record:74
+Time:100
+ 1 0 2 0
+k=2
+ 2 0 1 0
+k=2
+Simed:571
+Record:74
+Time:100
+ 12 4 1 2
+k=12
+ 6 2 2 9
+k=9
+Simed:638
+Record:74
+Time:100
+ 25 14 16 9
+k=25
+ 29 11 8 16
+k=29
+Simed:689
+Record:74
+Time:100
+ 54 26 31 30
+k=54
+ 42 24 30 45
+k=45
+Simed:790
+Record:74
+Time:100
+ 70 42 31 81
+k=81
+ 58 40 53 73
+k=73
+Simed:894
+Record:74
+Time:100
+ 26 67 50 58
+k=67
+ 30 61 69 41
+k=69
+Simed:965
+Record:74
+Time:100
+ 21 38 32 29
+k=38
+ 17 26 48 29
+k=48
+Simed:1027
+Record:74
+Time:100
+ 18 20 24 20
+k=24
+ 8 22 36 16
+k=36
+Simed:1476
+Record:74
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:55484
+Record:74
+sun.jdbc.odbc.JdbcOdbcConnection@d7c6bf100
+Record:75
+Time:100
+ 0 1 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:551
+Record:75
+Time:100
+ 4 1 0 0
+k=4
+ 3 0 0 2
+k=3
+Simed:546
+Record:75
+Time:100
+ 10 2 2 6
+k=10
+ 8 4 3 5
+k=8
+Simed:634
+Record:75
+Time:100
+ 27 13 16 17
+k=27
+ 26 16 11 20
+k=26
+Simed:696
+Record:75
+Time:100
+ 67 47 35 62
+k=67
+ 80 39 41 51
+k=80
+Simed:847
+Record:75
+Time:100
+ 49 58 55 60
+k=60
+ 32 60 54 76
+k=76
+Simed:917
+Record:75
+Time:100
+ 34 46 41 36
+k=46
+ 32 35 44 46
+k=46
+Simed:920
+Record:75
+Time:100
+ 13 27 31 25
+k=31
+ 5 17 44 30
+k=44
+Simed:1016
+Record:75
+Time:100
+ 4 3 5 13
+k=13
+ 4 9 7 5
+k=9
+Simed:1410
+Record:75
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54852
+Record:75
+sun.jdbc.odbc.JdbcOdbcConnection@170a650100
+Record:76
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:555
+Record:76
+Time:100
+ 1 0 0 0
+k=1
+ 0 1 0 0
+k=1
+Simed:595
+Record:76
+Time:100
+ 7 4 3 4
+k=7
+ 13 2 0 3
+k=13
+Simed:644
+Record:76
+Time:100
+ 34 26 20 20
+k=34
+ 38 27 12 23
+k=38
+Simed:716
+Record:76
+Time:100
+ 121 67 67 87
+k=121
+ 86 84 87 85
+k=87
+Simed:968
+Record:76
+sun.jdbc.odbc.JdbcOdbcConnection@4d40df100
+Record:77
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 1 0
+k=1
+Simed:544
+Record:77
+Time:100
+ 3 3 3 1
+k=3
+ 5 2 1 2
+k=5
+Simed:594
+Record:77
+Time:100
+ 13 10 7 9
+k=13
+ 13 9 7 10
+k=13
+Simed:634
+Record:77
+Time:100
+ 52 24 28 33
+k=52
+ 46 24 32 35
+k=46
+Simed:716
+Record:77
+Time:100
+ 105 87 75 123
+k=123
+ 112 74 94 110
+k=112
+Simed:989
+Record:77
+sun.jdbc.odbc.JdbcOdbcConnection@148e23b100
+Record:78
+Time:100
+ 0 1 0 1
+k=1
+ 1 0 1 0
+k=1
+Simed:484
+Record:78
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:583
+Record:78
+Time:100
+ 4 1 3 1
+k=4
+ 3 0 0 6
+k=6
+Simed:641
+Record:78
+Time:100
+ 19 19 17 18
+k=19
+ 28 16 15 14
+k=28
+Simed:709
+Record:78
+Time:100
+ 82 51 41 61
+k=82
+ 88 50 43 54
+k=88
+Simed:872
+Record:78
+Time:100
+ 37 50 62 54
+k=62
+ 40 40 61 62
+k=62
+Simed:900
+Record:78
+Time:100
+ 12 18 19 38
+k=38
+ 14 22 23 28
+k=28
+Simed:901
+Record:78
+Time:100
+ 14 16 7 17
+k=17
+ 4 15 25 10
+k=25
+Simed:1013
+Record:78
+Time:100
+ 5 4 8 7
+k=8
+ 1 1 18 4
+k=18
+Simed:1396
+Record:78
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56550
+Record:78
+sun.jdbc.odbc.JdbcOdbcConnection@15386c2100
+Record:79
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:551
+Record:79
+Time:100
+ 4 2 1 1
+k=4
+ 3 1 1 3
+k=3
+Simed:591
+Record:79
+Time:100
+ 19 12 17 6
+k=19
+ 22 9 11 12
+k=22
+Simed:658
+Record:79
+Time:100
+ 49 22 33 44
+k=49
+ 49 34 26 39
+k=49
+Simed:752
+Record:79
+Time:100
+ 102 66 74 123
+k=123
+ 91 79 89 106
+k=106
+Simed:984
+Record:79
+sun.jdbc.odbc.JdbcOdbcConnection@1408325100
+Record:80
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 0 1
+k=1
+Simed:556
+Record:80
+Time:100
+ 5 1 1 4
+k=5
+ 5 4 0 2
+k=5
+Simed:604
+Record:80
+Time:100
+ 18 12 9 13
+k=18
+ 18 10 5 19
+k=19
+Simed:654
+Record:80
+Time:100
+ 36 32 31 47
+k=47
+ 51 34 25 36
+k=51
+Simed:750
+Record:80
+Time:100
+ 102 75 80 89
+k=102
+ 97 73 80 96
+k=97
+Simed:968
+Record:80
+sun.jdbc.odbc.JdbcOdbcConnection@1220fd1100
+Record:81
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:566
+Record:81
+Time:100
+ 1 3 2 0
+k=3
+ 2 1 0 3
+k=3
+Simed:601
+Record:81
+Time:100
+ 2 5 1 5
+k=5
+ 6 1 3 3
+k=6
+Simed:636
+Record:81
+Time:100
+ 11 10 3 7
+k=11
+ 12 6 4 9
+k=12
+Simed:682
+Record:81
+Time:100
+ 33 23 26 23
+k=33
+ 22 24 23 36
+k=36
+Simed:778
+Record:81
+Time:100
+ 71 34 40 73
+k=73
+ 50 63 50 55
+k=63
+Simed:924
+Record:81
+Time:100
+ 88 134 140 71
+k=140
+ 92 115 121 105
+k=121
+Simed:1137
+Record:81
+sun.jdbc.odbc.JdbcOdbcConnection@cc5002100
+Record:82
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:558
+Record:82
+Time:100
+ 2 2 3 0
+k=3
+ 2 0 0 5
+k=5
+Simed:602
+Record:82
+Time:100
+ 11 4 7 9
+k=11
+ 13 4 1 13
+k=13
+Simed:651
+Record:82
+Time:100
+ 28 23 21 23
+k=28
+ 39 20 10 26
+k=39
+Simed:717
+Record:82
+Time:100
+ 51 49 44 68
+k=68
+ 56 49 47 60
+k=60
+Simed:841
+Record:82
+Time:100
+ 38 47 36 53
+k=53
+ 26 44 51 53
+k=53
+Simed:846
+Record:82
+Time:100
+ 14 51 26 42
+k=51
+ 23 31 42 37
+k=42
+Simed:864
+Record:82
+Time:100
+ 14 43 27 22
+k=43
+ 14 26 35 31
+k=35
+Simed:962
+Record:82
+Time:100
+ 11 21 31 12
+k=31
+ 9 12 34 20
+k=34
+Simed:1300
+Record:82
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56190
+Record:82
+sun.jdbc.odbc.JdbcOdbcConnection@79ecf4100
+Record:83
+Time:100
+ 0 0 1 0
+k=1
+ 0 0 1 0
+k=1
+Simed:557
+Record:83
+Time:100
+ 1 3 0 1
+k=3
+ 5 0 0 0
+k=5
+Simed:601
+Record:83
+Time:100
+ 5 3 3 4
+k=5
+ 5 1 2 7
+k=7
+Simed:624
+Record:83
+Time:100
+ 15 9 13 16
+k=16
+ 19 10 7 17
+k=19
+Simed:691
+Record:83
+Time:100
+ 51 18 17 20
+k=51
+ 41 23 19 23
+k=41
+Simed:775
+Record:83
+Time:100
+ 66 45 36 79
+k=79
+ 57 62 46 61
+k=62
+Simed:925
+Record:83
+Time:100
+ 98 134 142 86
+k=142
+ 78 124 138 120
+k=138
+Simed:1199
+Record:83
+sun.jdbc.odbc.JdbcOdbcConnection@94fe42100
+Record:84
+Time:100
+ 0 1 1 0
+k=1
+ 0 1 0 1
+k=1
+Simed:557
+Record:84
+Time:100
+ 0 0 1 0
+k=1
+ 0 1 0 0
+k=1
+Simed:571
+Record:84
+Time:100
+ 3 2 1 0
+k=3
+ 1 2 0 3
+k=3
+Simed:617
+Record:84
+Time:100
+ 19 9 11 5
+k=19
+ 12 12 9 11
+k=12
+Simed:663
+Record:84
+Time:100
+ 43 20 23 25
+k=43
+ 27 24 29 31
+k=31
+Simed:749
+Record:84
+Time:100
+ 45 49 50 95
+k=95
+ 63 47 53 76
+k=76
+Simed:895
+Record:84
+Time:100
+ 24 78 41 57
+k=78
+ 47 43 61 49
+k=61
+Simed:961
+Record:84
+Time:100
+ 16 37 34 32
+k=37
+ 13 30 39 37
+k=39
+Simed:1017
+Record:84
+Time:100
+ 18 25 28 23
+k=28
+ 17 15 31 31
+k=31
+Simed:1289
+Record:84
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:48105
+Record:84
+sun.jdbc.odbc.JdbcOdbcConnection@2c5444100
+Record:85
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 1 0
+k=1
+Simed:535
+Record:85
+Time:100
+ 3 2 2 0
+k=3
+ 2 1 3 1
+k=3
+Simed:584
+Record:85
+Time:100
+ 18 13 10 8
+k=18
+ 19 15 6 9
+k=19
+Simed:643
+Record:85
+Time:100
+ 50 27 25 41
+k=50
+ 51 32 21 39
+k=51
+Simed:748
+Record:85
+Time:100
+ 102 80 76 120
+k=120
+ 92 87 82 117
+k=117
+Simed:1003
+Record:85
+sun.jdbc.odbc.JdbcOdbcConnection@b1fea4100
+Record:86
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:559
+Record:86
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:603
+Record:86
+Time:100
+ 5 8 5 4
+k=8
+ 8 7 2 5
+k=8
+Simed:636
+Record:86
+Time:100
+ 12 10 8 6
+k=12
+ 12 7 5 12
+k=12
+Simed:693
+Record:86
+Time:100
+ 28 14 34 29
+k=34
+ 26 23 19 37
+k=37
+Simed:778
+Record:86
+Time:100
+ 68 49 37 58
+k=68
+ 69 46 40 57
+k=69
+Simed:911
+Record:86
+Time:100
+ 42 46 49 75
+k=75
+ 40 42 50 80
+k=80
+Simed:939
+Record:86
+Time:100
+ 23 34 30 40
+k=40
+ 12 35 41 39
+k=41
+Simed:1040
+Record:86
+Time:100
+ 17 27 22 17
+k=27
+ 10 18 40 15
+k=40
+Simed:1423
+Record:86
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54458
+Record:86
+sun.jdbc.odbc.JdbcOdbcConnection@1fd10fa100
+Record:87
+Time:100
+ 1 1 0 0
+k=1
+ 2 0 0 0
+k=2
+Simed:537
+Record:87
+Time:100
+ 3 2 2 2
+k=3
+ 5 1 2 1
+k=5
+Simed:588
+Record:87
+Time:100
+ 17 12 9 9
+k=17
+ 22 5 5 15
+k=22
+Simed:605
+Record:87
+Time:100
+ 41 40 48 41
+k=48
+ 49 35 31 55
+k=55
+Simed:780
+Record:87
+Time:100
+ 55 41 43 63
+k=63
+ 55 34 50 63
+k=63
+Simed:843
+Record:87
+Time:100
+ 39 59 58 63
+k=63
+ 48 46 54 71
+k=71
+Simed:917
+Record:87
+Time:100
+ 29 56 58 39
+k=58
+ 33 38 67 44
+k=67
+Simed:942
+Record:87
+Time:100
+ 6 12 9 18
+k=18
+ 2 14 17 12
+k=17
+Simed:974
+Record:87
+Time:100
+ 6 3 10 5
+k=10
+ 3 4 13 4
+k=13
+Simed:1391
+Record:87
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:54473
+Record:87
+sun.jdbc.odbc.JdbcOdbcConnection@52a2e3100
+Record:88
+Time:100
+ 1 0 1 0
+k=1
+ 1 0 0 1
+k=1
+Simed:535
+Record:88
+Time:100
+ 1 2 2 1
+k=2
+ 4 0 0 2
+k=4
+Simed:596
+Record:88
+Time:100
+ 6 3 4 4
+k=6
+ 7 7 1 2
+k=7
+Simed:628
+Record:88
+Time:100
+ 16 12 14 12
+k=16
+ 15 16 9 14
+k=16
+Simed:686
+Record:88
+Time:100
+ 64 45 39 59
+k=64
+ 65 47 36 59
+k=65
+Simed:854
+Record:88
+Time:100
+ 54 63 61 58
+k=63
+ 45 68 56 67
+k=68
+Simed:926
+Record:88
+Time:100
+ 21 55 46 40
+k=55
+ 30 37 54 41
+k=54
+Simed:927
+Record:88
+Time:100
+ 21 30 39 40
+k=40
+ 18 37 37 38
+k=38
+Simed:1020
+Record:88
+Time:100
+ 14 33 25 14
+k=33
+ 15 16 32 23
+k=32
+Simed:1467
+Record:88
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56072
+Record:88
+sun.jdbc.odbc.JdbcOdbcConnection@1966070100
+Record:89
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:556
+Record:89
+Time:100
+ 1 0 0 0
+k=1
+ 0 0 1 0
+k=1
+Simed:594
+Record:89
+Time:100
+ 9 9 2 2
+k=9
+ 12 2 2 6
+k=12
+Simed:636
+Record:89
+Time:100
+ 27 29 30 23
+k=30
+ 41 24 23 21
+k=41
+Simed:732
+Record:89
+Time:100
+ 70 32 50 71
+k=71
+ 73 56 41 53
+k=73
+Simed:869
+Record:89
+Time:100
+ 75 46 56 97
+k=97
+ 81 64 64 65
+k=81
+Simed:947
+Record:89
+Time:100
+ 117 165 131 73
+k=165
+ 95 120 153 118
+k=153
+Simed:1213
+Record:89
+Time:100
+ 44 94 92 46
+k=94
+ 58 62 78 78
+k=78
+Simed:1095
+Record:89
+Time:100
+ 47 82 154 52
+k=154
+ 44 65 149 77
+k=149
+Simed:1295
+Record:89
+Time:100
+ 24 38 29 15
+k=38
+ 22 22 38 24
+k=38
+Simed:1655
+Record:89
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:58406
+Record:89
+sun.jdbc.odbc.JdbcOdbcConnection@825cf3100
+Record:90
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:557
+Record:90
+Time:100
+ 1 1 0 2
+k=2
+ 2 0 0 2
+k=2
+Simed:598
+Record:90
+Time:100
+ 4 3 1 1
+k=4
+ 6 1 0 2
+k=6
+Simed:644
+Record:90
+Time:100
+ 12 13 15 15
+k=15
+ 21 13 5 16
+k=21
+Simed:698
+Record:90
+Time:100
+ 55 37 22 35
+k=55
+ 65 20 28 36
+k=65
+Simed:747
+Record:90
+Time:100
+ 92 51 53 69
+k=92
+ 76 61 61 67
+k=76
+Simed:914
+Record:90
+Time:100
+ 34 53 44 44
+k=53
+ 26 50 50 49
+k=50
+Simed:957
+Record:90
+Time:100
+ 28 34 32 36
+k=36
+ 17 35 38 40
+k=40
+Simed:1016
+Record:90
+Time:100
+ 16 25 27 20
+k=27
+ 11 12 49 16
+k=49
+Simed:1202
+Record:90
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:53493
+Record:90
+sun.jdbc.odbc.JdbcOdbcConnection@14da86b100
+Record:91
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:562
+Record:91
+Time:100
+ 3 1 1 1
+k=3
+ 3 2 0 1
+k=3
+Simed:578
+Record:91
+Time:100
+ 14 11 10 7
+k=14
+ 15 11 8 8
+k=15
+Simed:654
+Record:91
+Time:100
+ 54 37 28 34
+k=54
+ 47 38 25 43
+k=47
+Simed:738
+Record:91
+Time:100
+ 101 67 65 124
+k=124
+ 88 86 90 93
+k=93
+Simed:962
+Record:91
+sun.jdbc.odbc.JdbcOdbcConnection@1ce9085100
+Record:92
+Time:100
+ 0 2 0 0
+k=2
+ 1 1 0 0
+k=1
+Simed:558
+Record:92
+Time:100
+ 0 0 1 0
+k=1
+ 0 0 0 1
+k=1
+Simed:596
+Record:92
+Time:100
+ 4 6 3 3
+k=6
+ 7 4 1 4
+k=7
+Simed:626
+Record:92
+Time:100
+ 4 3 4 3
+k=4
+ 6 0 3 5
+k=6
+Simed:690
+Record:92
+Time:100
+ 21 16 17 14
+k=21
+ 20 18 12 18
+k=20
+Simed:754
+Record:92
+Time:100
+ 56 39 34 65
+k=65
+ 44 46 39 65
+k=65
+Simed:889
+Record:92
+Time:100
+ 101 87 83 157
+k=157
+ 82 110 113 123
+k=123
+Simed:1154
+Record:92
+sun.jdbc.odbc.JdbcOdbcConnection@1a517bd100
+Record:93
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:561
+Record:93
+Time:100
+ 0 1 1 0
+k=1
+ 1 0 0 1
+k=1
+Simed:598
+Record:93
+Time:100
+ 4 2 1 0
+k=4
+ 6 0 1 0
+k=6
+Simed:638
+Record:93
+Time:100
+ 20 11 4 10
+k=20
+ 19 11 7 8
+k=19
+Simed:681
+Record:93
+Time:100
+ 61 52 35 34
+k=61
+ 87 33 36 26
+k=87
+Simed:832
+Record:93
+Time:100
+ 69 43 45 69
+k=69
+ 61 51 50 64
+k=64
+Simed:922
+Record:93
+Time:100
+ 24 62 47 58
+k=62
+ 35 45 55 56
+k=56
+Simed:967
+Record:93
+Time:100
+ 27 36 35 38
+k=38
+ 18 43 42 33
+k=43
+Simed:1015
+Record:93
+Time:100
+ 10 19 24 19
+k=24
+ 8 13 38 13
+k=38
+Simed:1233
+Record:93
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:53037
+Record:93
+sun.jdbc.odbc.JdbcOdbcConnection@8c4b5f100
+Record:94
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:564
+Record:94
+Time:100
+ 2 0 2 0
+k=2
+ 2 0 1 1
+k=2
+Simed:592
+Record:94
+Time:100
+ 9 6 5 3
+k=9
+ 7 4 4 8
+k=8
+Simed:636
+Record:94
+Time:100
+ 33 15 17 18
+k=33
+ 35 13 17 18
+k=35
+Simed:722
+Record:94
+Time:100
+ 135 76 66 101
+k=135
+ 115 91 76 96
+k=115
+Simed:1006
+Record:94
+sun.jdbc.odbc.JdbcOdbcConnection@1f808e6100
+Record:95
+Time:100
+ 4 2 0 0
+k=4
+ 2 2 0 2
+k=2
+Simed:524
+Record:95
+Time:100
+ 4 1 3 3
+k=4
+ 8 0 1 2
+k=8
+Simed:590
+Record:95
+Time:100
+ 11 16 10 6
+k=16
+ 18 8 9 8
+k=18
+Simed:648
+Record:95
+Time:100
+ 22 16 16 15
+k=22
+ 26 10 10 23
+k=26
+Simed:714
+Record:95
+Time:100
+ 79 35 42 63
+k=79
+ 77 44 33 65
+k=77
+Simed:856
+Record:95
+Time:100
+ 35 60 44 45
+k=60
+ 41 44 46 53
+k=53
+Simed:870
+Record:95
+Time:100
+ 19 74 43 38
+k=74
+ 46 37 47 44
+k=47
+Simed:945
+Record:95
+Time:100
+ 22 45 38 35
+k=45
+ 20 33 55 32
+k=55
+Simed:1053
+Record:95
+Time:100
+ 21 22 33 19
+k=33
+ 18 14 36 27
+k=36
+Simed:1458
+Record:95
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:56861
+Record:95
+sun.jdbc.odbc.JdbcOdbcConnection@3fe94a100
+Record:96
+Time:100
+ 1 1 0 0
+k=1
+ 2 0 0 0
+k=2
+Simed:562
+Record:96
+Time:100
+ 1 5 0 1
+k=5
+ 4 1 0 2
+k=4
+Simed:602
+Record:96
+Time:100
+ 11 4 5 0
+k=11
+ 7 4 2 7
+k=7
+Simed:643
+Record:96
+Time:100
+ 28 13 8 10
+k=28
+ 28 13 7 11
+k=28
+Simed:704
+Record:96
+Time:100
+ 50 36 46 57
+k=57
+ 71 33 35 50
+k=71
+Simed:837
+Record:96
+Time:100
+ 76 45 62 81
+k=81
+ 65 75 53 71
+k=75
+Simed:937
+Record:96
+Time:100
+ 92 81 86 166
+k=166
+ 82 103 119 121
+k=121
+Simed:1161
+Record:96
+sun.jdbc.odbc.JdbcOdbcConnection@1a8739b100
+Record:97
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:561
+Record:97
+Time:100
+ 1 1 1 1
+k=1
+ 1 1 1 1
+k=1
+Simed:597
+Record:97
+Time:100
+ 9 3 4 7
+k=9
+ 11 7 3 2
+k=11
+Simed:575
+Record:97
+Time:100
+ 33 23 24 18
+k=33
+ 42 21 16 19
+k=42
+Simed:728
+Record:97
+Time:100
+ 123 79 81 94
+k=123
+ 109 102 87 79
+k=109
+Simed:1006
+Record:97
+sun.jdbc.odbc.JdbcOdbcConnection@dbd794100
+Record:98
+Time:100
+ 1 0 0 0
+k=1
+ 1 0 0 0
+k=1
+Simed:553
+Record:98
+Time:100
+ 7 6 1 0
+k=7
+ 9 3 1 1
+k=9
+Simed:601
+Record:98
+Time:100
+ 15 12 12 13
+k=15
+ 11 17 6 18
+k=18
+Simed:656
+Record:98
+Time:100
+ 42 38 36 43
+k=43
+ 45 38 25 51
+k=51
+Simed:765
+Record:98
+Time:100
+ 114 90 69 82
+k=114
+ 91 81 88 95
+k=95
+Simed:976
+Record:98
+sun.jdbc.odbc.JdbcOdbcConnection@8d0a11100
+Record:99
+Time:100
+ 1 0 1 0
+k=1
+ 1 0 0 1
+k=1
+Simed:543
+Record:99
+Time:100
+ 2 1 2 1
+k=2
+ 4 0 0 2
+k=4
+Simed:592
+Record:99
+Time:100
+ 15 9 8 9
+k=15
+ 19 10 4 8
+k=19
+Simed:639
+Record:99
+Time:100
+ 52 32 25 47
+k=52
+ 43 35 31 47
+k=47
+Simed:756
+Record:99
+Time:100
+ 80 70 75 102
+k=102
+ 80 64 98 85
+k=98
+Simed:939
+Record:99
+sun.jdbc.odbc.JdbcOdbcConnection@1be9a50100
+Record:100
+Time:100
+ 0 0 0 0
+k=0
+ 0 0 0 0
+k=0
+Simed:555
+Record:100
+Time:100
+ 2 0 1 0
+k=2
+ 1 1 1 0
+k=1
+Simed:578
+Record:100
+Time:100
+ 14 6 0 4
+k=14
+ 11 7 3 3
+k=11
+Simed:643
+Record:100
+Time:100
+ 40 27 19 21
+k=40
+ 51 31 11 14
+k=51
+Simed:734
+Record:100
+Time:100
+ 137 75 77 113
+k=137
+ 122 87 95 98
+k=122
+Simed:1035
+Record:100
+sun.jdbc.odbc.JdbcOdbcConnection@92015d100
+Record:101

@@ -72,9 +72,17 @@ public class Cat extends Animal{
         x=rand.nextInt(6)+(deadend.game.GameConfigClass.GridX/2-3);
         y=rand.nextInt(4)+(deadend.game.GameConfigClass.GridY-5);
 
-        this.position=new java.awt.Point(x,y);
+        this.position=new java.awt.Point(deadend.game.GameConfigClass.GridX/2-1,deadend.game.GameConfigClass.GridY-1);
     }
 
+    public void bornAtHome(int a){
+        int x,y;
+        java.util.Random rand=new java.util.Random();
+        x=deadend.game.GameConfigClass.GridX/2-1;
+        y=deadend.game.GameConfigClass.GridY-1;
+
+        this.position=new java.awt.Point(deadend.game.GameConfigClass.GridX/2-1,deadend.game.GameConfigClass.GridY-1);
+    }
     public StrategyInterface getStrategy() {
         return strategy;
     }

@@ -17,6 +17,8 @@
 
 package deadend.database.odbc;
 
+import deadend.globalenum.GameResults;
+import java.sql.*;
 /**
  *
  * @author Yang JiaJian
@@ -24,4 +26,30 @@ package deadend.database.odbc;
 public class ODBCWrite {
     // TODO public method of record step
     // TODO public method of record game result
+    public static void writeMCTime(deadend.game.DeadEndGame game){
+        try{
+	        String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\db\\ResultRecord\\090229data.mdb";
+	        Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+	        Connection connection=DriverManager.getConnection(strurl);
+
+            Integer t=new Integer(deadend.game.GameConfigClass.ComputingTimeLimit);
+	        Statement stmt=connection.createStatement();
+            int r=0;
+            if(game.gameresult==GameResults.NotEnd)return;
+            if(game.gameresult==GameResults.CatWin)r=0;
+            if(game.gameresult==GameResults.Draw)r=1;
+            if(game.gameresult==GameResults.DogWin)r=3;
+	        stmt.executeUpdate("insert into MonteCarloCalTimeRev1(calTime , GameResult) values('"
+                    +deadend.game.GameConfigClass.ComputingTimeLimit+"','"+r+"')"
+                    );
+                stmt.close();
+                connection.close();
+   	        System.out.println(connection+t.toString());
+
+	        }catch(Exception e)
+	        {
+	            e.printStackTrace();
+	        }
+
+    }
 }

@@ -52,7 +52,7 @@ public class DogTeam {
         int dogLimit=GameConfigClass.NumberOfDogs;
         for(int i=1;i<=dogLimit;i++){
             Dog d=new Dog(this.game);
-            d.initialize();
+            d.initialize(i-1);
             this.dogTeam.add(d);
         }
         this.brain=new DogTeamBrain(this.game,deadend.game.GameConfigClass.ComputingTimeLimit);
@@ -67,8 +67,8 @@ public class DogTeam {
     }
     // TODO add reset logic
     public void reset(){
-        for(Dog d:this.dogTeam){
-            d.bornAtHome();
+        for(int i=0;i<this.dogTeam.size();i++){
+            this.dogTeam.get(i).bornAtHome(i);
         }
     }
 
