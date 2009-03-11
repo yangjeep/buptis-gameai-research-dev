@@ -1,1 +1,1 @@
-create table MonteCarloCalTimeRev1(calTime int not null, GameResult int not null);
+create table MonteCarloCalTimeRev2(calTime int not null, GameResult int not null);

@@ -15,7 +15,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package deadend.ai.dog.sMonteCarlo;
+package deadend.ai.dog.stratMC;
 
 import deadend.roles.*;
 

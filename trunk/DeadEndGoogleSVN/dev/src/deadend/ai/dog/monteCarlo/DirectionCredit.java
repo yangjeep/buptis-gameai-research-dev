@@ -61,7 +61,10 @@ public class DirectionCredit {
         }
     }
 
-        public void addDrawCredit(Directions d){
+   /**
+    * @deprecated 
+    */
+   public void addDrawCredit(Directions d){
         //System.out.println(d.toString());
         int k=0;
         if(d==Directions.Down){

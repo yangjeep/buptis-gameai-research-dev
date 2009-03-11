@@ -1,1 +1,1 @@
-select * from MonteCarloCalTimeRev1 where calTime=500 and GameResult=3;
+select * from MonteCarloCalTimeRev2 where calTime=5 and GameResult=3;
