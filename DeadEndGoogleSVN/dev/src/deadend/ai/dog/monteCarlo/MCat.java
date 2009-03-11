@@ -47,7 +47,7 @@ public class MCat {
 
         int c=rand.nextInt(choices.size());
 
-        Point p=this.position;
+        Point p=(Point)this.position.clone();
         Directions dir=choices.get(c);
         if(dir==Directions.Up){
             this.position.setLocation(p.x,p.y-1);

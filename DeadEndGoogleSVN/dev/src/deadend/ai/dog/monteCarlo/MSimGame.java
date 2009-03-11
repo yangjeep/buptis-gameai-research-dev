@@ -68,7 +68,7 @@ public class MSimGame {
 
         this.scat=new MCat((Point)cat.getPosition().clone());
         this.sdogs.clear();
-        this.sdogs=new ArrayList<MDog>(dogs.size());
+        
 
         this.step=game.step;
 
@@ -85,12 +85,13 @@ public class MSimGame {
         }
         this.odist=dist;
 
+        /*
         this.odists=new ArrayList<Double>();
         this.odists.clear();
         for(Dog d:dogs){
             this.odists.add(new Double(d.getPosition().distance(cat.getPosition())));
         }
-
+        */
         this.count=1;
     }
     public ArrayList<Directions> nextDir;
@@ -142,7 +143,6 @@ public class MSimGame {
             
         }while(this.step<=this.game.LimitStep);
         
-        // TODO record the first step of dogs
         this.nextDir.clear();
         
         for(int i=0;i<this.sdogs.size();i++){

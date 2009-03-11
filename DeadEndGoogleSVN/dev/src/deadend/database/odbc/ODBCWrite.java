@@ -39,7 +39,7 @@ public class ODBCWrite {
             if(game.gameresult==GameResults.CatWin)r=0;
             if(game.gameresult==GameResults.Draw)r=1;
             if(game.gameresult==GameResults.DogWin)r=3;
-	        stmt.executeUpdate("insert into MonteCarloCalTimeRev1(calTime , GameResult) values('"
+	        stmt.executeUpdate("insert into MonteCarloCalTimeRev2(calTime , GameResult) values('"
                     +deadend.game.GameConfigClass.ComputingTimeLimit+"','"+r+"')"
                     );
                 stmt.close();
