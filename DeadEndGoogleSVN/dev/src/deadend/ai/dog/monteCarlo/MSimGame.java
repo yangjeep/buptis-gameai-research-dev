@@ -79,12 +79,13 @@ public class MSimGame {
         }
         this.isFinished=false;
 
+        /*
         double dist=dogs.get(0).getPosition().distance(cat.getPosition());
         for(Dog d:dogs){
             if(d.getPosition().distance(cat.getPosition())<dist)dist=d.getPosition().distance(cat.getPosition());
         }
         this.odist=dist;
-
+        */
         /*
         this.odists=new ArrayList<Double>();
         this.odists.clear();

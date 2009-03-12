@@ -41,14 +41,14 @@ public class Dog extends Animal{
      *@param direction Directions
      */
     public void compute(Directions direction){
-        // TODO the strategy logic is added here
+        // the strategy logic is added here
         this.direction=direction;
-        super.move();
+        super.move(false);
     }
     @Override
     public void compute(){
     }
-    // TODO the reset logig is here
+    // reset logig is here
     @Override
     public void reset(){
         this.bornAtHome();

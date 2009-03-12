@@ -29,7 +29,7 @@ import java.util.ArrayList;
 public class MSimGame {
     private double odist;
     private ArrayList<Double> odists;
-    // TODO add the logic of an original game
+    // the logic of an original game
     public MSimGame(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
         this.game=game;
         this.nextDir=new ArrayList<Directions>(dogs.size());
@@ -142,7 +142,7 @@ public class MSimGame {
             
         }while(this.step<=this.game.LimitStep);
         
-        // TODO record the first step of dogs
+        // record the first step of dogs
         this.nextDir.clear();
         
         for(int i=0;i<this.sdogs.size();i++){

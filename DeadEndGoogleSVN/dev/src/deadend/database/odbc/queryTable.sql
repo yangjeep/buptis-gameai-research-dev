@@ -1,1 +1,1 @@
-select * from MonteCarloCalTimeRev2 where calTime=5 and GameResult=3;
+select * from MonteCarloCalTimeRevised1 where catStrategy='BasicFSM' and calTime=300 and GameResult=3;

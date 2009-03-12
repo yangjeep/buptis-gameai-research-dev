@@ -33,9 +33,13 @@ public class GameConfigClass {
     // Dog speed
     public final static int DogSpeed=1;
     // Time limit of computing
-    public static int ComputingTimeLimit=5;
+    public static int ComputingTimeLimit=300;
     // Upper limit of game steps
     public final static int Step_Limit=20;
     // Refresh limit
     public final static int InitRefreshTimeMS=1000;
+
+    public static String currentCalTimeTableName="MonteCarloCalTimeRevised1";
+
+    public static String currentStepRecordName="MonteCarloTable1";
 }

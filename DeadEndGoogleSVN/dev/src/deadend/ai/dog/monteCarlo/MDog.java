@@ -39,13 +39,13 @@ public class MDog {
         if(this.position.x>0){
             choices.add(Directions.Left);
         }
-        if(this.position.x<deadend.game.GameConfigClass.GridX){
+        if(this.position.x<deadend.game.GameConfigClass.GridX-1){
             choices.add(Directions.Right);
         }
         if(this.position.y>0){
             choices.add(Directions.Up);
         }
-        if(this.position.y<deadend.game.GameConfigClass.GridY){
+        if(this.position.y<deadend.game.GameConfigClass.GridY-1){
             choices.add(Directions.Down);
         }
 

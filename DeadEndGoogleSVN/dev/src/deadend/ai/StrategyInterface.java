@@ -24,4 +24,6 @@ import deadend.game.DeadEndGame;
  */
 public interface StrategyInterface {
     public Directions compute(DeadEndGame game);
+    public void reset();
+    public String getName();
 }
