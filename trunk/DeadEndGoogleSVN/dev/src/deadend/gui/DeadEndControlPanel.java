@@ -96,7 +96,8 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         resumeButton.setEnabled(false);
         resumeButton.addActionListener(formListener);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "BasicFSM" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "BasicFSM", "ZigZag" }));
+        jComboBox1.addItemListener(formListener);
 
         jLabel2.setText("Cat");
 
@@ -182,11 +183,14 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
     // Code for dispatching events from components to event handlers.
 
-    private class FormListener implements java.awt.event.ActionListener {
+    private class FormListener implements java.awt.event.ActionListener, java.awt.event.ItemListener {
         FormListener() {}
         public void actionPerformed(java.awt.event.ActionEvent evt) {
             if (evt.getSource() == StartButton) {
                 DeadEndControlPanel.this.StartButtonActionPerformed(evt);
+            }
+            else if (evt.getSource() == jTextField1) {
+                DeadEndControlPanel.this.jTextField1ActionPerformed(evt);
             }
             else if (evt.getSource() == autoRunButton) {
                 DeadEndControlPanel.this.autoRunButtonActionPerformed(evt);
@@ -197,11 +201,14 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
             else if (evt.getSource() == resumeButton) {
                 DeadEndControlPanel.this.resumeButtonActionPerformed(evt);
             }
-            else if (evt.getSource() == jTextField1) {
-                DeadEndControlPanel.this.jTextField1ActionPerformed(evt);
-            }
             else if (evt.getSource() == PulseButton) {
                 DeadEndControlPanel.this.PulseButtonActionPerformed(evt);
+            }
+        }
+
+        public void itemStateChanged(java.awt.event.ItemEvent evt) {
+            if (evt.getSource() == jComboBox1) {
+                DeadEndControlPanel.this.jComboBox1ItemStateChanged(evt);
             }
         }
     }// </editor-fold>//GEN-END:initComponents
@@ -228,17 +235,17 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 }//GEN-LAST:event_autoRunButtonActionPerformed
 
     private void StartButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StartButtonActionPerformed
-        // TODO add your handling code here:
+        // Start a game
         this.game.StartAGame();
     }//GEN-LAST:event_StartButtonActionPerformed
 
     private void resetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetButtonActionPerformed
-        // TODO add your handling code here:
+        // reset game
         this.game.reset();
     }//GEN-LAST:event_resetButtonActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
+        // change the autorun times
         String ms=this.jTextField1.getText();
         int times=50;
         try{
@@ -250,9 +257,20 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void PulseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PulseButtonActionPerformed
-        // TODO add your handling code here:
+        // pause the game
         this.game.PulseGame();
     }//GEN-LAST:event_PulseButtonActionPerformed
+
+    private void jComboBox1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox1ItemStateChanged
+        // Change the strategy
+        String str=this.jComboBox1.getSelectedItem().toString();
+        if(str.equalsIgnoreCase("ZigZag")){
+            this.game.player.setStrategy(new deadend.ai.cat.CatZigzagFSM());
+        }
+        if(str.equalsIgnoreCase("BasicFSM")){
+            this.game.player.setStrategy(new deadend.ai.cat.CatBasicFSM());
+        }
+    }//GEN-LAST:event_jComboBox1ItemStateChanged
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -136,7 +136,7 @@ public class UIMain extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jScrollBar1AdjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {//GEN-FIRST:event_jScrollBar1AdjustmentValueChanged
-        // TODO add your handling code here:
+        
         this.game.ticker.setDelay(this.jScrollBar1.getValue());
     }//GEN-LAST:event_jScrollBar1AdjustmentValueChanged
 

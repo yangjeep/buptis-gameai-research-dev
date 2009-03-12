@@ -70,4 +70,10 @@ public class CatBasicFSM implements StrategyInterface{
         if(player.y>=0){return Directions.Up;}
         return null;
     }
+    @Override
+    public void reset(){}
+    @Override
+    public String getName(){
+        return "BasicFSM";
+    }
 }

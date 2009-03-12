@@ -34,7 +34,7 @@ public class MDog {
 
     public void rMove(int step){
 
-        // TODO change the direction into strategy
+        // change the direction into strategy
 
         java.util.Random rand=new java.util.Random();
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();

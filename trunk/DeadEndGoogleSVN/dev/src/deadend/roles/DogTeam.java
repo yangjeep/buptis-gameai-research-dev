@@ -34,7 +34,7 @@ import deadend.ai.dog.DogTeamBrain;
 public class DogTeam {
     public ArrayList<Dog> dogTeam;
 
-    // TODO add fields DogTeamBrain
+    // fields DogTeamBrain
     DeadEndGame game;
 
     // Strategy
@@ -46,7 +46,7 @@ public class DogTeam {
         this.game=game;
     }
 
-    // TODO add initialize logic
+    // initialize logic
     public void initialize(){
         this.dogTeam=new ArrayList<Dog>();
         int dogLimit=GameConfigClass.NumberOfDogs;
@@ -58,14 +58,19 @@ public class DogTeam {
         this.brain=new DogTeamBrain(this.game,deadend.game.GameConfigClass.ComputingTimeLimit);
     }
 
-    // TODO add compute logic
+    // compute logic
     public void compute(){
         this.brain.compute();
         for(int i=0;i<this.dogTeam.size();i++){
             this.dogTeam.get(i).compute(this.brain.directions.get(i));
         }
     }
-    // TODO add reset logic
+    public void removeDirection(){
+        for(int i=0;i<this.dogTeam.size();i++){
+            this.dogTeam.get(i).removeDirection();
+        }
+    }
+    // reset logic
     public void reset(){
         for(int i=0;i<this.dogTeam.size();i++){
             this.dogTeam.get(i).bornAtHome(i);

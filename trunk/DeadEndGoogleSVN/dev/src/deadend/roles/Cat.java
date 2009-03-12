@@ -60,8 +60,10 @@ public class Cat extends Animal{
         this.bornAtHome();
         this.direction=null;
 
-        // TODO reborn
+        // reborn
         this.bornAtHome();
+
+        this.strategy.reset();
     }
 
 

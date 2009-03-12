@@ -67,6 +67,29 @@ public abstract class Animal {
         }
         this.direction=null;
     }
+    public void move(boolean removeDirection){
+        if(this.direction==null){
+            System.err.print("The direction is null");
+            return;
+        }
+        Point p=this.position;
+        if(this.direction==Directions.Up && this.position.y>0){
+            this.position.setLocation(p.x,p.y-1);
+        }
+        if(this.direction==Directions.Down && this.position.y<deadend.game.GameConfigClass.GridY){
+            this.position.setLocation(p.x,p.y+1);
+        }
+        if(this.direction==Directions.Left && this.position.x>0){
+            this.position.setLocation(p.x-1, p.y);
+        }
+        if(this.direction==Directions.Right && this.position.y<deadend.game.GameConfigClass.GridX){
+            this.position.setLocation(p.x+1, p.y);
+        }
+    }
+
+    public void removeDirection(){
+        this.direction=null;
+    }
 
     public Directions getDirection() {
         return direction;

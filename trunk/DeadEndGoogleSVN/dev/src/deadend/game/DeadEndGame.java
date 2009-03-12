@@ -17,6 +17,7 @@
 
 package deadend.game;
 
+import deadend.database.StepRecordBuffer;
 import java.util.ArrayList;
 import java.awt.Point;
 import javax.swing.Timer;
@@ -47,6 +48,8 @@ public class DeadEndGame implements ActionListener{
     public int refreshTime;
 
     public ArrayList<Point> door;
+
+    public ArrayList<deadend.database.StepRecordBuffer> stepRecordBuf;
 
     // Tools access DB
     private ODBCWrite odbcWriter;
@@ -95,6 +98,9 @@ public class DeadEndGame implements ActionListener{
         //Initialize the timer
         this.refreshTime=GameConfigClass.InitRefreshTimeMS;
         this.ticker=new Timer(this.refreshTime,this);
+
+        //
+        this.stepRecordBuf=new ArrayList<deadend.database.StepRecordBuffer>();
 
         this.isReseted=true;
     }
@@ -154,11 +160,45 @@ public class DeadEndGame implements ActionListener{
         for(int i=1;i<=this.player.getSpeed();i++){
             this.player.compute();
         }
+
+        int catToDog1x,catToDog1y,catToDog2x,catToDog2y,catToExitX,catToExitY;
+
+        catToDog1x=this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x;
+        catToDog1y=this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y;
+        catToDog2x=this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x;
+        catToDog2y=this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y;
+
+        catToExitX=this.player.getPosition().x-this.door.get(0).x;
+        catToExitY=this.player.getPosition().y-this.door.get(0).y;
+
+        double catToDog1,catToDog2;
+
+        catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());
+        catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
+
+        this.judge();
+
         this.dogs.compute();
+        
+        deadend.globalenum.Directions dog1Dir,dog2Dir;
+
+        dog1Dir=this.dogs.dogTeam.get(0).getDirection();
+        dog2Dir=this.dogs.dogTeam.get(1).getDirection();
+
+        this.dogs.removeDirection();
+
+        deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
+                catToDog1x, catToDog1y, catToDog2x, catToDog2y,
+            catToDog1, catToDog2, catToExitX, catToExitY,
+            this.step, dog1Dir, dog2Dir);
+        this.stepRecordBuf.add(buf);
+
+        this.judge();
+
     }
 
     public void playGame(){
-        this.step++;
+         this.step++;
         this.judge();
         if(this.gameresult!=GameResults.NotEnd){
             this.ticker.stop();
@@ -171,12 +211,46 @@ public class DeadEndGame implements ActionListener{
         for(int i=1;i<=this.player.getSpeed();i++){
             this.player.compute();
         }
+
+        int catToDog1x,catToDog1y,catToDog2x,catToDog2y,catToExitX,catToExitY;
+
+        catToDog1x=this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x;
+        catToDog1y=this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y;
+        catToDog2x=this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x;
+        catToDog2y=this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y;
+
+        catToExitX=this.player.getPosition().x-this.door.get(0).x;
+        catToExitY=this.player.getPosition().y-this.door.get(0).y;
+
+        double catToDog1,catToDog2;
+
+        catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());
+        catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
+
+        this.judge();
+
         this.dogs.compute();
 
+        deadend.globalenum.Directions dog1Dir,dog2Dir;
+
+        dog1Dir=this.dogs.dogTeam.get(0).getDirection();
+        dog2Dir=this.dogs.dogTeam.get(1).getDirection();
+
+        this.dogs.removeDirection();
+
+        deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
+                catToDog1x, catToDog1y, catToDog2x, catToDog2y,
+            catToDog1, catToDog2, catToExitX, catToExitY,
+            this.step, dog1Dir, dog2Dir);
+        this.stepRecordBuf.add(buf);
+
+        this.judge();
     }
     // Reset logic
     public void reset(){
-        if(this.gameresult!=GameResults.NotEnd)this.recordGameResultToODBC();
+        if(this.gameresult!=GameResults.NotEnd){
+            this.recordGameResultToODBC();
+        }
         this.gameresult=GameResults.NotEnd;
         this.isAutoRun=false;
         this.isGameEnd=true;
@@ -188,19 +262,24 @@ public class DeadEndGame implements ActionListener{
         this.player.reset();
         this.dogs.reset();
 
+        this.stepRecordBuf.clear();
+
         this.isReseted=true;
     }
 
-    // TODO add logic to manipulate data
+    // logic to manipulate data
     private void recordStepToODBC(){
-        // TODO record the step
+        // record the step
+        
     }
     private void recordGameResultToODBC(){
-        // TODO record the game result
+        // record the game result
+        deadend.database.odbc.ODBCWrite.writeStep(this);
         deadend.database.odbc.ODBCWrite.writeMCTime(this);
+        
     }
     private void appendResultToStepODBC(){
-        // TODO query from the record and write it to another table
+        // query from the record and write it to another table
     }
 
     /**
@@ -232,6 +311,10 @@ public class DeadEndGame implements ActionListener{
             this.isGameEnd=true;
             this.gameresult=GameResults.Draw;
         }
+    }
+
+    public ArrayList<StepRecordBuffer> getStepRecordBuf() {
+        return stepRecordBuf;
     }
 
     /**
