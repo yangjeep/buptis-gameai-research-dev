@@ -43,8 +43,8 @@ public class ODBCWrite {
             if(game.gameresult==GameResults.CatWin)r=0;
             if(game.gameresult==GameResults.Draw)r=1;
             if(game.gameresult==GameResults.DogWin)r=3;
-	        stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentCalTimeTableName+"(catStrategy,calTime , GameResult) values('"+
-                    game.player.getStrategy().getName()+"','"
+	        stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentCalTimeTableName+"(catStrategy,dogStrategy,calTime, GameResult) values('"+
+                    game.player.getStrategy().getName()+"','"+game.dogs.getStrategy().getName()+"','"
                     +deadend.game.GameConfigClass.ComputingTimeLimit+"','"+r+"')"
                     );
                 stmt.close();
@@ -91,11 +91,11 @@ public class ODBCWrite {
                 String dog1Dir=b.getDog1Dir();
                 String dog2Dir=b.getDog2Dir();
                 
-                stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentStepRecordName+"(catStrategy,catToDog1x,catToDog1y," +
+                stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentStepRecordName+"(catStrategy,dogStrategy,catToDog1x,catToDog1y," +
                         "catToDog2x,catToDog2y,catToDog1,catToDog2," +
                         "catToExitX,catToExitY,turn," +
                         "dog1Dir,dog2Dir,CalculationTime,GameResult) values('"
-                        +game.player.getStrategy().getName()+"','"
+                        +game.player.getStrategy().getName()+"','"+game.dogs.getStrategy().getName()+"','"
                         +catToDog1x+"','"+catToDog1y+"','"+catToDog2x+"','"+catToDog2y+"','"
                         +catToDog1+"','"+catToDog2+"','"+catToExitX+"','"+catToExitY+"','"+turn+"','"
                         +dog1Dir+"','"+dog2Dir+"','"+deadend.game.GameConfigClass.ComputingTimeLimit+"','"+r+"')"

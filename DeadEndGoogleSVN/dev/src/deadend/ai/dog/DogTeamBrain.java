@@ -26,7 +26,7 @@ import deadend.ai.dog.monteCarlo.*;
  *
  * @author Yang JiaJian
  */
-public class DogTeamBrain {
+public class DogTeamBrain extends TeamBrainFound{
 
     public DogTeamBrain(DeadEndGame game,int timeLimit) {
         this.game=game;
@@ -40,7 +40,7 @@ public class DogTeamBrain {
 
     ArrayList<DirectionCredit> dcredits;
 
-    public ArrayList<deadend.globalenum.Directions> directions;
+    
     // method computation within time limit
     public void compute(){
         this.dcredits=new ArrayList<DirectionCredit>(deadend.game.GameConfigClass.NumberOfDogs);
@@ -94,4 +94,9 @@ public class DogTeamBrain {
         this.simNum=0;
     }
     int simNum=0;
+
+    @Override
+    public String getName(){
+        return "MonteCarlo";
+    }
 }
