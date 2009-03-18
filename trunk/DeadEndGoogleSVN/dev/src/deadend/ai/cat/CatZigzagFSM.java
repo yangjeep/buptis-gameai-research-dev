@@ -45,8 +45,8 @@ public class CatZigzagFSM implements StrategyInterface{
         Random rand=new Random();
 
         if(step==1){
-            double r=rand.nextDouble();
-            if(r>0.5) {
+            boolean r=rand.nextBoolean();
+            if(r) {
                 this.initDir = Directions.Left;
                 this.revDir=Directions.Right;
             }
@@ -67,8 +67,58 @@ public class CatZigzagFSM implements StrategyInterface{
         }
         Point targetDoor=doors.get(ne);
 
+        boolean isDanger=false;
+        Point dd=null;
+        double dist=20;
+        for(Dog d:dogs){
+            if((Math.abs(d.getPosition().x-player.x)<=2)
+                    && (player.y-d.getPosition().y>0)
+                    && (player.y-d.getPosition().y<4)
+                    ){
+                isDanger=true;
+                dd=d.getPosition();
+                if(dd.distance(player)<dist)dist=dd.distance(player);
+            }
+        }
+
+        if(isDanger){
+            if(this.isTouched){
+                ArrayList<Directions> ret=new ArrayList<Directions>();
+                if(targetDoor.x>player.x && Math.abs(player.x-dd.x)!=1){
+                    ret.add(this.revDir);
+                }
+                if(targetDoor.y<player.y && player.x-dd.x==1){
+                    ret.add(Directions.Up);
+                }
+                int rt=0;
+                if(ret.size()!=0){
+                    rand.nextInt(ret.size());
+                    return ret.get(rt);
+                }
+            }
+            else{
+                ArrayList<Directions> ret=new ArrayList<Directions>();
+                if(targetDoor.x>player.x && Math.abs(player.x-dd.x)!=1){
+                    ret.add(this.initDir);
+                }
+                if(targetDoor.y<player.y && player.x-dd.x==1){
+                    ret.add(Directions.Up);
+                }
+                int rt=0;
+                if(ret.size()!=0){
+                    rand.nextInt(ret.size());
+                    return ret.get(rt);
+                }
+            }
+        }
+
+        
+
         if(this.initDir==Directions.Left){
             if(!this.isTouched){
+                if(player.y<deadend.game.GameConfigClass.GridY/2){
+                    this.isTouched=true;
+                }
                 if(player.x>0){
                     if(rand.nextBoolean()){
                         return this.initDir;
@@ -101,6 +151,9 @@ public class CatZigzagFSM implements StrategyInterface{
         }
         else{
             if(!this.isTouched){
+                if(player.y<deadend.game.GameConfigClass.GridY/2){
+                    this.isTouched=true;
+                }
                 if(player.x<(deadend.game.GameConfigClass.GridX-1)){
                         if(rand.nextBoolean()){
                             return this.initDir;

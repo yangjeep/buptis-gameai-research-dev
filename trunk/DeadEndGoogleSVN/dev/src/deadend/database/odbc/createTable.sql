@@ -1,1 +1,1 @@
-create table MonteCarloCalTimeRevised1(catStrategy varchar not null, calTime int not null, GameResult int not null);
+create table MonteCarloCalTimeRevisedNew1(catStrategy varchar not null,dogStrategy varchar not null, calTime int not null, GameResult int not null);

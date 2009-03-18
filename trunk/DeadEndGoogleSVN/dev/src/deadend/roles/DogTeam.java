@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import deadend.game.DeadEndGame;
 import deadend.game.GameConfigClass;
 import deadend.ai.*;
-import deadend.ai.dog.DogTeamBrain;
+import deadend.ai.dog.*;;
 
 
 /**
@@ -40,7 +40,7 @@ public class DogTeam {
     // Strategy
     private StrategyInterface strategy;
 
-    private DogTeamBrain brain;
+    private TeamBrainFound brain;
 
     public DogTeam(DeadEndGame game) {
         this.game=game;
@@ -77,12 +77,12 @@ public class DogTeam {
         }
     }
 
-    public StrategyInterface getStrategy() {
-        return strategy;
+    public TeamBrainFound getStrategy() {
+        return this.brain;
     }
 
-    public void setStrategy(StrategyInterface strategy) {
-        this.strategy = strategy;
+    public void setStrategy(TeamBrainFound  strategy) {
+        this.brain = strategy;
     }
 
 }
