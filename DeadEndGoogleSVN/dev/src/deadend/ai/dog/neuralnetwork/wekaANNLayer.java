@@ -121,6 +121,7 @@ public class wekaANNLayer {
     public void Initialize(int NumNodes,
             wekaANNLayer parent,wekaANNLayer child){
 
+
         this.NeuronValues=new double[this.NumberOfNodes];
         this.DesiredValues=new double[this.NumberOfNodes];
         this.Errors=new double[this.NumberOfNodes];
@@ -306,16 +307,17 @@ public class wekaANNLayer {
 
     /**
      * Load weights from ODBC
+     * @param url the target url
      * @param tableName the name of the table in DB contains the weights
      */
-    public void LoadWeights(String tableName){
+    public void LoadWeights(String url,String tableName){
         // @TODO implement
         try{
             String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
                           "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\" +
                           "db\\ann\\090229data.mdb";
             Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection conn=DriverManager.getConnection(strurl);
+            Connection conn=DriverManager.getConnection(url);
             Statement stmt=conn.createStatement();
             ResultSet rs;
             rs=stmt.executeQuery("SELECT * FROM "+tableName);
@@ -325,9 +327,9 @@ public class wekaANNLayer {
                 int inNodeNum;
                 nodeNum=rs.getInt("nodeNum");
                 inNodeNum=rs.getInt("inputNodeNum");
-                this.Weights[nodeNum][inNodeNum]=w;
+                this.Weights[inNodeNum][nodeNum]=w;
                 // @Test
-                System.out.println("Weights:"+this.Weights[nodeNum][inNodeNum]);
+                System.out.println("Weights ["+inNodeNum+"]["+nodeNum+"]:"+this.Weights[inNodeNum][nodeNum]);
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -336,19 +338,26 @@ public class wekaANNLayer {
 
     /**
      * Load the bias value
+     * @param url the target url
      * @param tableName the name of the table in DB contains the bias
      */
-    public void LoadBias(String tableName){
+    public void LoadBias(String url,String tableName){
         // @TODO implement
         try{
             String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
                           "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\" +
                           "db\\ann\\090229data.mdb";
             Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
-            Connection conn=DriverManager.getConnection(strurl);
+            Connection conn=DriverManager.getConnection(url);
             Statement stmt=conn.createStatement();
             ResultSet rs;
             rs=stmt.executeQuery("SELECT * FROM "+tableName);
+            while(rs.next()){
+                double b=rs.getDouble("biasValue");
+                int seq=rs.getInt("nodeNum");
+                this.BiasValues[seq]=b;
+                System.out.println("Bias "+seq+" : "+this.BiasValues[seq]);
+            }
         }catch(Exception e){
             e.printStackTrace();
         }

@@ -55,13 +55,31 @@ public class wekaANNTest {
     @Test
     public void testInitialize() {
         System.out.println("initialize");
-        int nNodesInput = 0;
-        int nNodesHidden = 0;
-        int nNodesOutput = 0;
+        int nNodesInput = 9;
+        int nNodesHidden = 6;
+        int nNodesOutput = 4;
         wekaANN instance = new wekaANN();
-        instance.initialize(nNodesInput, nNodesHidden, nNodesOutput);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        try{
+            instance.initialize(nNodesInput, nNodesHidden, nNodesOutput);
+        }catch(Exception e){
+            System.err.println(e.toString());
+            fail("The test case is a prototype.");
+        }
+        int a=instance.InputLayer.NumberOfChildNodes;
+        int b=instance.InputLayer.NumberOfNodes;
+        int c=instance.InputLayer.NumberOfParentNodes;
+        if(a!=6 || b!=9 || c!=0)fail("init wrong at Input");
+
+        a=instance.HiddenLayer.NumberOfChildNodes;
+        b=instance.HiddenLayer.NumberOfNodes;
+        c=instance.HiddenLayer.NumberOfParentNodes;
+        if(a!=4 || b!=6 || c!=9)fail("init wrong at Hidden");
+
+        a=instance.OutputLayer.NumberOfChildNodes;
+        b=instance.OutputLayer.NumberOfNodes;
+        c=instance.OutputLayer.NumberOfParentNodes;
+        if(a!=0 || b!=4 || c!=6)fail("init wrong at OutPut");
+
     }
 
     /**
@@ -212,6 +230,36 @@ public class wekaANNTest {
     }
 
     /**
+     * Test of LoadData method, of class wekaANN.
+     */
+    @Test
+    public void testLoadData() {
+        System.out.println("LoadData");
+        int nNodesInput = 9;
+        int nNodesHidden = 6;
+        int nNodesOutput = 4;
+        wekaANN instance = new wekaANN();
+        instance.initialize(nNodesInput, nNodesHidden, nNodesOutput);
+        String rt;
+        rt=instance.InputLayer.NumberOfNodes+" "+
+                instance.HiddenLayer.NumberOfNodes+" "+
+                instance.OutputLayer.NumberOfNodes;
+        System.out.println(rt);
+        try{
+            for(int i=0;i<2;i++){
+                String url="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
+                          "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\" +
+                          "db\\ann\\090229dog"+(i+1)+".mdb";
+                instance.LoadData(url);
+            }
+        }catch(Exception e){
+            // review the generated test code and remove the default call to fail.
+            fail("The test case is a prototype.");
+        }
+        
+    }
+
+    /**
      * Test of dumpData method, of class wekaANN.
      */
     @Test
@@ -220,7 +268,7 @@ public class wekaANNTest {
         wekaANN instance = new wekaANN();
         instance.dumpData();
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
 }
