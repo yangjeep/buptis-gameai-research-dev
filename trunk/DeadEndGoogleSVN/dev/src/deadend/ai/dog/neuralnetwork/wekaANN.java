@@ -57,21 +57,21 @@ public class wekaANN {
         this.InputLayer.NumberOfChildNodes=nNodesHidden;
         this.InputLayer.NumberOfParentNodes=0;
         this.InputLayer.Initialize(nNodesInput, null, this.HiddenLayer);
-        this.InputLayer.RandomizeWeights();
+        //this.InputLayer.RandomizeWeights();
 
         // Hidden Layer
         this.HiddenLayer.NumberOfNodes=nNodesHidden;
         this.HiddenLayer.NumberOfChildNodes=nNodesOutput;
         this.HiddenLayer.NumberOfParentNodes=nNodesInput;
         this.HiddenLayer.Initialize(nNodesHidden, InputLayer, OutputLayer);
-        this.HiddenLayer.RandomizeWeights();
+        //this.HiddenLayer.RandomizeWeights();
 
         // Output Layer
         this.OutputLayer.NumberOfNodes=nNodesOutput;
         this.OutputLayer.NumberOfChildNodes=0;
         this.OutputLayer.NumberOfParentNodes=nNodesHidden;
         this.OutputLayer.Initialize(nNodesOutput, this.HiddenLayer, null);
-        this.OutputLayer.RandomizeWeights();
+        //this.OutputLayer.RandomizeWeights();
     }
 
     /**
@@ -217,6 +217,17 @@ public class wekaANN {
         this.InputLayer.MomentumFactor=factor;
         this.HiddenLayer.MomentumFactor=factor;
         this.OutputLayer.MomentumFactor=factor;
+    }
+
+    /**
+     * Choose the data source weights/bias
+     * @param dbname mdb file name
+     */
+    public void LoadData(String dbname){
+        this.InputLayer.LoadWeights(dbname, "HiddenLayerNodes");
+        this.InputLayer.LoadBias(dbname, "HiddenLayerBias");
+        this.HiddenLayer.LoadWeights(dbname, "OutputLayerNodes");
+        this.HiddenLayer.LoadBias(dbname, "OutputLayerBias");
     }
 
     /**

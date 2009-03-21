@@ -96,14 +96,15 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         resumeButton.setEnabled(false);
         resumeButton.addActionListener(formListener);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "BasicFSM", "ZigZag" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "BasicFSM", "ZigZag", "CounterStrike" }));
         jComboBox1.addItemListener(formListener);
 
         jLabel2.setText("Cat");
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarlo" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarlo", "MC-ANN" }));
+        jComboBox2.addItemListener(formListener);
 
         PulseButton.setText("Pulse");
         PulseButton.setEnabled(false);
@@ -210,6 +211,9 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
             if (evt.getSource() == jComboBox1) {
                 DeadEndControlPanel.this.jComboBox1ItemStateChanged(evt);
             }
+            else if (evt.getSource() == jComboBox2) {
+                DeadEndControlPanel.this.jComboBox2ItemStateChanged(evt);
+            }
         }
     }// </editor-fold>//GEN-END:initComponents
 
@@ -270,7 +274,21 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         if(str.equalsIgnoreCase("BasicFSM")){
             this.game.player.setStrategy(new deadend.ai.cat.CatBasicFSM());
         }
+        if(str.equalsIgnoreCase("CounterStrike")){
+            this.game.player.setStrategy(new deadend.ai.cat.CatAppealFSM());
+        }
     }//GEN-LAST:event_jComboBox1ItemStateChanged
+
+    private void jComboBox2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox2ItemStateChanged
+        String str=this.jComboBox2.getSelectedItem().toString();
+        if(str.equalsIgnoreCase("MonteCarlo")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.DogTeamBrain(game,
+                    deadend.game.GameConfigClass.ComputingTimeLimit));
+        }
+        if(str.equalsIgnoreCase("MC-ANN")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game));
+        }
+    }//GEN-LAST:event_jComboBox2ItemStateChanged
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
