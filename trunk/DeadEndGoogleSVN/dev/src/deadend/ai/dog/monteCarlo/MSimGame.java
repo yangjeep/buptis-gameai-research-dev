@@ -99,10 +99,10 @@ public class MSimGame {
     public GameResults simResult;
     private DeadEndGame game;
 
-    private MCat scat;
-    private ArrayList<MDog> sdogs;
+    MCat scat;
+    ArrayList<MDog> sdogs;
 
-    private int step;
+    int step;
 
     private int count;
 
@@ -133,10 +133,10 @@ public class MSimGame {
                 break;
             }
             for(int s=1;s<=this.game.player.getSpeed();s++){
-                this.scat.rMove();
+                this.scat.rMove(this);
             }
             for(MDog m:this.sdogs){
-                m.rMove(count);
+                m.rMove(count,this);
             }
             
             count++;

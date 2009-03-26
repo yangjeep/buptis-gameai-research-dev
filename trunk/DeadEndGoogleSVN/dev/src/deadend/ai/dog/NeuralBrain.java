@@ -36,16 +36,29 @@ public class NeuralBrain extends TeamBrainFound{
 
     ArrayList<wekaANN> annDogs;
 
-    public NeuralBrain(DeadEndGame game){
+    int catNum;
+    boolean onlyWin;
+
+    public NeuralBrain(DeadEndGame game,int catNum,boolean onlyWin){
         this.game=game;
+        this.catNum=catNum;
+        this.onlyWin=onlyWin;
 
         this.annDogs=new ArrayList<wekaANN>();
         for(int i=0;i<game.dogs.dogTeam.size();i++){
             wekaANN ann=new wekaANN();
             ann.initialize(9, 6, 4);
-            String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
+            String strurl;
+            if(onlyWin){
+                strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
                           "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\" +
-                          "db\\ann\\090229dog"+(i+1)+".mdb";
+                          "db\\ann\\Cat"+catNum+"-"+"dog"+(i+1)+"-Win"+".mdb";
+            }
+            else{
+                strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
+                          "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\" +
+                          "db\\ann\\Cat"+catNum+"-"+"dog"+(i+1)+".mdb";
+            }
             ann.LoadData(strurl);
             this.annDogs.add(ann);
         }
@@ -92,25 +105,163 @@ public class NeuralBrain extends TeamBrainFound{
 
             int k=this.annDogs.get(i).getMAxOutPutID();
             Directions d=Directions.Still;
-            switch(k){
-                case 0:
-                    d=Directions.Down;
-                    break;
-                case 1:
-                    d=Directions.Left;
-                    break;
-                case 2:
-                    d=Directions.Up;
-                    break;
-                case 3:
-                    d=Directions.Right;
-                    break;
-            }
+            d=this.loadChoice(i+1,k);
             this.directions.set(i, d);
         }
     }
     @Override
     public String getName(){
-        return "ANN";
+        String str="ANN";
+        switch(this.catNum){
+            case 1:
+                str+="-BasicFSM";
+                break;
+            case 2:
+                str+="-Zigzag";
+                break;
+            case 3:
+                str+="-CounterStrike";
+                break;
+        }
+        if(this.onlyWin)str+="-WinOnly";
+        else str+="-All";
+        str+="-Time"+deadend.game.GameConfigClass.ComputingTimeLimit;
+        return str;
+    }
+
+    private Directions loadChoice(int dogNum,int k){
+        Directions dir=Directions.Still;
+        switch(this.catNum){
+            case 1:{
+                if(dogNum==1){
+                    if(this.onlyWin){
+                        // cat1-dog1-onlyWin
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Left;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Right;
+                        }
+                    }
+                    else{
+                        // cat1-dog1-all
+                        switch(k){
+                            case 0:
+                            case 1:
+                            case 2:
+                            case 3:
+                        }
+                    }
+                }
+                if(dogNum==2){
+                    if(this.onlyWin){
+                        // cat1-dog2-onlyWin
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Left;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
+                        }
+                    }
+                    else{
+                        // cat1-dog2-all
+                        switch(k){
+                            case 0:
+                            case 1:
+                            case 2:
+                            case 3:
+                        }
+                    }
+                }
+                break;
+            }
+            case 2:{
+                if(dogNum==1){
+                    if(this.onlyWin){
+                        // cat2-dog1-onlyWin
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Left;
+                        }
+                    }
+                    else{
+                        // cat2-dog1-all
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Up;
+                            case 2:return Directions.Left;
+                            case 3:return Directions.Right;
+                        }
+                    }
+                }
+                if(dogNum==2){
+                    if(this.onlyWin){
+                        // cat2-dog2-onlyWin
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Left;
+                            case 3:return Directions.Up;
+                        }
+                    }
+                    else{
+                        // cat2-dog2-all
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Left;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
+                        }
+                    }
+                }
+                break;
+            }
+            case 3:{
+                if(dogNum==1){
+                    if(this.onlyWin){
+                        // cat3-dog1-onlyWin
+                        switch(k){
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Down;
+                            case 3:return Directions.Up;
+                        }
+                    }
+                    else{
+                        // cat3-dog1-all
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Left;
+                            case 3:return Directions.Up;
+                        }
+                    }
+                }
+                if(dogNum==2){
+                    if(this.onlyWin){
+                        // cat3-dog2-onlyWin
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Left;
+                            case 3:return Directions.Up;
+                        }
+                    }
+                    else{
+                        // cat3-dog2-all
+                        switch(k){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Up;
+                            case 2:return Directions.Left;
+                            case 3:return Directions.Right;
+                        }
+                    }
+                }
+                break;
+            }
+        }
+        return dir;
     }
 }

@@ -97,6 +97,8 @@ public class DogTeamBrain extends TeamBrainFound{
 
     @Override
     public String getName(){
-        return "MonteCarlo";
+        String str="MonteCarlo";
+        str+="-Time"+deadend.game.GameConfigClass.ComputingTimeLimit;
+        return str;
     }
 }
