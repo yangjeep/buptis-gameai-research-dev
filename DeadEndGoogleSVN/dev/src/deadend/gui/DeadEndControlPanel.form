@@ -182,9 +182,22 @@
     <Component class="javax.swing.JComboBox" name="jComboBox2">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="2">
-            <StringItem index="0" value="MonteCarlo"/>
-            <StringItem index="1" value="MC-ANN"/>
+          <StringArray count="15">
+            <StringItem index="0" value="MonteCarloAdv"/>
+            <StringItem index="1" value="AdvANN-Basic-Win"/>
+            <StringItem index="2" value="AdvANN-ZigZag-Win"/>
+            <StringItem index="3" value="AdvANN-CS-Win"/>
+            <StringItem index="4" value="MonteCarloState"/>
+            <StringItem index="5" value="MonteCarlo"/>
+            <StringItem index="6" value="AdvANN-Basic"/>
+            <StringItem index="7" value="AdvANN-ZigZag"/>
+            <StringItem index="8" value="AdvANN-CS"/>
+            <StringItem index="9" value="ANN-Basic-Win"/>
+            <StringItem index="10" value="ANN-ZigZag-Win"/>
+            <StringItem index="11" value="ANN-CS-Win"/>
+            <StringItem index="12" value="ANN-Basic"/>
+            <StringItem index="13" value="ANN-ZigZag"/>
+            <StringItem index="14" value="ANN-CS"/>
           </StringArray>
         </Property>
       </Properties>

@@ -39,7 +39,9 @@ public class GameConfigClass {
     // Refresh limit
     public final static int InitRefreshTimeMS=1000;
 
-    public static String currentCalTimeTableName="MonteCarloCalTimeRevisedNew1";
+    public static int currentStepRecordTableVersion=2;
 
-    public static String currentStepRecordName="MonteCarloTableNew1";
+    public static String currentCalTimeTableName="MCTable090323Result";
+
+    public static String currentStepRecordName="MCTable090323";
 }

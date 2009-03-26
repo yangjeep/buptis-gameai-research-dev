@@ -103,7 +103,7 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarlo", "MC-ANN" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdv", "AdvANN-Basic-Win", "AdvANN-ZigZag-Win", "AdvANN-CS-Win", "MonteCarloState", "MonteCarlo", "AdvANN-Basic", "AdvANN-ZigZag", "AdvANN-CS", "ANN-Basic-Win", "ANN-ZigZag-Win", "ANN-CS-Win", "ANN-Basic", "ANN-ZigZag", "ANN-CS" }));
         jComboBox2.addItemListener(formListener);
 
         PulseButton.setText("Pulse");
@@ -285,8 +285,53 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
             this.game.dogs.setStrategy(new deadend.ai.dog.DogTeamBrain(game,
                     deadend.game.GameConfigClass.ComputingTimeLimit));
         }
-        if(str.equalsIgnoreCase("MC-ANN")){
-            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game));
+        
+        if(str.equalsIgnoreCase("MonteCarloAdv")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.MCTeamBrain(game,
+                    deadend.game.GameConfigClass.ComputingTimeLimit));
+        }
+
+        if(str.equalsIgnoreCase("MonteCarloState")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.MCStateTeamBrain(game,
+                    deadend.game.GameConfigClass.ComputingTimeLimit));
+        }
+
+        if(str.equalsIgnoreCase("ANN-Basic")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game,1,false));
+        }
+        if(str.equalsIgnoreCase("ANN-ZigZag")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game,2,false));
+        }
+        if(str.equalsIgnoreCase("ANN-CS")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game,3,false));
+        }
+        if(str.equalsIgnoreCase("ANN-Basic-Win")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game,1,true));
+        }
+        if(str.equalsIgnoreCase("ANN-ZigZag-Win")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game,2,true));
+        }
+        if(str.equalsIgnoreCase("ANN-CS-Win")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game,3,true));
+        }
+
+        if(str.equalsIgnoreCase("AdvANN-Basic")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,1,false));
+        }
+        if(str.equalsIgnoreCase("AdvANN-ZigZag")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,2,false));
+        }
+        if(str.equalsIgnoreCase("AdvANN-CS")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,3,false));
+        }
+        if(str.equalsIgnoreCase("AdvANN-Basic-Win")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,1,true));
+        }
+        if(str.equalsIgnoreCase("AdvANN-ZigZag-Win")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,2,true));
+        }
+        if(str.equalsIgnoreCase("AdvANN-CS-Win")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,3,true));
         }
     }//GEN-LAST:event_jComboBox2ItemStateChanged
 

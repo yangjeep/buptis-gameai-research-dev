@@ -32,7 +32,56 @@ public class MDog {
         this.first=Directions.Still;
     }
 
-    public void rMove(int step){
+    /**
+     *
+     * @param step
+     * @param simGame
+     */
+    public void rMove(int step,MSimGame simGame){
+        java.util.Random rand=new java.util.Random();
+        java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
+        choices.clear();
+        if(this.position.x>0){
+            choices.add(Directions.Left);
+        }
+        if(this.position.x<deadend.game.GameConfigClass.GridX-1){
+            choices.add(Directions.Right);
+        }
+        if(this.position.y>0){
+            choices.add(Directions.Up);
+        }
+        if(this.position.y<deadend.game.GameConfigClass.GridY-1){
+            choices.add(Directions.Down);
+        }
+
+        int c=rand.nextInt(choices.size());
+        if(step==1){
+            this.first=choices.get(c);
+            //System.out.println(this.first.toString());
+        }
+
+        Point p=(Point)this.position.clone();
+        Directions dir=choices.get(c);
+        if(dir==Directions.Up){
+            this.position.setLocation(p.x,p.y-1);
+        }
+        if(dir==Directions.Down){
+            this.position.setLocation(p.x,p.y+1);
+        }
+        if(dir==Directions.Left){
+            this.position.setLocation(p.x-1, p.y);
+        }
+        if(dir==Directions.Right){
+            this.position.setLocation(p.x+1, p.y);
+        }
+    }
+
+    /**
+     * 
+     * @deprecated
+     * @param step
+     */
+    public void rMove1(int step){
         java.util.Random rand=new java.util.Random();
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
         choices.clear();

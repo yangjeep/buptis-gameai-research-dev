@@ -146,8 +146,7 @@ public class DeadEndGame implements ActionListener{
     }
 
     @Override
-    public void actionPerformed(ActionEvent e){   
-        this.step++;
+    public void actionPerformed(ActionEvent e){
         this.judge();
         if(this.gameresult!=GameResults.NotEnd){
             this.ticker.stop();
@@ -157,6 +156,8 @@ public class DeadEndGame implements ActionListener{
             this.ticker.stop();
             return;
         }
+        this.step++;
+        
         for(int i=1;i<=this.player.getSpeed();i++){
             this.player.compute();
         }
@@ -176,7 +177,50 @@ public class DeadEndGame implements ActionListener{
         catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());
         catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
 
-        this.judge();
+        double catDog1Angle;
+        if(this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x!=0){
+            catDog1Angle=
+                (this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y)/
+                (this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x)
+                ;
+        }
+        else{
+            catDog1Angle=1;
+        }
+        double catDog2Angle;
+        if(this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x!=0){
+            catDog2Angle=
+                (this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y)/
+                (this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x)
+                ;
+        }
+        else{
+            catDog2Angle=1;
+        }
+
+
+        int catToLeft=this.player.getPosition().x-0;
+        int catToRight=GameConfigClass.GridX-this.player.getPosition().x;
+        int catToTop=this.player.getPosition().y-0;
+        int catToBottom=GameConfigClass.GridY-this.player.getPosition().y;
+
+        int dog1ToLeft=this.dogs.dogTeam.get(0).getPosition().x-0;
+        int dog1ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(0).getPosition().x;
+        int dog1ToTop=this.dogs.dogTeam.get(0).getPosition().y-0;
+        int dog1ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(0).getPosition().y;
+
+        int dog2ToLeft=this.dogs.dogTeam.get(1).getPosition().x-0;
+        int dog2ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(1).getPosition().x;
+        int dog2ToTop=this.dogs.dogTeam.get(1).getPosition().y-0;
+        int dog2ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(1).getPosition().y;
+
+        double dogInnerDist=this.dogs.dogTeam.get(0).getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
+        int dog1ToExitX=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).x;
+        int dog1ToExitY=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).y;
+
+        int dog2ToExitX=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).x;
+        int dog2ToExitY=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).y;
+        //this.judge();
 
         this.dogs.compute();
         
@@ -187,10 +231,21 @@ public class DeadEndGame implements ActionListener{
 
         this.dogs.removeDirection();
 
+        /*
         deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
                 catToDog1x, catToDog1y, catToDog2x, catToDog2y,
             catToDog1, catToDog2, catToExitX, catToExitY,
             this.step, dog1Dir, dog2Dir);
+         */
+        deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
+                catToDog1x, catToDog1y, catToDog2x, catToDog2y,
+                catToDog1, catToDog2, catToExitX, catToExitY,
+                catDog1Angle, catDog2Angle,
+                catToLeft, catToRight, catToTop, catToBottom,
+                dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,
+                dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,
+                dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,
+                step, dog1Dir, dog2Dir);
         this.stepRecordBuf.add(buf);
 
         this.judge();
