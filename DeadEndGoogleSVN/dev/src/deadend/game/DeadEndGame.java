@@ -96,13 +96,15 @@ public class DeadEndGame implements ActionListener{
         this.dogs.initialize();
 
         //Initialize the timer
-        this.refreshTime=GameConfigClass.InitRefreshTimeMS;
+        this.refreshTime=GameConfigClass.InitRefreshTimeMS/(GameConfigClass.CatSpeed+1);
         this.ticker=new Timer(this.refreshTime,this);
 
         //
         this.stepRecordBuf=new ArrayList<deadend.database.StepRecordBuffer>();
 
         this.isReseted=true;
+
+        this.remainder=0;
     }
     /**
      * When starting the game it enters the main loop
@@ -145,6 +147,34 @@ public class DeadEndGame implements ActionListener{
         this.refreshTime=delay;
     }
 
+    int remainder;
+
+    /***/
+    int catToDog1x,catToDog1y,catToDog2x,catToDog2y,catToExitX,catToExitY;
+    double catToDog1,catToDog2;
+    double catDog1Angle;
+    double catDog2Angle;
+    int catToLeft;
+    int catToRight;
+    int catToTop;
+    int catToBottom;
+    int dog1ToLeft;
+    int dog1ToRight;
+    int dog1ToTop;
+    int dog1ToBottom;
+
+    int dog2ToLeft;
+    int dog2ToRight;
+    int dog2ToTop;
+    int dog2ToBottom;
+
+    double dogInnerDist;
+    int dog1ToExitX;
+    int dog1ToExitY;
+
+    int dog2ToExitX;
+    int dog2ToExitY;
+
     @Override
     public void actionPerformed(ActionEvent e){
         this.judge();
@@ -156,9 +186,7 @@ public class DeadEndGame implements ActionListener{
             this.ticker.stop();
             return;
         }
-        this.step++;
-        
-        for(int i=1;i<=this.player.getSpeed();i++){
+        if(this.remainder==0){            this.step++;            this.remainder++;            this.player.compute();            this.judge();        }        else if(this.remainder==1){            this.remainder++;            this.player.compute();            this.judge();        }        else if(this.remainder==2){            catToDog1x=this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x;            catToDog1y=this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y;            catToDog2x=this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x;            catToDog2y=this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y;            catToExitX=this.player.getPosition().x-this.door.get(0).x;            catToExitY=this.player.getPosition().y-this.door.get(0).y;            catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());            catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());            if(this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x!=0){                catDog1Angle=                    (this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y)/                    (this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x)                    ;            }            else{                catDog1Angle=1;            }            if(this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x!=0){                catDog2Angle=                    (this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y)/                    (this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x)                    ;            }            else{                catDog2Angle=1;            }             catToLeft=this.player.getPosition().x-0;             catToRight=GameConfigClass.GridX-this.player.getPosition().x;             catToTop=this.player.getPosition().y-0;             catToBottom=GameConfigClass.GridY-this.player.getPosition().y;             dog1ToLeft=this.dogs.dogTeam.get(0).getPosition().x-0;             dog1ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(0).getPosition().x;             dog1ToTop=this.dogs.dogTeam.get(0).getPosition().y-0;             dog1ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(0).getPosition().y;             dog2ToLeft=this.dogs.dogTeam.get(1).getPosition().x-0;             dog2ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(1).getPosition().x;             dog2ToTop=this.dogs.dogTeam.get(1).getPosition().y-0;             dog2ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(1).getPosition().y;             dogInnerDist=this.dogs.dogTeam.get(0).getPosition().distance(this.dogs.dogTeam.get(1).getPosition());             dog1ToExitX=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).x;             dog1ToExitY=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).y;             dog2ToExitX=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).x;             dog2ToExitY=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).y;                          this.dogs.compute();             this.remainder=0;             this.judge();             deadend.globalenum.Directions dog1Dir,dog2Dir;             dog1Dir=this.dogs.dogTeam.get(0).getDirection();             dog2Dir=this.dogs.dogTeam.get(1).getDirection();             this.dogs.removeDirection();             deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(                catToDog1x, catToDog1y, catToDog2x, catToDog2y,                catToDog1, catToDog2, catToExitX, catToExitY,                catDog1Angle, catDog2Angle,                catToLeft, catToRight, catToTop, catToBottom,                dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,                dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,                dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,                step, dog1Dir, dog2Dir);            this.stepRecordBuf.add(buf);        }       }    /**     * @param e     * @deprecated     */    public void actionPerformedOld(ActionEvent e){        this.judge();        if(this.gameresult!=GameResults.NotEnd){            this.ticker.stop();            return;        }        if(this.isPaused){            this.ticker.stop();            return;        }        for(int i=1;i<=this.player.getSpeed();i++){
             this.player.compute();
         }
 
@@ -223,7 +251,7 @@ public class DeadEndGame implements ActionListener{
         //this.judge();
 
         this.dogs.compute();
-        
+
         deadend.globalenum.Directions dog1Dir,dog2Dir;
 
         dog1Dir=this.dogs.dogTeam.get(0).getDirection();
@@ -253,10 +281,9 @@ public class DeadEndGame implements ActionListener{
     }
 
     public void playGame(){
-         this.step++;
+        this.step++;
         this.judge();
         if(this.gameresult!=GameResults.NotEnd){
-            this.ticker.stop();
             return;
         }
         if(this.isPaused){
@@ -341,15 +368,7 @@ public class DeadEndGame implements ActionListener{
      * This part is to judge the result
      */
     private void judge(){
-        /**
-         * Find if dog wins
-         */
-        for(Dog d:this.dogs.dogTeam){
-            if(d.getPosition().equals(this.player.getPosition())){
-                this.isGameEnd=true;
-                this.gameresult=GameResults.DogWin;
-            }
-        }
+
         /**
          * Find if cat wins
          */
@@ -359,6 +378,16 @@ public class DeadEndGame implements ActionListener{
                 this.gameresult=GameResults.CatWin;
             }
         }
+        /**
+         * Find if dog wins
+         */
+        for(Dog d:this.dogs.dogTeam){
+            if(d.getPosition().equals(this.player.getPosition())){
+                this.isGameEnd=true;
+                this.gameresult=GameResults.DogWin;
+            }
+        }
+        
         /**
          * Find if the turns has been reached
          */
@@ -395,6 +424,21 @@ public class DeadEndGame implements ActionListener{
     public void autoRun(){
         do{
             this.playGame();
+            if(this.gameresult!=GameResults.NotEnd){
+                this.reset();
+                i++;
+            }
+            System.out.println("Record:"+this.i);
+        }while(i<=this.autoRun_Rounds);
+    }
+    /**
+     * execute the autorun task
+     * @param gamePanel 
+     */
+    public void autoRun(deadend.gui.DeadEndGamePanel gamePanel){
+        do{
+            this.playGame();
+            gamePanel.repaint();
             if(this.gameresult!=GameResults.NotEnd){
                 this.reset();
                 i++;
