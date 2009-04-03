@@ -43,7 +43,7 @@ public class Cat extends Animal{
 
         this.speed=deadend.game.GameConfigClass.CatSpeed;
 
-        this.strategy=new CatBasicFSM();
+        this.strategy=new CatZigzagFSM();
     }
 
     // the strategy related logic here

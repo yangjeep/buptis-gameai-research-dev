@@ -55,7 +55,7 @@ public class DogTeam {
             d.initialize(i-1);
             this.dogTeam.add(d);
         }
-        this.brain=new DogTeamBrain(this.game,deadend.game.GameConfigClass.ComputingTimeLimit);
+        this.brain=new deadend.ai.dog.MCAdvSingleBrain(game, deadend.game.GameConfigClass.ComputingTimeLimit);
     }
 
     // compute logic
