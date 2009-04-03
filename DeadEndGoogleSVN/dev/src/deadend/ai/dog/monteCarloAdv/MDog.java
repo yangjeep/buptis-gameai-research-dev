@@ -36,8 +36,9 @@ public class MDog {
      *
      * @param step
      * @param simGame
+     * @param remainder 
      */
-    public void rMove(int step,MSimGame simGame){
+    public void rMove(int step,MSimGame simGame,int remainder){
         java.util.Random rand=new java.util.Random();
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
         choices.clear();
@@ -61,7 +62,20 @@ public class MDog {
         Directions dir=choices.get(c);
 
         if(step==1){
-            this.first=dir;
+            switch(remainder){
+                case 0:
+                    this.first=Directions.Up;
+                    break;
+                case 1:
+                    this.first=Directions.Left;
+                    break;
+                case 2:
+                    this.first=Directions.Right;
+                    break;
+                case 3:
+                    this.first=Directions.Down;
+                    break;
+            }
             if(this.position.x-simGame.scat.position.x==1 &&
                     this.position.y-simGame.scat.position.y==0)this.first=Directions.Left;
             if(this.position.x-simGame.scat.position.x==-1 &&
