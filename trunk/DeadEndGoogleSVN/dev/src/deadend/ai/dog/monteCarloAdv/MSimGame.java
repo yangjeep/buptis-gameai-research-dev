@@ -31,6 +31,7 @@ public class MSimGame {
     private ArrayList<Double> odists;
     // the logic of an original game
     public MSimGame(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
+
         this.game=game;
         this.nextDir=new ArrayList<Directions>(dogs.size());
         this.simResult=GameResults.NotEnd;
@@ -107,43 +108,30 @@ public class MSimGame {
     private int count;
 
     public boolean isFinished;
-    public boolean runSim(){
+    public boolean runSim(int remainder){
         do{
             this.step++;
             this.judge();
+            
             if(this.isFinished)break;
-            if(this.step>=this.game.LimitStep){
-                this.isFinished=true;
-                this.simResult=GameResults.Draw;
-                //System.out.println("Simdraw");
-                //double dist=sdogs.get(0).position.distance(scat.position);
-                //for(MDog d:sdogs){
-                //if(d.position.distance(scat.position)<odist)this.simResult=GameResults.DogWin;
-                //}
-                /*
-                ArrayList<Double> dists=new ArrayList<Double>();
-                int x=0;
-                for(int j=0;j<sdogs.size();j++){
-                    dists.add(new Double(sdogs.get(j).position.distance(scat.position)));
-                    if(dists.get(j)<this.odists.get(j))x++;
-                }
-                if(x==this.game.dogs.dogTeam.size()){
-                    this.simResult=GameResults.DogWin;
-                }*/
-                break;
-            }
+            
             for(int s=1;s<=this.game.player.getSpeed();s++){
                 this.scat.rMove(this);
             }
             for(MDog m:this.sdogs){
-                m.rMove(count,this);
+                m.rMove(count,this,remainder);
             }
-            
             count++;
-            if(!this.isFinished)continue;
+            //if(!this.isFinished)continue;
             
         }while(this.step<=this.game.LimitStep);
-        
+
+        if(this.step>=this.game.LimitStep &&
+                this.simResult!=GameResults.CatWin &&
+                this.simResult!=GameResults.DogWin){
+                this.isFinished=true;
+                this.simResult=GameResults.Draw;
+            }
         this.nextDir.clear();
         
         for(int i=0;i<this.sdogs.size();i++){
@@ -151,14 +139,17 @@ public class MSimGame {
             //System.out.print(this.sdogs.get(i).first.toString());
         }
         //System.out.println();
+
+
         return true;
     }
-    public void runToDeath(){
-        while(!this.isFinished){
-            this.runSim();
-        }
-    }
     private void judge(){
+        for(MDog p:this.sdogs){
+            if(p.position.equals(this.scat.position)){
+                this.simResult=GameResults.DogWin;
+                this.isFinished=true;
+            }
+        }
         for(Point p:this.game.door){
             if(this.scat.position.equals(p)){
                 this.simResult=GameResults.CatWin;
@@ -166,11 +157,6 @@ public class MSimGame {
                 return;
             }
         }
-        for(MDog p:this.sdogs){
-            if(p.position.equals(this.scat.position)){
-                this.simResult=GameResults.DogWin;
-                this.isFinished=true;
-            }
-        }
+        
     }
 }
