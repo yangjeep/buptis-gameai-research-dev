@@ -37,8 +37,9 @@ public class UIMain extends javax.swing.JFrame {
         this.game.intialize();
         initComponents();
 
-        this.deadEndControlPanel1.initGame(game);
+
         this.deadEndGamePanel1.initGame(game);
+        this.deadEndControlPanel1.initGame(game,this.deadEndGamePanel1);
         this.update();
     }
 
@@ -63,9 +64,6 @@ public class UIMain extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(566, 729));
 
-        deadEndGamePanel1.setMinimumSize(new java.awt.Dimension(501, 501));
-        deadEndGamePanel1.setPreferredSize(new java.awt.Dimension(501, 501));
-
         javax.swing.GroupLayout deadEndGamePanel1Layout = new javax.swing.GroupLayout(deadEndGamePanel1);
         deadEndGamePanel1.setLayout(deadEndGamePanel1Layout);
         deadEndGamePanel1Layout.setHorizontalGroup(
@@ -77,10 +75,10 @@ public class UIMain extends javax.swing.JFrame {
             .addGap(0, 501, Short.MAX_VALUE)
         );
 
-        jScrollBar1.setMaximum(5000);
-        jScrollBar1.setMinimum(500);
-        jScrollBar1.setUnitIncrement(500);
-        jScrollBar1.setValue(3000);
+        jScrollBar1.setMaximum(2000);
+        jScrollBar1.setMinimum(250);
+        jScrollBar1.setUnitIncrement(250);
+        jScrollBar1.setValueIsAdjusting(true);
         jScrollBar1.addAdjustmentListener(formListener);
 
         deadEndControlPanel1.setMinimumSize(new java.awt.Dimension(520, 120));
@@ -104,11 +102,9 @@ public class UIMain extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(deadEndGamePanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(deadEndControlPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(18, Short.MAX_VALUE))))
+                        .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(deadEndControlPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
