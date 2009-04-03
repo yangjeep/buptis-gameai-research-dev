@@ -17,7 +17,7 @@
 
 package deadend.ai.dog.monteCarloAdv;
 
-import deadend.globalenum.Directions;
+import deadend.globalenum.*;
 
 import java.util.*;
 /**
@@ -89,6 +89,9 @@ public class DirectionCredit {
         }
     }
 
+   /**
+    * @deprecated
+    */
     public void subCredit(Directions d){
         //System.out.println(d.toString());
         int k=0;
@@ -110,6 +113,34 @@ public class DirectionCredit {
         if(d==Directions.Right){
             k=this.credit.get(3);
             k--;
+            this.credit.set(3, k);
+        }
+    }
+
+    public void autoAddCredit(Directions d, GameResults result){
+        int incr=0;
+        if(result==GameResults.DogWin)incr=1;
+        else if(result==GameResults.Draw)incr=0;
+
+        int k=0;
+        if(d==Directions.Down){
+            k=this.credit.get(0);
+            k+=incr;
+            this.credit.set(0, k);
+        }
+        if(d==Directions.Up){
+            k=this.credit.get(1);
+            k+=incr;
+            this.credit.set(1, k);
+        }
+        if(d==Directions.Left){
+            k=this.credit.get(2);
+            k+=incr;
+            this.credit.set(2, k);
+        }
+        if(d==Directions.Right){
+            k=this.credit.get(3);
+            k+=incr;
             this.credit.set(3, k);
         }
     }
