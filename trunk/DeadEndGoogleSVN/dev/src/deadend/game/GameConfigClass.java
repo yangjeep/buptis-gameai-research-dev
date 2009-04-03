@@ -23,25 +23,41 @@ package deadend.game;
  * @author Yang JiaJian
  */
 public class GameConfigClass {
-    // The dimension of the board
+    // 
+    /**
+     * The dimension of the board
+     * Number of grids on x-axis
+     */
     public final static int GridX=20;
+    /**
+     * The dimension of the board
+     * Number of grids on y-axis
+     */
     public final static int GridY=20;
-    // Number Of dogs
+    /**
+     * Number Of dogs
+     */
     public final static int NumberOfDogs=2;
-    // Cat speed
+    /**
+     * Cat speed
+     */
     public final static int CatSpeed=2;
-    // Dog speed
+    /**
+     * Dog speed
+     */
     public final static int DogSpeed=1;
-    // Time limit of computing
+    /**
+     * Time limit of computation
+     */
     public static int ComputingTimeLimit=300;
-    // Upper limit of game steps
+    /**
+     * Upper limit of game steps
+     */
     public final static int Step_Limit=20;
-    // Refresh limit
-    public final static int InitRefreshTimeMS=1000;
+    /**
+     * Minimum refresh rate of the game panel
+     */
+    public static int InitRefreshTimeMS=500;
 
-    public static int currentStepRecordTableVersion=2;
-
-    public static String currentCalTimeTableName="MCTable090323Result";
-
-    public static String currentStepRecordName="MCTable090323";
-}
+    /**     * The version of the database     */    public static int currentStepRecordTableVersion=2;
+    /**     * The name of the table records the game resord     */    public static String currentCalTimeTableName="MCTable090403Result";    /**     * The name of the table records the game steps     */    public static String currentStepRecordName="MCTable090403";}
