@@ -22,11 +22,6 @@ AdvANN-CS-Win
         if(str.equalsIgnoreCase("AdvANN-CS-Win")){
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,3,true));
         }
-MonteCarloState
-        if(str.equalsIgnoreCase("MonteCarloState")){
-            this.game.dogs.setStrategy(new deadend.ai.dog.MCStateBrain(game,
-                    deadend.game.GameConfigClass.ComputingTimeLimit));
-        }
 MonteCarlo
         if(str.equalsIgnoreCase("MonteCarlo")){
             this.game.dogs.setStrategy(new deadend.ai.dog.DogTeamBrain(game,

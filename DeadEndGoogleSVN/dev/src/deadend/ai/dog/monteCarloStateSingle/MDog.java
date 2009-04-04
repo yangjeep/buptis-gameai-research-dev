@@ -18,6 +18,7 @@
 package deadend.ai.dog.monteCarloStateSingle;
 
 import java.awt.Point;
+import java.util.ArrayList;
 
 import deadend.globalenum.Directions;
 /**
@@ -30,29 +31,41 @@ public class MDog {
     public MDog(Point position){
         this.position=position;
         this.first=Directions.Still;
+
+        // TODO initialize the strategies
+        this.strategies=new java.util.ArrayList<MCSimStrategy>();
+        this.strategies.add(new MCBasicChasing());
+        this.strategies.add(new MCBasicDefence());
+        this.strategies.add(new MCBasicWait());
     }
 
     /**
      *
      * @param step
      * @param simGame
+     * @param remainder
      */
-    public void rMove(int step,MSimGame simGame){
+    public void rMove(int step,MSimGame simGame,int remainder){
         java.util.Random rand=new java.util.Random();
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
+        
         choices.clear();
-
-        if(this.position.x>0){
-            choices.add(Directions.Left);
+        /*if(this.position.x>0){
+        choices.add(Directions.Left);
         }
         if(this.position.x<deadend.game.GameConfigClass.GridX-1){
-            choices.add(Directions.Right);
+        choices.add(Directions.Right);
         }
         if(this.position.y>0){
-            choices.add(Directions.Up);
+        choices.add(Directions.Up);
         }
         if(this.position.y<deadend.game.GameConfigClass.GridY-1){
-            choices.add(Directions.Down);
+        choices.add(Directions.Down);
+        }*/
+        
+        
+        for(int l=0;l<this.strategies.size();l++){
+            choices.add(this.strategies.get(l).nextDir(simGame,this.position));
         }
 
         int c=rand.nextInt(choices.size());
@@ -61,6 +74,7 @@ public class MDog {
         Directions dir=choices.get(c);
 
         if(step==1){
+            dir=this.computeByAStrategy(remainder, simGame);
             this.first=dir;
             if(this.position.x-simGame.scat.position.x==1 &&
                     this.position.y-simGame.scat.position.y==0)this.first=Directions.Left;
@@ -133,6 +147,10 @@ public class MDog {
         }
     }
 
-    // @TODO 
+    public ArrayList<MCSimStrategy> strategies;
+    // @TODO set several strategy
+    private Directions computeByAStrategy(int strateID,MSimGame simGame){
+        return this.strategies.get(strateID).nextDir(simGame,this.position);
+    }
 
 }

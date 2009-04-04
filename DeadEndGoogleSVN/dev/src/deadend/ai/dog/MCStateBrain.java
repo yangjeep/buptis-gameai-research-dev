@@ -53,51 +53,67 @@ public class MCStateBrain extends TeamBrainFound{
         }
 
         long begin = System.currentTimeMillis();
-		long limit = begin + this.timeLimitInMS;
+		long limit = begin + this.timeLimitInMS/this.game.dogs.dogTeam.size();
 
         System.out.println("Time:"+(limit-begin));
         MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
-        do{
-            
+
+        int remainder=0;
+        for(int j=0;j<this.game.dogs.dogTeam.size();j++){
+            do{
             // Computation logic here
-            msim.runSim();
-            
+            msim.runSim(remainder,j);
             if(msim.simResult!=deadend.globalenum.GameResults.NotEnd){
-                if(msim.simResult==deadend.globalenum.GameResults.DogWin)
-                {
-                    for(int i=0;i<this.game.dogs.dogTeam.size();i++){
-                            Directions d=msim.nextDir.get(i);
-                            this.dcredits.get(i).addCredit(d);
-                        }
-                }
-                /*
-                if(msim.simResult==deadend.globalenum.GameResults.Draw)
-                {
-                    for(int i=0;i<this.game.dogs.dogTeam.size();i++){
-                            Directions d=msim.nextDir.get(i);
-                            this.dcredits.get(i).addDrawCredit(d);
-                        }
-                }
-                 */
+                //if(j==1 && msim.simResult==deadend.globalenum.GameResults.DogWin)System.out.println("add credits to 2");
+                Directions d=msim.nextDir.get(j);
+                this.dcredits.get(j).autoAddCredit(d, msim.simResult);
                 this.simNum++;
                 msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
+                if(remainder<msim.sdogs.get(0).strategies.size())remainder++;
+                if(remainder>=msim.sdogs.get(0).strategies.size())remainder=0;
             }
-            
         }while(System.currentTimeMillis()<=limit);
+            System.out.println(j+":Simed:"+simNum);
+            simNum=0;
+            begin = System.currentTimeMillis();
+            limit = begin + this.timeLimitInMS/this.game.dogs.dogTeam.size();
+        }
+        
 
         for(int i=0;i<this.directions.size();i++){
             this.directions.set(i, this.dcredits.get(i).findBest(
                     (java.awt.Point)this.game.dogs.dogTeam.get(i).getPosition().clone(),
                     (java.awt.Point)this.game.player.getPosition().clone()));
+            
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==1 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
+                this.directions.set(i,Directions.Right);
+                System.out.println("eat right");
+            }
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==-1 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
+                this.directions.set(i,Directions.Left);
+                System.out.println("eat left");
+            }
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==1){
+                this.directions.set(i,Directions.Down);
+                System.out.println("eat down");
+            }
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==-1){
+                this.directions.set(i,Directions.Up);
+                System.out.println("eat up");
+            }
+            
         }
-        System.out.println("Simed:"+simNum);
-        this.simNum=0;
+        
     }
     int simNum=0;
 
     @Override
     public String getName(){
-        String str="MonteCarloStateSingle";
+        String str="MonteCarloAdvancedSingle";
         str+="-Time"+deadend.game.GameConfigClass.ComputingTimeLimit;
         return str;
     }
