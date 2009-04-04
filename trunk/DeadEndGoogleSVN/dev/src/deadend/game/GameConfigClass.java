@@ -17,6 +17,7 @@
 
 package deadend.game;
 
+
 /**
  * This is a temporay configuration file instead of xml
  * @version 0.1
