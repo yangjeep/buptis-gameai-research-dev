@@ -60,5 +60,16 @@ public class GameConfigClass {
      */
     public static int InitRefreshTimeMS=500;
 
-    /**     * The version of the database     */    public static int currentStepRecordTableVersion=2;
-    /**     * The name of the table records the game resord     */    public static String currentCalTimeTableName="MCTable090403Result";    /**     * The name of the table records the game steps     */    public static String currentStepRecordName="MCTable090403";}
+    /**
+     * The version of the database
+     */
+    public static int currentStepRecordTableVersion=2;
+    /**
+     * The name of the table records the game resord
+     */
+    public static String currentCalTimeTableName="MCResult";
+    /**
+     * The name of the table records the game steps
+     */
+    public static String currentStepRecordName="MCStep";
+}
