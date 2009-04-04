@@ -97,7 +97,7 @@ public class MCStateBrain extends TeamBrainFound{
 
     @Override
     public String getName(){
-        String str="MonteCarloState";
+        String str="MonteCarloStateSingle";
         str+="-Time"+deadend.game.GameConfigClass.ComputingTimeLimit;
         return str;
     }
