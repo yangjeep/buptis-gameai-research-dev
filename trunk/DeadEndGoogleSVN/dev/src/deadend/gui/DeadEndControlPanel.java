@@ -106,8 +106,7 @@ DeadEndGamePanel gamePanel;
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "MonteCarloAdv" }));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdv", "AdvANN-Basic-Win", "AdvANN-ZigZag-Win", "AdvANN-CS-Win", "MonteCarloState", "MonteCarlo", "AdvANN-Basic", "AdvANN-ZigZag", "AdvANN-CS", "ANN-Basic-Win", "ANN-ZigZag-Win", "ANN-CS-Win", "ANN-Basic", "ANN-ZigZag", "ANN-CS" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "MonteCarloStateSingle", "MonteCarloAdv" }));
         jComboBox2.addItemListener(formListener);
 
         PulseButton.setText("Pulse");
@@ -299,6 +298,7 @@ DeadEndGamePanel gamePanel;
         if(str.equalsIgnoreCase("MonteCarloAdv")){
             this.game.dogs.setStrategy(new deadend.ai.dog.MCAdvBrain(game,
                     deadend.game.GameConfigClass.ComputingTimeLimit));
+        }
         
         if(str.equalsIgnoreCase("MonteCarloAdv")){
             this.game.dogs.setStrategy(new deadend.ai.dog.MCTeamBrain(game,
@@ -515,5 +515,4 @@ DeadEndGamePanel gamePanel;
             this.game.player.setStrategy(new deadend.ai.cat.CatAppealFSM());
         }
     }
-}
 }
