@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 import deadend.game.DeadEndGame;
 import deadend.globalenum.Directions;
-import deadend.ai.dog.monteCarloState.*;
+import deadend.ai.dog.monteCarloStateSingle.*;
 /**
  *
  * @author Yang JiaJian
