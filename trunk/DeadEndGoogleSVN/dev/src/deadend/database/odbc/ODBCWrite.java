@@ -33,8 +33,8 @@ public class ODBCWrite {
     public static void writeMCTime(deadend.game.DeadEndGame game){
         try{
 	        String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
-                    "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\" +
-                    "DeadEndGoogleSVN\\db\\ResultRecord\\current.mdb";
+                    "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk\\" +
+                    "DeadEndGoogleSVN\\dev\\db\\ResultRecord\\current.mdb";
 	        Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	        Connection connection=DriverManager.getConnection(strurl);
 
@@ -61,7 +61,13 @@ public class ODBCWrite {
     }
         // method of record step
         public static void writeStep(deadend.game.DeadEndGame game){
-            if(deadend.game.GameConfigClass.currentStepRecordTableVersion==1){                try{                String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +                        "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\" +                        "DeadEndGoogleSVN\\db\\StepRecord\\current.mdb";                Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");                Connection connection=DriverManager.getConnection(strurl);
+            if(deadend.game.GameConfigClass.currentStepRecordTableVersion==1){
+                try{
+                    String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
+                            "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk\\" +
+                            "DeadEndGoogleSVN\\dev\\db\\StepRecord\\current.mdb";
+                    Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+                    Connection connection=DriverManager.getConnection(strurl);
                 ArrayList<StepRecordBuffer>buf=game.getStepRecordBuf();
 
                 Integer t=new Integer(deadend.game.GameConfigClass.ComputingTimeLimit);
@@ -89,7 +95,8 @@ public class ODBCWrite {
                     String dog1Dir=b.getDog1Dir();
                     String dog2Dir=b.getDog2Dir();
 
-                    stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentStepRecordName+"(catStrategy,dogStrategy,catToDog1x,catToDog1y," +
+                    stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentStepRecordName+
+                            "(catStrategy,dogStrategy,catToDog1x,catToDog1y," +
                             "catToDog2x,catToDog2y,catToDog1,catToDog2," +
                             "catToExitX,catToExitY,turn," +
                             "dog1Dir,dog2Dir,CalculationTime,GameResult) values('"
@@ -110,7 +117,13 @@ public class ODBCWrite {
                     e.printStackTrace();
                 }
             }
-            else if(deadend.game.GameConfigClass.currentStepRecordTableVersion==2){                try{                    String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +                            "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN" +                            "\\DeadEndGoogleSVN\\db\\StepRecord\\current.mdb";                    Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");                    Connection connection=DriverManager.getConnection(strurl);
+            else if(deadend.game.GameConfigClass.currentStepRecordTableVersion==2){
+                try{
+                    String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
+                            "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk" +
+                            "\\DeadEndGoogleSVN\\dev\\db\\StepRecord\\current.mdb";
+                    Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+                    Connection connection=DriverManager.getConnection(strurl);
                     ArrayList<StepRecordBuffer>buf=game.getStepRecordBuf();
 
                     Integer t=new Integer(deadend.game.GameConfigClass.ComputingTimeLimit);
