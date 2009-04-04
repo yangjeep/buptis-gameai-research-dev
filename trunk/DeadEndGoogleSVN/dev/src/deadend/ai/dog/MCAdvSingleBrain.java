@@ -76,7 +76,7 @@ public class MCAdvSingleBrain extends TeamBrainFound{
             System.out.println(j+":Simed:"+simNum);
             simNum=0;
             begin = System.currentTimeMillis();
-            limit = begin + this.timeLimitInMS/2;
+            limit = begin + this.timeLimitInMS/this.game.dogs.dogTeam.size();
         }
         
 

@@ -290,6 +290,11 @@ DeadEndGamePanel gamePanel;
                     deadend.game.GameConfigClass.ComputingTimeLimit));
         }
 
+        if(str.equalsIgnoreCase("MonteCarloStateSingle")){
+            this.game.dogs.setStrategy(new deadend.ai.dog.MCStateBrain(game,
+                    deadend.game.GameConfigClass.ComputingTimeLimit));
+        }
+
         if(str.equalsIgnoreCase("MonteCarlo")){
             this.game.dogs.setStrategy(new deadend.ai.dog.DogTeamBrain(game,
                     deadend.game.GameConfigClass.ComputingTimeLimit));
@@ -348,10 +353,6 @@ DeadEndGamePanel gamePanel;
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,3,true));
         }
 
-        if(str.equalsIgnoreCase("MonteCarloState")){
-            this.game.dogs.setStrategy(new deadend.ai.dog.MCStateTeamBrain(game,
-                    deadend.game.GameConfigClass.ComputingTimeLimit));
-        }
 
         if(str.equalsIgnoreCase("ANN-Basic")){
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrain(game,1,false));
