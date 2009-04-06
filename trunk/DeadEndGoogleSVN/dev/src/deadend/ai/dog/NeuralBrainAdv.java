@@ -52,12 +52,12 @@ public class NeuralBrainAdv extends TeamBrainFound{
             String strurl;
             if(onlyWin){
                 strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
-                          "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\" +
+                          "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\dev\\" +
                           "db\\annAdv\\Cat"+catNum+"-"+"dog"+(i+1)+"-Win"+".mdb";
             }
             else{
                 strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
-                          "DBQ=E:\\My Java Projects\\sseProj\\dev\\DeadEndGoogleSVN\\DeadEndGoogleSVN\\" +
+                          "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\dev\\" +
                           "db\\annAdv\\Cat"+catNum+"-"+"dog"+(i+1)+".mdb";
             }
             ann.LoadData(strurl);

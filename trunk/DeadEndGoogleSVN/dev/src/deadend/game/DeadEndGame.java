@@ -186,7 +186,97 @@ public class DeadEndGame implements ActionListener{
             this.ticker.stop();
             return;
         }
-        if(this.remainder==0){            this.step++;            this.remainder++;            this.player.compute();            this.judge();        }        else if(this.remainder==1){            this.remainder++;            this.player.compute();            this.judge();        }        else if(this.remainder==2){            catToDog1x=this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x;            catToDog1y=this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y;            catToDog2x=this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x;            catToDog2y=this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y;            catToExitX=this.player.getPosition().x-this.door.get(0).x;            catToExitY=this.player.getPosition().y-this.door.get(0).y;            catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());            catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());            if(this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x!=0){                catDog1Angle=                    (this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y)/                    (this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x)                    ;            }            else{                catDog1Angle=1;            }            if(this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x!=0){                catDog2Angle=                    (this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y)/                    (this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x)                    ;            }            else{                catDog2Angle=1;            }             catToLeft=this.player.getPosition().x-0;             catToRight=GameConfigClass.GridX-this.player.getPosition().x;             catToTop=this.player.getPosition().y-0;             catToBottom=GameConfigClass.GridY-this.player.getPosition().y;             dog1ToLeft=this.dogs.dogTeam.get(0).getPosition().x-0;             dog1ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(0).getPosition().x;             dog1ToTop=this.dogs.dogTeam.get(0).getPosition().y-0;             dog1ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(0).getPosition().y;             dog2ToLeft=this.dogs.dogTeam.get(1).getPosition().x-0;             dog2ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(1).getPosition().x;             dog2ToTop=this.dogs.dogTeam.get(1).getPosition().y-0;             dog2ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(1).getPosition().y;             dogInnerDist=this.dogs.dogTeam.get(0).getPosition().distance(this.dogs.dogTeam.get(1).getPosition());             dog1ToExitX=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).x;             dog1ToExitY=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).y;             dog2ToExitX=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).x;             dog2ToExitY=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).y;                          this.dogs.compute();             this.remainder=0;             this.judge();             deadend.globalenum.Directions dog1Dir,dog2Dir;             dog1Dir=this.dogs.dogTeam.get(0).getDirection();             dog2Dir=this.dogs.dogTeam.get(1).getDirection();             this.dogs.removeDirection();             deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(                catToDog1x, catToDog1y, catToDog2x, catToDog2y,                catToDog1, catToDog2, catToExitX, catToExitY,                catDog1Angle, catDog2Angle,                catToLeft, catToRight, catToTop, catToBottom,                dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,                dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,                dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,                step, dog1Dir, dog2Dir);            this.stepRecordBuf.add(buf);        }       }    /**     * @param e     * @deprecated     */    public void actionPerformedOld(ActionEvent e){        this.judge();        if(this.gameresult!=GameResults.NotEnd){            this.ticker.stop();            return;        }        if(this.isPaused){            this.ticker.stop();            return;        }        for(int i=1;i<=this.player.getSpeed();i++){
+        if(this.remainder==0){
+            this.step++;
+            this.remainder++;
+            this.player.compute();
+            this.judge();
+        }
+        else if(this.remainder==1){
+            this.remainder++;
+            this.player.compute();
+            this.judge();        }
+        else if(this.remainder==2){
+
+            catToDog1x=this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x;
+            catToDog1y=this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y;
+            catToDog2x=this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x;
+            catToDog2y=this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y;
+            catToExitX=this.player.getPosition().x-this.door.get(0).x;
+            catToExitY=this.player.getPosition().y-this.door.get(0).y;
+            catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());
+            catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
+
+            if(this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x!=0){
+                catDog1Angle=
+                        (this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y)/
+                        (this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x)
+                        ;
+            }
+            else{
+                catDog1Angle=1;
+            }
+            if(this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x!=0){
+                catDog2Angle=
+                        (this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y)/
+                        (this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x)
+                        ;
+            }            else{
+                catDog2Angle=1;
+            }             catToLeft=this.player.getPosition().x-0;
+            catToRight=GameConfigClass.GridX-this.player.getPosition().x;
+            catToTop=this.player.getPosition().y-0;
+            catToBottom=GameConfigClass.GridY-this.player.getPosition().y;
+            dog1ToLeft=this.dogs.dogTeam.get(0).getPosition().x-0;
+            dog1ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(0).getPosition().x;
+            dog1ToTop=this.dogs.dogTeam.get(0).getPosition().y-0;
+            dog1ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(0).getPosition().y;
+            dog2ToLeft=this.dogs.dogTeam.get(1).getPosition().x-0;
+            dog2ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(1).getPosition().x;
+            dog2ToTop=this.dogs.dogTeam.get(1).getPosition().y-0;
+            dog2ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(1).getPosition().y;
+            dogInnerDist=this.dogs.dogTeam.get(0).getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
+            dog1ToExitX=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).x;
+            dog1ToExitY=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).y;
+            dog2ToExitX=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).x;
+            dog2ToExitY=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).y;
+            this.dogs.compute();
+            this.remainder=0;
+            this.judge();
+
+            deadend.globalenum.Directions dog1Dir,dog2Dir;
+
+            dog1Dir=this.dogs.dogTeam.get(0).getDirection();
+            dog2Dir=this.dogs.dogTeam.get(1).getDirection();
+
+            this.dogs.removeDirection();
+            deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
+                    catToDog1x, catToDog1y, catToDog2x, catToDog2y,
+                    catToDog1, catToDog2, catToExitX, catToExitY,
+                    catDog1Angle, catDog2Angle,
+                    catToLeft, catToRight, catToTop, catToBottom,
+                    dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,
+                    dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,
+                    dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,
+                    step, dog1Dir, dog2Dir);
+            this.stepRecordBuf.add(buf);
+        }
+    }
+    /**
+     * @param e
+     * @deprecated
+     */
+    public void actionPerformedOld(ActionEvent e){
+        this.judge();
+        if(this.gameresult!=GameResults.NotEnd){
+            this.ticker.stop();
+            return;
+        }
+        if(this.isPaused){
+            this.ticker.stop();
+            return;
+        }
+        for(int i=1;i<=this.player.getSpeed();i++){
             this.player.compute();
         }
 
@@ -281,53 +371,99 @@ public class DeadEndGame implements ActionListener{
     }
 
     public void playGame(){
-        this.step++;
         this.judge();
         if(this.gameresult!=GameResults.NotEnd){
+            this.ticker.stop();
             return;
         }
         if(this.isPaused){
             this.ticker.stop();
             return;
         }
-        for(int i=1;i<=this.player.getSpeed();i++){
-            this.player.compute();
-        }
+            if(this.remainder==0){
+                this.step++;
+                this.remainder++;
+                this.player.compute();
+                this.judge();
+            }
+            else if(this.remainder==1){
+                this.remainder++;
+                this.player.compute();
+                this.judge();
+            }
+            else if(this.remainder==2){
 
-        int catToDog1x,catToDog1y,catToDog2x,catToDog2y,catToExitX,catToExitY;
+                catToDog1x=this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x;
+                catToDog1y=this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y;
+                catToDog2x=this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x;
+                catToDog2y=this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y;
 
-        catToDog1x=this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x;
-        catToDog1y=this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y;
-        catToDog2x=this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x;
-        catToDog2y=this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y;
+                catToExitX=this.player.getPosition().x-this.door.get(0).x;
+                catToExitY=this.player.getPosition().y-this.door.get(0).y;
 
-        catToExitX=this.player.getPosition().x-this.door.get(0).x;
-        catToExitY=this.player.getPosition().y-this.door.get(0).y;
+                catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());
+                catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
 
-        double catToDog1,catToDog2;
+                if(this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x!=0){
+                    catDog1Angle=
+                            (this.player.getPosition().y-this.dogs.dogTeam.get(0).getPosition().y)/
+                            (this.player.getPosition().x-this.dogs.dogTeam.get(0).getPosition().x)
+                            ;
+                }
+                else{
+                    catDog1Angle=1;
+                }
 
-        catToDog1=this.player.getPosition().distance(this.dogs.dogTeam.get(0).getPosition());
-        catToDog2=this.player.getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
+                if(this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x!=0){
+                    catDog2Angle=
+                            (this.player.getPosition().y-this.dogs.dogTeam.get(1).getPosition().y)/
+                            (this.player.getPosition().x-this.dogs.dogTeam.get(1).getPosition().x)
+                            ;
+                }
+                else{
+                    catDog2Angle=1;
+                }
+                catToLeft=this.player.getPosition().x-0;
+                catToRight=GameConfigClass.GridX-this.player.getPosition().x;
+                catToTop=this.player.getPosition().y-0;
+                catToBottom=GameConfigClass.GridY-this.player.getPosition().y;
+                dog1ToLeft=this.dogs.dogTeam.get(0).getPosition().x-0;
+                dog1ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(0).getPosition().x;
+                dog1ToTop=this.dogs.dogTeam.get(0).getPosition().y-0;
+                dog1ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(0).getPosition().y;
+                dog2ToLeft=this.dogs.dogTeam.get(1).getPosition().x-0;
+                dog2ToRight=GameConfigClass.GridX-this.dogs.dogTeam.get(1).getPosition().x;
+                dog2ToTop=this.dogs.dogTeam.get(1).getPosition().y-0;
+                dog2ToBottom=GameConfigClass.GridY-this.dogs.dogTeam.get(1).getPosition().y;
+                dogInnerDist=this.dogs.dogTeam.get(0).getPosition().distance(this.dogs.dogTeam.get(1).getPosition());
+                dog1ToExitX=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).x;
+                dog1ToExitY=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).y;
+                dog2ToExitX=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).x;
+                dog2ToExitY=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).y;
+                this.dogs.compute();
+                this.remainder=0;
+                this.judge();
 
-        this.judge();
+                deadend.globalenum.Directions dog1Dir,dog2Dir;
 
-        this.dogs.compute();
+                dog1Dir=this.dogs.dogTeam.get(0).getDirection();
+                dog2Dir=this.dogs.dogTeam.get(1).getDirection();
 
-        deadend.globalenum.Directions dog1Dir,dog2Dir;
-
-        dog1Dir=this.dogs.dogTeam.get(0).getDirection();
-        dog2Dir=this.dogs.dogTeam.get(1).getDirection();
-
-        this.dogs.removeDirection();
-
-        deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
-                catToDog1x, catToDog1y, catToDog2x, catToDog2y,
-            catToDog1, catToDog2, catToExitX, catToExitY,
-            this.step, dog1Dir, dog2Dir);
-        this.stepRecordBuf.add(buf);
-
+                this.dogs.removeDirection();
+                deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
+                        catToDog1x, catToDog1y, catToDog2x, catToDog2y,
+                        catToDog1, catToDog2, catToExitX, catToExitY,
+                        catDog1Angle, catDog2Angle,
+                        catToLeft, catToRight, catToTop, catToBottom,
+                        dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,
+                        dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,
+                        dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,
+                        step, dog1Dir, dog2Dir);
+                this.stepRecordBuf.add(buf);
+            }
         this.judge();
     }
+
     // Reset logic
     public void reset(){
         if(this.gameresult!=GameResults.NotEnd){
