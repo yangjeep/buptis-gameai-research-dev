@@ -69,6 +69,7 @@ public class MCStateBrain extends TeamBrainFound{
                 this.dcredits.get(j).autoAddCredit(d, msim.simResult);
                 this.simNum++;
                 msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
+
                 if(remainder<msim.sdogs.get(0).strategies.size())remainder++;
                 if(remainder>=msim.sdogs.get(0).strategies.size())remainder=0;
             }

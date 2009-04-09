@@ -182,10 +182,12 @@
     <Component class="javax.swing.JComboBox" name="jComboBox2">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
+          <StringArray count="5">
             <StringItem index="0" value="MonteCarloAdvSingle"/>
             <StringItem index="1" value="MonteCarloStateSingle"/>
             <StringItem index="2" value="MonteCarloAdv"/>
+            <StringItem index="3" value="ANN-MCS300-ZigZag"/>
+            <StringItem index="4" value="ANN-MCS300-CS"/>
           </StringArray>
         </Property>
       </Properties>

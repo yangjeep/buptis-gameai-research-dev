@@ -106,7 +106,7 @@ DeadEndGamePanel gamePanel;
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "MonteCarloStateSingle", "MonteCarloAdv" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "MonteCarloStateSingle", "MonteCarloAdv", "ANN-MCS300-ZigZag", "ANN-MCS300-CS" }));
         jComboBox2.addItemListener(formListener);
 
         PulseButton.setText("Pulse");
@@ -284,6 +284,21 @@ DeadEndGamePanel gamePanel;
 
     private void jComboBox2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox2ItemStateChanged
         String str=this.jComboBox2.getSelectedItem().toString();
+
+        if(str.equalsIgnoreCase("ANN-MCS300-ZigZag")){
+            String url=
+                    "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\2009-04-06\\MCState-ZigZag-Win";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
+        if(str.equalsIgnoreCase("ANN-MCS300-CS")){
+            String url=
+                    "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\2009-04-06\\MCState300-CS-Win";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
 
         if(str.equalsIgnoreCase("MonteCarloAdvSingle")){
             this.game.dogs.setStrategy(new deadend.ai.dog.MCAdvSingleBrain(game,

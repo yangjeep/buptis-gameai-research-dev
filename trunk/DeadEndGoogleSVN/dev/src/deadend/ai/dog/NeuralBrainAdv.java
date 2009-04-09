@@ -40,15 +40,48 @@ public class NeuralBrainAdv extends TeamBrainFound{
     int catNum;
     boolean onlyWin;
 
+
+    private String dburl;
+    /**
+     *
+     * @param game
+     * @param catNum
+     * @param onlyWin
+     * @param dburl
+     * @param numOfInputs
+     * @param numOfHidden
+     * @param numOfOutput
+     */
+    public NeuralBrainAdv(DeadEndGame game,int catNum,boolean onlyWin,String dburl,
+            int numOfInputs,int numOfHidden,int numOfOutput
+            ){
+        this.game=game;
+        this.catNum=catNum;
+        this.onlyWin=onlyWin;
+        this.dburl=dburl;
+
+        this.annDogs=new ArrayList<wekaANN>();
+        for(int i=0;i<game.dogs.dogTeam.size();i++){
+            wekaANN ann=new wekaANN();
+            ann.initialize(numOfInputs,numOfHidden,numOfOutput);
+            String odbc="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};DBQ=";
+            String strurl=odbc+dburl+"\\Dog"+(i+1)+".mdb";
+            
+            ann.LoadData(strurl);
+            this.annDogs.add(ann);
+        }
+    }
+
     public NeuralBrainAdv(DeadEndGame game,int catNum,boolean onlyWin){
         this.game=game;
         this.catNum=catNum;
         this.onlyWin=onlyWin;
 
+
         this.annDogs=new ArrayList<wekaANN>();
         for(int i=0;i<game.dogs.dogTeam.size();i++){
             wekaANN ann=new wekaANN();
-            ann.initialize(27, 18, 4);
+            ann.initialize(28, 18, 4);
             String strurl;
             if(onlyWin){
                 strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
@@ -60,6 +93,7 @@ public class NeuralBrainAdv extends TeamBrainFound{
                           "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\dev\\" +
                           "db\\annAdv\\Cat"+catNum+"-"+"dog"+(i+1)+".mdb";
             }
+            this.dburl=strurl;
             ann.LoadData(strurl);
             this.annDogs.add(ann);
         }
@@ -177,7 +211,8 @@ public class NeuralBrainAdv extends TeamBrainFound{
 
             int k=this.annDogs.get(i).getMAxOutPutID();
             Directions d=Directions.Still;
-            d=this.loadChoice(i+1,k);
+            //d=this.loadChoice(i+1,k);
+            d=this.loadChoice(i+1,dburl+(i+1)+".mdb",k);
             this.directions.set(i, d);
         }
     }
@@ -200,7 +235,33 @@ public class NeuralBrainAdv extends TeamBrainFound{
         str+="-Time"+deadend.game.GameConfigClass.ComputingTimeLimit;
         return str;
     }
+    private Directions loadChoice(int dogID,String dburl,int maxID){
+        boolean comUrl;
 
+        
+        comUrl=this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\2009-04-06\\MCState300-CS-Win");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Left;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Left;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Right;
+                        }
+            }
+        }
+
+        return Directions.Still;
+    }
     private Directions loadChoice(int dogNum,int k){
         Directions dir=Directions.Still;
         switch(this.catNum){

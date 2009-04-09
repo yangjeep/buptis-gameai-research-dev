@@ -53,19 +53,23 @@ public class MCat {
         
         if(this.position.x>0){
             if(this.position.x-1==nearDog.position.x && this.position.y==nearDog.position.y){}
-                else choices.add(Directions.Left);
+                else
+                    choices.add(Directions.Left);
         }
         if(this.position.x<deadend.game.GameConfigClass.GridX-1){
             if(this.position.x+1==nearDog.position.x && this.position.y==nearDog.position.y){}
-                else choices.add(Directions.Right);
+                else
+                    choices.add(Directions.Right);
         }
         if(this.position.y>0){
             if(this.position.x==nearDog.position.x && this.position.y-1==nearDog.position.y){}
-                else choices.add(Directions.Up);
+                else
+                    choices.add(Directions.Up);
         }
         if(this.position.y<deadend.game.GameConfigClass.GridY-1){
             if(this.position.x==nearDog.position.x && this.position.y+1==nearDog.position.y){}
-                else choices.add(Directions.Down);
+                else
+                    choices.add(Directions.Down);
         }
 
         int c=rand.nextInt(choices.size());

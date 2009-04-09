@@ -563,8 +563,8 @@ public class DeadEndGame implements ActionListener{
             if(this.gameresult!=GameResults.NotEnd){
                 this.reset();
                 i++;
-                System.out.println("Record:"+this.i);
             }
+        System.out.println("Record:"+this.i);
         }while(i<=this.autoRun_Rounds);
     }
     /**
@@ -579,7 +579,7 @@ public class DeadEndGame implements ActionListener{
                 this.reset();
                 i++;
             }
-            System.out.println("Record:"+this.i);
+        System.out.println("Record:"+this.i);
         }while(i<=this.autoRun_Rounds);
     }
 }
