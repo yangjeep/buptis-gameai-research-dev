@@ -38,7 +38,6 @@ public class UIMain extends javax.swing.JFrame {
         this.game.intialize();
         initComponents();
 
-
         this.deadEndGamePanel1.initGame(game);
         this.deadEndControlPanel1.initGame(game,this.deadEndGamePanel1);
         this.update();
@@ -76,9 +75,9 @@ public class UIMain extends javax.swing.JFrame {
             .addGap(0, 501, Short.MAX_VALUE)
         );
 
-        jScrollBar1.setMaximum(2000);
-        jScrollBar1.setMinimum(250);
+        jScrollBar1.setMaximum(1000);
         jScrollBar1.setUnitIncrement(250);
+        jScrollBar1.setValue(deadend.game.GameConfigClass.InitRefreshTimeMS);
         jScrollBar1.setValueIsAdjusting(true);
         jScrollBar1.addAdjustmentListener(formListener);
 
@@ -133,7 +132,7 @@ public class UIMain extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jScrollBar1AdjustmentValueChanged(java.awt.event.AdjustmentEvent evt) {//GEN-FIRST:event_jScrollBar1AdjustmentValueChanged
-        
+        this.game.refreshTime=this.jScrollBar1.getValue();
         this.game.ticker.setDelay(this.jScrollBar1.getValue());
     }//GEN-LAST:event_jScrollBar1AdjustmentValueChanged
 

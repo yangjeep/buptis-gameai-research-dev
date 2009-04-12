@@ -23,6 +23,7 @@ import java.util.ArrayList;
  */
 public abstract class TeamBrainFound {
     public ArrayList<deadend.globalenum.Directions> directions;
+    public boolean goodRound;
     public abstract void compute();
     public abstract String getName();
 }

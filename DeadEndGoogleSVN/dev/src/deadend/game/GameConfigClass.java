@@ -58,7 +58,7 @@ public class GameConfigClass {
     /**
      * Minimum refresh rate of the game panel
      */
-    public static int InitRefreshTimeMS=500;
+    public static int InitRefreshTimeMS=300;
 
     /**
      * The version of the database

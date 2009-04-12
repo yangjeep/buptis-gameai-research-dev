@@ -91,9 +91,11 @@
     </Container>
     <Component class="javax.swing.JScrollBar" name="jScrollBar1">
       <Properties>
-        <Property name="maximum" type="int" value="2000"/>
-        <Property name="minimum" type="int" value="250"/>
+        <Property name="maximum" type="int" value="1000"/>
         <Property name="unitIncrement" type="int" value="250"/>
+        <Property name="value" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="deadend.game.GameConfigClass.InitRefreshTimeMS" type="code"/>
+        </Property>
         <Property name="valueIsAdjusting" type="boolean" value="true"/>
       </Properties>
       <Events>

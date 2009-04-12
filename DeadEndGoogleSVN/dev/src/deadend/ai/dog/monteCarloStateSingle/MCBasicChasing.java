@@ -35,17 +35,16 @@ public class MCBasicChasing extends MCSimStrategy{
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
         choices.clear();
 
-        choices.add(Directions.Still);
-        if(cx>dx){
+        if(cx>=dx && dx<deadend.game.GameConfigClass.GridX-1){
             choices.add(Directions.Right);
         }
-        if(cx<dx){
+        if(cx<=dx && dx>0){
             choices.add(Directions.Left);
         }
-        if(cy>dy){
+        if(cy>=dy && dy>1){
             choices.add(Directions.Up);
         }
-        if(cy<dy){
+        if(cy<=dy && dy<deadend.game.GameConfigClass.GridY-1){
             choices.add(Directions.Down);
         }
         java.util.Random rand=new java.util.Random();

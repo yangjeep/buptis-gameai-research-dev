@@ -31,7 +31,7 @@ public class MCAdvBrain extends TeamBrainFound{
     public MCAdvBrain(DeadEndGame game,int timeLimit) {
         this.game=game;
         this.timeLimitInMS=timeLimit;
-        
+        this.goodRound=false;
     }
 
     DeadEndGame game;
@@ -103,21 +103,25 @@ public class MCAdvBrain extends TeamBrainFound{
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
                 this.directions.set(i,Directions.Right);
                 System.out.println("eat right");
+                this.goodRound=true;
             }
             if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==-1 &&
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
                 this.directions.set(i,Directions.Left);
                 System.out.println("eat left");
+                this.goodRound=true;
             }
             if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==1){
                 this.directions.set(i,Directions.Down);
                 System.out.println("eat down");
+                this.goodRound=true;
             }
             if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==-1){
                 this.directions.set(i,Directions.Up);
                 System.out.println("eat up");
+                this.goodRound=true;
             }
             
         }

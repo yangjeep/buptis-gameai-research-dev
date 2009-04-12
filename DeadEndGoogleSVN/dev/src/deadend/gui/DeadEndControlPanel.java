@@ -24,12 +24,13 @@
 package deadend.gui;
 
 import deadend.game.*;
+import deadend.globalenum.*;
 /**
  *
  * @author Yang JiaJian
  */
 public class DeadEndControlPanel extends javax.swing.JPanel {
-DeadEndGamePanel gamePanel;
+    DeadEndGamePanel gamePanel;
     public DeadEndControlPanel() {
         initComponents();
     }
@@ -99,7 +100,7 @@ DeadEndGamePanel gamePanel;
         resumeButton.setEnabled(false);
         resumeButton.addActionListener(formListener);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ZigZag", "BasicFSM", "CounterStrike" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ZigZag", "BasicFSM", "CounterStrike", "Square" }));
         jComboBox1.addItemListener(formListener);
 
         jLabel2.setText("Cat");
@@ -113,8 +114,8 @@ DeadEndGamePanel gamePanel;
         PulseButton.setEnabled(false);
         PulseButton.addActionListener(formListener);
 
-        autoRunStop.setText("StopAuto");
-        autoRunStop.setEnabled(false);
+        autoRunStop.setText("AutoVisb");
+        autoRunStop.addActionListener(formListener);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -208,6 +209,9 @@ DeadEndGamePanel gamePanel;
             else if (evt.getSource() == PulseButton) {
                 DeadEndControlPanel.this.PulseButtonActionPerformed(evt);
             }
+            else if (evt.getSource() == autoRunStop) {
+                DeadEndControlPanel.this.autoRunStopActionPerformed(evt);
+            }
         }
 
         public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -280,6 +284,10 @@ DeadEndGamePanel gamePanel;
         if(str.equalsIgnoreCase("CounterStrike")){
             this.game.player.setStrategy(new deadend.ai.cat.CatAppealFSM());
         }
+        if(str.equalsIgnoreCase("Square")){
+            this.game.player.setStrategy(new deadend.ai.cat.CatSquareFSM());
+        }
+        
     }//GEN-LAST:event_jComboBox1ItemStateChanged
 
     private void jComboBox2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox2ItemStateChanged
@@ -288,14 +296,14 @@ DeadEndGamePanel gamePanel;
         if(str.equalsIgnoreCase("ANN-MCS300-ZigZag")){
             String url=
                     "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\2009-04-06\\MCState-ZigZag-Win";
+                    "dev\\db\\enhanced\\current\\MCState-ZigZag-Win";
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
                     2, true, url, 28, 18, 4));
         }
         if(str.equalsIgnoreCase("ANN-MCS300-CS")){
             String url=
                     "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\2009-04-06\\MCState300-CS-Win";
+                    "dev\\db\\enhanced\\current\\MCState300-CS-Win";
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
                     2, true, url, 28, 18, 4));
         }
@@ -408,6 +416,23 @@ DeadEndGamePanel gamePanel;
         }
     }//GEN-LAST:event_jComboBox2ItemStateChanged
 
+    private void autoRunStopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_autoRunStopActionPerformed
+        // TODO add your handling code here:
+        // add your handling code here:
+        if(!this.game.isAutoRun){
+            String ms=this.jTextField1.getText();
+        int times=50;
+        try{
+            times=Integer.parseInt(ms);
+        }catch(Exception e){
+            System.err.println(e.toString());
+        }
+        
+        this.game.initAutoRun(times);
+        this.game.autoRun();
+        }
+    }//GEN-LAST:event_autoRunStopActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton PulseButton;
@@ -428,39 +453,14 @@ DeadEndGamePanel gamePanel;
     private DeadEndGame game;
 
     public void update(){
-        this.jProgressBar1.setValue(game.step/game.LimitStep);
-        if(this.game.isGameEnd){
-            this.StartButton.setEnabled(true);
-            this.PulseButton.setEnabled(false);
-        }
+        if(!this.game.isAutoRun)this.jProgressBar1.setValue(game.step*100/game.LimitStep);
         else{
-            this.StartButton.setEnabled(false);
-            this.PulseButton.setEnabled(true);
-        }
-        
-        if(this.game.isPaused){
-            this.PulseButton.setEnabled(false);
-            this.resumeButton.setEnabled(true);
-        }else{
-            this.PulseButton.setEnabled(true);
-            this.resumeButton.setEnabled(false);
-        }
-
-        if(this.game.isAutoRun){
-            this.StartButton.setEnabled(false);
-            this.PulseButton.setEnabled(false);
-            this.resumeButton.setEnabled(false);
-            this.resetButton.setEnabled(false);
-            this.autoRunButton.setEnabled(false);
-            this.autoRunStop.setEnabled(true);
-        }
-        if(!this.game.isAutoRun){
-            this.autoRunButton.setEnabled(true);
-            this.autoRunStop.setEnabled(false);
+            this.jProgressBar1.setValue(game.i*100/game.autoRun_Rounds);
         }
     }
     @Override
     public void paintComponent(java.awt.Graphics g){
+        this.update();
         this.repaint();
     }
 

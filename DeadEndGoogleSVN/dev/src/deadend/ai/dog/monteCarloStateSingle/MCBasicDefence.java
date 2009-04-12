@@ -34,16 +34,22 @@ public class MCBasicDefence extends MCSimStrategy{
 
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
         choices.clear();
-        if(cx>dx){
-            choices.add(Directions.Right);
+
+        if(dx<deadend.game.GameConfigClass.GridX-1){
+        choices.add(Directions.Right);
         }
-        if(cx<dx){
-            choices.add(Directions.Left);
+        if(dx>0){
+        choices.add(Directions.Left);
         }
-        if(cy>=dy && dy>0){
+        if(cy-dy<=5 && dy<deadend.game.GameConfigClass.GridY-1){
+            choices.add(Directions.Down);
+        }
+        if(dy>3){
             choices.add(Directions.Up);
         }
-        choices.add(Directions.Still);
+        /*if(dy>1){
+        choices.add(Directions.Up);
+        }*/
         java.util.Random rand=new java.util.Random();
         int c=rand.nextInt(choices.size());
         return choices.get(c);

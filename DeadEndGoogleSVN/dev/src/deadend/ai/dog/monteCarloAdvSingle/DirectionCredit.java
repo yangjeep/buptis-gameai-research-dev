@@ -27,11 +27,16 @@ import java.util.*;
 public class DirectionCredit {
 
     ArrayList<Integer> credit;
-    
+    ArrayList<Integer> dcredit;
     public DirectionCredit(){
         credit=new ArrayList<Integer>(4);
+        dcredit=new ArrayList<Integer>(4);
+
+        credit.clear();
+        dcredit.clear();
         for(int i=1;i<=4;i++){
             credit.add(0);
+            dcredit.add(0);
         }
     }
 
@@ -143,6 +148,31 @@ public class DirectionCredit {
             k+=incr;
             this.credit.set(3, k);
         }
+
+        if(result==GameResults.DogWin)incr=0;
+        else if(result==GameResults.Draw)incr=1;
+
+        k=0;
+        if(d==Directions.Down){
+            k=this.dcredit.get(0);
+            k+=incr;
+            this.dcredit.set(0, k);
+        }
+        if(d==Directions.Up){
+            k=this.dcredit.get(1);
+            k+=incr;
+            this.dcredit.set(1, k);
+        }
+        if(d==Directions.Left){
+            k=this.dcredit.get(2);
+            k+=incr;
+            this.dcredit.set(2, k);
+        }
+        if(d==Directions.Right){
+            k=this.dcredit.get(3);
+            k+=incr;
+            this.dcredit.set(3, k);
+        }
     }
 
     public Directions findBest(java.awt.Point thispos,java.awt.Point catpos){
@@ -165,25 +195,50 @@ public class DirectionCredit {
             if(t==2)return Directions.Left;
             if(t==3)return Directions.Right;
         }else{
-            
-            int x,y;
-            int cx,cy;
-
-            x=thispos.x;
-            y=thispos.y;
-
-            cx=catpos.x;
-            cy=catpos.y;
-
-            java.util.Random rand=new java.util.Random();
-            if(rand.nextBoolean()){
-                if(cx>x)return Directions.Right;
-                else return Directions.Left;
-            }else{
-                if(cy>y)return Directions.Down;
-                else return Directions.Up;
+            k=0;
+            for(int i=0;i<this.dcredit.size();i++){
+                if(this.dcredit.get(i)>k){
+                    judged=true;
+                    t=i;
+                    k=this.dcredit.get(i);
+                }
             }
+            if(t==0)return Directions.Down;
+            if(t==1)return Directions.Up;
+            if(t==2)return Directions.Left;
+            if(t==3)return Directions.Right;
         }
-        return null;
+        return Directions.Still;
+    }
+
+
+        public Directions findBest(deadend.game.DeadEndGame game){
+        int k=this.credit.get(0);
+        int t=-1;
+        boolean judged=false;
+        for(int i=0;i<this.credit.size();i++){
+            if(this.credit.get(i)>k){
+                judged=true;
+                t=i;
+                k=this.credit.get(i);
+            }
+            System.out.print(" "+this.credit.get(i));
+        }
+        System.out.println();
+        System.out.println("k="+k);
+        if(k>0){
+            if(t==0 || t==-1)return Directions.Down;
+            if(t==1)return Directions.Up;
+            if(t==2)return Directions.Left;
+            if(t==3)return Directions.Right;
+        }else{
+            ArrayList<Directions> lis=new ArrayList<Directions>();
+            if(game.player.getPosition().x>0)lis.add(Directions.Left);
+            if(game.player.getPosition().y>0)lis.add(Directions.Up);
+            if(game.player.getPosition().x<deadend.game.GameConfigClass.GridX-1)lis.add(Directions.Right);
+            if(game.player.getPosition().y<deadend.game.GameConfigClass.GridY-1)lis.add(Directions.Down);
+            return lis.get(new Random().nextInt(lis.size()));
+        }
+        return Directions.Still;
     }
 }

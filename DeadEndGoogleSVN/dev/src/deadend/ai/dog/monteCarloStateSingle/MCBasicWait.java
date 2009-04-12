@@ -40,22 +40,18 @@ public class MCBasicWait extends MCSimStrategy{
         distx=Math.abs(cx-dx);
         disty=Math.abs(cy-dy);
         int dist=(int)Math.sqrt(distx*distx+disty*disty);
-        if(dist>3){
-            choices.add(Directions.Still);
-        }
-        if(cx>dx){
+        
+        if(cx>=dx && dx<deadend.game.GameConfigClass.GridX-1){
             choices.add(Directions.Right);
         }
-        if(cx<dx){
+        if(cx<=dx && dx>0){
             choices.add(Directions.Left);
         }
-        if(cy>=dy && dy>0){
-            choices.add(Directions.Up);
-        }
-        if(cy<dy){
-            choices.add(Directions.Down);
-        }
-        choices.add(Directions.Still);
+        if(dy<deadend.game.GameConfigClass.GridY-1)choices.add(Directions.Down);
+        if(dy>1)choices.add(Directions.Up);
+        /*if(dy>1){
+        choices.add(Directions.Up);
+        }*/
         java.util.Random rand=new java.util.Random();
         int c=rand.nextInt(choices.size());
         return choices.get(c);

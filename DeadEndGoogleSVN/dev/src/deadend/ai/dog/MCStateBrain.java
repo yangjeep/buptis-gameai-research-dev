@@ -31,7 +31,7 @@ public class MCStateBrain extends TeamBrainFound{
     public MCStateBrain(DeadEndGame game,int timeLimit) {
         this.game=game;
         this.timeLimitInMS=timeLimit;
-        
+        this.goodRound=false;
     }
 
     DeadEndGame game;
@@ -47,8 +47,10 @@ public class MCStateBrain extends TeamBrainFound{
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
         directions.clear();
         dcredits.clear();
+        MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
+        
         for(int i=0;i<deadend.game.GameConfigClass.NumberOfDogs;i++){
-            this.dcredits.add(new DirectionCredit());
+            this.dcredits.add(new DirectionCredit(msim));
             this.directions.add(Directions.Still);
         }
 
@@ -56,7 +58,7 @@ public class MCStateBrain extends TeamBrainFound{
 		long limit = begin + this.timeLimitInMS/this.game.dogs.dogTeam.size();
 
         System.out.println("Time:"+(limit-begin));
-        MSimGame msim=new MSimGame(this.game,this.game.player,this.game.dogs.dogTeam);
+        
 
         int remainder=0;
         for(int j=0;j<this.game.dogs.dogTeam.size();j++){
@@ -90,21 +92,25 @@ public class MCStateBrain extends TeamBrainFound{
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
                 this.directions.set(i,Directions.Right);
                 System.out.println("eat right");
+                this.goodRound=true;
             }
             if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==-1 &&
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
                 this.directions.set(i,Directions.Left);
                 System.out.println("eat left");
+                this.goodRound=true;
             }
             if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==1){
                 this.directions.set(i,Directions.Down);
                 System.out.println("eat down");
+                this.goodRound=true;
             }
             if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==-1){
                 this.directions.set(i,Directions.Up);
                 System.out.println("eat up");
+                this.goodRound=true;
             }
             
         }
