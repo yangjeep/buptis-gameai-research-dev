@@ -488,10 +488,15 @@ public class DeadEndGame implements ActionListener{
     // Reset logic
     public void reset(){
         if(this.gameresult!=GameResults.NotEnd){
-            if(!this.dogs.getStrategy().getName().contains("ANN") &&
-                    this.gameresult==GameResults.DogWin && !this.dogs.getStrategy().goodRound)
+            if(this.gameresult==GameResults.DogWin && !this.dogs.getStrategy().goodRound)
+            {
                 System.out.println("No record");
-            else this.recordGameResultToODBC();
+                this.recordGameResultToODBC();
+            }
+            else {
+                this.recordGameResultToODBC();
+                this.recordStepToODBC();
+            }
         }
         this.dogs.getStrategy().goodRound=false;
 
@@ -531,11 +536,10 @@ public class DeadEndGame implements ActionListener{
     // logic to manipulate data
     private void recordStepToODBC(){
         // record the step
-        
+        deadend.database.odbc.ODBCWrite.writeStep(this);
     }
     private void recordGameResultToODBC(){
         // record the game result
-        deadend.database.odbc.ODBCWrite.writeStep(this);
         deadend.database.odbc.ODBCWrite.writeMCTime(this);
     }
     private void appendResultToStepODBC(){

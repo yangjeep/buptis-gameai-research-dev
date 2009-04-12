@@ -88,21 +88,21 @@ public class CatSquareFSM implements StrategyInterface{
         distx=enemy.x-player.x;
         disty=enemy.y-player.y;
         
-        if(Math.abs(disty)>4 && this.turnStep==0){
+        if(Math.abs(disty)>2 && this.turnStep==0){
             if(doors.get(target).y<player.y)return Directions.Up;
         }
-        if(Math.abs(disty)==4 && this.turnStep==0){
+        if(Math.abs(disty)<=2 && this.turnStep==0){
             this.turnStep=game.step;
             if(this.side==Directions.Left && player.x>0)return this.side;
             if(this.side==Directions.Right && player.x<deadend.game.GameConfigClass.GridX-1)return this.side;
         }
 
-        if(this.turnStep!=0 && player.y>2){
-            if(player.x>2 && this.side==Directions.Left)return this.side;
-            if(player.x<deadend.game.GameConfigClass.GridX-2 && this.side==Directions.Right)return this.side;
+        if(this.turnStep!=0 && player.y>4){
+            if(player.x>4 && this.side==Directions.Left)return this.side;
+            if(player.x<deadend.game.GameConfigClass.GridX-4 && this.side==Directions.Right)return this.side;
 
-            if(player.x<=2 && this.side==Directions.Left)return Directions.Up;
-            if(player.x>=deadend.game.GameConfigClass.GridX-2 && this.side==Directions.Right)return Directions.Up;
+            if(player.x<=4 && this.side==Directions.Left)return Directions.Up;
+            if(player.x>=deadend.game.GameConfigClass.GridX-4 && this.side==Directions.Right)return Directions.Up;
         }
 
         if(doors.get(target).x>player.x)return (Directions.Right);

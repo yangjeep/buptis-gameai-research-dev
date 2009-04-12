@@ -74,6 +74,7 @@ public class MCStateBrain extends TeamBrainFound{
 
                 if(remainder<msim.sdogs.get(0).strategies.size())remainder++;
                 if(remainder>=msim.sdogs.get(0).strategies.size())remainder=0;
+                
             }
         }while(System.currentTimeMillis()<=limit);
             System.out.println(j+":Simed:"+simNum);

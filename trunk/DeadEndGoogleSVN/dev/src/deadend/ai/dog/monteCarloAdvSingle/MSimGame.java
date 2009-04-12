@@ -107,7 +107,7 @@ public class MSimGame {
             
             if(this.isFinished)break;
             
-            for(int s=1;s<=deadend.game.GameConfigClass.CatSpeed;s++){
+            for(int s=0;s<=deadend.game.GameConfigClass.CatSpeed;s++){
                 this.scat.rMove(this);
             }
             for(int i=0;i<this.sdogs.size();i++){
@@ -117,7 +117,7 @@ public class MSimGame {
             count++;
             //if(!this.isFinished)continue;
             
-        }while(this.step<=this.game.LimitStep);
+        }while(this.step<=deadend.game.GameConfigClass.Step_Limit);
 
         if(this.step>=this.game.LimitStep &&
                 this.simResult!=GameResults.CatWin &&

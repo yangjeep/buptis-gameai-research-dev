@@ -37,6 +37,7 @@ public class MDog {
         this.strategies.add(new MCBasicChasing());
         this.strategies.add(new MCBasicDefence());
         this.strategies.add(new MCBasicWait());
+        this.strategies.add(new MCBasicRandom());
     }
 
     /**

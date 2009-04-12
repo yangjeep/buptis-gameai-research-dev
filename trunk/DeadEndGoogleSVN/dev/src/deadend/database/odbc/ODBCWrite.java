@@ -45,9 +45,13 @@ public class ODBCWrite {
             if(game.gameresult==GameResults.CatWin)r=0;
             if(game.gameresult==GameResults.Draw)r=1;
             if(game.gameresult==GameResults.DogWin)r=3;
-	        stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentCalTimeTableName+"(catStrategy,dogStrategy,calTime, GameResult) values('"+
+            String goodround;
+            if(!game.dogs.getStrategy().goodRound && game.gameresult==GameResults.DogWin)goodround="noise";
+            else goodround="good";
+
+	        stmt.executeUpdate("insert into "+deadend.game.GameConfigClass.currentCalTimeTableName+"(catStrategy,dogStrategy,calTime, GameResult,Goodround) values('"+
                     game.player.getStrategy().getName()+"','"+game.dogs.getStrategy().getName()+"','"
-                    +deadend.game.GameConfigClass.ComputingTimeLimit+"','"+r+"')"
+                    +deadend.game.GameConfigClass.ComputingTimeLimit+"','"+r+"','"+goodround+"')"
                     );
                 stmt.close();
                 connection.close();
