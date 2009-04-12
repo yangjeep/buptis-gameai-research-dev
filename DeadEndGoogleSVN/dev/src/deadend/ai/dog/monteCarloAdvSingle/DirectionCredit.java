@@ -124,10 +124,12 @@ public class DirectionCredit {
 
     public void autoAddCredit(Directions d, GameResults result){
         int incr=0;
+        int k=0;
+
         if(result==GameResults.DogWin)incr=1;
         else if(result==GameResults.Draw)incr=0;
+        else if(result==GameResults.CatWin)incr=0;
 
-        int k=0;
         if(d==Directions.Down){
             k=this.credit.get(0);
             k+=incr;
@@ -151,27 +153,28 @@ public class DirectionCredit {
 
         if(result==GameResults.DogWin)incr=0;
         else if(result==GameResults.Draw)incr=1;
+        else if(result==GameResults.CatWin)incr=-1;
 
         k=0;
         if(d==Directions.Down){
-            k=this.dcredit.get(0);
-            k+=incr;
-            this.dcredit.set(0, k);
+        k=this.dcredit.get(0);
+        k+=incr;
+        this.dcredit.set(0, k);
         }
         if(d==Directions.Up){
-            k=this.dcredit.get(1);
-            k+=incr;
-            this.dcredit.set(1, k);
+        k=this.dcredit.get(1);
+        k+=incr;
+        this.dcredit.set(1, k);
         }
         if(d==Directions.Left){
-            k=this.dcredit.get(2);
-            k+=incr;
-            this.dcredit.set(2, k);
+        k=this.dcredit.get(2);
+        k+=incr;
+        this.dcredit.set(2, k);
         }
         if(d==Directions.Right){
-            k=this.dcredit.get(3);
-            k+=incr;
-            this.dcredit.set(3, k);
+        k=this.dcredit.get(3);
+        k+=incr;
+        this.dcredit.set(3, k);
         }
     }
 
@@ -195,15 +198,16 @@ public class DirectionCredit {
             if(t==2)return Directions.Left;
             if(t==3)return Directions.Right;
         }else{
-            k=0;
+            k=this.dcredit.get(0);
+            t=-1;
             for(int i=0;i<this.dcredit.size();i++){
-                if(this.dcredit.get(i)>k){
+                if(this.dcredit.get(i)>=k){
                     judged=true;
                     t=i;
                     k=this.dcredit.get(i);
                 }
             }
-            if(t==0)return Directions.Down;
+            if(t==0 || t==-1)return Directions.Down;
             if(t==1)return Directions.Up;
             if(t==2)return Directions.Left;
             if(t==3)return Directions.Right;

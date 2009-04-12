@@ -22,7 +22,7 @@ import deadend.globalenum.Directions;
  *
  * @author Yang JiaJian
  */
-public class MCBasicChasing extends MCSimStrategy{
+public class MCBasicRandom extends MCSimStrategy{
 
     public deadend.globalenum.Directions nextDir(MSimGame simGame,java.awt.Point selfPos){
         java.awt.Point catPos=simGame.scat.position;
@@ -36,18 +36,22 @@ public class MCBasicChasing extends MCSimStrategy{
         choices.clear();
 
         if(dx<deadend.game.GameConfigClass.GridX-1){
-            choices.add(Directions.Right);
+        choices.add(Directions.Right);
         }
         if(dx>0){
-            choices.add(Directions.Left);
+        choices.add(Directions.Left);
         }
-        if(cy<=dy && dy>0){
-            choices.add(Directions.Up);
-        }
-        if(cy>=dy && dy<deadend.game.GameConfigClass.GridY-1){
+        if(dy<deadend.game.GameConfigClass.GridY-1){
             choices.add(Directions.Down);
         }
+        if(dy>0){
+            choices.add(Directions.Up);
+        }
+        /*if(dy>1){
+        choices.add(Directions.Up);
+        }*/
         java.util.Random rand=new java.util.Random();
-        return choices.get(rand.nextInt(choices.size()));
+        int c=rand.nextInt(choices.size());
+        return choices.get(c);
     }
 }

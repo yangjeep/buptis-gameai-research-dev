@@ -107,7 +107,7 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "MonteCarloStateSingle", "MonteCarloAdv", "ANN-MCS300-ZigZag", "ANN-MCS300-CS" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloStateSingle", "MonteCarloAdvSingle", "MonteCarloAdv", "ANN-MCS300-ZigZag", "ANN-MCS300-CS", "ANN-MCS300-Square" }));
         jComboBox2.addItemListener(formListener);
 
         PulseButton.setText("Pulse");
@@ -307,7 +307,13 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
                     2, true, url, 28, 18, 4));
         }
-
+        if(str.equalsIgnoreCase("ANN-MCS300-Square")){
+            String url=
+                    "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\current\\MCState300-Square-Win";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
         if(str.equalsIgnoreCase("MonteCarloAdvSingle")){
             this.game.dogs.setStrategy(new deadend.ai.dog.MCAdvSingleBrain(game,
                     deadend.game.GameConfigClass.ComputingTimeLimit));

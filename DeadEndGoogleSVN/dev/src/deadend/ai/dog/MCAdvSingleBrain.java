@@ -70,7 +70,7 @@ public class MCAdvSingleBrain extends TeamBrainFound{
                 this.simNum++;
                 msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
                 if(remainder<=3)remainder++;
-                else if(remainder>3)remainder=0;
+                if(remainder>3)remainder=0;
             }
         }while(System.currentTimeMillis()<=limit);
             System.out.println(j+":Simed:"+simNum);
@@ -82,7 +82,8 @@ public class MCAdvSingleBrain extends TeamBrainFound{
 
         for(int i=0;i<this.directions.size();i++){
             this.directions.set(i, this.dcredits.get(i).findBest(
-                    this.game));
+                    this.game.player.getPosition(),this.game.dogs.dogTeam.get(i).getPosition()
+                    ));
             
             if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==1 &&
                     this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){

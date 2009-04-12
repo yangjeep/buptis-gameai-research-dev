@@ -213,27 +213,42 @@ public class NeuralBrainAdv extends TeamBrainFound{
             Directions d=Directions.Still;
             //d=this.loadChoice(i+1,k);
             d=this.loadChoice(i+1,dburl+(i+1)+".mdb",k);
+
+
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==1 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
+                this.directions.set(i,Directions.Right);
+                System.out.println("eat right");
+            }
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==-1 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==0){
+                this.directions.set(i,Directions.Left);
+                System.out.println("eat left");
+            }
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==1){
+                this.directions.set(i,Directions.Down);
+                System.out.println("eat down");
+            }
+            if(this.game.player.getPosition().x-this.game.dogs.dogTeam.get(i).getPosition().x==0 &&
+                    this.game.player.getPosition().y-this.game.dogs.dogTeam.get(i).getPosition().y==-1){
+                this.directions.set(i,Directions.Up);
+                System.out.println("eat up");
+            }
+            
+
             this.directions.set(i, d);
         }
     }
     @Override
     public String getName(){
-        String str="ANN-Adv";
-        switch(this.catNum){
-            case 1:
-                str+="-BasicFSM";
-                break;
-            case 2:
-                str+="-Zigzag";
-                break;
-            case 3:
-                str+="-CounterStrike";
-                break;
-        }
-        if(this.onlyWin)str+="-WinOnly";
-        else str+="-All";
-        str+="-Time"+deadend.game.GameConfigClass.ComputingTimeLimit;
-        return str;
+        if(this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\current\\MCState300-CS-Win"))return "ANN-MCState300-CS-Win";
+        if(this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\current\\MCState-ZigZag-Win"))return "ANN-MCState300-Zigzag-Win";
+        if(this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\current\\MCState300-Square-Win"))return "ANN-MCState300-Square-Win";
+        return this.dburl;
     }
     private Directions loadChoice(int dogID,String dburl,int maxID){
         boolean comUrl;
@@ -244,18 +259,18 @@ public class NeuralBrainAdv extends TeamBrainFound{
         if(comUrl){
             if(dogID==1){
                  switch(maxID){
-                            case 0:return Directions.Down;
-                            case 1:return Directions.Right;
-                            case 2:return Directions.Up;
-                            case 3:return Directions.Left;
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
                         }
             }
             if(dogID==2){
                 switch(maxID){
-                            case 0:return Directions.Down;
-                            case 1:return Directions.Left;
-                            case 2:return Directions.Up;
-                            case 3:return Directions.Right;
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
                         }
             }
         }
@@ -265,18 +280,39 @@ public class NeuralBrainAdv extends TeamBrainFound{
         if(comUrl){
             if(dogID==1){
                  switch(maxID){
-                            case 0:return Directions.Right;
+                            case 0:return Directions.Left;
                             case 1:return Directions.Down;
                             case 2:return Directions.Up;
-                            case 3:return Directions.Left;
+                            case 3:return Directions.Right;
                         }
             }
             if(dogID==2){
                 switch(maxID){
-                            case 0:return Directions.Right;
-                            case 1:return Directions.Down;
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Down;
+                            case 3:return Directions.Up;
+                        }
+            }
+        }
+
+        comUrl=this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\current\\MCState300-Square-Win");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Right;
                             case 2:return Directions.Left;
                             case 3:return Directions.Up;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Up;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Down;
+                            case 3:return Directions.Left;
                         }
             }
         }
