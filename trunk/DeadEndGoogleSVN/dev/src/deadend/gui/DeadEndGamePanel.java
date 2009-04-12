@@ -40,7 +40,9 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
         initComponents();
     }
     
-    /** Creates new form DeadEndGamePanel */
+    /** Creates new form DeadEndGamePanel
+     * @param game 
+     */
     public DeadEndGamePanel(DeadEndGame game) {
         initComponents();
         this.game=game;
@@ -81,12 +83,13 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     public DeadEndGame game;
     /**
      * Construct the game entity
+     * @param game 
      */
     public void initGame(DeadEndGame game){
         this.game=game;
         this.game.intialize();
 
-        this.drawGame();
+        this.drawGame(game);
     }
 
 
@@ -137,6 +140,17 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
     }
 
     //Graphics g;
+    /**
+     * 
+     * @param game
+     */
+    public void drawGame(deadend.game.DeadEndGame game){
+        
+    }
+
+    /**
+     * 
+     */
     public void drawGame(){
         
     }
@@ -184,7 +198,6 @@ public class DeadEndGamePanel extends javax.swing.JPanel {
             y=d.getPosition().y;
             g.fillOval(x*unitx, y*unity, unitx, unity);
         }
-
     }
     /**
      * call Reset logic of the game

@@ -240,7 +240,7 @@ public class NeuralBrainAdv extends TeamBrainFound{
 
         
         comUrl=this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\2009-04-06\\MCState300-CS-Win");
+                    "dev\\db\\enhanced\\current\\MCState300-CS-Win");
         if(comUrl){
             if(dogID==1){
                  switch(maxID){
@@ -256,6 +256,27 @@ public class NeuralBrainAdv extends TeamBrainFound{
                             case 1:return Directions.Left;
                             case 2:return Directions.Up;
                             case 3:return Directions.Right;
+                        }
+            }
+        }
+
+        comUrl=this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\db\\enhanced\\current\\MCState-ZigZag-Win");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Right;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Left;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Right;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Left;
+                            case 3:return Directions.Up;
                         }
             }
         }

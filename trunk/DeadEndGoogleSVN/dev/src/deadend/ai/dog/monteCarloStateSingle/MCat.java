@@ -76,6 +76,28 @@ public class MCat {
 
         Point p=(Point)this.position.clone();
         Directions dir=choices.get(c);
+
+        java.util.ArrayList<Point> doors=simGame.game.door;
+        Point nearDoor=doors.get(0);
+        int id=0;
+        double nd=this.position.distance(nearDoor);
+        for(int l=0;l<doors.size();l++){
+            double dist=this.position.distance(doors.get(l));
+            if(dist<nd){
+                id=l;
+                nearDoor=doors.get(id);
+            }
+        }
+
+        if(this.position.x-nearDoor.x==1 && this.position.y-nearDoor.y==0){
+            dir=Directions.Left;
+        }
+        if(this.position.x-nearDoor.x==-1 && this.position.y-nearDoor.y==0){
+            dir=Directions.Right;
+        }
+        if(this.position.x-nearDoor.x==0 && this.position.y-nearDoor.y==1){
+            dir=Directions.Up;
+        }
         
         if(dir==Directions.Up){
             this.position.setLocation(p.x,p.y-1);

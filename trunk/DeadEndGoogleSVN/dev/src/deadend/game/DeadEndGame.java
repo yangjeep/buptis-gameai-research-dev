@@ -32,6 +32,8 @@ import deadend.database.odbc.*;
  * @author Yang JiaJian
  */
 public class DeadEndGame implements ActionListener{
+
+
     // The characters
     public Cat player;
     public DogTeam dogs;
@@ -98,7 +100,9 @@ public class DeadEndGame implements ActionListener{
         //Initialize the timer
         this.refreshTime=GameConfigClass.InitRefreshTimeMS/(GameConfigClass.CatSpeed+1);
         this.ticker=new Timer(this.refreshTime,this);
+        this.prevDelay=this.refreshTime;
 
+        this.prevDelayRecorded=false;
         //
         this.stepRecordBuf=new ArrayList<deadend.database.StepRecordBuffer>();
 
@@ -113,8 +117,10 @@ public class DeadEndGame implements ActionListener{
         if(!this.isReseted){
             this.reset();
         }
+        if(!this.isAutoRun)this.ticker.setDelay(this.refreshTime);
         this.ticker.start();
         this.isReseted=false;
+
     }
 
     public void StartAGame(int time){
@@ -122,7 +128,6 @@ public class DeadEndGame implements ActionListener{
         if(!this.isReseted){
             this.reset();
         }
-        
         this.isReseted=false;
     }
 
@@ -175,8 +180,18 @@ public class DeadEndGame implements ActionListener{
     int dog2ToExitX;
     int dog2ToExitY;
 
+
+    private boolean prevDelayRecorded;
     @Override
     public void actionPerformed(ActionEvent e){
+        if(this.i==1 && this.isAutoRun && !this.prevDelayRecorded){
+            this.prevDelayRecorded=true;
+            this.prevDelay=this.ticker.getDelay();
+            this.ticker.setDelay(0);
+        }
+        if(this.isAutoRun){
+            System.out.println("Recorded:"+this.i);
+        }
         this.judge();
         if(this.gameresult!=GameResults.NotEnd){
             this.ticker.stop();
@@ -240,6 +255,7 @@ public class DeadEndGame implements ActionListener{
             dog1ToExitY=this.dogs.dogTeam.get(0).getPosition().x-this.door.get(0).y;
             dog2ToExitX=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).x;
             dog2ToExitY=this.dogs.dogTeam.get(1).getPosition().x-this.door.get(0).y;
+
             this.dogs.compute();
             this.remainder=0;
             this.judge();
@@ -261,6 +277,11 @@ public class DeadEndGame implements ActionListener{
                     step, dog1Dir, dog2Dir);
             this.stepRecordBuf.add(buf);
         }
+
+        if(this.gameresult!=GameResults.NotEnd && this.isAutoRun){
+            this.reset();
+        }
+
     }
     /**
      * @param e
@@ -467,10 +488,15 @@ public class DeadEndGame implements ActionListener{
     // Reset logic
     public void reset(){
         if(this.gameresult!=GameResults.NotEnd){
-            this.recordGameResultToODBC();
+            if(!this.dogs.getStrategy().getName().contains("ANN") &&
+                    this.gameresult==GameResults.DogWin && !this.dogs.getStrategy().goodRound)
+                System.out.println("No record");
+            else this.recordGameResultToODBC();
         }
+        this.dogs.getStrategy().goodRound=false;
+
         this.gameresult=GameResults.NotEnd;
-        this.isAutoRun=false;
+        //this.isAutoRun=false;
         this.isGameEnd=true;
         this.isPaused=false;
         this.step=0;
@@ -483,6 +509,23 @@ public class DeadEndGame implements ActionListener{
         this.stepRecordBuf.clear();
 
         this.isReseted=true;
+
+        if(this.isAutoRun){
+            i++;
+        }
+        if(this.i<this.autoRun_Rounds){
+            this.ticker.start();
+        }
+        if(this.i==this.autoRun_Rounds){
+            this.ticker.stop();
+            this.isAutoRun=false;
+            this.i=0;
+            this.ticker.setDelay(this.prevDelay);
+            this.prevDelayRecorded=false;
+        }
+        if(!this.isAutoRun){
+            this.ticker.setDelay(this.refreshTime);
+        }
     }
 
     // logic to manipulate data
@@ -494,7 +537,6 @@ public class DeadEndGame implements ActionListener{
         // record the game result
         deadend.database.odbc.ODBCWrite.writeStep(this);
         deadend.database.odbc.ODBCWrite.writeMCTime(this);
-        
     }
     private void appendResultToStepODBC(){
         // query from the record and write it to another table
@@ -541,11 +583,12 @@ public class DeadEndGame implements ActionListener{
      * This part is to implement the autorun feature
      *
      */
-    private int autoRun_Rounds;
+    public int autoRun_Rounds;
     public void initAutoRun(int totalRounds){
         this.autoRun_Rounds=totalRounds;
         this.i=1;
         this.isBreakTask=false;
+        this.ticker.setDelay(0);
         this.reset();
     }
     private boolean isTaskFinished;
@@ -553,20 +596,17 @@ public class DeadEndGame implements ActionListener{
     public void stopAutoRun(){
         this.isBreakTask=true;
     }
-    int i=1;
+    public int i=1;
+
+    public int prevDelay;
     /**
      * execute the autorun task
      */
     public void autoRun(){
-        do{
-            this.playGame();
-            if(this.gameresult!=GameResults.NotEnd){
-                this.reset();
-                i++;
-            }
-        System.out.println("Record:"+this.i);
-        }while(i<=this.autoRun_Rounds);
+        this.isAutoRun=true;
+        this.StartAGame();
     }
+
     /**
      * execute the autorun task
      * @param gamePanel 
@@ -579,7 +619,8 @@ public class DeadEndGame implements ActionListener{
                 this.reset();
                 i++;
             }
-        System.out.println("Record:"+this.i);
+            System.out.println("Record:"+this.i);
         }while(i<=this.autoRun_Rounds);
     }
+
 }

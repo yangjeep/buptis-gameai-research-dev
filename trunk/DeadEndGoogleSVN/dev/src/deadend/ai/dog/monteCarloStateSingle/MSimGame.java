@@ -84,7 +84,7 @@ public class MSimGame {
     }
     public ArrayList<Directions> nextDir;
     public GameResults simResult;
-    private DeadEndGame game;
+    DeadEndGame game;
 
     MCat scat;
     public ArrayList<MDog> sdogs;
@@ -107,7 +107,7 @@ public class MSimGame {
             
             if(this.isFinished)break;
             
-            for(int s=1;s<=this.game.player.getSpeed();s++){
+            for(int s=1;s<=deadend.game.GameConfigClass.CatSpeed;s++){
                 this.scat.rMove(this);
             }
             for(int i=0;i<this.sdogs.size();i++){

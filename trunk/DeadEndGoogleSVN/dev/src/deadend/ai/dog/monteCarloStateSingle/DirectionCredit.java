@@ -27,11 +27,25 @@ import java.util.*;
 public class DirectionCredit {
 
     ArrayList<Integer> credit;
-    
+    ArrayList<Integer> dcredit;
     public DirectionCredit(){
         credit=new ArrayList<Integer>(4);
+        dcredit=new ArrayList<Integer>(4);
         for(int i=1;i<=4;i++){
             credit.add(0);
+            dcredit.add(0);
+        }
+
+    }
+
+    MSimGame game;
+    public DirectionCredit(MSimGame game){
+        this.game=game;
+        credit=new ArrayList<Integer>(4);
+        dcredit=new ArrayList<Integer>(4);
+        for(int i=1;i<=4;i++){
+            credit.add(0);
+            dcredit.add(0);
         }
     }
 
@@ -121,6 +135,7 @@ public class DirectionCredit {
         int incr=0;
         if(result==GameResults.DogWin)incr=1;
         else if(result==GameResults.Draw)incr=0;
+        else if(result==GameResults.CatWin)incr=0;
 
         int k=0;
         if(d==Directions.Down){
@@ -143,14 +158,16 @@ public class DirectionCredit {
             k+=incr;
             this.credit.set(3, k);
         }
+        
     }
 
     public Directions findBest(java.awt.Point thispos,java.awt.Point catpos){
-        int k=this.credit.get(0);
+        int k=0;
+        k=this.credit.get(0);
         int t=-1;
         boolean judged=false;
         for(int i=0;i<this.credit.size();i++){
-            if(this.credit.get(i)>k){
+            if(this.credit.get(i)>=k){
                 judged=true;
                 t=i;
                 k=this.credit.get(i);
@@ -159,31 +176,19 @@ public class DirectionCredit {
         }
         System.out.println();
         System.out.println("k="+k);
+
+        Random rand=new Random();
         if(k>0){
             if(t==0 || t==-1)return Directions.Down;
-            if(t==1)return Directions.Up;
-            if(t==2)return Directions.Left;
-            if(t==3)return Directions.Right;
+            else if(t==1)return Directions.Up;
+            else if(t==2)return Directions.Left;
+            else return Directions.Right;
         }else{
-            
-            int x,y;
-            int cx,cy;
-
-            x=thispos.x;
-            y=thispos.y;
-
-            cx=catpos.x;
-            cy=catpos.y;
-
-            java.util.Random rand=new java.util.Random();
-            if(rand.nextBoolean()){
-                if(cx>x)return Directions.Right;
-                else return Directions.Left;
-            }else{
-                if(cy>y)return Directions.Down;
-                else return Directions.Up;
-            }
+            System.out.println("no choice");
+            MDog dog=new MDog(thispos);
+            return dog.strategies.get(new Random().nextInt(dog.strategies.size())).nextDir(game, thispos);
         }
-        return null;
+        
+        //return Directions.Still;
     }
 }
