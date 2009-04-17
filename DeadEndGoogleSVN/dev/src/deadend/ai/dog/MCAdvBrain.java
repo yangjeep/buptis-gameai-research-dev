@@ -28,6 +28,11 @@ import deadend.ai.dog.monteCarloAdv.*;
  */
 public class MCAdvBrain extends TeamBrainFound{
 
+    /**
+     *
+     * @param game
+     * @param timeLimit
+     */
     public MCAdvBrain(DeadEndGame game,int timeLimit) {
         this.game=game;
         this.timeLimitInMS=timeLimit;
@@ -42,7 +47,7 @@ public class MCAdvBrain extends TeamBrainFound{
 
     
     // method computation within time limit
-    public void compute(){
+    public void compute(deadend.game.DeadEndGame thegame){
         this.dcredits=new ArrayList<DirectionCredit>(deadend.game.GameConfigClass.NumberOfDogs);
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
         directions.clear();
@@ -130,6 +135,10 @@ public class MCAdvBrain extends TeamBrainFound{
     }
     int simNum=0;
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String getName(){
         String str="MonteCarloAdvanced";

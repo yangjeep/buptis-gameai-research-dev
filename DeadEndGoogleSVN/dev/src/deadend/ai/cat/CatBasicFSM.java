@@ -29,6 +29,11 @@ import deadend.roles.*;
  * @author Yang JiaJian
  */
 public class CatBasicFSM implements StrategyInterface{
+    /**
+     * compute the next step
+     * @param game the situation of the game
+     * @return next step
+     */
     @Override public Directions compute(DeadEndGame game){
         ArrayList<Point> doors=game.door;
         ArrayList<Dog> dogs=game.dogs.dogTeam;
@@ -70,8 +75,15 @@ public class CatBasicFSM implements StrategyInterface{
         if(player.y>=0){return Directions.Up;}
         return null;
     }
+    /**
+     * nothing to reset
+     */
     @Override
     public void reset(){}
+    /**
+     * The name of the strategy
+     * @return the name in String
+     */
     @Override
     public String getName(){
         return "BasicFSM";

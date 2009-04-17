@@ -10,8 +10,8 @@
     (3)Monte Carlo based on State
         deadend.ai.dog.monteCarloState
 3.Plot the Time of Monte Carlo Method - Wining Rate correlation
-4.Build ANN advance with 27 inputs
-    file path: ./db/annAdv
+4.Build ANN advance with 28 inputs
+    file path: db/annAdv
     record the data for every group for 200 games
     train the ann in WEKA
     Copy the data back to ANN

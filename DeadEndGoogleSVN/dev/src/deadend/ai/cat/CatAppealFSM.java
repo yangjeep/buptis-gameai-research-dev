@@ -33,11 +33,19 @@ public class CatAppealFSM implements StrategyInterface{
 
     private int catStep;
 
+    /**
+     * Constructor
+     */
     public CatAppealFSM() {
         this.catStep=0;
     }
 
 
+    /**
+     * Compute the next step
+     * @param game the situation of the game
+     * @return next step direction
+     */
     @Override
     public Directions compute(DeadEndGame game){
         this.catStep++;
@@ -142,11 +150,22 @@ public class CatAppealFSM implements StrategyInterface{
         return Directions.Up;
     }
 
+    /**
+     * reset the current step
+     */
     @Override
     public void reset(){
         this.catStep=0;
     }
 
+    /**
+     * The name of the strategy
+     * @return the name in string
+     */
+    /**
+     *
+     * @return
+     */
     @Override
     public String getName(){ return "CounterStrike"; }
 }

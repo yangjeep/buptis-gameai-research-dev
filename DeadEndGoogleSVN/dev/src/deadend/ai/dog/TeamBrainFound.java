@@ -22,8 +22,22 @@ import java.util.ArrayList;
  * @author Yang JiaJian
  */
 public abstract class TeamBrainFound {
+    /**
+     *
+     */
     public ArrayList<deadend.globalenum.Directions> directions;
+    /**
+     *
+     */
     public boolean goodRound;
-    public abstract void compute();
+    /**
+     * 
+     * @param thegame
+     */
+    public abstract void compute(deadend.game.DeadEndGame thegame);
+    /**
+     *
+     * @return
+     */
     public abstract String getName();
 }

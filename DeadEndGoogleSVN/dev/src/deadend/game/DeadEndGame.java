@@ -35,22 +35,55 @@ public class DeadEndGame implements ActionListener{
 
 
     // The characters
+    /**
+     *
+     */
     public Cat player;
+    /**
+     *
+     */
     public DogTeam dogs;
 
     // Fields used in game
+    /**
+     *
+     */
     public GameResults gameresult;
+    /**
+     *
+     */
     public int step;
+    /**
+     *
+     */
     public int LimitStep;
+    /**
+     *
+     */
     public boolean isGameEnd;
 
+    /**
+     *
+     */
     public boolean isReseted;
 
+    /**
+     *
+     */
     public Timer ticker;
+    /**
+     *
+     */
     public int refreshTime;
 
+    /**
+     *
+     */
     public ArrayList<Point> door;
 
+    /**
+     *
+     */
     public ArrayList<deadend.database.StepRecordBuffer> stepRecordBuf;
 
     // Tools access DB
@@ -64,13 +97,22 @@ public class DeadEndGame implements ActionListener{
     public boolean isAutoRun;
 
     //State control
+    /**
+     *
+     */
     public boolean isPaused;
 
     // Constructor
+    /**
+     *
+     */
     public DeadEndGame(){
 
     }
     // Initialize
+    /**
+     *
+     */
     public void intialize(){
         this.LimitStep=GameConfigClass.Step_Limit;
         this.gameresult=GameResults.NotEnd;
@@ -123,6 +165,10 @@ public class DeadEndGame implements ActionListener{
 
     }
 
+    /**
+     *
+     * @param time
+     */
     public void StartAGame(int time){
         this.refreshTime=GameConfigClass.ComputingTimeLimit;
         if(!this.isReseted){
@@ -131,16 +177,25 @@ public class DeadEndGame implements ActionListener{
         this.isReseted=false;
     }
 
+    /**
+     *
+     */
     public void StopGame(){
         this.ticker.stop();
     }
 
+    /**
+     *
+     */
     public void PulseGame(){
         if(!this.isPaused){
             this.isPaused=true;
             this.ticker.stop();
         }
     }
+    /**
+     *
+     */
     public void ResumeGame(){
         if(this.isPaused){
             this.isPaused=false;
@@ -148,6 +203,10 @@ public class DeadEndGame implements ActionListener{
         }
     }
 
+    /**
+     *
+     * @param delay
+     */
     public void setRefreshDelay(int delay){
         this.refreshTime=delay;
     }
@@ -391,6 +450,9 @@ public class DeadEndGame implements ActionListener{
 
     }
 
+    /**
+     *
+     */
     public void playGame(){
         this.judge();
         if(this.gameresult!=GameResults.NotEnd){
@@ -486,6 +548,9 @@ public class DeadEndGame implements ActionListener{
     }
 
     // Reset logic
+    /**
+     *
+     */
     public void reset(){
         if(this.gameresult!=GameResults.NotEnd){
             if(this.gameresult==GameResults.DogWin && !this.dogs.getStrategy().goodRound)
@@ -579,6 +644,10 @@ public class DeadEndGame implements ActionListener{
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<StepRecordBuffer> getStepRecordBuf() {
         return stepRecordBuf;
     }
@@ -588,6 +657,10 @@ public class DeadEndGame implements ActionListener{
      *
      */
     public int autoRun_Rounds;
+    /**
+     *
+     * @param totalRounds
+     */
     public void initAutoRun(int totalRounds){
         this.autoRun_Rounds=totalRounds;
         this.i=1;
@@ -597,11 +670,20 @@ public class DeadEndGame implements ActionListener{
     }
     private boolean isTaskFinished;
     private boolean isBreakTask;
+    /**
+     *
+     */
     public void stopAutoRun(){
         this.isBreakTask=true;
     }
+    /**
+     *
+     */
     public int i=1;
 
+    /**
+     *
+     */
     public int prevDelay;
     /**
      * execute the autorun task

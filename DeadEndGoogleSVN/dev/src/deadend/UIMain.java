@@ -156,6 +156,9 @@ public class UIMain extends javax.swing.JFrame {
     private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Update the control panel
+     */
     public void update(){
         this.deadEndControlPanel1.update();
         this.repaint();

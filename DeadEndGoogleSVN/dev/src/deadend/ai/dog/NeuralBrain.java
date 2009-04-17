@@ -39,6 +39,12 @@ public class NeuralBrain extends TeamBrainFound{
     int catNum;
     boolean onlyWin;
 
+    /**
+     *
+     * @param game
+     * @param catNum
+     * @param onlyWin
+     */
     public NeuralBrain(DeadEndGame game,int catNum,boolean onlyWin){
         this.game=game;
         this.catNum=catNum;
@@ -65,7 +71,7 @@ public class NeuralBrain extends TeamBrainFound{
         // TODO apply ANN and load data
     }
     @Override
-    public void compute(){
+    public void compute(deadend.game.DeadEndGame thegame){
 
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
         directions.clear();
@@ -109,6 +115,10 @@ public class NeuralBrain extends TeamBrainFound{
             this.directions.set(i, d);
         }
     }
+    /**
+     *
+     * @return
+     */
     @Override
     public String getName(){
         String str="ANN";

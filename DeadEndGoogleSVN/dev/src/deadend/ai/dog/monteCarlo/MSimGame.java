@@ -30,6 +30,12 @@ public class MSimGame {
     private double odist;
     private ArrayList<Double> odists;
     // the logic of an original game
+    /**
+     *
+     * @param game
+     * @param cat
+     * @param dogs
+     */
     public MSimGame(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
         this.game=game;
         this.nextDir=new ArrayList<Directions>(dogs.size());
@@ -61,6 +67,12 @@ public class MSimGame {
 
         this.count=1;
     }
+    /**
+     *
+     * @param game
+     * @param cat
+     * @param dogs
+     */
     public void reset(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
         this.game=game;
         this.nextDir=new ArrayList<Directions>(dogs.size());
@@ -95,7 +107,13 @@ public class MSimGame {
         */
         this.count=1;
     }
+    /**
+     *
+     */
     public ArrayList<Directions> nextDir;
+    /**
+     *
+     */
     public GameResults simResult;
     private DeadEndGame game;
 
@@ -106,7 +124,14 @@ public class MSimGame {
 
     private int count;
 
+    /**
+     *
+     */
     public boolean isFinished;
+    /**
+     *
+     * @return
+     */
     public boolean runSim(){
         do{
             this.step++;
@@ -153,6 +178,9 @@ public class MSimGame {
         //System.out.println();
         return true;
     }
+    /**
+     *
+     */
     public void runToDeath(){
         while(!this.isFinished){
             this.runSim();

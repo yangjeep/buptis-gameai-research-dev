@@ -28,6 +28,11 @@ import deadend.ai.dog.monteCarloStateSingle.*;
  */
 public class MCStateBrain extends TeamBrainFound{
 
+    /**
+     *
+     * @param game
+     * @param timeLimit
+     */
     public MCStateBrain(DeadEndGame game,int timeLimit) {
         this.game=game;
         this.timeLimitInMS=timeLimit;
@@ -42,7 +47,7 @@ public class MCStateBrain extends TeamBrainFound{
 
     
     // method computation within time limit
-    public void compute(){
+    public void compute(deadend.game.DeadEndGame thegame){
         this.dcredits=new ArrayList<DirectionCredit>(deadend.game.GameConfigClass.NumberOfDogs);
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
         directions.clear();
@@ -119,6 +124,10 @@ public class MCStateBrain extends TeamBrainFound{
     }
     int simNum=0;
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String getName(){
         String str="MonteCarloStateSingle";

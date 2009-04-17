@@ -72,6 +72,12 @@ public class NeuralBrainAdv extends TeamBrainFound{
         }
     }
 
+    /**
+     *
+     * @param game
+     * @param catNum
+     * @param onlyWin
+     */
     public NeuralBrainAdv(DeadEndGame game,int catNum,boolean onlyWin){
         this.game=game;
         this.catNum=catNum;
@@ -100,7 +106,7 @@ public class NeuralBrainAdv extends TeamBrainFound{
         // TODO apply ANN and load data
     }
     @Override
-    public void compute(){
+    public void compute(deadend.game.DeadEndGame thegame){
 
         directions=new ArrayList<deadend.globalenum.Directions>(deadend.game.GameConfigClass.NumberOfDogs);
         directions.clear();
@@ -240,22 +246,22 @@ public class NeuralBrainAdv extends TeamBrainFound{
             this.directions.set(i, d);
         }
     }
+    /**
+     *
+     * @return
+     */
     @Override
     public String getName(){
-        if(this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState300-CS-Win"))return "ANN-MCState300-CS-Win";
-        if(this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState-ZigZag-Win"))return "ANN-MCState300-Zigzag-Win";
-        if(this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState300-Square-Win"))return "ANN-MCState300-Square-Win";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState300-CS-Win"))return "ANN-MCState300-CS-Win";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState-ZigZag-Win"))return "ANN-MCState300-Zigzag-Win";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState300-Square-Win"))return "ANN-MCState300-Square-Win";
         return this.dburl;
     }
     private Directions loadChoice(int dogID,String dburl,int maxID){
         boolean comUrl;
 
         
-        comUrl=this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState300-CS-Win");
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState300-CS-Win");
         if(comUrl){
             if(dogID==1){
                  switch(maxID){
@@ -275,8 +281,7 @@ public class NeuralBrainAdv extends TeamBrainFound{
             }
         }
 
-        comUrl=this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState-ZigZag-Win");
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState-ZigZag-Win");
         if(comUrl){
             if(dogID==1){
                  switch(maxID){
@@ -296,8 +301,7 @@ public class NeuralBrainAdv extends TeamBrainFound{
             }
         }
 
-        comUrl=this.dburl.equalsIgnoreCase("E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState300-Square-Win");
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState300-Square-Win");
         if(comUrl){
             if(dogID==1){
                  switch(maxID){

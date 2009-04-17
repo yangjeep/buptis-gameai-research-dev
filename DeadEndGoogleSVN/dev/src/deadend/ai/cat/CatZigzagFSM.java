@@ -34,6 +34,11 @@ public class CatZigzagFSM implements StrategyInterface{
     Directions initDir;
     Directions revDir;
     boolean isTouched=false;
+    /**
+     *
+     * @param game
+     * @return
+     */
     @Override public Directions compute(DeadEndGame game){
         ArrayList<Point> doors=game.door;
         ArrayList<Dog> dogs=game.dogs.dogTeam;
@@ -187,12 +192,19 @@ public class CatZigzagFSM implements StrategyInterface{
 
     }
 
+    /**
+     *
+     */
     @Override
     public void reset(){
         this.initDir=null;
         this.revDir=null;
         this.isTouched=false;
     }
+    /**
+     *
+     * @return
+     */
     @Override
     public String getName(){
         return "ZigZagFSM";

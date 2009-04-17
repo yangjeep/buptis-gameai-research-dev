@@ -24,6 +24,12 @@ import deadend.globalenum.Directions;
  */
 public class MCBasicDefence extends MCSimStrategy{
 
+    /**
+     *
+     * @param simGame
+     * @param selfPos
+     * @return
+     */
     public deadend.globalenum.Directions nextDir(MSimGame simGame,java.awt.Point selfPos){
         java.awt.Point catPos=simGame.scat.position;
         int cx,cy,dx,dy;

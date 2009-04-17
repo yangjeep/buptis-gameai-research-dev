@@ -31,12 +31,16 @@ import deadend.globalenum.*;
  */
 public class DeadEndControlPanel extends javax.swing.JPanel {
     DeadEndGamePanel gamePanel;
+    /**
+     *
+     */
     public DeadEndControlPanel() {
         initComponents();
     }
     /**
      * Creates new form DeadEndControlPanel
      * @param game the game
+     * @param gamePanel
      */
     public DeadEndControlPanel(DeadEndGame game,DeadEndGamePanel gamePanel) {
         initComponents();
@@ -48,6 +52,7 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
     /**
      * Initilize the game
      * @param game the game
+     * @param gamePanel
      */
     public void initGame(DeadEndGame game,DeadEndGamePanel gamePanel){
         this.game=game;
@@ -100,14 +105,14 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         resumeButton.setEnabled(false);
         resumeButton.addActionListener(formListener);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ZigZag", "BasicFSM", "CounterStrike", "Square" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ZigZag", "BasicFSM", "CounterStrike", "Square", "Still" }));
         jComboBox1.addItemListener(formListener);
 
         jLabel2.setText("Cat");
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloStateSingle", "MonteCarloAdvSingle", "MonteCarloAdv", "ANN-MCS300-ZigZag", "ANN-MCS300-CS", "ANN-MCS300-Square" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "MonteCarloStateSingle", "MonteCarloAdv", "ANN-MCS300-ZigZag", "ANN-MCS300-CS", "ANN-MCS300-Square" }));
         jComboBox2.addItemListener(formListener);
 
         PulseButton.setText("Pulse");
@@ -287,6 +292,9 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         if(str.equalsIgnoreCase("Square")){
             this.game.player.setStrategy(new deadend.ai.cat.CatSquareFSM());
         }
+        if(str.equalsIgnoreCase("Still")){
+            this.game.player.setStrategy(new deadend.ai.cat.CatStill());
+        }
         
     }//GEN-LAST:event_jComboBox1ItemStateChanged
 
@@ -295,22 +303,25 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
         if(str.equalsIgnoreCase("ANN-MCS300-ZigZag")){
             String url=
-                    "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState-ZigZag-Win";
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\MCState-ZigZag-Win";
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
                     2, true, url, 28, 18, 4));
         }
         if(str.equalsIgnoreCase("ANN-MCS300-CS")){
             String url=
-                    "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState300-CS-Win";
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\MCState300-CS-Win";
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
                     2, true, url, 28, 18, 4));
         }
         if(str.equalsIgnoreCase("ANN-MCS300-Square")){
             String url=
-                    "E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
-                    "dev\\db\\enhanced\\current\\MCState300-Square-Win";
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\MCState300-Square-Win";
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
                     2, true, url, 28, 18, 4));
         }
@@ -458,6 +469,9 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
     private DeadEndGame game;
 
+    /**
+     *
+     */
     public void update(){
         if(!this.game.isAutoRun)this.jProgressBar1.setValue(game.step*100/game.LimitStep);
         else{
@@ -470,6 +484,9 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
         this.repaint();
     }
 
+    /**
+     *
+     */
     public void setDogStrategy(){
         String str=this.jComboBox2.getSelectedItem().toString();
         if(str.equalsIgnoreCase("MonteCarlo")){
@@ -525,6 +542,9 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
             this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(game,3,true));
         }
     }
+    /**
+     *
+     */
     public void setCatStrategy(){
         String str=this.jComboBox1.getSelectedItem().toString();
         if(str.equalsIgnoreCase("ZigZag")){

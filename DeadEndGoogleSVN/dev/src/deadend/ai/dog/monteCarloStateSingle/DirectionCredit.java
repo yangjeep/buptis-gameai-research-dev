@@ -28,6 +28,9 @@ public class DirectionCredit {
 
     ArrayList<Integer> credit;
     ArrayList<Integer> dcredit;
+    /**
+     *
+     */
     public DirectionCredit(){
         credit=new ArrayList<Integer>(4);
         dcredit=new ArrayList<Integer>(4);
@@ -39,6 +42,10 @@ public class DirectionCredit {
     }
 
     MSimGame game;
+    /**
+     *
+     * @param game
+     */
     public DirectionCredit(MSimGame game){
         this.game=game;
         credit=new ArrayList<Integer>(4);
@@ -50,6 +57,10 @@ public class DirectionCredit {
     }
 
 
+    /**
+     *
+     * @param d
+     */
     public void addCredit(Directions d){
         //System.out.println(d.toString());
         int k=0;
@@ -76,7 +87,8 @@ public class DirectionCredit {
     }
 
    /**
-    * @deprecated 
+    * @param d
+    * @deprecated
     */
    public void addDrawCredit(Directions d){
         //System.out.println(d.toString());
@@ -104,6 +116,7 @@ public class DirectionCredit {
     }
 
    /**
+    * @param d
     * @deprecated
     */
     public void subCredit(Directions d){
@@ -131,6 +144,11 @@ public class DirectionCredit {
         }
     }
 
+    /**
+     *
+     * @param d
+     * @param result
+     */
     public void autoAddCredit(Directions d, GameResults result){
         int incr=0;
         if(result==GameResults.DogWin)incr=1;
@@ -161,6 +179,12 @@ public class DirectionCredit {
         
     }
 
+    /**
+     *
+     * @param thispos
+     * @param catpos
+     * @return
+     */
     public Directions findBest(java.awt.Point thispos,java.awt.Point catpos){
         int k=0;
         k=this.credit.get(0);

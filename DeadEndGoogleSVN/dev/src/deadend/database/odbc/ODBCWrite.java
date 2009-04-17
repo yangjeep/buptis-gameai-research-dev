@@ -30,11 +30,17 @@ import deadend.database.StepRecordBuffer;
 public class ODBCWrite {
     
     // public method of record game result
+    /**
+     *
+     * @param game
+     */
     public static void writeMCTime(deadend.game.DeadEndGame game){
         try{
 	        String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
-                    "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk\\" +
-                    "DeadEndGoogleSVN\\dev\\db\\ResultRecord\\current.mdb";
+                    "DBQ=" +
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\" +
+                    "DeadEndGoogleSVN\\dev\\" +*/
+                    "db\\ResultRecord\\current.mdb";
 	        Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	        Connection connection=DriverManager.getConnection(strurl);
 
@@ -64,12 +70,18 @@ public class ODBCWrite {
 
     }
         // method of record step
-        public static void writeStep(deadend.game.DeadEndGame game){
+    /**
+     *
+     * @param game
+     */
+    public static void writeStep(deadend.game.DeadEndGame game){
             if(deadend.game.GameConfigClass.currentStepRecordTableVersion==1){
                 try{
                     String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
-                            "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk\\" +
-                            "DeadEndGoogleSVN\\dev\\db\\StepRecord\\current.mdb";
+                            "DBQ=" +
+                            /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\" +
+                            "DeadEndGoogleSVN\\dev\\" +*/
+                            "db\\StepRecord\\current.mdb";
                     Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
                     Connection connection=DriverManager.getConnection(strurl);
                 ArrayList<StepRecordBuffer>buf=game.getStepRecordBuf();
@@ -124,8 +136,10 @@ public class ODBCWrite {
             else if(deadend.game.GameConfigClass.currentStepRecordTableVersion==2){
                 try{
                     String strurl="jdbc:odbc:driver={Microsoft Access Driver (*.mdb)};" +
-                            "DBQ=E:\\My Java Projects\\sseProj\\dev\\trunk" +
-                            "\\DeadEndGoogleSVN\\dev\\db\\StepRecord\\current.mdb";
+                            "DBQ=" +
+                            /*"E:\\My Java Projects\\sseProj\\dev\\trunk" +
+                            "\\DeadEndGoogleSVN\\dev\\" +*/
+                            "db\\StepRecord\\current.mdb";
                     Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
                     Connection connection=DriverManager.getConnection(strurl);
                     ArrayList<StepRecordBuffer>buf=game.getStepRecordBuf();
