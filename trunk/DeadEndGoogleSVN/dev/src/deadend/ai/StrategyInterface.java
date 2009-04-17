@@ -23,7 +23,19 @@ import deadend.game.DeadEndGame;
  * @author Yang JiaJian
  */
 public interface StrategyInterface {
+    /**
+     *
+     * @param game
+     * @return
+     */
     public Directions compute(DeadEndGame game);
+    /**
+     *
+     */
     public void reset();
+    /**
+     *
+     * @return
+     */
     public String getName();
 }

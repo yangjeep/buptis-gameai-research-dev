@@ -26,7 +26,14 @@ import deadend.globalenum.Directions;
  */
 public class MDog {
     Point position;
+    /**
+     *
+     */
     public Directions first;
+    /**
+     *
+     * @param position
+     */
     public MDog(Point position){
         this.position=position;
         this.first=Directions.Still;

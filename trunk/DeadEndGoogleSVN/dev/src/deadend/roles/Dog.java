@@ -24,6 +24,10 @@ import deadend.globalenum.Directions;
  */
 public class Dog extends Animal{
 
+    /**
+     *
+     * @param game
+     */
     public Dog(DeadEndGame game) {
     }
 
@@ -33,6 +37,10 @@ public class Dog extends Animal{
         this.bornAtHome();
     }
 
+    /**
+     *
+     * @param num
+     */
     public void initialize(int num){
         this.bornAtHome(num);
     }
@@ -45,10 +53,16 @@ public class Dog extends Animal{
         this.direction=direction;
         super.move(false);
     }
+    /**
+     *
+     */
     @Override
     public void compute(){
     }
     // reset logig is here
+    /**
+     *
+     */
     @Override
     public void reset(){
         this.bornAtHome();
@@ -56,6 +70,9 @@ public class Dog extends Animal{
 
 
     // To born at the initial place
+    /**
+     *
+     */
     public void bornAtHome(){
         int x,y;
         java.util.Random rand=new java.util.Random();
@@ -66,6 +83,10 @@ public class Dog extends Animal{
     }
 
     // To born at the initial place
+    /**
+     *
+     * @param num
+     */
     public void bornAtHome(int num){
         int x,y;
         if(num==0)

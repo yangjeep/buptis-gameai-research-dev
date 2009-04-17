@@ -38,15 +38,30 @@ public abstract class Animal {
      * The core related parameters
      */
     protected Point position;
+    /**
+     *
+     */
     protected Directions direction;
+    /**
+     *
+     */
     protected int speed;
     /**
      * Core related functions
      */
     public abstract void initialize();
+    /**
+     *
+     */
     public abstract void compute();
+    /**
+     *
+     */
     public abstract void reset();
 
+    /**
+     *
+     */
     public void move(){
         if(this.direction==null){
             System.err.print("The direction is null");
@@ -67,6 +82,10 @@ public abstract class Animal {
         }
         this.direction=null;
     }
+    /**
+     *
+     * @param removeDirection
+     */
     public void move(boolean removeDirection){
         if(this.direction==null){
             System.err.print("The direction is null");
@@ -87,30 +106,57 @@ public abstract class Animal {
         }
     }
 
+    /**
+     *
+     */
     public void removeDirection(){
         this.direction=null;
     }
 
+    /**
+     *
+     * @return
+     */
     public Directions getDirection() {
         return direction;
     }
 
+    /**
+     *
+     * @param direction
+     */
     public void setDirection(Directions direction) {
         this.direction = direction;
     }
 
+    /**
+     *
+     * @return
+     */
     public Point getPosition() {
         return position;
     }
 
+    /**
+     *
+     * @param position
+     */
     public void setPosition(Point position) {
         this.position = position;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getSpeed() {
         return speed;
     }
 
+    /**
+     *
+     * @param speed
+     */
     public void setSpeed(int speed) {
         this.speed = speed;
     }

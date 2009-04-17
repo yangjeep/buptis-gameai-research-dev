@@ -33,6 +33,9 @@ public class CatSquareFSM implements StrategyInterface{
 
     private int catStep;
 
+    /**
+     *
+     */
     public CatSquareFSM() {
         this.catStep=0;
     }
@@ -40,6 +43,11 @@ public class CatSquareFSM implements StrategyInterface{
     private Directions side;
 
     private int turnStep;
+    /**
+     *
+     * @param game
+     * @return
+     */
     @Override
     public Directions compute(DeadEndGame game){
         this.catStep++;
@@ -110,11 +118,18 @@ public class CatSquareFSM implements StrategyInterface{
         return Directions.Up;
     }
 
+    /**
+     *
+     */
     @Override
     public void reset(){
         this.catStep=0;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String getName(){ return "Square"; }
 }

@@ -30,6 +30,12 @@ public class MSimGame {
     private double odist;
     private ArrayList<Double> odists;
     // the logic of an original game
+    /**
+     *
+     * @param game
+     * @param cat
+     * @param dogs
+     */
     public MSimGame(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
 
         this.game=game;
@@ -62,6 +68,12 @@ public class MSimGame {
 
         this.count=1;
     }
+    /**
+     *
+     * @param game
+     * @param cat
+     * @param dogs
+     */
     public void reset(DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
         this.game=game;
         this.nextDir=new ArrayList<Directions>(dogs.size());
@@ -82,7 +94,13 @@ public class MSimGame {
 
         this.count=1;
     }
+    /**
+     *
+     */
     public ArrayList<Directions> nextDir;
+    /**
+     *
+     */
     public GameResults simResult;
     DeadEndGame game;
 
@@ -93,6 +111,9 @@ public class MSimGame {
 
     private int count;
 
+    /**
+     *
+     */
     public boolean isFinished;
     /**
      *
@@ -112,7 +133,7 @@ public class MSimGame {
             }
             for(int i=0;i<this.sdogs.size();i++){
                 if(i==dogID)this.sdogs.get(i).rMove(count,this,remainder);
-                //else this.sdogs.get(i).rMove(step, this);
+                else this.sdogs.get(i).rMove(step, this);
             }
             count++;
             //if(!this.isFinished)continue;
@@ -129,8 +150,9 @@ public class MSimGame {
         
         for(int i=0;i<this.sdogs.size();i++){
             this.nextDir.add(this.sdogs.get(i).first);
-            //System.out.print(this.sdogs.get(i).first.toString());
+        //System.out.print(this.sdogs.get(i).first.toString());
         }
+        /*this.nextDir.add(this.sdogs.get(dogID).first);*/
         //System.out.println();
         return true;
     }

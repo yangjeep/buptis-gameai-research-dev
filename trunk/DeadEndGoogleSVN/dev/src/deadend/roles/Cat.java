@@ -30,6 +30,10 @@ public class Cat extends Animal{
     // Strategy
     private StrategyInterface strategy;
 
+    /**
+     *
+     * @param game
+     */
     public Cat(DeadEndGame game) {
         // assign fields
         this.game=game;
@@ -47,6 +51,9 @@ public class Cat extends Animal{
     }
 
     // the strategy related logic here
+    /**
+     *
+     */
     @Override
     public void compute(){
         // the strategy logic is added here
@@ -55,6 +62,9 @@ public class Cat extends Animal{
     }
 
     // the reset logig is here
+    /**
+     *
+     */
     @Override
     public void reset(){
         this.bornAtHome();
@@ -68,6 +78,9 @@ public class Cat extends Animal{
 
 
     // To born at the initial place
+    /**
+     *
+     */
     public void bornAtHome(){
         int x,y;
         java.util.Random rand=new java.util.Random();
@@ -77,6 +90,10 @@ public class Cat extends Animal{
         this.position=new java.awt.Point(deadend.game.GameConfigClass.GridX/2-1,deadend.game.GameConfigClass.GridY-1);
     }
 
+    /**
+     *
+     * @param a
+     */
     public void bornAtHome(int a){
         int x,y;
         java.util.Random rand=new java.util.Random();
@@ -85,10 +102,18 @@ public class Cat extends Animal{
 
         this.position=new java.awt.Point(deadend.game.GameConfigClass.GridX/2-1,deadend.game.GameConfigClass.GridY-1);
     }
+    /**
+     *
+     * @return
+     */
     public StrategyInterface getStrategy() {
         return strategy;
     }
 
+    /**
+     *
+     * @param strategy
+     */
     public void setStrategy(StrategyInterface strategy) {
         this.strategy = strategy;
     }

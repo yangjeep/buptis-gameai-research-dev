@@ -26,7 +26,14 @@ import deadend.globalenum.Directions;
  */
 public class MDog {
     Point position;
+    /**
+     *
+     */
     public Directions first;
+    /**
+     *
+     * @param position
+     */
     public MDog(Point position){
         this.position=position;
         this.first=Directions.Still;
@@ -132,6 +139,7 @@ public class MDog {
         Directions dir=choices.get(c);
 
         if(step==1){
+            this.first=dir;
             if(this.position.x-simGame.scat.position.x==1 &&
                     this.position.y-simGame.scat.position.y==0)this.first=Directions.Left;
             if(this.position.x-simGame.scat.position.x==-1 &&

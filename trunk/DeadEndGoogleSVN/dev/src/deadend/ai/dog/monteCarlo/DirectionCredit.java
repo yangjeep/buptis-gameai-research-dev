@@ -28,6 +28,9 @@ public class DirectionCredit {
 
     ArrayList<Integer> credit;
     
+    /**
+     *
+     */
     public DirectionCredit(){
         credit=new ArrayList<Integer>(4);
         for(int i=1;i<=4;i++){
@@ -36,6 +39,10 @@ public class DirectionCredit {
     }
 
 
+    /**
+     *
+     * @param d
+     */
     public void addCredit(Directions d){
         //System.out.println(d.toString());
         int k=0;
@@ -62,7 +69,8 @@ public class DirectionCredit {
     }
 
    /**
-    * @deprecated 
+    * @param d
+    * @deprecated
     */
    public void addDrawCredit(Directions d){
         //System.out.println(d.toString());
@@ -89,7 +97,11 @@ public class DirectionCredit {
         }
     }
 
-    public void subCredit(Directions d){
+   /**
+    *
+    * @param d
+    */
+   public void subCredit(Directions d){
         //System.out.println(d.toString());
         int k=0;
         if(d==Directions.Down){
@@ -114,7 +126,13 @@ public class DirectionCredit {
         }
     }
 
-    public Directions findBest(java.awt.Point thispos,java.awt.Point catpos){
+   /**
+    *
+    * @param thispos
+    * @param catpos
+    * @return
+    */
+   public Directions findBest(java.awt.Point thispos,java.awt.Point catpos){
         int k=this.credit.get(0);
         int t=-1;
         boolean judged=false;

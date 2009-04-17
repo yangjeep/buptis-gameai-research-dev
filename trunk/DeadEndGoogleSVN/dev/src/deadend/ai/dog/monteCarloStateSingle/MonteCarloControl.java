@@ -34,6 +34,12 @@ public class MonteCarloControl {
     Cat oCat;
     ArrayList<Dog> odogs;
 
+    /**
+     *
+     * @param game
+     * @param cat
+     * @param dogs
+     */
     public MonteCarloControl(deadend.game.DeadEndGame game,Cat cat,ArrayList<Dog> dogs){
         this.oGame=game;
         this.oCat=cat;

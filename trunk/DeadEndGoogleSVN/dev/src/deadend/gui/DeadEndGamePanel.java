@@ -36,6 +36,9 @@ import deadend.roles.Dog;
 public class DeadEndGamePanel extends javax.swing.JPanel {
 
 
+    /**
+     *
+     */
     public DeadEndGamePanel() {
         initComponents();
     }

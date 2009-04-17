@@ -26,6 +26,10 @@ import deadend.globalenum.Directions;
  */
 public class MCat {
     Point position;
+    /**
+     *
+     * @param position
+     */
     public MCat(Point position){
         this.position=position;
     }

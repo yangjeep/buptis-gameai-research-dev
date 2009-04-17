@@ -32,6 +32,9 @@ import deadend.ai.dog.*;;
  * @author Yang JiaJian
  */
 public class DogTeam {
+    /**
+     *
+     */
     public ArrayList<Dog> dogTeam;
 
     // fields DogTeamBrain
@@ -42,11 +45,18 @@ public class DogTeam {
 
     private TeamBrainFound brain;
 
+    /**
+     *
+     * @param game
+     */
     public DogTeam(DeadEndGame game) {
         this.game=game;
     }
 
     // initialize logic
+    /**
+     *
+     */
     public void initialize(){
         this.dogTeam=new ArrayList<Dog>();
         int dogLimit=GameConfigClass.NumberOfDogs;
@@ -55,32 +65,49 @@ public class DogTeam {
             d.initialize(i-1);
             this.dogTeam.add(d);
         }
-        this.brain=new deadend.ai.dog.MCStateBrain(game, deadend.game.GameConfigClass.ComputingTimeLimit);
+        this.brain=new deadend.ai.dog.MCAdvSingleBrain(game, deadend.game.GameConfigClass.ComputingTimeLimit);
     }
 
     // compute logic
+    /**
+     *
+     */
     public void compute(){
-        this.brain.compute();
+        this.brain.compute(this.game);
         for(int i=0;i<this.dogTeam.size();i++){
             this.dogTeam.get(i).compute(this.brain.directions.get(i));
         }
     }
+    /**
+     *
+     */
     public void removeDirection(){
         for(int i=0;i<this.dogTeam.size();i++){
             this.dogTeam.get(i).removeDirection();
         }
     }
     // reset logic
+    /**
+     *
+     */
     public void reset(){
         for(int i=0;i<this.dogTeam.size();i++){
             this.dogTeam.get(i).bornAtHome(i);
         }
     }
 
+    /**
+     *
+     * @return
+     */
     public TeamBrainFound getStrategy() {
         return this.brain;
     }
 
+    /**
+     *
+     * @param strategy
+     */
     public void setStrategy(TeamBrainFound  strategy) {
         this.brain = strategy;
     }

@@ -70,6 +70,17 @@ public class StepRecordBuffer {
     private Directions dog2Dir;
 
     /**
+     * @param catToDog1x 
+     * @param catToDog2x
+     * @param catToDog1y
+     * @param catToDog1
+     * @param catToDog2y
+     * @param turn
+     * @param catToDog2
+     * @param catToExitY
+     * @param catToExitX
+     * @param dog2Dir
+     * @param dog1Dir
      * @deprecated
      */
     public StepRecordBuffer(int catToDog1x, int catToDog1y, int catToDog2x, int catToDog2y, 
@@ -156,38 +167,74 @@ public class StepRecordBuffer {
 
 
 
+    /**
+     *
+     * @return
+     */
     public double getCatToDog1() {
         return catToDog1;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToDog1x() {
         return catToDog1x;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToDog1y() {
         return catToDog1y;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getCatToDog2() {
         return catToDog2;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToDog2x() {
         return catToDog2x;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToDog2y() {
         return catToDog2y;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToExitX() {
         return catToExitX;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToExitY() {
         return catToExitY;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getDog1Dir() {
         if(this.dog1Dir==Directions.Up)return "Up";
         else if(this.dog1Dir==Directions.Down)return "Down";
@@ -196,6 +243,10 @@ public class StepRecordBuffer {
         else return "Still";
     }
 
+    /**
+     *
+     * @return
+     */
     public String getDog2Dir() {
         if(this.dog2Dir==Directions.Up)return "Up";
         else if(this.dog2Dir==Directions.Down)return "Down";
@@ -204,82 +255,162 @@ public class StepRecordBuffer {
         else return "Still";
     }
 
+    /**
+     *
+     * @return
+     */
     public int getTurn() {
         return turn;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getCatDog1Angle() {
         return catDog1Angle;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getCatDog2Angle() {
         return catDog2Angle;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToBottom() {
         return catToBottom;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToLeft() {
         return catToLeft;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToRight() {
         return catToRight;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getCatToTop() {
         return catToTop;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog1ToBottom() {
         return dog1ToBottom;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog1ToExitX() {
         return dog1ToExitX;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog1ToExitY() {
         return dog1ToExitY;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog1ToLeft() {
         return dog1ToLeft;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog1ToRight() {
         return dog1ToRight;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog1ToTop() {
         return dog1ToTop;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog2ToBottom() {
         return dog2ToBottom;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog2ToExitX() {
         return dog2ToExitX;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog2ToExitY() {
         return dog2ToExitY;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog2ToLeft() {
         return dog2ToLeft;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog2ToRight() {
         return dog2ToRight;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getDog2ToTop() {
         return dog2ToTop;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getDogInnerDist() {
         return dogInnerDist;
     }
