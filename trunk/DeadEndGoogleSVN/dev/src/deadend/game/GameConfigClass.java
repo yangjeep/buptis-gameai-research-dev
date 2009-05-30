@@ -50,7 +50,7 @@ public class GameConfigClass {
     /**
      * Time limit of computation
      */
-    public static int ComputingTimeLimit=300;
+    public static int ComputingTimeLimit=10;
     /**
      * Upper limit of game steps
      */

@@ -105,7 +105,10 @@ public class MSimGame {
     DeadEndGame game;
 
     MCat scat;
-    ArrayList<MDog> sdogs;
+    /**
+     *
+     */
+    public ArrayList<MDog> sdogs;
 
     int step;
 
@@ -128,17 +131,17 @@ public class MSimGame {
             
             if(this.isFinished)break;
             
-            for(int s=0;s<=deadend.game.GameConfigClass.CatSpeed;s++){
+            for(int s=1;s<=deadend.game.GameConfigClass.CatSpeed;s++){
                 this.scat.rMove(this);
             }
             for(int i=0;i<this.sdogs.size();i++){
                 if(i==dogID)this.sdogs.get(i).rMove(count,this,remainder);
-                else this.sdogs.get(i).rMove(step, this);
+                //else this.sdogs.get(i).rMove(step, this);
             }
             count++;
             //if(!this.isFinished)continue;
             
-        }while(this.step<=deadend.game.GameConfigClass.Step_Limit);
+        }while(this.step<=this.game.LimitStep);
 
         if(this.step>=this.game.LimitStep &&
                 this.simResult!=GameResults.CatWin &&
@@ -150,9 +153,8 @@ public class MSimGame {
         
         for(int i=0;i<this.sdogs.size();i++){
             this.nextDir.add(this.sdogs.get(i).first);
-        //System.out.print(this.sdogs.get(i).first.toString());
+            //System.out.print(this.sdogs.get(i).first.toString());
         }
-        /*this.nextDir.add(this.sdogs.get(dogID).first);*/
         //System.out.println();
         return true;
     }

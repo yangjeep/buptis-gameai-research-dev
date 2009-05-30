@@ -18,6 +18,7 @@
 package deadend.ai.dog.monteCarloAdvSingle;
 
 import java.awt.Point;
+import java.util.ArrayList;
 
 import deadend.globalenum.Directions;
 /**
@@ -37,52 +38,48 @@ public class MDog {
     public MDog(Point position){
         this.position=position;
         this.first=Directions.Still;
+
+        // TODO initialize the strategies
+        this.strategies=new java.util.ArrayList<MCSimStrategy>();
+        this.strategies.add(new MCBasicChasing());
+        this.strategies.add(new MCBasicDefence());
+        this.strategies.add(new MCBasicWait());
+        this.strategies.add(new MCBasicRandom());
     }
 
     /**
      *
      * @param step
      * @param simGame
-     * @param remainder 
+     * @param remainder
      */
     public void rMove(int step,MSimGame simGame,int remainder){
         java.util.Random rand=new java.util.Random();
         java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
+        
         choices.clear();
-
         if(this.position.x>0){
-            choices.add(Directions.Left);
+        choices.add(Directions.Left);
         }
         if(this.position.x<deadend.game.GameConfigClass.GridX-1){
-            choices.add(Directions.Right);
+        choices.add(Directions.Right);
         }
         if(this.position.y>0){
-            choices.add(Directions.Up);
+        choices.add(Directions.Up);
         }
         if(this.position.y<deadend.game.GameConfigClass.GridY-1){
-            choices.add(Directions.Down);
+        choices.add(Directions.Down);
         }
 
+        if(choices.size()<=0)choices.add(Directions.Still);
         int c=rand.nextInt(choices.size());
 
         Point p=(Point)this.position.clone();
         Directions dir=choices.get(c);
 
         if(step==1){
-            switch(remainder){
-                case 0:
-                    this.first=Directions.Up;
-                    break;
-                case 1:
-                    this.first=Directions.Left;
-                    break;
-                case 2:
-                    this.first=Directions.Right;
-                    break;
-                case 3:
-                    this.first=Directions.Down;
-                    break;
-            }
+            dir=this.computeByAStrategy(remainder);
+            this.first=dir;
             if(this.position.x-simGame.scat.position.x==1 &&
                     this.position.y-simGame.scat.position.y==0)this.first=Directions.Left;
             if(this.position.x-simGame.scat.position.x==-1 &&
@@ -110,62 +107,6 @@ public class MDog {
         
     }
 
-        /**
-     *
-     * @param step
-     * @param simGame
-     */
-    public void rMove(int step,MSimGame simGame){
-        java.util.Random rand=new java.util.Random();
-        java.util.ArrayList<Directions> choices=new java.util.ArrayList<Directions>();
-        choices.clear();
-
-        if(this.position.x>0){
-            choices.add(Directions.Left);
-        }
-        if(this.position.x<deadend.game.GameConfigClass.GridX-1){
-            choices.add(Directions.Right);
-        }
-        if(this.position.y>0){
-            choices.add(Directions.Up);
-        }
-        if(this.position.y<deadend.game.GameConfigClass.GridY-1){
-            choices.add(Directions.Down);
-        }
-
-        int c=rand.nextInt(choices.size());
-
-        Point p=(Point)this.position.clone();
-        Directions dir=choices.get(c);
-
-        if(step==1){
-            this.first=dir;
-            if(this.position.x-simGame.scat.position.x==1 &&
-                    this.position.y-simGame.scat.position.y==0)this.first=Directions.Left;
-            if(this.position.x-simGame.scat.position.x==-1 &&
-                    this.position.y-simGame.scat.position.y==0)this.first=Directions.Right;
-            if(this.position.x-simGame.scat.position.x==0 &&
-                    this.position.y-simGame.scat.position.y==1)this.first=Directions.Down;
-            if(this.position.x-simGame.scat.position.x==0 &&
-                    this.position.y-simGame.scat.position.y==-1)this.first=Directions.Up;
-            //System.out.println(this.first.toString());
-            dir=this.first;
-        }
-
-        if(dir==Directions.Up){
-            this.position.setLocation(p.x,p.y-1);
-        }
-        if(dir==Directions.Down){
-            this.position.setLocation(p.x,p.y+1);
-        }
-        if(dir==Directions.Left){
-            this.position.setLocation(p.x-1, p.y);
-        }
-        if(dir==Directions.Right){
-            this.position.setLocation(p.x+1, p.y);
-        }
-
-    }
     /**
      * 
      * @deprecated
@@ -209,4 +150,26 @@ public class MDog {
             this.position.setLocation(p.x+1, p.y);
         }
     }
+
+    /**
+     *
+     */
+    public ArrayList<MCSimStrategy> strategies;
+    // @TODO set several strategy
+    private Directions computeByAStrategy(int re){
+        switch(re){
+            case 0:
+                return Directions.Up;
+            case 1:
+                return Directions.Down;
+            case 2:
+                return Directions.Left;
+            case 3:
+                return Directions.Right;
+            default:
+                return Directions.Still;
+        }
+
+    }
+
 }

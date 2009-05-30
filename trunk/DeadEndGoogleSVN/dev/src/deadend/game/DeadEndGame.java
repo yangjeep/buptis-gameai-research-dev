@@ -697,10 +697,9 @@ public class DeadEndGame implements ActionListener{
      * execute the autorun task
      * @param gamePanel 
      */
-    public void autoRun(deadend.gui.DeadEndGamePanel gamePanel){
+    public void autoRunGame(){
         do{
             this.playGame();
-            gamePanel.repaint();
             if(this.gameresult!=GameResults.NotEnd){
                 this.reset();
                 i++;

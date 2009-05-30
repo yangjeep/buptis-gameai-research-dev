@@ -34,9 +34,22 @@ public class DirectionCredit {
     public DirectionCredit(){
         credit=new ArrayList<Integer>(4);
         dcredit=new ArrayList<Integer>(4);
+        for(int i=1;i<=4;i++){
+            credit.add(0);
+            dcredit.add(0);
+        }
 
-        credit.clear();
-        dcredit.clear();
+    }
+
+    MSimGame game;
+    /**
+     *
+     * @param game
+     */
+    public DirectionCredit(MSimGame game){
+        this.game=game;
+        credit=new ArrayList<Integer>(4);
+        dcredit=new ArrayList<Integer>(4);
         for(int i=1;i<=4;i++){
             credit.add(0);
             dcredit.add(0);
@@ -138,12 +151,11 @@ public class DirectionCredit {
      */
     public void autoAddCredit(Directions d, GameResults result){
         int incr=0;
-        int k=0;
-
         if(result==GameResults.DogWin)incr=1;
         else if(result==GameResults.Draw)incr=0;
         else if(result==GameResults.CatWin)incr=0;
 
+        int k=0;
         if(d==Directions.Down){
             k=this.credit.get(0);
             k+=incr;
@@ -164,32 +176,7 @@ public class DirectionCredit {
             k+=incr;
             this.credit.set(3, k);
         }
-
-        if(result==GameResults.DogWin)incr=0;
-        else if(result==GameResults.Draw)incr=1;
-        else if(result==GameResults.CatWin)incr=-1;
-
-        k=0;
-        if(d==Directions.Down){
-        k=this.dcredit.get(0);
-        k+=incr;
-        this.dcredit.set(0, k);
-        }
-        if(d==Directions.Up){
-        k=this.dcredit.get(1);
-        k+=incr;
-        this.dcredit.set(1, k);
-        }
-        if(d==Directions.Left){
-        k=this.dcredit.get(2);
-        k+=incr;
-        this.dcredit.set(2, k);
-        }
-        if(d==Directions.Right){
-        k=this.dcredit.get(3);
-        k+=incr;
-        this.dcredit.set(3, k);
-        }
+        
     }
 
     /**
@@ -199,11 +186,12 @@ public class DirectionCredit {
      * @return
      */
     public Directions findBest(java.awt.Point thispos,java.awt.Point catpos){
-        int k=this.credit.get(0);
+        int k=0;
+        k=this.credit.get(0);
         int t=-1;
         boolean judged=false;
         for(int i=0;i<this.credit.size();i++){
-            if(this.credit.get(i)>k){
+            if(this.credit.get(i)>=k){
                 judged=true;
                 t=i;
                 k=this.credit.get(i);
@@ -212,68 +200,24 @@ public class DirectionCredit {
         }
         System.out.println();
         System.out.println("k="+k);
+
+        Random rand=new Random();
         if(k>0){
             if(t==0 || t==-1)return Directions.Down;
-            if(t==1)return Directions.Up;
-            if(t==2)return Directions.Left;
-            if(t==3)return Directions.Right;
+            else if(t==1)return Directions.Up;
+            else if(t==2)return Directions.Left;
+            else return Directions.Right;
         }else{
-            /*k=this.dcredit.get(0);
-            t=-1;
-            for(int i=0;i<this.dcredit.size();i++){
-            if(this.dcredit.get(i)>=k){
-            judged=true;
-            t=i;
-            k=this.dcredit.get(i);
-            }
-            }
-            if(t==0 || t==-1)return Directions.Down;
-            if(t==1)return Directions.Up;
-            if(t==2)return Directions.Left;
-            if(t==3)return Directions.Right;*/
-            ArrayList<Directions> dirs=new ArrayList<Directions>();
-            if(thispos.x>0)dirs.add(Directions.Left);
-            if(thispos.y>0)dirs.add(Directions.Up);
-            if(thispos.x<deadend.game.GameConfigClass.GridX-1)dirs.add(Directions.Right);
-            if(thispos.y<deadend.game.GameConfigClass.GridY-1)dirs.add(Directions.Down);
-            return dirs.get(new Random().nextInt(dirs.size()));
+            System.out.println("no choice");
+            ArrayList<Directions> choices=new ArrayList<Directions>();
+            if(thispos.x>0)choices.add(Directions.Up);
+            if(thispos.y>0)choices.add(Directions.Left);
+            if(thispos.x<deadend.game.GameConfigClass.GridX-1)choices.add(Directions.Right);
+            if(thispos.y<deadend.game.GameConfigClass.GridY-1)choices.add(Directions.Down);
+            if(choices.isEmpty())choices.add(Directions.Still);
+            return choices.get(rand.nextInt(choices.size()));
         }
-        return Directions.Still;
-    }
-
-
-    /**
-     *
-     * @param game
-     * @return
-     */
-    public Directions findBest(deadend.game.DeadEndGame game){
-        int k=this.credit.get(0);
-        int t=-1;
-        boolean judged=false;
-        for(int i=0;i<this.credit.size();i++){
-            if(this.credit.get(i)>k){
-                judged=true;
-                t=i;
-                k=this.credit.get(i);
-            }
-            System.out.print(" "+this.credit.get(i));
-        }
-        System.out.println();
-        System.out.println("k="+k);
-        if(k>0){
-            if(t==0 || t==-1)return Directions.Down;
-            if(t==1)return Directions.Up;
-            if(t==2)return Directions.Left;
-            if(t==3)return Directions.Right;
-        }else{
-            ArrayList<Directions> lis=new ArrayList<Directions>();
-            if(game.player.getPosition().x>0)lis.add(Directions.Left);
-            if(game.player.getPosition().y>0)lis.add(Directions.Up);
-            if(game.player.getPosition().x<deadend.game.GameConfigClass.GridX-1)lis.add(Directions.Right);
-            if(game.player.getPosition().y<deadend.game.GameConfigClass.GridY-1)lis.add(Directions.Down);
-            return lis.get(new Random().nextInt(lis.size()));
-        }
-        return Directions.Still;
+        
+        //return Directions.Still;
     }
 }

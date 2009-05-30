@@ -68,7 +68,7 @@ public class DogTeam {
         this.brain=new deadend.ai.dog.MCAdvSingleBrain(game, deadend.game.GameConfigClass.ComputingTimeLimit);
     }
 
-    // compute logic
+    // computation logic
     /**
      *
      */
