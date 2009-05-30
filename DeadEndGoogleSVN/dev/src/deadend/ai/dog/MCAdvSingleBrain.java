@@ -73,20 +73,20 @@ public class MCAdvSingleBrain extends TeamBrainFound{
             do{
             // Computation logic here
             msim.runSim(remainder,j);
-            if(msim.simResult!=deadend.globalenum.GameResults.NotEnd){
-                //if(j==1 && msim.simResult==deadend.globalenum.GameResults.DogWin)System.out.println("add credits to 2");
-                Directions d=msim.nextDir.get(j);
-                this.dcredits.get(j).autoAddCredit(d, msim.simResult);
-                this.simNum++;
-                msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
-                if(remainder<=3)remainder++;
-                if(remainder>3)remainder=0;
-            }
-        }while(System.currentTimeMillis()<=limit);
-            System.out.println(j+":Simed:"+simNum);
-            simNum=0;
-            begin = System.currentTimeMillis();
-            limit = begin + this.timeLimitInMS/this.game.dogs.dogTeam.size();
+                if(msim.simResult!=deadend.globalenum.GameResults.NotEnd){
+                    //if(j==1 && msim.simResult==deadend.globalenum.GameResults.DogWin)System.out.println("add credits to 2");
+                    Directions d=msim.nextDir.get(j);
+                    this.dcredits.get(j).autoAddCredit(d, msim.simResult);
+                    this.simNum++;
+                    msim.reset(this.game,this.game.player,this.game.dogs.dogTeam);
+                    if(remainder<=3)remainder++;
+                    if(remainder>3)remainder=0;
+                }
+            }while(System.currentTimeMillis()<=limit);
+        System.out.println(j+":Simed:"+simNum);
+        simNum=0;
+        begin = System.currentTimeMillis();
+        limit = begin + this.timeLimitInMS/this.game.dogs.dogTeam.size();
         }
         
 

@@ -70,12 +70,13 @@ public class MCat {
                 else
                     choices.add(Directions.Up);
         }
-        if(this.position.y<deadend.game.GameConfigClass.GridY-1){
-            if(this.position.x==nearDog.position.x && this.position.y+1==nearDog.position.y){}
-                else
-                    choices.add(Directions.Down);
-        }
+        /*if(this.position.y<deadend.game.GameConfigClass.GridY-1){
+        if(this.position.x==nearDog.position.x && this.position.y+1==nearDog.position.y){}
+        else
+        choices.add(Directions.Down);
+        }*/
 
+        if(choices.size()<=0)choices.add(Directions.Still);
         int c=rand.nextInt(choices.size());
 
         Point p=(Point)this.position.clone();
@@ -102,8 +103,7 @@ public class MCat {
         if(this.position.x-nearDoor.x==0 && this.position.y-nearDoor.y==1){
             dir=Directions.Up;
         }
-
-
+        
         if(dir==Directions.Up){
             this.position.setLocation(p.x,p.y-1);
         }

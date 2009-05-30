@@ -245,7 +245,7 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
             System.err.println(e.toString());
         }
         this.game.initAutoRun(times);
-        this.game.autoRun(this.gamePanel);
+        this.game.autoRunGame();
         }
         
 }//GEN-LAST:event_autoRunButtonActionPerformed
