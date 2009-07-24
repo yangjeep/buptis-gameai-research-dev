@@ -68,6 +68,29 @@ public class StepRecordBuffer {
 
     private Directions dog1Dir;
     private Directions dog2Dir;
+    private Directions catDir;
+
+    /**
+     * Get the value of catDir
+     *
+     * @return the value of catDir
+     */
+    public String getCatDir() {
+        if(this.catDir==Directions.Up)return "Up";
+        else if(this.catDir==Directions.Down)return "Down";
+        else if(this.catDir==Directions.Left)return "Left";
+        else if(this.catDir==Directions.Right)return "Right";
+        else return "Still";
+    }
+
+    /**
+     * Set the value of catDir
+     *
+     * @param catDir new value of catDir
+     */
+    public void setCatDir(Directions catDir) {
+        this.catDir = catDir;
+    }
 
     /**
      * @param catToDog1x 
@@ -132,7 +155,7 @@ public class StepRecordBuffer {
      * @param dog1Dir Directions
      * @param dog2Dir Directions
      */
-    public StepRecordBuffer(int catToDog1x, int catToDog1y, int catToDog2x, int catToDog2y, double catToDog1, double catToDog2, int catToExitX, int catToExitY, double catDog1Angle, double catDog2Angle, int catToLeft, int catToRight, int catToTop, int catToBottom, int dog1ToLeft, int dog1ToRight, int dog1ToTop, int dog1ToBottom, int dog2ToLeft, int dog2ToRight, int dog2ToTop, int dog2ToBottom, double dogInnerDist, int dog1ToExitX, int dog1ToExitY, int dog2ToExitX, int dog2ToExitY, int turn, Directions dog1Dir, Directions dog2Dir) {
+    public StepRecordBuffer(int catToDog1x, int catToDog1y, int catToDog2x, int catToDog2y, double catToDog1, double catToDog2, int catToExitX, int catToExitY, double catDog1Angle, double catDog2Angle, int catToLeft, int catToRight, int catToTop, int catToBottom, int dog1ToLeft, int dog1ToRight, int dog1ToTop, int dog1ToBottom, int dog2ToLeft, int dog2ToRight, int dog2ToTop, int dog2ToBottom, double dogInnerDist, int dog1ToExitX, int dog1ToExitY, int dog2ToExitX, int dog2ToExitY, int turn, Directions dog1Dir, Directions dog2Dir,Directions catDir) {
         this.catToDog1x = catToDog1x;
         this.catToDog1y = catToDog1y;
         this.catToDog2x = catToDog2x;
@@ -163,6 +186,7 @@ public class StepRecordBuffer {
         this.turn = turn;
         this.dog1Dir = dog1Dir;
         this.dog2Dir = dog2Dir;
+        this.catDir=catDir;
     }
 
 

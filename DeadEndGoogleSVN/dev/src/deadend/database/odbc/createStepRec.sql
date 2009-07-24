@@ -1,4 +1,4 @@
-create table MCTable090323(catStrategy varchar not null,dogStrategy varchar not null, catToDog1x int not null,catToDog1y int not null, catToDog2x int not null, catToDog2y int not null,
+create table MCStep(catStrategy varchar not null,dogStrategy varchar not null, catToDog1x int not null,catToDog1y int not null, catToDog2x int not null, catToDog2y int not null,
             catToDog1 double not null, catToDog2 double not null, catToExitX int not null, catToExitY int not null,
             catDog1Angle double not null,catDog2Angle double not null,
             catToLeft int not null,catToRight int not null,catToTop int not null,catToBottom int not null,
@@ -7,5 +7,5 @@ create table MCTable090323(catStrategy varchar not null,dogStrategy varchar not 
             dogInnterDist int not null,
             dog1ToExitX int not null,dog1ToExitY int not null,
             dog2ToExitX int not null,dog2ToExitY int not null,
-            turn int not null, dog1Dir varchar not null, dog2Dir varchar not null,
+            turn int not null, dog1Dir varchar not null, dog2Dir varchar not null,catDir varchar not null,
             CalculationTime int not null,GameResult int not null);

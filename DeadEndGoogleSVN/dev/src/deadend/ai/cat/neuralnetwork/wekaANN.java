@@ -15,7 +15,7 @@
  * with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package deadend.ai.dog.neuralnetwork;
+package deadend.ai.cat.neuralnetwork;
 
 import java.util.Random;
 
@@ -175,23 +175,24 @@ public class wekaANN {
 
         double sum=0.0;
         double maxval=0.0;
-        double out[]=new double[this.OutputLayer.NumberOfNodes];
         for(i=0;i<this.OutputLayer.NumberOfNodes;i++){
-            out[i]=this.OutputLayer.NeuronValues[i];
             sum+=this.OutputLayer.NeuronValues[i];
         }
 
-        for(i=0;i<this.OutputLayer.NumberOfNodes;i++){
+        double out[]=this.OutputLayer.NeuronValues.clone();
+        for(i=0;i<out.length;i++){
             out[i]=out[i]/sum;
         }
         Random rand=new Random();
         double val=rand.nextDouble();
 
-        for(i=0;i<this.OutputLayer.NumberOfNodes-1;i++){
+        for(i=0;i<out.length-1;i++){
             if(val>out[i] && val<out[i+1])id=i;
         }
+
         return id;
     }
+
 
     /**
      * Compute the erros

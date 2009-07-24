@@ -109,7 +109,7 @@ public class NeuralBrain extends TeamBrainFound{
 
             this.annDogs.get(i).feedForward();
 
-            int k=this.annDogs.get(i).getMAxOutPutID();
+            int k=this.annDogs.get(i).getOutputIDByProbability();
             Directions d=Directions.Still;
             d=this.loadChoice(i+1,k);
             this.directions.set(i, d);
