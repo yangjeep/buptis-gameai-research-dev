@@ -112,7 +112,7 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
 
         jLabel3.setText("Dog");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "MonteCarloStateSingle", "MonteCarloAdv", "ANN-MCS300-ZigZag", "ANN-MCS300-CS", "ANN-MCS300-Square" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MonteCarloAdvSingle", "ANN-ZZ-Cluster-1", "ANN-ZZ-Cluster-2", "ANN-ZZ-Cluster-3", "ANN-ZZ-Cluster-4", "ANN-ZZ-Unclustered", "MonteCarloStateSingle", "MonteCarloAdv", "ANN-MCS300-ZigZag", "ANN-MCS300-CS", "ANN-MCS300-Square" }));
         jComboBox2.addItemListener(formListener);
 
         PulseButton.setText("Pulse");
@@ -132,10 +132,10 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, 0, 203, Short.MAX_VALUE)
+                        .addComponent(jComboBox1, 0, 197, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel3))
-                    .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
+                    .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -152,10 +152,10 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(resetButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(StartButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(StartButton, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(PulseButton, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
+                            .addComponent(PulseButton, javax.swing.GroupLayout.DEFAULT_SIZE, 71, Short.MAX_VALUE)
                             .addComponent(resumeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
@@ -301,6 +301,49 @@ public class DeadEndControlPanel extends javax.swing.JPanel {
     private void jComboBox2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox2ItemStateChanged
         String str=this.jComboBox2.getSelectedItem().toString();
 
+        //Cluster
+        if(str.equalsIgnoreCase("ANN-ZZ-Cluster-1")){
+            String url=
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\Cluster-ZZ\\C1";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
+        if(str.equalsIgnoreCase("ANN-ZZ-Cluster-2")){
+            String url=
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\Cluster-ZZ\\C2";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
+        if(str.equalsIgnoreCase("ANN-ZZ-Cluster-3")){
+            String url=
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\Cluster-ZZ\\C3";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
+        if(str.equalsIgnoreCase("ANN-ZZ-Cluster-4")){
+            String url=
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\Cluster-ZZ\\C4";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
+        if(str.equalsIgnoreCase("ANN-ZZ-Unclustered")){
+            String url=
+                    /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +
+                    "dev\\" +*/
+                    "db\\enhanced\\current\\Cluster-ZZ\\Ref";
+            this.game.dogs.setStrategy(new deadend.ai.dog.NeuralBrainAdv(this.game,
+                    2, true, url, 28, 18, 4));
+        }
+        
+        //Supervised
         if(str.equalsIgnoreCase("ANN-MCS300-ZigZag")){
             String url=
                     /*"E:\\My Java Projects\\sseProj\\dev\\trunk\\DeadEndGoogleSVN\\" +

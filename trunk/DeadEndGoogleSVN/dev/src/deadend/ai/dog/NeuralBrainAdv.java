@@ -215,7 +215,7 @@ public class NeuralBrainAdv extends TeamBrainFound{
 
             this.annDogs.get(i).feedForward();
 
-            int k=this.annDogs.get(i).getMAxOutPutID();
+            int k=this.annDogs.get(i).getOutputIDByProbability();
             Directions d=Directions.Still;
             //d=this.loadChoice(i+1,k);
             d=this.loadChoice(i+1,dburl+(i+1)+".mdb",k);
@@ -255,12 +255,117 @@ public class NeuralBrainAdv extends TeamBrainFound{
         if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState300-CS-Win"))return "ANN-MCState300-CS-Win";
         if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState-ZigZag-Win"))return "ANN-MCState300-Zigzag-Win";
         if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState300-Square-Win"))return "ANN-MCState300-Square-Win";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C1"))return "ANN-Cluster-A";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C2"))return "ANN-Cluster-B";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C3"))return "ANN-Cluster-C";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C4"))return "ANN-Cluster-D";
+        if(this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\Ref"))return "ANN-Unclustered";
         return this.dburl;
     }
     private Directions loadChoice(int dogID,String dburl,int maxID){
         boolean comUrl;
 
-        
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C1");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Left;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Right;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Left;
+                        }
+            }
+        }
+
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C2");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Right;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Right;
+                        }
+            }
+        }
+
+
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C3");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Left;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Down;
+                            case 1:return Directions.Left;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
+                        }
+            }
+        }
+
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\C4");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Right;
+                            case 2:return Directions.Down;
+                            case 3:return Directions.Up;
+                        }
+            }
+        }
+
+        comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\Cluster-ZZ\\Ref");
+        if(comUrl){
+            if(dogID==1){
+                 switch(maxID){
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Up;
+                            case 3:return Directions.Right;
+                        }
+            }
+            if(dogID==2){
+                switch(maxID){
+                            case 0:return Directions.Left;
+                            case 1:return Directions.Down;
+                            case 2:return Directions.Right;
+                            case 3:return Directions.Up;
+                        }
+            }
+        }
+
         comUrl=this.dburl.equalsIgnoreCase("db\\enhanced\\current\\MCState300-CS-Win");
         if(comUrl){
             if(dogID==1){

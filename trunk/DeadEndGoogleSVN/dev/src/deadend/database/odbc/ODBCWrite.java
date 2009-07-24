@@ -194,6 +194,7 @@ public class ODBCWrite {
 
                         String dog1Dir=b.getDog1Dir();
                         String dog2Dir=b.getDog2Dir();
+                        String catDir=b.getCatDir();
 
                         String cmd=
                                 "insert into "+deadend.game.GameConfigClass.currentStepRecordName+
@@ -207,7 +208,7 @@ public class ODBCWrite {
                                 "dogInnterDist  , " +
                                 "dog1ToExitX  ,dog1ToExitY  ,  " +
                                 "dog2ToExitX  ,dog2ToExitY  , " +
-                                "turn  , dog1Dir  , dog2Dir  ," +
+                                "turn  , dog1Dir  , dog2Dir  ,catDir," +
                                 " CalculationTime  ,GameResult ) values('"+
                                 game.player.getStrategy().getName()+"','"+game.dogs.getStrategy().getName()+"','"+
                                 catToDog1x+"','"+catToDog1y+"','"+catToDog2x+"','"+catToDog2y+"','"+
@@ -220,7 +221,7 @@ public class ODBCWrite {
                                 dog1ToExitX+"','"+dog1ToExitY+"','"+
                                 dog2ToExitX+"','"+dog2ToExitY+"','"+
                                 turn+"','"
-                                +dog1Dir+"','"+dog2Dir+"','"+
+                                +dog1Dir+"','"+dog2Dir+"','"+catDir+"','"+
                                 deadend.game.GameConfigClass.ComputingTimeLimit+"','"+r+"')";
                         stmt.executeUpdate(cmd);
                     }

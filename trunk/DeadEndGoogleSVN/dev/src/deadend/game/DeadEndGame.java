@@ -27,6 +27,7 @@ import java.awt.event.ActionEvent;
 import deadend.roles.*;
 import deadend.globalenum.GameResults;
 import deadend.database.odbc.*;
+import deadend.globalenum.Directions;
 /**
  *
  * @author Yang JiaJian
@@ -319,11 +320,11 @@ public class DeadEndGame implements ActionListener{
             this.remainder=0;
             this.judge();
 
-            deadend.globalenum.Directions dog1Dir,dog2Dir;
+            Directions dog1Dir,dog2Dir;
 
             dog1Dir=this.dogs.dogTeam.get(0).getDirection();
             dog2Dir=this.dogs.dogTeam.get(1).getDirection();
-
+            Directions catDir=this.player.getDirection();
             this.dogs.removeDirection();
             deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
                     catToDog1x, catToDog1y, catToDog2x, catToDog2y,
@@ -333,7 +334,7 @@ public class DeadEndGame implements ActionListener{
                     dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,
                     dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,
                     dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,
-                    step, dog1Dir, dog2Dir);
+                    step, dog1Dir, dog2Dir,catDir);
             this.stepRecordBuf.add(buf);
         }
 
@@ -422,12 +423,13 @@ public class DeadEndGame implements ActionListener{
 
         this.dogs.compute();
 
-        deadend.globalenum.Directions dog1Dir,dog2Dir;
+        deadend.globalenum.Directions dog1Dir,dog2Dir,catDir;
 
         dog1Dir=this.dogs.dogTeam.get(0).getDirection();
         dog2Dir=this.dogs.dogTeam.get(1).getDirection();
-
+        catDir=this.player.getDirection();
         this.dogs.removeDirection();
+        this.player.removeDirection();
 
         /*
         deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
@@ -443,7 +445,7 @@ public class DeadEndGame implements ActionListener{
                 dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,
                 dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,
                 dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,
-                step, dog1Dir, dog2Dir);
+                step, dog1Dir, dog2Dir,catDir);
         this.stepRecordBuf.add(buf);
 
         this.judge();
@@ -527,12 +529,14 @@ public class DeadEndGame implements ActionListener{
                 this.remainder=0;
                 this.judge();
 
-                deadend.globalenum.Directions dog1Dir,dog2Dir;
+                deadend.globalenum.Directions dog1Dir,dog2Dir,catDir;
 
                 dog1Dir=this.dogs.dogTeam.get(0).getDirection();
                 dog2Dir=this.dogs.dogTeam.get(1).getDirection();
+                catDir=this.player.getDirection();
 
                 this.dogs.removeDirection();
+                this.player.removeDirection();
                 deadend.database.StepRecordBuffer buf=new deadend.database.StepRecordBuffer(
                         catToDog1x, catToDog1y, catToDog2x, catToDog2y,
                         catToDog1, catToDog2, catToExitX, catToExitY,
@@ -541,7 +545,7 @@ public class DeadEndGame implements ActionListener{
                         dog1ToLeft, dog1ToRight, dog1ToTop, dog1ToBottom,
                         dog2ToLeft, dog2ToRight, dog2ToTop, dog2ToBottom,
                         dogInnerDist, dog1ToExitX, dog1ToExitY, dog2ToExitX, dog2ToExitY,
-                        step, dog1Dir, dog2Dir);
+                        step, dog1Dir, dog2Dir,catDir);
                 this.stepRecordBuf.add(buf);
             }
         this.judge();
