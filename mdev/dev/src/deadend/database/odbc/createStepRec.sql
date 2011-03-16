@@ -1,0 +1,11 @@
+create table MCStep(catStrategy varchar not null,dogStrategy varchar not null, catToDog1x int not null,catToDog1y int not null, catToDog2x int not null, catToDog2y int not null,
+            catToDog1 double not null, catToDog2 double not null, catToExitX int not null, catToExitY int not null,
+            catDog1Angle double not null,catDog2Angle double not null,
+            catToLeft int not null,catToRight int not null,catToTop int not null,catToBottom int not null,
+            dog1ToLeft int not null,dog1ToRight int not null,dog1ToTop int not null,dog1ToBottom int not null,
+            dog2ToLeft int not null,dog2ToRight int not null,dog2ToTop int not null,dog2ToBottom int not null,
+            dogInnterDist int not null,
+            dog1ToExitX int not null,dog1ToExitY int not null,
+            dog2ToExitX int not null,dog2ToExitY int not null,
+            turn int not null, dog1Dir varchar not null, dog2Dir varchar not null,catDir varchar not null,
+            CalculationTime int not null,GameResult int not null);
