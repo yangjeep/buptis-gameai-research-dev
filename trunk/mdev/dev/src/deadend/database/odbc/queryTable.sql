@@ -1,0 +1,1 @@
+select * from MonteCarloCalTimeRevised1 where catStrategy='BasicFSM' and calTime=300 and GameResult=3;

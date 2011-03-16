@@ -1,0 +1,28 @@
+2009-03-23 Task List
+--------------------------------------------------------------------------------
+1.Build Three Different Cat Strategies
+    Explain the three strategies on the group
+2.Build Three Types of Monte Carlo Method
+    (1)Monte Carlo based on Direcitons with no supervision
+        deadend.ai.dog.monteCarlo
+    (2)Monte Carlo based on Directions with supervision
+        deadend.ai.dog.monteCarloAdv
+    (3)Monte Carlo based on State
+        deadend.ai.dog.monteCarloState
+3.Plot the Time of Monte Carlo Method - Wining Rate correlation
+4.Build ANN advance with 28 inputs
+    file path: db/annAdv
+    record the data for every group for 200 games
+    train the ann in WEKA
+    Copy the data back to ANN
+    Record the wining rate
+5.Cross-Group Experiment
+    Proof that only the corresponding ANN fighting against the Cat will get best
+    Cat Strategy 1 - ANN-1, ANN-2, ANN-3
+    Cat Strategy 2 - ANN-1, ANN-2, ANN-3
+    Cat Strategy 3 - ANN-1, ANN-2, ANN-3
+6.Build a Dynamic Tree Search for UCT/Monte Carlo Method
+    Try to see the improvement of the dynamic depth adjustment of Tree Search
+    Resources: Google group
+7.Measure the Improvement of Time on the calculation
+    Using Monte Carlo Method (Real-Time Calculation) vs. ANN

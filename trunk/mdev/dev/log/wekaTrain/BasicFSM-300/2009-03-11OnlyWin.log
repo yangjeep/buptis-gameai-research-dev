@@ -1,0 +1,250 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a -G -R
+Relation:     MonteCarloTable1-OnlyWin
+Instances:    632
+Attributes:   14
+              catStrategy
+              catToDog1x
+              catToDog1y
+              catToDog2x
+              catToDog2y
+              catToDog1
+              catToDog2
+              catToExitX
+              catToExitY
+              turn
+              dog1Dir
+              dog2Dir
+              CalculationTime
+              GameResult
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -6.80059281131816
+    Node 4    1.3684227914633196
+    Node 5    -8.893867952687271
+    Node 6    4.755617796842281
+    Node 7    3.581446844115702
+    Node 8    -7.053677530993552
+    Node 9    3.489174585517867
+    Node 10    3.0823085591345447
+    Node 11    2.026926266245608
+    Node 12    -4.625200984943686
+    Node 13    7.203180963347401
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    4.336892066146407
+    Node 4    0.04362057500694013
+    Node 5    4.3150785797258875
+    Node 6    -3.6708180218894504
+    Node 7    -3.484998505162775
+    Node 8    6.403556990637338
+    Node 9    -3.9434058155602156
+    Node 10    -1.5808519217558559
+    Node 11    -1.4739867071348538
+    Node 12    -0.979296979437392
+    Node 13    -5.115579275327159
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.327326343556005
+    Node 4    -1.4516188257029303
+    Node 5    -0.9791630199510243
+    Node 6    -1.3124598847563806
+    Node 7    -1.2644879895595742
+    Node 8    -1.1440797312801927
+    Node 9    -1.131564770570332
+    Node 10    -1.9549967812522546
+    Node 11    -5.1112216638851535
+    Node 12    -0.9497465027598873
+    Node 13    -0.5723052820796086
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.8998875507434937
+    Node 4    -4.8658439004378
+    Node 5    4.605123813109859
+    Node 6    0.20363076152722331
+    Node 7    1.4622045141599929
+    Node 8    -0.4187950708520985
+    Node 9    -2.9559404295462595
+    Node 10    1.871919389270202
+    Node 11    -2.094407317111903
+    Node 12    5.494351265056002
+    Node 13    -7.090789254167315
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.02069166830921332
+    Attrib catStrategy    0.034396976255898576
+    Attrib catToDog1x    -2.2933492655508325
+    Attrib catToDog1y    0.8944375557700607
+    Attrib catToDog2x    0.22571009833935943
+    Attrib catToDog2y    -2.4003192067800887
+    Attrib catToDog1    -0.25294256090098666
+    Attrib catToDog2    -6.5376152294649765
+    Attrib catToExitX    1.3293442530214714
+    Attrib catToExitY    -1.6725933577802392
+    Attrib turn    0.8947148712243356
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.794936828718024
+    Attrib catStrategy    0.00556216264496899
+    Attrib catToDog1x    -12.320684072749161
+    Attrib catToDog1y    3.759278610902541
+    Attrib catToDog2x    2.399103818697765
+    Attrib catToDog2y    -2.215334821849117
+    Attrib catToDog1    4.048324397588958
+    Attrib catToDog2    -3.612319347519724
+    Attrib catToExitX    -0.34052027987244776
+    Attrib catToExitY    -2.1203267363986016
+    Attrib turn    1.8273772439979925
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.9639634815737008
+    Attrib catStrategy    0.0118806999074648
+    Attrib catToDog1x    -0.1372913488785706
+    Attrib catToDog1y    4.584018727980879
+    Attrib catToDog2x    3.8767917253991007
+    Attrib catToDog2y    -2.5822738689941684
+    Attrib catToDog1    3.701512168600152
+    Attrib catToDog2    -8.655255435615269
+    Attrib catToExitX    1.6264162596050682
+    Attrib catToExitY    -3.548559985334935
+    Attrib turn    2.1958826741043804
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.5470289209396975
+    Attrib catStrategy    -0.00434681932879024
+    Attrib catToDog1x    -6.347052759536832
+    Attrib catToDog1y    3.2662496519156434
+    Attrib catToDog2x    -4.729165691896099
+    Attrib catToDog2y    -2.0608945258871936
+    Attrib catToDog1    1.0622445680078874
+    Attrib catToDog2    -4.09735300434732
+    Attrib catToExitX    -1.9519766897206907
+    Attrib catToExitY    -2.168824073450639
+    Attrib turn    0.636641834714766
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -5.797213632817825
+    Attrib catStrategy    0.041948332472986266
+    Attrib catToDog1x    15.581153645740065
+    Attrib catToDog1y    -2.287839565557556
+    Attrib catToDog2x    5.114234866902688
+    Attrib catToDog2y    -7.854672515519584
+    Attrib catToDog1    3.950373145573906
+    Attrib catToDog2    -4.554763860362022
+    Attrib catToExitX    1.8511017530349403
+    Attrib catToExitY    -0.42721607576769144
+    Attrib turn    1.7711348216815113
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.2424649356037456
+    Attrib catStrategy    0.0170674493521544
+    Attrib catToDog1x    -0.6699822394659612
+    Attrib catToDog1y    -1.167710099325166
+    Attrib catToDog2x    -0.615383165835836
+    Attrib catToDog2y    -4.472742259180042
+    Attrib catToDog1    -2.3635660264745133
+    Attrib catToDog2    -7.421499623133806
+    Attrib catToExitX    0.04238069887435349
+    Attrib catToExitY    -3.13082341586435
+    Attrib turn    2.508312784529275
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    0.2510946113356496
+    Attrib catStrategy    -0.03661533732355975
+    Attrib catToDog1x    -8.953666909951064
+    Attrib catToDog1y    2.1772013422917302
+    Attrib catToDog2x    -5.267249580801599
+    Attrib catToDog2y    -0.08149283388771579
+    Attrib catToDog1    -0.3990094489405229
+    Attrib catToDog2    -1.3973372543043494
+    Attrib catToExitX    -1.2622269672676223
+    Attrib catToExitY    -2.287238116956311
+    Attrib turn    1.2175141588925655
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -3.908908884945433
+    Attrib catStrategy    0.04396666903023187
+    Attrib catToDog1x    0.6622168781229066
+    Attrib catToDog1y    -3.563783699352524
+    Attrib catToDog2x    6.084275081268848
+    Attrib catToDog2y    0.9768985183514158
+    Attrib catToDog1    -4.5210596283294056
+    Attrib catToDog2    -2.3307080711598522
+    Attrib catToExitX    0.571171440949421
+    Attrib catToExitY    5.544767727619699
+    Attrib turn    -5.865950345619365
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -3.3351450404036433
+    Attrib catStrategy    -0.019378361806208347
+    Attrib catToDog1x    -8.320265695107944
+    Attrib catToDog1y    0.2378512852291769
+    Attrib catToDog2x    0.11420593879245852
+    Attrib catToDog2y    1.0408432154061278
+    Attrib catToDog1    -0.4659816401014363
+    Attrib catToDog2    0.6084823140914583
+    Attrib catToExitX    0.8515228437744369
+    Attrib catToExitY    -1.051929179003188
+    Attrib turn    0.555858875797965
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    8.498488026120908
+    Attrib catStrategy    0.031830331580935164
+    Attrib catToDog1x    -0.33350139417938013
+    Attrib catToDog1y    7.9290843627406185
+    Attrib catToDog2x    3.6071076883625586
+    Attrib catToDog2y    7.33710914027679
+    Attrib catToDog1    3.435184253457819
+    Attrib catToDog2    0.8995203316684774
+    Attrib catToExitX    -2.5978954925558133
+    Attrib catToExitY    0.8510560870670485
+    Attrib turn    -3.079740895513093
+Class Down
+    Input
+    Node 0
+Class Right
+    Input
+    Node 1
+Class Up
+    Input
+    Node 2
+Class Left
+    Input
+    Node 3
+
+
+Time taken to build model: 29.58 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         506               80.0633 %
+Incorrectly Classified Instances       126               19.9367 %
+Kappa statistic                          0.5009
+Mean absolute error                      0.1355
+Root mean squared error                  0.2632
+Relative absolute error                 55.9257 %
+Root relative squared error             75.762  %
+Total Number of Instances              632
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+  0.998     0.578      0.775     0.998     0.872      0.878    Down
+  0.375     0.004      0.969     0.375     0.541      0.852    Right
+  0         0          0         0         0          0.84     Up
+  0.742     0.003      0.92      0.742     0.821      0.899    Left
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 420   1   0   0 |   a = Down
+ 103  63   0   2 |   b = Right
+  11   1   0   0 |   c = Up
+   8   0   0  23 |   d = Left
+

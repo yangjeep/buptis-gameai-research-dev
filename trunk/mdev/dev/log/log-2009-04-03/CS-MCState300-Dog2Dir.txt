@@ -1,0 +1,730 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 1000 -V 0 -S 0 -E 20 -H a -G -B -C -R
+Relation:     CS-MCState300-WinOnly
+Instances:    1139
+Attributes:   34
+              catStrategy
+              dogStrategy
+              catToDog1x
+              catToDog1y
+              catToDog2x
+              catToDog2y
+              catToDog1
+              catToDog2
+              catToExitX
+              catToExitY
+              catDog1Angle
+              catDog2Angle
+              catToLeft
+              catToRight
+              catToTop
+              catToBottom
+              dog1ToLeft
+              dog1ToRight
+              dog1ToTop
+              dog1ToBottom
+              dog2ToLeft
+              dog2ToRight
+              dog2ToTop
+              dog2ToBottom
+              dogInnterDist
+              dog1ToExitX
+              dog1ToExitY
+              dog2ToExitX
+              dog2ToExitY
+              turn
+              dog1Dir
+              dog2Dir
+              CalculationTime
+              GameResult
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -3.8187300428187405
+    Node 4    -4.489930787389522
+    Node 5    -6.656155784894371
+    Node 6    3.225027225229946
+    Node 7    -8.063514171509318
+    Node 8    0.699239792686726
+    Node 9    -8.380047613069712
+    Node 10    0.2660690457452009
+    Node 11    -4.968495589996104
+    Node 12    -10.137923194775729
+    Node 13    1.477561460271898
+    Node 14    11.610226364026449
+    Node 15    -3.6944168726563222
+    Node 16    3.057961097507617
+    Node 17    5.877644461163132
+    Node 18    -5.710413865090105
+    Node 19    12.050865861441984
+    Node 20    0.7490328807869556
+    Node 21    -0.026059141767747297
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.2692541257451833
+    Node 4    -11.350815574201087
+    Node 5    -8.376953579509829
+    Node 6    2.4223878739443543
+    Node 7    -10.573561418891284
+    Node 8    9.553635729271162
+    Node 9    10.261309421974067
+    Node 10    0.7296330951129106
+    Node 11    8.376063914837578
+    Node 12    -8.981227568321636
+    Node 13    -0.41210880574041536
+    Node 14    -14.730622235076721
+    Node 15    5.947835350138624
+    Node 16    6.228204179965333
+    Node 17    -3.663177895528844
+    Node 18    3.0045446381025998
+    Node 19    -0.6932149248149573
+    Node 20    -0.38255507488525975
+    Node 21    -3.5231730649277817
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    2.565293835449239
+    Node 4    -4.889578667630091
+    Node 5    -5.851649764753601
+    Node 6    -3.733247476156207
+    Node 7    14.29332379685112
+    Node 8    6.018757606278657
+    Node 9    -16.263606022137637
+    Node 10    -9.883205509261135
+    Node 11    -10.278486794212975
+    Node 12    4.804516051488012
+    Node 13    -2.115379609913924
+    Node 14    -1.0851268037826305
+    Node 15    -6.718995761389344
+    Node 16    5.496113488819878
+    Node 17    -7.966759843935491
+    Node 18    -6.682548283481179
+    Node 19    5.436706301675195
+    Node 20    -2.8392057247498164
+    Node 21    -7.393134109690672
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -3.827732430672572
+    Node 4    9.907402811964083
+    Node 5    14.29251382813295
+    Node 6    -4.156391420622024
+    Node 7    -5.04316212328029
+    Node 8    -8.811015564590392
+    Node 9    4.6870418036957195
+    Node 10    -3.632330001718843
+    Node 11    -3.473848782618411
+    Node 12    -6.333202407232454
+    Node 13    -5.019325786389937
+    Node 14    1.425280951330278
+    Node 15    -3.9336115255741935
+    Node 16    -7.438633494076009
+    Node 17    9.873842881552662
+    Node 18    9.747288987333006
+    Node 19    -13.427088888964434
+    Node 20    4.533422637354679
+    Node 21    8.85042728587813
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -10.62393841587875
+    Attrib catToDog1x    8.782121261435027
+    Attrib catToDog1y    -4.93249000354676
+    Attrib catToDog2x    15.32119614697726
+    Attrib catToDog2y    -5.669184310560201
+    Attrib catToDog1    6.351468711775111
+    Attrib catToDog2    -1.8374098768282243
+    Attrib catToExitX    4.058822137620566
+    Attrib catToExitY    -3.882137227780605
+    Attrib catDog1Angle    2.8338509636561766
+    Attrib catDog2Angle    -9.759476746684406
+    Attrib catToLeft    4.078250197065402
+    Attrib catToRight    -4.047645944990382
+    Attrib catToTop    -3.865706994087807
+    Attrib catToBottom    3.937192374439726
+    Attrib dog1ToLeft    0.028156253773156475
+    Attrib dog1ToRight    -0.021497521775645977
+    Attrib dog1ToTop    0.621628741036783
+    Attrib dog1ToBottom    -0.6182349778048993
+    Attrib dog2ToLeft    -7.154345336789455
+    Attrib dog2ToRight    7.124400092360028
+    Attrib dog2ToTop    6.518322727462886
+    Attrib dog2ToBottom    -6.506097042009298
+    Attrib dogInnterDist    -6.2149197189979555
+    Attrib dog1ToExitX    -0.0180030981237312
+    Attrib dog1ToExitY    0.04191716409877303
+    Attrib dog2ToExitX    -7.117955867624475
+    Attrib dog2ToExitY    -7.099003297938107
+    Attrib turn    11.054416390847383
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -7.375799404577462
+    Attrib catToDog1x    4.820911863852302
+    Attrib catToDog1y    -0.8378472516348301
+    Attrib catToDog2x    1.0107100311902402
+    Attrib catToDog2y    0.8246694161469389
+    Attrib catToDog1    -11.33048988252059
+    Attrib catToDog2    9.852423553118426
+    Attrib catToExitX    1.2463018397842063
+    Attrib catToExitY    -0.9732750657888138
+    Attrib catDog1Angle    2.56515652303001
+    Attrib catDog2Angle    -5.7844244467004415
+    Attrib catToLeft    1.1937707648936142
+    Attrib catToRight    -1.212549702881949
+    Attrib catToTop    -0.9538686342902858
+    Attrib catToBottom    0.8961902917178544
+    Attrib dog1ToLeft    -1.1398874349270398
+    Attrib dog1ToRight    1.1582881607497713
+    Attrib dog1ToTop    -1.0967526359341833
+    Attrib dog1ToBottom    1.104753336491566
+    Attrib dog2ToLeft    0.6090666425283091
+    Attrib dog2ToRight    -0.5930463375415609
+    Attrib dog2ToTop    -3.6832642332465118
+    Attrib dog2ToBottom    3.647294360185206
+    Attrib dogInnterDist    3.3759367339149056
+    Attrib dog1ToExitX    -1.1812114853525835
+    Attrib dog1ToExitY    -1.1411992460284266
+    Attrib dog2ToExitX    0.606468581844122
+    Attrib dog2ToExitY    0.5818838235335346
+    Attrib turn    2.4876460215154386
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    1.648773495890765
+    Attrib catToDog1x    -7.144232143010521
+    Attrib catToDog1y    6.493087490372144
+    Attrib catToDog2x    -5.041083475179568
+    Attrib catToDog2y    4.268560397069833
+    Attrib catToDog1    9.490585498471567
+    Attrib catToDog2    4.372388288983682
+    Attrib catToExitX    -1.3243350491148496
+    Attrib catToExitY    4.362420379420369
+    Attrib catDog1Angle    -5.174961157863698
+    Attrib catDog2Angle    -3.312207713521432
+    Attrib catToLeft    -1.3440379146743102
+    Attrib catToRight    1.338682982290638
+    Attrib catToTop    4.348924926185063
+    Attrib catToBottom    -4.337500986453525
+    Attrib dog1ToLeft    2.364520589228744
+    Attrib dog1ToRight    -2.2699917830263874
+    Attrib dog1ToTop    -4.176319436130204
+    Attrib dog1ToBottom    4.199468187542341
+    Attrib dog2ToLeft    2.3815286014498995
+    Attrib dog2ToRight    -2.354983638550842
+    Attrib dog2ToTop    -0.06811060858194785
+    Attrib dog2ToBottom    0.08064804731510546
+    Attrib dogInnterDist    -1.9316491716355975
+    Attrib dog1ToExitX    2.3158180567271613
+    Attrib dog1ToExitY    2.352439300365272
+    Attrib dog2ToExitX    2.328045240132101
+    Attrib dog2ToExitY    2.3334914901162223
+    Attrib turn    -5.605212796999278
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -12.074543357549636
+    Attrib catToDog1x    2.847529511425034
+    Attrib catToDog1y    -3.7353720711623692
+    Attrib catToDog2x    0.6131483992349719
+    Attrib catToDog2y    -2.4794501788504717
+    Attrib catToDog1    2.739079599598665
+    Attrib catToDog2    -3.4782034626507046
+    Attrib catToExitX    1.0595019263323722
+    Attrib catToExitY    -2.4511751479561603
+    Attrib catDog1Angle    -3.473400037815098
+    Attrib catDog2Angle    3.6852998016408076
+    Attrib catToLeft    1.069404671594655
+    Attrib catToRight    -1.0671066198462857
+    Attrib catToTop    -2.4981195210070055
+    Attrib catToBottom    2.485669213398559
+    Attrib dog1ToLeft    -0.3457952793732994
+    Attrib dog1ToRight    0.34138878880037576
+    Attrib dog1ToTop    1.0811598042082182
+    Attrib dog1ToBottom    -1.0929178437150924
+    Attrib dog2ToLeft    0.6581769293632136
+    Attrib dog2ToRight    -0.6813303031802433
+    Attrib dog2ToTop    1.7035821503187618
+    Attrib dog2ToBottom    -1.7266361463116637
+    Attrib dogInnterDist    7.242288628083506
+    Attrib dog1ToExitX    -0.2620475978007524
+    Attrib dog1ToExitY    -0.30125386439806184
+    Attrib dog2ToExitX    0.6468648173212164
+    Attrib dog2ToExitY    0.664705772585304
+    Attrib turn    8.901472452211447
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -9.764277281681515
+    Attrib catToDog1x    -8.6991663162977
+    Attrib catToDog1y    -8.301947168596893
+    Attrib catToDog2x    3.453703176009205
+    Attrib catToDog2y    -4.983177245645359
+    Attrib catToDog1    -3.3469887965496823
+    Attrib catToDog2    -7.293379949356825
+    Attrib catToExitX    -0.9323003398332278
+    Attrib catToExitY    -4.994596038677828
+    Attrib catDog1Angle    -3.181228428547074
+    Attrib catDog2Angle    -4.344432884320159
+    Attrib catToLeft    -0.9372738208051842
+    Attrib catToRight    0.91593480083633
+    Attrib catToTop    -4.96770189412782
+    Attrib catToBottom    5.031405613162023
+    Attrib dog1ToLeft    3.6370061996470304
+    Attrib dog1ToRight    -3.631364948229909
+    Attrib dog1ToTop    5.622843368936961
+    Attrib dog1ToBottom    -5.591155578864441
+    Attrib dog2ToLeft    -3.5847149043346
+    Attrib dog2ToRight    3.654833882314726
+    Attrib dog2ToTop    1.5293559414101918
+    Attrib dog2ToBottom    -1.505235894021638
+    Attrib dogInnterDist    12.128345509994375
+    Attrib dog1ToExitX    3.651024715354889
+    Attrib dog1ToExitY    3.6366128462293106
+    Attrib dog2ToExitX    -3.616823709896856
+    Attrib dog2ToExitY    -3.6507088922625224
+    Attrib turn    3.6708633983091916
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -22.017711618589235
+    Attrib catToDog1x    -13.764682584434818
+    Attrib catToDog1y    -10.558382033982928
+    Attrib catToDog2x    -3.0228963231371635
+    Attrib catToDog2y    -5.532401420014564
+    Attrib catToDog1    -6.812866082773263
+    Attrib catToDog2    -0.2501776090804114
+    Attrib catToExitX    -3.2859371605643997
+    Attrib catToExitY    -6.739581618039109
+    Attrib catDog1Angle    -0.5974291163034509
+    Attrib catDog2Angle    0.1304003503986499
+    Attrib catToLeft    -3.2988330555696956
+    Attrib catToRight    3.304670388973225
+    Attrib catToTop    -6.761518095257397
+    Attrib catToBottom    6.822514614524653
+    Attrib dog1ToLeft    3.6807216736337227
+    Attrib dog1ToRight    -3.6628083782552303
+    Attrib dog1ToTop    4.959682716686172
+    Attrib dog1ToBottom    -4.927503461986663
+    Attrib dog2ToLeft    -1.288927489635343
+    Attrib dog2ToRight    1.3032062666056623
+    Attrib dog2ToTop    -0.3688024896088751
+    Attrib dog2ToBottom    0.34123292598355837
+    Attrib dogInnterDist    0.708386893767476
+    Attrib dog1ToExitX    3.6782580230769475
+    Attrib dog1ToExitY    3.604879741481907
+    Attrib dog2ToExitX    -1.312651364389842
+    Attrib dog2ToExitY    -1.2917064097977025
+    Attrib turn    2.7218511263944136
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.1091090447980352
+    Attrib catToDog1x    -1.4169973197763404
+    Attrib catToDog1y    -0.18300535120833517
+    Attrib catToDog2x    -1.4518046888686431
+    Attrib catToDog2y    0.19794785149248612
+    Attrib catToDog1    6.471585162145903
+    Attrib catToDog2    -3.159516677580984
+    Attrib catToExitX    -0.2476704307248019
+    Attrib catToExitY    0.22285601550266948
+    Attrib catDog1Angle    -1.9580213135263445
+    Attrib catDog2Angle    -4.07745487628751
+    Attrib catToLeft    -0.28275706113019483
+    Attrib catToRight    0.20263114230537974
+    Attrib catToTop    0.21943536794108426
+    Attrib catToBottom    -0.2266918870861815
+    Attrib dog1ToLeft    0.46562432009272825
+    Attrib dog1ToRight    -0.4774631488878234
+    Attrib dog1ToTop    0.6932361326385585
+    Attrib dog1ToBottom    -0.7207329373348139
+    Attrib dog2ToLeft    0.7453350088654803
+    Attrib dog2ToRight    -0.7958518637222053
+    Attrib dog2ToTop    0.026575070769973994
+    Attrib dog2ToBottom    -0.05661123658550325
+    Attrib dogInnterDist    2.713508946324548
+    Attrib dog1ToExitX    0.48517961750904004
+    Attrib dog1ToExitY    0.47137306217355
+    Attrib dog2ToExitX    0.7450917709434267
+    Attrib dog2ToExitY    0.8305548359851967
+    Attrib turn    3.3894664916488115
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -8.395218790186085
+    Attrib catToDog1x    -14.092530742074207
+    Attrib catToDog1y    -0.7176522730610225
+    Attrib catToDog2x    -3.066311441250742
+    Attrib catToDog2y    -2.779172697052958
+    Attrib catToDog1    5.679131339099464
+    Attrib catToDog2    -4.082713993643908
+    Attrib catToExitX    -4.150472138398172
+    Attrib catToExitY    -1.2944473989982328
+    Attrib catDog1Angle    -4.034453265064527
+    Attrib catDog2Angle    -2.9682721204500053
+    Attrib catToLeft    -4.078012786971219
+    Attrib catToRight    4.082845212826834
+    Attrib catToTop    -1.3026350319260713
+    Attrib catToBottom    1.2708717000618834
+    Attrib dog1ToLeft    2.814031268760091
+    Attrib dog1ToRight    -2.7959918718443855
+    Attrib dog1ToTop    -2.570466416508705
+    Attrib dog1ToBottom    2.5128096576989605
+    Attrib dog2ToLeft    -2.162542385885885
+    Attrib dog2ToRight    2.141255943692312
+    Attrib dog2ToTop    5.373961835976419
+    Attrib dog2ToBottom    -5.374120388688028
+    Attrib dogInnterDist    -0.6871012462076481
+    Attrib dog1ToExitX    2.8020642457061427
+    Attrib dog1ToExitY    2.7878620083579553
+    Attrib dog2ToExitX    -2.207515105089797
+    Attrib dog2ToExitY    -2.1645568118795735
+    Attrib turn    -3.6513464876131914
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -7.587030801768334
+    Attrib catToDog1x    -1.348686539998832
+    Attrib catToDog1y    -7.232686590429685
+    Attrib catToDog2x    0.8266960067663853
+    Attrib catToDog2y    -4.2814042180736145
+    Attrib catToDog1    -6.990862466581484
+    Attrib catToDog2    -4.222324777625658
+    Attrib catToExitX    -0.29316318037133854
+    Attrib catToExitY    -4.9103369716038845
+    Attrib catDog1Angle    -6.138678239054568
+    Attrib catDog2Angle    15.253419042563259
+    Attrib catToLeft    -0.22373923123322662
+    Attrib catToRight    0.2889039380619904
+    Attrib catToTop    -4.86503432127555
+    Attrib catToBottom    4.923772769442156
+    Attrib dog1ToLeft    0.41154163778203584
+    Attrib dog1ToRight    -0.4729138153725891
+    Attrib dog1ToTop    3.824224949512106
+    Attrib dog1ToBottom    -3.75897009034214
+    Attrib dog2ToLeft    -0.9374584692462308
+    Attrib dog2ToRight    0.8714998669048056
+    Attrib dog2ToTop    -0.5270697273545285
+    Attrib dog2ToBottom    0.5318493086555169
+    Attrib dogInnterDist    1.483162371343972
+    Attrib dog1ToExitX    0.4074071776819948
+    Attrib dog1ToExitY    0.42042131291459045
+    Attrib dog2ToExitX    -0.9216796266032875
+    Attrib dog2ToExitY    -0.9172271962060198
+    Attrib turn    16.65196307684216
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -3.2506951865839135
+    Attrib catToDog1x    -3.6644020140031173
+    Attrib catToDog1y    -1.1555109140864266
+    Attrib catToDog2x    0.37795282190713614
+    Attrib catToDog2y    2.1871878139296843
+    Attrib catToDog1    -0.9743259514013576
+    Attrib catToDog2    2.086714972746144
+    Attrib catToExitX    -2.2889999116643227
+    Attrib catToExitY    0.28178481104770153
+    Attrib catDog1Angle    4.25816214943792
+    Attrib catDog2Angle    -5.812984668381467
+    Attrib catToLeft    -2.2628710588715757
+    Attrib catToRight    2.3527591015329716
+    Attrib catToTop    0.2950544811479299
+    Attrib catToBottom    -0.3202576950735216
+    Attrib dog1ToLeft    -0.6917811779935495
+    Attrib dog1ToRight    0.7056037997497618
+    Attrib dog1ToTop    2.8188309227975754
+    Attrib dog1ToBottom    -2.8156192833796005
+    Attrib dog2ToLeft    -2.8082022711040366
+    Attrib dog2ToRight    2.7855508583452337
+    Attrib dog2ToTop    -4.788387298349815
+    Attrib dog2ToBottom    4.807038965412953
+    Attrib dogInnterDist    2.248806644605915
+    Attrib dog1ToExitX    -0.6888360472382277
+    Attrib dog1ToExitY    -0.7130683116477247
+    Attrib dog2ToExitX    -2.799987711403883
+    Attrib dog2ToExitY    -2.812827058590689
+    Attrib turn    3.9888711267223003
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -11.018603219106438
+    Attrib catToDog1x    -1.1293526995690055
+    Attrib catToDog1y    0.5284127037548195
+    Attrib catToDog2x    2.009240222554428
+    Attrib catToDog2y    3.2611364965827887
+    Attrib catToDog1    10.295660503339061
+    Attrib catToDog2    -16.751768126396072
+    Attrib catToExitX    0.23497165915762266
+    Attrib catToExitY    1.7133760377408616
+    Attrib catDog1Angle    -5.967295638096475
+    Attrib catDog2Angle    9.666345160497553
+    Attrib catToLeft    0.21556344085113274
+    Attrib catToRight    -0.20559182528655004
+    Attrib catToTop    1.706049548130548
+    Attrib catToBottom    -1.6759528843161664
+    Attrib dog1ToLeft    0.8067573593149233
+    Attrib dog1ToRight    -0.8392431765111135
+    Attrib dog1ToTop    1.3409925073182682
+    Attrib dog1ToBottom    -1.3194659607593695
+    Attrib dog2ToLeft    -1.2813289166582544
+    Attrib dog2ToRight    1.2978076855493463
+    Attrib dog2ToTop    -2.7195529914001337
+    Attrib dog2ToBottom    2.7284698581533506
+    Attrib dogInnterDist    1.0705662957837438
+    Attrib dog1ToExitX    0.8728232050534117
+    Attrib dog1ToExitY    0.8633290008308412
+    Attrib dog2ToExitX    -1.2915564604182892
+    Attrib dog2ToExitY    -1.2238709748189112
+    Attrib turn    1.0341286227668312
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -6.634849712185366
+    Attrib catToDog1x    9.723789121396333
+    Attrib catToDog1y    -0.4846245617963972
+    Attrib catToDog2x    2.0795416948555676
+    Attrib catToDog2y    -2.6029521302002703
+    Attrib catToDog1    -1.0696388035290474
+    Attrib catToDog2    6.955144051904212
+    Attrib catToExitX    2.130961414331539
+    Attrib catToExitY    -1.7468381641765878
+    Attrib catDog1Angle    -0.8234169655036485
+    Attrib catDog2Angle    2.878903688370443
+    Attrib catToLeft    2.1145824935409294
+    Attrib catToRight    -2.1215194664679125
+    Attrib catToTop    -1.7525862398405527
+    Attrib catToBottom    1.734087807421563
+    Attrib dog1ToLeft    -2.8166176304588286
+    Attrib dog1ToRight    2.811060764486991
+    Attrib dog1ToTop    -3.846335486986194
+    Attrib dog1ToBottom    3.8255386042971034
+    Attrib dog2ToLeft    0.6815234185293553
+    Attrib dog2ToRight    -0.6773892601610454
+    Attrib dog2ToTop    3.19970608076401
+    Attrib dog2ToBottom    -3.2264952528147206
+    Attrib dogInnterDist    -2.8583480446591403
+    Attrib dog1ToExitX    -2.816709741784996
+    Attrib dog1ToExitY    -2.8274123993746723
+    Attrib dog2ToExitX    0.6688329805209634
+    Attrib dog2ToExitY    0.6767612494795954
+    Attrib turn    -3.040278505655637
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -6.044110837744785
+    Attrib catToDog1x    -5.896777819775932
+    Attrib catToDog1y    -2.175322094482998
+    Attrib catToDog2x    -1.7042620167153724
+    Attrib catToDog2y    -0.1593363942472283
+    Attrib catToDog1    1.2083367212871894
+    Attrib catToDog2    -5.176155015097182
+    Attrib catToExitX    -1.4468828480936726
+    Attrib catToExitY    -2.359200366241243
+    Attrib catDog1Angle    4.100156584563298
+    Attrib catDog2Angle    9.620247650968437
+    Attrib catToLeft    -1.3963613200377738
+    Attrib catToRight    1.4028667932040766
+    Attrib catToTop    -2.341396915759285
+    Attrib catToBottom    2.3260101514892764
+    Attrib dog1ToLeft    1.5607984762411091
+    Attrib dog1ToRight    -1.5090379083893504
+    Attrib dog1ToTop    -1.265595858449736
+    Attrib dog1ToBottom    1.2434226060418614
+    Attrib dog2ToLeft    -0.2947790969782831
+    Attrib dog2ToRight    0.24602093645530912
+    Attrib dog2ToTop    -5.052068742907475
+    Attrib dog2ToBottom    5.136755157845939
+    Attrib dogInnterDist    0.27809119060925697
+    Attrib dog1ToExitX    1.5808617774504
+    Attrib dog1ToExitY    1.5659418143656796
+    Attrib dog2ToExitX    -0.2291718958501999
+    Attrib dog2ToExitY    -0.2537215093266377
+    Attrib turn    6.3410489001120185
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -26.02314140931411
+    Attrib catToDog1x    5.606783734949539
+    Attrib catToDog1y    -11.642532763757632
+    Attrib catToDog2x    -0.7022626476930849
+    Attrib catToDog2y    -7.328661495176728
+    Attrib catToDog1    -3.567853059331955
+    Attrib catToDog2    -8.775377038563253
+    Attrib catToExitX    0.6430393681814891
+    Attrib catToExitY    -8.337848095980753
+    Attrib catDog1Angle    -5.108308051326354
+    Attrib catDog2Angle    6.739319121202741
+    Attrib catToLeft    0.6341411152292603
+    Attrib catToRight    -0.6436310046836747
+    Attrib catToTop    -8.39415137898277
+    Attrib catToBottom    8.39915056567899
+    Attrib dog1ToLeft    -2.2452772139095973
+    Attrib dog1ToRight    2.2564430675810323
+    Attrib dog1ToTop    3.0137252174072198
+    Attrib dog1ToBottom    -3.0256243818480884
+    Attrib dog2ToLeft    1.2984667197382707
+    Attrib dog2ToRight    -1.2445617305319963
+    Attrib dog2ToTop    0.8644132351850223
+    Attrib dog2ToBottom    -0.871427830401574
+    Attrib dogInnterDist    0.5776184032190006
+    Attrib dog1ToExitX    -2.2661726958630917
+    Attrib dog1ToExitY    -2.1961822468836507
+    Attrib dog2ToExitX    1.273040487459169
+    Attrib dog2ToExitY    1.2915841464874593
+    Attrib turn    0.5354352665824844
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    3.237826562114547
+    Attrib catToDog1x    -6.063502890695256
+    Attrib catToDog1y    0.06907177993299032
+    Attrib catToDog2x    4.056180695876853
+    Attrib catToDog2y    0.3578488586823802
+    Attrib catToDog1    2.2505861402280707
+    Attrib catToDog2    3.700467433000987
+    Attrib catToExitX    1.423481732480593
+    Attrib catToExitY    -0.16485948920816576
+    Attrib catDog1Angle    2.241126243510961
+    Attrib catDog2Angle    6.449941708994776
+    Attrib catToLeft    1.4712020254527263
+    Attrib catToRight    -1.4369293036743847
+    Attrib catToTop    -0.19845880690204626
+    Attrib catToBottom    0.18129391265110528
+    Attrib dog1ToLeft    5.003752926671763
+    Attrib dog1ToRight    -4.995357271377203
+    Attrib dog1ToTop    -0.19937814892906108
+    Attrib dog1ToBottom    0.21675384350624366
+    Attrib dog2ToLeft    -1.480718364862012
+    Attrib dog2ToRight    1.4819345684639507
+    Attrib dog2ToTop    -1.8207534189155887
+    Attrib dog2ToBottom    1.8387908303544882
+    Attrib dogInnterDist    4.394513611295704
+    Attrib dog1ToExitX    4.961768698849553
+    Attrib dog1ToExitY    5.00768825517951
+    Attrib dog2ToExitX    -1.526656201940903
+    Attrib dog2ToExitY    -1.4455825664468398
+    Attrib turn    10.211646058148709
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -15.091595404846693
+    Attrib catToDog1x    -1.9124107942047064
+    Attrib catToDog1y    0.527064732227737
+    Attrib catToDog2x    -1.3995706164003892
+    Attrib catToDog2y    3.1904336329195133
+    Attrib catToDog1    6.237273009186546
+    Attrib catToDog2    -20.60900864624495
+    Attrib catToExitX    -0.2272267018055556
+    Attrib catToExitY    1.7372063340185315
+    Attrib catDog1Angle    -2.6502664734220134
+    Attrib catDog2Angle    6.339967332240856
+    Attrib catToLeft    -0.261349700886502
+    Attrib catToRight    0.24233770151096934
+    Attrib catToTop    1.7689941799758513
+    Attrib catToBottom    -1.8042052944215943
+    Attrib dog1ToLeft    0.6771231877354311
+    Attrib dog1ToRight    -0.6923269479583802
+    Attrib dog1ToTop    0.9789735066415826
+    Attrib dog1ToBottom    -0.970588893315723
+    Attrib dog2ToLeft    0.7974035582070432
+    Attrib dog2ToRight    -0.7971984566627736
+    Attrib dog2ToTop    -1.632633879216606
+    Attrib dog2ToBottom    1.6151774248879676
+    Attrib dogInnterDist    -1.7308858755581527
+    Attrib dog1ToExitX    0.7664299220295294
+    Attrib dog1ToExitY    0.7103158705671619
+    Attrib dog2ToExitX    0.8144268741332011
+    Attrib dog2ToExitY    0.8101255114728584
+    Attrib turn    7.224793525687817
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    -3.2925833320192632
+    Attrib catToDog1x    11.183161837874511
+    Attrib catToDog1y    -1.2272177893435394
+    Attrib catToDog2x    -0.2977692949123073
+    Attrib catToDog2y    -1.435851999433233
+    Attrib catToDog1    0.6453516611528547
+    Attrib catToDog2    -6.879032118210775
+    Attrib catToExitX    -2.7228159535941243
+    Attrib catToExitY    -2.460851801272222
+    Attrib catDog1Angle    0.8964713448533239
+    Attrib catDog2Angle    -1.536480829925314
+    Attrib catToLeft    -2.6405555480912444
+    Attrib catToRight    2.6795979069463627
+    Attrib catToTop    -2.4447784508210963
+    Attrib catToBottom    2.483132399549647
+    Attrib dog1ToLeft    -9.28418506914935
+    Attrib dog1ToRight    9.227758950601784
+    Attrib dog1ToTop    -3.478014169556627
+    Attrib dog1ToBottom    3.5051618919582617
+    Attrib dog2ToLeft    -2.6908639255367346
+    Attrib dog2ToRight    2.686185517956554
+    Attrib dog2ToTop    -2.3487918782517636
+    Attrib dog2ToBottom    2.3290277314213275
+    Attrib dogInnterDist    -4.404792569522005
+    Attrib dog1ToExitX    -9.237172836765156
+    Attrib dog1ToExitY    -9.292238632683807
+    Attrib dog2ToExitX    -2.701222772483109
+    Attrib dog2ToExitY    -2.6754292925145835
+    Attrib turn    -3.6543791911829038
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    -18.791270014005537
+    Attrib catToDog1x    11.86695244873002
+    Attrib catToDog1y    -9.133328442059772
+    Attrib catToDog2x    1.4350384942922993
+    Attrib catToDog2y    -2.2875858491259877
+    Attrib catToDog1    -5.96169535332519
+    Attrib catToDog2    -0.48845517762602475
+    Attrib catToExitX    3.1450520732908966
+    Attrib catToExitY    -4.547371379345053
+    Attrib catDog1Angle    1.6480728394847797
+    Attrib catDog2Angle    -0.12949195543330033
+    Attrib catToLeft    3.1376755063079917
+    Attrib catToRight    -3.154170669343543
+    Attrib catToTop    -4.577412487649852
+    Attrib catToBottom    4.579857871468466
+    Attrib dog1ToLeft    -2.834601941901689
+    Attrib dog1ToRight    2.8511332747534417
+    Attrib dog1ToTop    7.409500872498768
+    Attrib dog1ToBottom    -7.348707352845489
+    Attrib dog2ToLeft    2.286564641354665
+    Attrib dog2ToRight    -2.299120576444921
+    Attrib dog2ToTop    -3.326837856832493
+    Attrib dog2ToBottom    3.359829874329869
+    Attrib dogInnterDist    1.3959480026437834
+    Attrib dog1ToExitX    -2.8192591875721713
+    Attrib dog1ToExitY    -2.8075621296424313
+    Attrib dog2ToExitX    2.2912684319391547
+    Attrib dog2ToExitY    2.217726591836819
+    Attrib turn    2.783861899845433
+Class Down
+    Input
+    Node 0
+Class Left
+    Input
+    Node 1
+Class Up
+    Input
+    Node 2
+Class Right
+    Input
+    Node 3
+
+
+Time taken to build model: 78.92 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances         890               78.1387 %
+Incorrectly Classified Instances       249               21.8613 %
+Kappa statistic                          0.6907
+Mean absolute error                      0.135
+Root mean squared error                  0.2675
+Relative absolute error                 37.1925 %
+Root relative squared error             62.79   %
+Total Number of Instances             1139
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+  0.28      0.026      0.684     0.28      0.397      0.902    Down
+  0.887     0.213      0.712     0.887     0.79       0.921    Left
+  0.846     0.041      0.838     0.846     0.842      0.947    Up
+  0.908     0.041      0.884     0.908     0.896      0.976    Right
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+  54 131   5   3 |   a = Down
+  21 376  14  13 |   b = Left
+   2  14 192  19 |   c = Up
+   2   7  18 268 |   d = Right
+
