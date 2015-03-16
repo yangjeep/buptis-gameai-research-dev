@@ -1,0 +1,1 @@
+The research platform of game AI development in BUPT International School, mainly focus on UCT, ANN, Monte Carlo method of building NPCs
